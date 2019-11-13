@@ -210,6 +210,7 @@ div#tag_line h5{
 }
 #female img{
   width: 60%;
+  height: auto;
 }
 
 .odd{
@@ -260,16 +261,19 @@ div#tag_line h5{
   }
 }*/
 
-@media screen and (max-width: 992px){
-  #diverse {
-    height: 45rem;
+@media only screen and (max-width: 512px){
+  #diverse{
+    height: 35rem;
   }
   #female{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 41vw;
+  }
+  .img_center{
+    margin-left: 1rem;
   }
 }
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
   #diverse {
     height: 37rem;
   }
@@ -278,14 +282,18 @@ div#tag_line h5{
     height: auto;
   }
 }
-@media screen and (max-width: 512px){
-  #diverse{
-    height: 35rem;
+
+@media only screen and (max-width: 992px){
+  #diverse {
+    height: 45rem;
   }
-  .img_center{
-    margin-left: 1rem;
+  #female{
+    max-width: 100%;
+    height: auto;
   }
 }
+
+
 
 
 
