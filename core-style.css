@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import '../css/font-awesome.min.css';
+@import '../css/pe-icon-7-stroke.css';
+@import '../css/magnific-popup.css';
+@import '../css/animate.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {outline:none !important}
+.gallery_area {
+    height: 40%;
+    width: 100%;
+    z-index: 1;
+}
+.btn{
+  margin:1em 1em 0 1em;
+  padding: 2px 1rem!important;
+  border: 1px solid #e74c3c;
+  background-color: #fff;
+}
+
+.btn:focus{
+  border: none;
+  box-shadow: none;
+  transition: border 0.9s;
+}
+
+.portfolio-menu button {
+    background-color: transparent;
+    font-size: 15px;
+    color: #838383;
+    padding: 0 0px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.portfolio-menu button.active,
+.portfolio-menu button:hover {
+    color: #1d1d1d;
+}
+
+.portfolio-menu button:focus {
+    box-shadow: none;
+}
+
+.gallery_menu {
+    margin-bottom: 2rem;
+}
+button{
+  padding: 5px!important;
+}
+.column_single_gallery_item {
+    margin-bottom: 30px;
+}
+
+.column_single_gallery_item img {
+    width: 100%;
+}
+.hover_overlay {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.hover_overlay a {
+    font-size: 30px;
+    color: #fff;
+}
+
+.column_single_gallery_item:hover .hover_overlay {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+img#one{
+	z-index: -1;
+	position: fixed;
+	opacity: 0.4;
+	top: 8rem;
+	left: 30rem;
+	width: 15vh;
+}
+img#two{
+	position: fixed;
+	opacity: 0.7;
+	width: 10rem;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+img#three{
+	position: fixed;
+	width: 20rem;
+	opacity: 0.4;
+	padding: 0 0;
+	z-index: -1;
+}
+img#four{
+	position: fixed;
+	width: 10rem;
+	right: 40rem;
+	bottom: 10rem;
+	z-index: -1;
+	opacity: 0.5;
+}
+#color_white{
+  color: #000;
+  padding: 0 2px;
+  background: #ecf0f1;
+  border: 1px solid #3498db;
+  transition: background 0.7s;
+}
+#color_white:hover{
+  background: #3498db;
+  border:0;
+  transition: background 0.7s;
+}

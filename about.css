@@ -1,0 +1,57 @@
+body,html{
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+div h1{
+  text-decoration: underline;
+}
+iframe{
+  width: 20rem;
+  height: 25rem;
+}
+div.col-lg-10 p{
+  text-align: justify;
+  font-size: 1rem;
+  word-spacing: 1em;
+  color: #000;
+}
+div.col-lg-10 span{
+  font-family: 'Lobster',sans-serif;
+  font-size: 3rem;
+  color: rgba(52, 73, 94,1);
+  text-decoration: underline;
+}
+img#about{
+  position: fixed;
+  top: 8rem;
+  left: 22rem;
+  width: 10rem;
+}
+img#do{
+  position: fixed;
+  bottom: 0rem;
+  width: 10rem;
+}
+img#another{
+  position: fixed;
+  width: 5rem;
+  right: 0;
+  bottom: 0;
+}
+img#again{
+  position: fixed;
+  width: 5rem;
+  right: 10rem;
+  top: 10rem;
+}
+.margin{
+  margin: 4rem 0;
+}
+.box-shadows{
+  box-shadow: 1px 2px 20px #000;
+  transition: box-shadow 0.7s;
+}
+.box-shadows:hover{
+  box-shadow: 2px 2px 40px #000;
+  transition: box-shadow 0.7s;
+}

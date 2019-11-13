@@ -1,0 +1,39 @@
+body{
+  background-image: url("imgs\\qui.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  z-index: 1;
+}
+#heading{
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  text-decoration: underline;
+  color: white;
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.card{
+  border: 1px solid #aaa;
+  border-radius: 5px !important;
+  /* box-shadow: 2px 30px 30px #777; */
+}
+
+
+div h3,span{
+  font-weight: bold;
+}
+.font{
+  font-weight: bold;
+  line-height: 3px;
+}
+h3{
+  font-family: 'Pacifico', cursive;
+  text-decoration: underline;
+}

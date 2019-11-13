@@ -1,0 +1,48 @@
+.navbar-light {
+    background-color: rgba(0,0,0,0.1);
+    border-color: rgba(0,0,0,0.0);
+    transition: .5s all;
+    transition-delay: .5s;
+}
+.navbar-light:hover {
+   /* background-color: rgba(96, 119, 187,0.7); */
+    border-color: rgba(0,0,0,0.5);
+    transition-delay: 0s;
+}
+.navbar-brand{
+    margin: 0px 30px 0pc 10px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 0 30px;
+    /* border: 2px solid red; */
+/*    margin: 10px 0px;*/
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    position: relative;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-weight: bold;
+/*    color: black;*/
+     border-bottom: 5px solid #6077bb;
+    transition: border-bottom 0.3s;
+}
+.navbar.scrolled {
+    background: rgba(70,83,94,0.1);
+    transition: background 500ms;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+p,h1,h2,h3,h4,h5,h6{
+    cursor: default;
+}

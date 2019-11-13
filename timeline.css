@@ -1,0 +1,173 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.timeline{
+	width: 100%;
+	float: left;
+}
+.timeline h1{
+	margin:0;
+	text-align: center;
+	padding:50px 30px;
+}
+.timeline .container{
+	max-width: 1170px;
+	margin:50px auto;
+}
+.timeline .container::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.timeline .content{
+	width: 100%;
+	float: left;
+}
+
+
+.timeline .content ul{
+	list-style: none;
+	margin:0;
+	padding:0px;
+	position: relative;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.timeline .content ul::before{
+	content: '';
+	position: absolute;
+	left:50%;
+	width: 2px;
+	margin-left:-1px;
+	height: 100%;
+	background-color: #c4c4c4;
+}
+.timeline .content ul li{
+	position: relative;
+	padding:30px 40px;
+	width: 50%;
+	display: block;
+	clear: both;
+}
+.timeline .content ul li::before{
+	content: '';
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background-color:#aaa;
+	/* background-color:#87D0E8; */
+	top:30px;
+	margin-left: -8px;
+	box-shadow: 0 0 0 3px rgb(255,135,36);						/* circle outline */
+}
+.timeline .content ul li:nth-child(odd)::before{
+	left:100%;
+}
+.timeline .content ul li:nth-child(even)::before{
+	left:0%;
+}
+
+.timeline .content ul li:nth-child(odd){
+	float: left;
+	text-align: right;
+}
+.timeline .content ul li:nth-child(even){
+	float: right;
+	text-align: left;
+}
+
+.timeline .content ul li h3{
+	margin:0;
+}
+.timeline .content ul li p{
+	margin:0px;
+	padding:15px 0px;
+	line-height: 22px;
+}
+.timeline h3{
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #01030A;
+	word-spacing: 0.2rem;
+}
+.timeline div{
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+	/* text-transform: uppercase; */
+}
+.timeline .content ul li .time{
+	position: absolute;
+	padding:10px 20px;
+	min-width: 140px;
+	text-align: center;
+	background-color:#aaa;
+	/* background-color:#59C9EB; */
+	/* box-shadow: 0 0 0 3px rgba(3,7,26,0.5); */				/* box outine */
+	color:#ffffff;
+	font-size:14px;
+	border-radius:4px;
+	top:20px;
+	display: inline-block;
+}
+
+.timeline .content ul li:nth-child(odd) .time{
+   left:100%;
+ margin-left: 40px;
+}
+.timeline .content ul li:nth-child(even) .time{
+	right:100%;
+	margin-right: 40px;
+}
+
+
+/*responsive*/
+
+@media(max-width: 767px){
+	.timeline .content ul::before{
+		left:30px;
+	}
+	.timeline .content ul li{
+		width: 100%;
+	}
+	.timeline .content ul li:nth-child(odd){
+		text-align: left;
+	}
+	.timeline .content ul li:nth-child(odd)::before{
+		left:30px;
+	}
+	.timeline .content ul li:nth-child(even)::before{
+		left:30px;
+	}
+
+ .timeline .content ul li {
+    position: relative;
+    padding: 20px 30px 20px 60px;
+ }
+ .timeline .content ul li h3{
+ 	padding-top: 20px;
+ }
+ .timeline .content ul li .time{
+ 	position: relative;
+ 	top: auto;
+ }
+ .timeline .content ul li:nth-child(odd) .time{
+ 	left:0px;
+ 	margin-left:0px;
+ }
+ .timeline .content ul li:nth-child(even) .time{
+ 	left:0px;
+ 	right: auto;
+ 	margin-right:0px;
+
+ }
+}

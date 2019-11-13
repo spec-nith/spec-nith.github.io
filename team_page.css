@@ -1,0 +1,72 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: white;
+    font-family: "Nunito", sans-serif;
+    opacity:0;
+    transition: opacity 2s;
+    /* background-image: linear-gradient(#70e1f5, #ffd194); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 5px;
+}
+.type{
+border: 0;
+height: 55px;
+background-image: url("imgs/type_1.png");
+display: block;
+margin-left: center;
+margin-right: center;
+width: 40%;
+background-repeat: no-repeat;
+}
+.border{
+  border: 2px solid red!important;
+}
+.card{
+  margin: 30px 20px;
+}
+.Display-3{
+  text-decoration: underline;
+}
+ .card-title{
+   text-align: center;
+   font-family: 'Lobster', cursive;
+   font-size: 25px;
+   color: #30348C;
+   font-size: 30px;
+   text-shadow: 1px 1px 3px #30348C;
+   text-decoration: underline;
+ }
+.card-text{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+  font-size: 20px;
+}
+.box-shadows{
+  box-shadow: 10px 10px 30px #aaaaaa;
+  transition: box-shadow 0.7s;
+}
+.box-shadows:hover{
+  box-shadow: 20px 20px 120px #aaaaaa;
+  transition: box-shadow 0.7s;
+}
+.btn{
+  border-radius: 1rem;
+}
+.navbar.scrolled {
+    background: rgba(70,83,94,0.1);
+    transition: background 500ms;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

@@ -1,0 +1,52 @@
+body{
+  font-family: "Nunito", sans-serif;
+}
+.img{
+  height: 15vw!important;
+  width: 20vw!important;
+  /* border: 2px solid red; */
+}
+.border{
+  border:2px solid #aaa!important;
+  border-radius: 10px;
+}
+.name{
+  margin-left: 10vw;
+}
+img#one{
+	z-index: -1;
+	position: fixed;
+	opacity: 0.4;
+	top: 8rem;
+	left: 43rem;
+	width: 15vh;
+}
+img#two{
+	position: fixed;
+	opacity: 0.7;
+	width: 10rem;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+img#three{
+	position: fixed;
+	width: 20rem;
+	opacity: 0.4;
+	padding: 0 0;
+	z-index: -1;
+}
+img#four{
+	position: fixed;
+	width: 10rem;
+	right: 15rem;
+	bottom: 20rem;
+	z-index: -1;
+	opacity: 0.5;
+}
+#back{
+  background: #fff;
+}
+.borderred{
+  border: 2px solid red!important;
+}

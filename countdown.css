@@ -1,0 +1,43 @@
+.container{
+	text-align: center;
+	color: white;
+}
+
+.container h2{
+font-size: 20px;
+margin: 0px;
+font-weight: 500px;
+font-style: italic;
+}
+.row h3{
+	text-align: center;
+	word-spacing: 0.5rem;
+	text-transform: uppercase;
+	font-size: 2rem;
+}	
+#count{
+	margin-left: 0!important;
+}
+/*.countd{
+	display: inline-block;
+	width: 50px;
+	height: 80px;
+	border: 2px solid;
+	margin: 0px 30px;
+	font-size: 12px;
+	border-radius: 50%;
+	overflow: hidden;
+}*/
+.countd{
+	/*border: 2px solid red;*/
+	padding: 1rem 0;
+	margin-right: 0.8rem;
+	border-bottom: 2px solid green;
+	font-size: 0.7rem;
+}
+
+.countd span{
+	display: block;
+	font-size: 26px;
+	margin-top: 14px;
+}

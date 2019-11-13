@@ -1,0 +1,84 @@
+
+body{
+  font-family: "Nunito", sans-serif;
+}
+h1{
+  text-decoration: underline;
+}
+span{
+  font-weight: bold;
+}
+div[class="row"] img{
+  padding: 1rem 0;
+  margin: 2rem 0;
+  box-shadow: 3px 3px 5px #aaa;
+}
+#heading1{
+  font-family: "Lobster",sans-serif;
+  text-align: center;
+  /* margin: 0 2em 1em 0; */
+  text-decoration: underline;
+  letter-spacing: 2px;
+  /* text-transform: uppercase; */
+}
+#heading2{
+  margin-bottom: 1em;
+  font-family: "Lobster",sans-serif;
+  text-align: center;
+}
+.container{
+
+}
+.card{
+  margin-top: 2em;
+  border: 2px solid #aaa;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px rgba(24, 44, 97,0.2);
+  transition: box-shadow 0.7s;
+}
+
+.card:hover{
+	box-shadow: 20px 20px 20px rgba(24, 44, 97,0.2);
+	transition: box-shadow 0.3s;
+}
+.border{
+  border: solid 2px red!important;
+}
+.text_card{
+  margin-top: 50px;
+}
+img#one{
+	z-index: -1;
+	position: fixed;
+	opacity: 0.4;
+	top: 8rem;
+	left: 30rem;
+	width: 15vh;
+}
+img#two{
+	position: fixed;
+	opacity: 0.7;
+	width: 10rem;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+img#three{
+	position: fixed;
+	width: 10rem;
+  bottom: 0;
+	opacity: 0.4;
+	padding: 0 0;
+	z-index: -1;
+}
+img#four{
+	position: fixed;
+	width: 10rem;
+	right: 10rem;
+	bottom: 10rem;
+	z-index: -1;
+	opacity: 0.5;
+}
+div.row div.col-lg-8 p{
+  text-align: justify;
+}
