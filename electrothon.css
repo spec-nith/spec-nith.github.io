@@ -263,17 +263,20 @@ div#tag_line h5{
 .female img{
   width: 60vw;
   height: auto;
+  border: 2px solid red;
 }
 @media screen and (min-width: 768px){
   .female img{
     width: 40vw;
     height: auto;
+    border: 2px solid red;
   }
 }
 @media screen and (max-width: 312px){
   .female img{
     width: 50vw;
     height: auto;
+    border: 2px solid red;
   }
 }
 /*@media only screen and (max-width: 512px){
