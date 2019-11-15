@@ -99,6 +99,26 @@ p{
   animation: fadein 2s;
   /* max-width: 50%; */
 }
+#sendus p{
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0!important;
+}
+#sendus{
+  margin-top: 2rem;
+}
+#diversity p{
+  font-size: 1.2rem;
+  color: #292929;
+}
+#diversity span{
+  font-size: 1.2rem;
+}
+#about_hack p{
+  font-size: 1.2rem;
+  color: #292929;
+}
 div.carousel-item img{
   max-width: 100%;
   height: auto;
