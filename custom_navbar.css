@@ -1,6 +1,23 @@
 body,html{
   overflow-x: hidden;
 }
+
+.navbar .dropdown-toggle, .navbar .dropdown-menu a {
+    cursor: pointer;
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+    color: inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
+
 .navbar-light {
     background-color: rgba(0,0,0,0.01);
     border-color: rgba(0,0,0,0.0);
