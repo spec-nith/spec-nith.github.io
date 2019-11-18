@@ -48,6 +48,9 @@ body,html{
     text-decoration: none;
     background-color: #f8f9fa;
 }
+.dropdown-item {
+    text-align: center!important;
+    }
 
 .navbar-light {
     background-color: rgba(0,0,0,0.01);
