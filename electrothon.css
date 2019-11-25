@@ -270,10 +270,16 @@ div#tag_line h5{
  	height: 40vw!important;
   }
 }
-@media screen and (max-width: 312px){
+@media screen and (max-width: 320px){
   .female img{
     width: 50vw;
     height: 50vw!important;
+  }
+  .img_center{
+    margin-left: 1rem;
+  }
+  .mar img{
+    margin-bottom: 2rem;
   }
 }
 /*@media only screen and (max-width: 512px){
