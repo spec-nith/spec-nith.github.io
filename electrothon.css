@@ -264,6 +264,9 @@ div#tag_line h5{
   width: 60vw;
   height: 60vw!important;
 }
+ .mar img{
+    margin-bottom: 2rem;
+  }
 @media screen and (min-width: 768px){
   .female img{
     width: 40vw;
