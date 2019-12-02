@@ -58,10 +58,8 @@ body {
   border-radius: 100px;
   background: #585858; }
 
-p {
-  font-family: "Avenir";
-  line-height: 25px;
+/* p {
   text-align: justify;
   opacity: 0;
-  color: #585858; 
-}
+  color: #585858;
+} */
