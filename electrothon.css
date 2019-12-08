@@ -91,7 +91,7 @@ p{
   width:15rem;
 }
 .mar img{
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 div.container-fluid h2{
 	color: rgb(70, 83, 94);
