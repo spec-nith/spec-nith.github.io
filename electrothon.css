@@ -32,8 +32,6 @@ p{
   background: rgba(0,0,0,0.0);
   border: 0;
 }
-
-
 .p{
   margin: 1rem 0 1rem 0;
 }
@@ -155,6 +153,11 @@ div#tag_line h1{
 div#tag_line h5{
   	text-align: left;
   	padding: 0.2em 0em 0em 1em;
+}
+#zulip{
+	width: 60%;
+	/*height: auto;*/
+	margin: 0;
 }
 #electro_img img{
   width: 20rem;
