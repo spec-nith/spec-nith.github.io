@@ -126,6 +126,15 @@ color: rgb(70, 83, 94);
 div img{
   width: 30em;
 }
+i{
+  color: #444;
+}
+path{
+  fill: #fff;
+}
+#we{
+  margin: 4.7rem 0 0 0;
+}
 #havelook{
   font-size: 2em;
   font-weight: bold;
