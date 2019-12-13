@@ -54,7 +54,7 @@ ul, li {
   cursor: pointer!important;
 }
 .faq li {
-  padding: 1rem;        /*inter question spacing*/
+  padding: 0.5rem;        /*inter question spacing*/
 }
 
 .faq li.q {
