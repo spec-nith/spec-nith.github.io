@@ -153,16 +153,22 @@ path{
 	height: 100%;
   object-fit: contain;
 }
-div#tag_line h1{
+#tag_line{
   margin-top: 5rem;
+}
+#tag_line img{
+  width: 10rem;
+  height: auto;
+}
+div#tag_line h1{
   text-align: center;
   letter-spacing: 0.3rem;
   font-size: 3rem;
 }
-div#tag_line h5{
+/*div#tag_line h5{
   	text-align: left;
   	padding: 0.2em 0em 0em 1em;
-}
+}*/
 #zulip{
 	width: 60%;
 	/*height: auto;*/
