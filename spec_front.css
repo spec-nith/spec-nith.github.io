@@ -133,7 +133,7 @@ div.carousel-item img{
   margin: 5rem;
 }
 img#one{
-  position: fixed;
+  position: absolute;
   top: 5rem;
   right: 88rem;
   width: 15vw;
@@ -160,7 +160,7 @@ img#four{
   width: 8vw;
 }
 img#five{
-  position: fixed;
+  position: absolute;
   right: 10rem;
   bottom: 44rem;
   /*top:0;*/
