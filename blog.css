@@ -29,6 +29,9 @@ img#two{
 	right: 0;
 	z-index: -1;
 }
+.border{
+	border: 2px solid black;
+}
 img#three{
 	position: fixed;
 	width: 20rem;
