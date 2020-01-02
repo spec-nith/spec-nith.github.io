@@ -1,35 +1,24 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Blog</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Lobster" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" type="text/css" href="custom_navbar.css">
+  <link rel="shortcut icon" href="imgs/headicon.ico" />
   <link rel="stylesheet" type="text/css" href="blog.css">
-  <link rel="shortcut icon" href="imgs\headicon.ico" />
-<style>
-  body,h1,h2,h3,h4,h5 {
-    font-family: "Nunito", sans-serif;
-  }
-  #divfixed{
-    position: sticky;
-    top:40px;
-    right:20px;
-    width:400px;
-    height:60px;
-    margin-bottom: 20px;
-</style>
-  <title>Blog</title>
+  <!-- main css -->
+  <link rel="stylesheet" href="blog/css/style.css">
+  <link rel="stylesheet" href="blog/css/responsive.css">
 </head>
-<body>
 <body onload="document.body.style.opacity='1'">
 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light">
       <a id="brand" class="navbar-brand" href="index.html">
-          <img src="imgs\spec_logo.png" width="70" height="50">
+          <img src="imgs/spec_logo.png" width="70" height="50">
       </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,11 +117,11 @@
   </nav>
 <!--Carousel Begins -->
 
-
-<img id="one" src="imgs\circle_red.png">
-<img id="two" src="imgs\semi_red.png">
-<img id="three" src="imgs\semi_another_red.png">
-<img id="four" src="imgs\circle.png">
+<!--
+<img id="one" src="imgs/circle_red.png">
+<img id="two" src="imgs/semi_red.png">
+<img id="three" src="imgs/semi_another_red.png">
+<img id="four" src="imgs/circle.png"> -->
 <!-- w3-content defines a container for fixed size centered content,
 and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
@@ -143,140 +132,162 @@ and is wrapped around the whole page content, except for the footer in this exam
   <p style="letter-spacing:1px;">Welcome to the blog of <span class="w3-tag">Electronics</span></p>
 </header>
 
-<!-- Grid -->
-<div class="w3-row">
-
-<div class="w3-col l8 s12">
-  <div class="w3-card-4 w3-margin w3-white border">
-    <div class="w3-col l6 s6 name my-5">
-      <h3><b>An Introduction To NodeMCU</b></h3>
-      <h5><span class="w3-opacity mx-5">  January 20, 2018</span></h5>
-    </div>
-    <img class="w3-col l6 s6 img" style="width:100%;" src="imgs\uno.png" alt="Nature">
-    <div class="w3-container">
-      <p>You must have thought about your automatic wash machine as to how it took inputs by just making you press a few buttons, and then perform the tasks accordingly. We have seen something like this in our computers. So then deriving an analogy we can say that a small computer...</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><a target="_blank" href="https://specblog399943221.wordpress.com/2018/01/20/an-introduction-to-arduino/"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
+<!--================Blog Area =================-->
+<section class="blog_area p_120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog_left_sidebar">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <article class="blog_style1 small">
+            <div class="blog_img">
+              <img class="img-fluid" src="blog/img/code.jpg" alt="">
+            </div>
+            <div class="blog_text">
+              <div class="blog_text_inner">
+                <h4>Best Coding Challenges Websites</h4>
+                <p>This  2018 list features 10 websites that offer the best coding challenges and resources to help new and intermediate developers improve their skills, prepare for interviews, and progress in their careers...</p>
+                <div class="w3-row">
+                  <div class="w3-col m8 s12">
+                    <p><a href="post4.html"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
+                  </div>
+                </div>
+                <div class="date">
+                  <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> May 7, 2018</a>
+                </div>
+              </div>
+            </div>
+          </article>
+                      </div>
+                        <div class="col-md-6">
+                          <article class="blog_style1 small">
+              <div class="blog_img">
+                <img class="img-fluid" src="blog/img/web.jpg" alt="">
+              </div>
+              <div class="blog_text">
+                <div class="blog_text_inner">
+                  <h4>Practical Approach to Web development</h4>
+                  <p>So you are a beginner having no knowledge about this field. No Problem. This article will remove all your doubts regarding how you should start web development...</p>
+                  <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p><a href="post3.html"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
+                    </div>
+                  </div>
+                  <div class="date">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> April 7, 2018</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+                        </div>
+                      <div class="col-md-6">
+                      <article class="blog_style1 small">
+                      <div class="blog_img">
+                        <img class="img-fluid" src="blog/img/pi.png" alt="">
+                      </div>
+                      <div class="blog_text">
+                        <div class="blog_text_inner">
+                        <h4>An Introduction to Raspberry Pi</h4>
+                          <p>The Raspberry Pi Foundation works to put the power of digital making into the hands of people all over the world and aims to promote the teaching of basic computer science in schools and developing countries...</p>
+                          <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                              <p><a href="post2.html"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
+                            </div>
+                          </div>
+                          <div class="date">
+                            <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> January 21, 2018</a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                                </div>
+                        <div class="col-md-6">
+                          <article class="blog_style1 small">
+              <div class="blog_img">
+                <img class="img-fluid" src="blog/img/uno.png" alt="">
+              </div>
+              <div class="blog_text">
+                <div class="blog_text_inner">
+                  <h4>An Introduction to Arduino</h4>
+                  <p>You must have thought about your automatic wash machine as to how it took inputs by just making you press a few buttons, and then perform the tasks accordingly. We have seen something like this in our computers. So then deriving an analogy we can say that a small computer...</p>
+                  <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <p><a href="post1.html"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
+                    </div>
+                    <div class="w3-col m4 w3-hide-small">
+                      <p><span class="w3-padding-large w3-right"><b>  </b> <span class="w3-tag"></span></span></p>
+                    </div>
+                  </div>
+                  <div class="date">
+                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> January 20, 2018</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            </div>
+                    </div>
+<!--
+                    <nav class="blog-pagination justify-content-center d-flex">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a href="#" class="page-link" aria-label="Previous">
+                                <span aria-hidden="true">
+                                    <span class="lnr lnr-chevron-left"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a href="#" class="page-link">01</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">02</a></li>
+                        <li class="page-item"><a href="#" class="page-link">03</a></li>
+                        <li class="page-item"><a href="#" class="page-link">04</a></li>
+                        <li class="page-item"><a href="#" class="page-link">09</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link" aria-label="Next">
+                                <span aria-hidden="true">
+                                    <span class="lnr lnr-chevron-right"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav> -->
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_right_sidebar">
+                    <aside class="single_sidebar_widget popular_post_widget">
+                        <h3 class="widget_title">Popular Posts</h3>
+                        <div class="media post_item">
+                            <img src="blog/img/popular-post/post1.jpg" alt="post">
+                            <div class="media-body">
+                                <a href="post1.html"><h3>An Introduction to Arduino</h3></a>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img src="blog/img/popular-post/post2.jpg" alt="post">
+                            <div class="media-body">
+                                <a href="post2.html"><h3>An Introduction to Raspberry Pi</h3></a>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img src="blog/img/popular-post/post3.jpg" alt="post">
+                            <div class="media-body">
+                                <a href="post3.html"><h3>Practical Approach to Web development</h3></a>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img src="blog/img/popular-post/post4.jpg" alt="post">
+                            <div class="media-body">
+                                <a href="post4.html"><h3>Best Coding Challenges Websites</h3></a>
+                            </div>
+                        </div>
+                        <div class="br"></div>
+                    </aside>
+                </div>
+            </div>
         </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>  </b> <span class="w3-tag"></span></span></p>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-  <div class="w3-card-4 w3-margin w3-white border">
-    <div class="w3-col l6 s6 name my-5">
-      <h3><b>Introduction To Raspberry Pi</b></h3>
-      <h5><span class="w3-opacity">January 21, 2018</span></h5>
-    </div>
-    <img  class="w3-col l6 s6 img" src="imgs\pi.jpg" alt="Nature">
-    <div class="w3-container">
-      <p>The Raspberry Pi Foundation works to put the power of digital making into the hands of people all over the world and aims to promote the teaching of basic computer science in schools and developing countries...</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><a target="_blank" href="https://specblogs105182527.wordpress.com/2018/01/21/14/"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>  </b> <span class="w3-tag"></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-card-4 w3-margin w3-white border">
-    <div class="w3-col l6 s6 name my-5">
-      <h3><b>A Practical Approach To Web Development.</b></h3>
-      <h5> <span class="w3-opacity">April 7, 2018</span></h5>
-    </div>
-    <img class="w3-col l6 s6 img" src="imgs\web2.jpg" alt="Nature" style="width:100%;height: 350px;">
-    <br>
-
-    <div class="w3-container">
-      <p>So you are a beginner having no knowledge about this field. No Problem. This article will remove all your doubts regarding how you should start web development...</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><a target="_blank" href="https://specblogs.wordpress.com/2018/01/21/17/"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>  </b> <span class="w3-tag"></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-card-4 w3-margin w3-white border">
-    <div class="w3-col l6 s6 name my-5">
-      <h3><b>The 10 Best Coding Challenge Websites</b></h3>
-      <h5> <span class="w3-opacity">May 7, 2018</span></h5>
-    </div>
-    <img class="w3-col l6 s6 img" src="imgs\code2.jpg" alt="Nature" style="width:100%;height: 350px;">
-    <br>
-
-    <div class="w3-container">
-      <p>This  2018 list features 10 websites that offer the best coding challenges and resources to help new and intermediate developers improve their skills, prepare for interviews, and progress in their careers...</p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <p><a target="_blank" href="https://specblogcoding.wordpress.com/2018/01/21/14/"><button class="btn btn-outline-info"><b>READ MORE »</b></button></a></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-          <p><span class="w3-padding-large w3-right"><b>  </b> <span class="w3-tag"></span></span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- Blog entry -->
-<!-- END BLOG ENTRIES -->
-</div>
-
-<!-- Introduction menu -->
-<div class="w3-col l4" id="divfixed">
-  <!-- About Card -->
-
-  <!-- Posts -->
-  <div class="w3-card border w3-margin">
-    <div id="back" class="w3-container w3-padding">
-      <h4 >Popular Posts</h4>
-    </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <a target="_blank" href="https://specblog399943221.wordpress.com/2018/01/20/an-introduction-to-arduino/"><li class="w3-padding-16">
-        <img src="imgs\uno.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">An Introduction To Arduino</span><br>
-      </li></a>
-      <a target="_blank" href="https://specblogs105182527.wordpress.com/2018/01/21/14/"><li class="w3-padding-16">
-        <img src="imgs\pi.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Introduction To Raspberry Pi</span><br>
-      </li></a>
-      <!--<li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="imgs\glass.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">World Of Drones</span><br>
-        <span>Sarthak Jain</span>-->
-      <a target="_blank" href="https://specblogs.wordpress.com/2018/01/21/17/"><li class="w3-padding-16">
-        <img src="imgs\web.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">A Practical Approach To Web Development</span><br>
-        <span></span>
-      </li></a>
-      <a target="_blank" href="https://specblogcoding.wordpress.com/2018/01/21/14/"><li class="w3-padding-16">
-        <img src="imgs\code.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">The 10 Best Coding Challenge Websites</span><br>
-        <span></span>
-      </li></a>
-    </ul>
-  </div>
-
-  <!-- Labels / tags -->
-
-
-<!-- END Introduction Menu -->
-</div>
-
-<!-- END GRID -->
-</div><br>
+</section>
 
 <!-- END w3-content -->
 </div>
