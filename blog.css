@@ -2,8 +2,14 @@ body{
   font-family: "Nunito", sans-serif;
 }
 div#first img{
-  margin: 4rem;
-  width: 7rem;
+  margin: 2rem;
+  width: 5rem;
+}
+
+.img_container
+{
+  text-align: center;
+  display: block;
 }
 .img{
   height: 15vw!important;
