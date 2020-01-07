@@ -1,5 +1,6 @@
 .view {
-  max-height: 180px;
+  max-height: 27vh;
+  min-height: 27vh;
   object-fit: cover;
   object-position: center;
   width: 300px;
@@ -13,4 +14,8 @@
 
 #swiper-img {
   object-fit: cover;
+}
+
+.transparent{
+	opacity: 0;
 }
