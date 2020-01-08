@@ -1,581 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Lobster|Lato" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="materialize\css\materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" type="text/css" href="custom_navbar.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="core-style.css">
-    <link rel="shortcut icon" href="imgs\headicon.ico"/>
-    <style>
-        body {
-            font-family: "Nunito", sans-serif;
-        }
-        div>img {
-            height: 13rem;
-            max-width: 100%;
-            min-width: 100%!important;
-            /*max-height: 100vh;*/
-            margin: auto;
-        }
-    </style>
-    <title>Gallery</title>
+  <title>SPEC - Gallary</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="gallery\fonts\icomoon\style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+
+
+  <link rel="stylesheet" href="gallery\fonts\flaticon\font\flaticon.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="gallery\css\style.css">
+  <link rel="stylesheet" href="gallery\css\custom.css">
+
 </head>
 
-
 <body>
-  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light">
-        <a id="brand" class="navbar-brand" href="index.html">
-            <img src="imgs\spec_logo.png" width="70" height="50">
-        </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#about_index">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="workshops.html">Workshops</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Events
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="competitions.html">Competitions</a>
-              <a class="dropdown-item" href="workshops.html">Workshop</a>
-              <a class="dropdown-item" href="internships.html">Internships</a>
-            </div>
-          </li> -->
+  <div class="site-wrap">
 
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blogs</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="team_page_final.html">Team Spec</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-                <li class="nav-item">
-                <a class="nav-link" href="hackathon.html">Electrothon</a>
-                </li>
-            <li class="nav-item dropdown">
-                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">E-books</a>
-                                  <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
-                                    <li class="dropdown-item dropdown dropright">
-                                        <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject Books</a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdown2-1">
-                                            <li>
-                                              <a target="_blank" href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_" class="dropdown-item nestedmenu">1st Year</a>
-                                            </li>
-                                        <li>
-                                            <a target="_blank" href="https://drive.google.com/open?id=1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC" class="dropdown-item nestedmenu">2nd Year</a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank" href="https://drive.google.com/open?id=1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF" class="dropdown-item nestedmenu">3rd Year</a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank" href="https://drive.google.com/open?id=1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO" class="dropdown-item nestedmenu">Final Year</a>
-                                        </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-item dropdown dropright">
-                                            <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject Notes</a>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdown2-1">
-                                                <li>
-                                                    <a target="_blank" href="https://drive.google.com/open?id=1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt" class="dropdown-item nestedmenu">1st Year</a>
-                                                </li>
-                                                <li>
-                                                    <a target="_blank" href="https://drive.google.com/open?id=1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9" class="dropdown-item nestedmenu">2nd Year</a>
-                                                </li>
-                                                <li>
-                                                    <a target="_blank" href="https://drive.google.com/open?id=1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j" class="dropdown-item nestedmenu">3rd Year</a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a target="_blank" href="https://drive.google.com/open?id=1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r" class="dropdown-item nestedmenu">Final Year</a>
-                                                </li> -->
-                                                </ul>
-                                    </li>
-                                    <li class="dropdown-item dropdown dropright">
-                                        <a class="dropdown-toggle" id="dropdown2-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Papers</a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdown2-1">
-                                            <li>
-                                                <a target="_blank" href="https://drive.google.com/open?id=1xhNMyx-A7Twg9XdsF6EZsmX-H8KaJoGq" class="dropdown-item nestedmenu">1st Year</a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="https://drive.google.com/open?id=1HOfMim4Fit6gRWh-8eEOXzNrHy097kTw" class="dropdown-item nestedmenu">2nd Year</a>
-                                            </li>
-                                            <li>
-                                                <a target="_blank" href="https://drive.google.com/open?id=1ZPqZOYGo-uRwsqgiX_VldQqgwFHGu7iU" class="dropdown-item nestedmenu">3rd Year</a>
-                                            </li>
-                                            <!-- <li>
-                                                <a target="_blank" href="https://drive.google.com/open?id=1jlKH6ffVdqdEjaagkHupaRkoqd38d6yB" class="dropdown-item nestedmenu">Final Year</a>
-                                            </li> -->
-                                        </ul>
-                                    </li>
-                                </ul>
-                                </li>
-          </ul>
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
       </div>
-    </ul>
-    </nav>
-
-    <img id="one" src="imgs\circle_red.png">
-    <img id="two" src="imgs\semi_red.png">
-    <img id="three" src="imgs\semi_another_red.png">
-    <img id="four" src="imgs\circle_red.png">
-
-
-                                                        <!-- Gallery Buttons -->
-    <!-- <div class="row">
-        <div class="col-none col-sm-2 col-lg-4"></div>
-        <div class="col-sm-8 col-lg-4">
-            <div class="row">
-                <div class="col-3 d-flex justify-content-center">
-                    <button class="btn" type="button" data-filter="*">All</button>
-                </div>
-                <div class="col-3 d-flex justify-content-center">
-                    <button class="btn" type="button" data-filter=".weddings">Workshops</button>
-                </div>
-                <div class="col-3 d-flex justify-content-center">
-                    <button class="btn" type="button" data-filter=".studio">EVENTS</button>
-                </div>
-                <div class="col-3 d-flex justify-content-center">
-                    <button class="btn" type="button" data-filter=".fashion">SPECFEST</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-none col-sm-2 col-lg-4"></div>
-    </div> -->
-
-    <div class="gallery_area clearfix">
-            <div class="container-fluid clearfix">
-                <div class="gallery_menu">
-                    <div class="portfolio-menu">
-                        <div class="row">
-                            <div class="col-none col-sm-2 col-lg-4"></div>
-                                <div class="col-sm-8 col-lg-4">
-                                    <div class="row">
-                                        <div class="col-3 d-flex justify-content-center">
-                                            <button class="btn" type="button" data-filter="*">All</button>
-                                        </div>
-                                        <div class="col-3 d-flex justify-content-center">
-                                            <button class="btn" type="button" data-filter=".weddings">Workshops</button>
-                                        </div>
-                                        <div class="col-3 d-flex justify-content-center">
-                                            <button class="btn" type="button" data-filter=".studio">EVENTS</button>
-                                        </div>
-                                        <div class="col-3 d-flex justify-content-center">
-                                            <button class="btn" type="button" data-filter=".fashion">SPECFEST</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="col-none col-sm-2 col-lg-4"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-                                                        <!-- Gallery Button ends -->
-
-
-
-
-    <div style="margin: 1rem;" class="row portfolio-column borderred">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item  fashion studio">
-            <img src="img\bg-img\e1.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e1.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w1.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w1.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s3.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s3.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w2.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w2.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w3.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w3.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e2.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e2.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e3.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e3.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e4.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e4.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s1.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s1.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e5.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e5.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item  fashion ">
-            <img src="img\bg-img\s6.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s6.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion weddings">
-            <img src="img\bg-img\w4.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w4.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s2.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s2.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w5.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w5.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s6.jpg" alt="">
-            <div class="hover_overlay">
-                <a href="img\bg-img\s6.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s4.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s4.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s5.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s5.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings ">
-            <img src="img\bg-img\w6.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w6.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w7.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w7.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w8.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w8.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w9.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w9.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w10.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w10.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w11.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w11.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w12.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w12.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e7.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e7.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e8.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e8.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e9.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e9.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e10.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e10.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e11.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e11.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e12.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e12.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s7.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s7.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s8.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s8.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s9.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s9.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s10.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s10.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s11.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s11.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s12.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s12.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e13.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e13.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w13.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w13.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e14.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e14.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w14.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w14.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e15.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e15.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w15.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w15.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item fashion">
-            <img src="img\bg-img\s13.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\s13.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e16.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e16.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w16.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w16.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e17.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e17.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w17.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w17.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item studio">
-            <img src="img\bg-img\e18.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\e18.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w18.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w18.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
-        <!-- Single Item -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 column_single_gallery_item weddings">
-            <img src="img\bg-img\w19.jpg" alt="">
-            <div class="hover_overlay">
-                <a  href="img\bg-img\w19.jpg"><i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-
+      <div class="site-mobile-menu-body"></div>
     </div>
 
-    <div class="row">
-        <div class="col-12 text-center mt-70">
-            <a id="color_white" href="https://www.facebook.com/pg/spec.ece/photos/?ref=page_internal"
-                class="btn studio-btn btn-primary"><img src="img\core-img/logo-icon.png" alt="facebook"> Load
-                More</a>
+
+
+
+    <header class="site-navbar py-3" role="banner">
+
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <div class="col-6 col-xl-2" data-aos="fade-down">
+        <!-- <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">SPEC</a></h1>-->
+        <a href="index.html"><img src="gallery\bg-img\spec_logo.png" class="logo" /></a>
+      </div>
+      <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+        <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+          <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+            <li><a href="index.html#about_index">About</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="team_page_final.html">Team SPEC</a></li>
+            <li class="has-children active">
+              <a href="gallery.html">Gallery</a>
+              <ul class="dropdown">
+                <li><a href="gallery_fest.html">SPEC Fest</a></li>
+                <li><a href="gallery_events.html">Events</a></li>
+                <li><a href="gallery_workshops.html">Workshops</a></li>
+              </ul>
+            </li>
+            <li><a href="hackathon.html">ELECTROTHON</a></li>
+            <li class="has-children"><a href="#">E-Books</a>
+              <ul class="dropdown">
+                <li class="has-children"><a href="#">Subject Books</a>
+                  <ul class="dropdown">
+                    <li><a href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_">First Year</a></li>
+                    <li><a href="https://drive.google.com/open?id=1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC">Second Year</a></li>
+                    <li><a href="https://drive.google.com/open?id=1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF">Third Year</a></li>
+                    <li><a href="https://drive.google.com/open?id=1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO">Final Year</a></li>
+                  </ul>
+                </li>
+                <li class="has-children"><a href="#">Subject Notes</a>
+                  <ul class="dropdown">
+                    <li><a href="https://drive.google.com/open?id=1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt">First Year</a></li>
+                    <li><a href="https://drive.google.com/open?id=1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9">Second Year</a></li>
+                    <li><a href="https://drive.google.com/open?id=1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j">Third Year</a></li>
+                  </ul>
+                </li>
+            </li>
+            <li class="has-children"><a href="#">Past Pappers</a>
+              <ul class="dropdown">
+                <li><a href="https://drive.google.com/open?id=1xhNMyx-A7Twg9XdsF6EZsmX-H8KaJoGq">First Year</a></li>
+                <li><a href="https://drive.google.com/open?id=1HOfMim4Fit6gRWh-8eEOXzNrHy097kTw">Second Year</a></li>
+                <li><a href="https://drive.google.com/open?id=1ZPqZOYGo-uRwsqgiX_VldQqgwFHGu7iU">Third Year</a></li>
+              </ul>
+            </li>
+            </li>
+          </ul>
+          </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+        <div class="d-none d-xl-inline-block">
+          <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+            <li>
+              <a href="https://www.facebook.com/spec.ece/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/SPEC__NITH" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/s.p.e.c_nith/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com/in/s-p-e-c-nith-40214b197" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            </li>
+          </ul>
         </div>
-    </div>
-    </div>
-    </div>
 
-    <script src="js\jquery\jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js\popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js\bootstrap.min.js"></script>
-    <!-- Plugins js -->
-    <script src="js\plugins.js"></script>
-    <!-- Active js -->
-    <script src="js\active.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+        <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="custom_navbar.js"></script>
+      </div>
+
+    </div>
+  </div>
+
+</header>
+
+
+
+    <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+      <div class="swiper-container images-carousel">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="image-wrap">
+              <div class="image-info">
+                <h2 class="mb-3" id="selector_text">SPEC Fest</h2>
+                <a href="gallery_fest.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+              </div>
+              <img src="gallery\bg-img\img_1.jpg" alt="Image">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-wrap">
+              <div class="image-info">
+                <h2 class="mb-3">Events</h2>
+                <a href="gallery_events.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+              </div>
+              <img src="gallery\bg-img\img_2.jpg" id="swiper-img" style="object-position: right;" alt="Image">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image-wrap">
+              <div class="image-info">
+                <h2 class="mb-3">Workshops</h2>
+                <a href="gallery_workshops.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+              </div>
+              <img src="gallery\bg-img\img_3.jpg" id="swiper-img" alt="Image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+
+  <div class="footer py-4 transparent">
+    <div class="container-fluid">
+      <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script>
+          document.write(new Date().getFullYear());
+        </script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+  <script src="gallery\js\main.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#lightgallery').lightGallery();
+    });
+  </script>
+
 </body>
 
 </html>
