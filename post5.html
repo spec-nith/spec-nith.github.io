@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" type="text/css" href="custom_navbar.css">
+  <link rel="shortcut icon" href="imgs/headicon.ico" />
+  <link rel="stylesheet" type="text/css" href="blog.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="blog/css/style2.css">
+</head>
+<body onload="document.body.style.opacity='1'">
+  <div class= "img_container" id="first">
+    <a href="blog.html"><img src="imgs\spec_logo.png"></a>
+  </div>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+    <!--================Blog Area =================-->
+    <section class="blog_area p_120 single-post-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="main_blog_details">
+              <h4>Introduction to NodeMCU</h4>
+              <div class="user_details">
+                <div class="float-right">
+                  <div class="media">
+                    <div class="media-body">
+                      <p>25 October, 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>The NodeMCU development board is a powerful solution to program microcontrollers and be part of the Internet of Things (IoT). The NodeMCU development board, based on ESP8266EX, is a module with a microcontroller, integrated Wi-Fi receiver, and transmitter. NodeMCU supports several programming languages; hence, it is very easy to upload programs from any computer over a micro-USB port. I have been playing with the NodeMCU for quite a while now and, I have to say, it is a lot more fun than the other available IoT modules. When it comes to prototyping — just another perfect, relatively cheap, easy-to-learn, and user-friendly minuscule magic module!</p>
+              <p><strong>NodeMCU V1.0</strong></p>
+              <p>The first generation of the NodeMCU Development Kit had the version number V0.9. The second generation had the version number V1.0, and this newer version used ESP-12E (not ESP-12), which comes with 4 MB of flash memory. The new version comes with the CP2102 serial chip (not CH340) and it works really well and without a hassle. However, I noticed that, when it comes to many Chinese online vendors, there’s a blurring mix-up of generation and version names. The common name used by them for version 1.0 is V2, and most of those V2 boards are fabricated by or at least marked with “Amica.” Technically, it’s “NodeMCU V1.0 with ESP-12E module!”</p>
+              <img class="img-fluid" src="blog/img//post5/a1.png" alt="">
+              <p><br></p>
+              <img class="img-fluid" src="blog/img//post5/a2.png" alt="">
+              <p><br><strong>NodeMCU First Run</strong></p>
+              <p>NodeMCU is a complete environment of hardware and software for IoT prototyping based on the Lua language. You can connect NodeMCU to your computer through a standard USB interface for power, programming, and debugging. Before using NodeMCU V1.0 for the first time, install the requisite USB driver (CP210x) on the operating system of your computer:Download it from: <a href="http://www.silabs.com/products/mcu/">here</a></p>
+              <img class="img-fluid" src="blog/img//post5/a3.png" alt="">
+              <p><br>Next, connect NodeMCU, run PuTTY to enter its Lua shell, and enter the test code to test the onboard LED in NodeMCU (also see following images). If everything is okay, you should able to connect NodeMCU with PuTTY, enter Lua shell, and test the on/off functions of the onboard blue indicator. If NodeMCU has no response in the PuTTY terminal, try to press the RST button on NodeMCU.</p>
+              <p><strong>Comparing NodeMCU to Arduino</strong></p>
+              <p>So, why would you choose to use a NodeMCU when the more widely-documented Arduino is around? Well, the NodeMCU has several distinct advantages. Before we detail them, however, we should state that the NodeMCU, technically, isn’t a device, but rather the firmware that loads onto one. In practice, you’ll see the NodeMCU firmware available for sale pre-loaded onto the board. If you already have an ESP8266, all of the connectivity options we’ll run through here will still apply.</p>
+              <img class="img-fluid" src="blog/img//post5/a4.png" alt="">
+              <p><br>There have been many different ESP modules over the years, each with their own advantages and drawbacks. There have been just two types of NodeMCU boards, however: versions 0.9 and 1.0. The 0.9 version is blue and comes loaded with the ESP-12 chip, while the 1.0 is black, and comes with the ESP-12E (which stands for ‘enhanced’). There are several key differences between the two chips, the most notable being that the later version comes with 22 pins and the earlier one comes with just 16.</p>
+              <p>Given that the ESP8266 is a more recent release than the Arduino, it’s not surprising that it has stronger specs. There’s a 32-bit RISC processor clocked at 80MHz, along with a generous RAM complement and support for up to 16mb of external flash storage. The device is especially useful for IoT applications, thanks to its tiny footprint and built-in WiFi support.</p>
+              <p>In all other aspects, however, the ESP is pretty much similar to the Arduino. There’s an on-board voltage regulator that ensures the cleanest possible power to the MCU itself, as well as a push-button reset and a USB connection for easy interface with your computer</p>
+              <p><strong>Programming NodeMCU with Arduino IDE</strong></p>
+              <p>The fact that NodeMCU can be reprogrammed using the Arduino IDE makes it especially convenient. But before you can get started, you’ll need to first configure the IDE to recognize the new board.</p>
+              <p>Let’s run through the process:</p>
+              <ol>
+                <li>Open Arduino IDE and navigate to file -> preferences</li>
+                <li>In the space marked “additional Boards Manager URLs” add the following url: http://arduino.esp8266.com/stable/package_esp8266com_index.json</li>
+                <img class="img-fluid" src="blog/img//post5/a5.png" alt="">
+                <p><br></p>
+                <li>Click “OK”</li>
+                <li>Navigate to the Boards Manager. You’ll find it under Tools>Board>Boards Manager.</li>
+                <li>Type “ESP8266” into the resulting search bar. Then install the package.</li>
+                <img class="img-fluid" src="blog/img//post5/a6.png" alt="">
+                <p><br></p>
+                <li>Select the exact model. Go to Tools>Board and select “NodeMCU1.0 (ESP-12E module).”</li>
+              </ol>
+              <p>You’re now ready to start uploading code to your ESP, and take advantage of all the great connectivity features we’ve been through!</p>
+              <p><strong>NodeMCU Links</strong></p>
+              <ul>
+                <li><a href="https://en.wikipedia.org/wiki/NodeMCU">Wikipedia Article on NodeMCU:</a></li>
+                <li><a href="http://www.nodemcu.com/index_en.html">Offical NodeMCU Website:</a></li>
+                <li><a href="https://github.com/nodemcu/nodemcufirmware">Github Repository for NodeMCU Firmware</a></li>
+                <li><a href="https://github.com/nodemcu/nodemcudevkit">Github Repository for NodeMCU Hardware</a></li>
+              </ul>
+            </div>
+            <div class="navigation-area">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                  <div class="arrow">
+                    <a href="#"><span class="lnr text-white lnr-arrow-left"> </a>
+                    </div>
+                    <div class="details">
+                      <p>Prev Post</p>
+                      <a href="post4.html"><h4>Best Coding Challenges Websites</h4></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                    <div class="details">
+                      <p>Next Post</p>
+                      <a href="post6.html"><h4>AR is expected to overcome VR</h4></a>
+                    </div>
+                    <div class="arrow">
+                      <a href="#"><span class="lnr text-white lnr-arrow-right"> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="blog_right_sidebar">
+                  <aside class="single_sidebar_widget popular_post_widget">
+                    <h3 class="widget_title">Popular Posts</h3>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post9.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post9.html"><h3>14 Top Tech Skills in Demand in 2020</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post8.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post8.html"><h3>What is Blockchain?</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post6.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post6.html"><h3>AR is expected to overcome VR</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post5.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post5.html"><h3>An Introduction to NodeMCU</h3></a>
+                      </div>
+                    </div>
+                    <div class="br"></div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--================Blog Area =================-->
+
+        <!-- END w3-content -->
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script type="text/javascript" src="custom_navbar.js"></script>
+    </body>
+    </html>

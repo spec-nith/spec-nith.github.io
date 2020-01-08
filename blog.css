@@ -1,6 +1,16 @@
 body{
   font-family: "Nunito", sans-serif;
 }
+div#first img{
+  margin: 2rem;
+  width: 5rem;
+}
+
+.img_container
+{
+  text-align: center;
+  display: block;
+}
 .img{
   height: 15vw!important;
   width: 20vw!important;
@@ -47,6 +57,6 @@ img#four{
 #back{
   background: #fff;
 }
-.borderred{
+.bordered{
   border: 2px solid red!important;
 }
