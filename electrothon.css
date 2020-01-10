@@ -280,3 +280,13 @@ div#tag_line h1{
     color: rgb(70, 83, 94);
   }
 }
+
+.headshot{
+  max-width: 40vh;
+  max-height: 40vh;
+  object-position: top;
+  object-fit: cover;
+  padding: 0.7rem;
+  display: block;
+  margin: 0 auto;
+}
