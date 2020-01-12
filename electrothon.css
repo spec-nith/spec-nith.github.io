@@ -282,8 +282,8 @@ div#tag_line h1{
 }
 
 .headshot{
-  max-width: min(40vw, 40vh);
-  max-height: min(40vw, 40vh);
+  max-width: 41vh;
+  max-height: 41vh;
   object-position: top;
   object-fit: cover;
   padding: 0.7rem;
@@ -294,8 +294,57 @@ div#tag_line h1{
 .row_spk{
   margin-right: 20vw;
   margin-left: 20vw;
+  height: 100%;
 }
 
+.tile{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  text-align: center;
+}
+
+.profile_img{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto;
+}
+
+.info{
+  transition: 0.5s;
+  opacity: 0;
+  text-align: center;
+  font-weight: 600;
+  z-index: 999;
+  width: 100%
+  height: 100%;
+  color: #fff;
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto;
+  margin-top: 17%;
+  font-size: 1em;
+}
+
+#info2{
+  text-align: center;
+  color: #fff;
+}
+
+.tile:hover .profile_img{
+  filter: brightness(40%);
+  transform: scale(1.25);
+}
+
+.tile:hover .info{
+  opacity: 1;
+  filter: brightness(100%);
+}
 @media only screen and (max-width: 450px)
 {
   .headshot{
