@@ -56,6 +56,9 @@
 					<a class="nav-link" href="#categories">Categories</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="#spk">Speakers</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="#sponsors">Sponsors</a>
 				</li>
 				<li class="nav-item">
@@ -267,28 +270,35 @@
 <!-- categories end -->
 
 <!-- Tech speakers Start -->
-
+<a name="spk"></a>
 <div class="container-fluid speakers">
 	<div class="title">
 		<h1 class="text-align-center" style="font-size: 3rem; padding-bottom: 3rem;">Tech Speakers</h1>
 	</div>
 
 	<div class="row row_spk">
-		<div class="col">
-			<div class="tile">
-				<img src="img\tech_spkr_1.jpg" class="rounded-circle headshot">
-				<h5 class="text-align-center" style="font-weight: 700;">Jyotsna Gupta</h5>
-				<p style="padding-bottom: 1rem; text-align: center;">Cross-platform browser add-ons using Web Extension API</p>
+		<div class="col tile">
+				<div class="profile_img">
+					<img src="img\tech_spkr_1.jpg" class="rounded-circle headshot" id="headshot">
+				</div>
+				<div class="info">
+					<h4>Jyotsna Gupta</h4>
+					<p id="info2">Building cross-platform browser add-ons using Web Extension API</p>
+					<p id="info2">Software Developer in Exotel, Bangalore</p>
+				</div>
 			</div>
-		</div>
-		<div class="col">
-			<div class="tile">
+		<div class="col tile">
+			<div class="profile_img">
 				<img src="img\tech_spkr_2.jpg" class="rounded-circle headshot">
-				<h5 class="text-align-center" style="font-weight: 700;">Bhuvana Meenakshi Koteeswaran</h5>
-				<p style="padding-bottom: 1rem; text-align: center;">Firefox Reality and Mozilla Hubs</p>
 			</div>
+				<div class="info">
+				<h4>Bhuvana Meenakshi Koteeswaran</h4>
+				<p id="info2">Firefox Reality and Mozilla Hubs</p>
+				<p id="info2">Gender gap research consultant, Centre for Internet and Society, India</p>
+				</div>
 		</div>
 	</div>
+</div>
 
 <!-- Tech speakers End -->
 
@@ -576,6 +586,13 @@ To ensure this, we have separate reserved seats for female participants as well 
 	<script type="text/javascript" src="devfolio.js"></script>
   <script type="text/javascript" src="countdown.js"></script>
 	<script type="text/javascript" src="js/faq.js"></script>
+	<script type="text/javascript">
+		
+	$(document).ready(function() {
+  		$(".info").css("height", 1.1 * $(".headshot").height());
+  		$(".info").css("width", 1.1 * $(".headshot").width());
+		});
+	</script>
 
 </body>
 </html>
