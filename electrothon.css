@@ -289,71 +289,105 @@ div#tag_line h1{
   padding: 0.7rem;
   display: block;
   margin: 0 auto;
+  transition: 0.5s ease;
 }
 
-.row_spk{
-  margin-right: 20vw;
-  margin-left: 20vw;
-  height: 100%;
-}
-
-.tile{
+.box{
   position: relative;
   width: 100%;
   height: 100%;
   display: grid;
   text-align: center;
+  padding-right: 13%;
+  padding-left: 13%;
 }
 
 .profile_img{
-  width: 100%;
-  height: 100%;
   transition: 0.5s ease;
   backface-visibility: hidden;
-  grid-column: 1;
-  grid-row: 1;
   margin: auto;
+  display: grid;
+  text-align: center;
 }
 
 .info{
   transition: 0.5s;
-  opacity: 0;
   text-align: center;
   font-weight: 600;
   z-index: 999;
-  width: 100%
-  height: 100%;
-  color: #fff;
-  grid-column: 1;
-  grid-row: 1;
+  color: #000;
   margin: auto;
-  margin-top: 17%;
   font-size: 1em;
+  padding-left: 13%;
+  padding-right: 13%;
+
+}
+
+.box p{
+  font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word;
+}
+
+.profile_img p{
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #fff;
+  padding-bottom: 7%;
 }
 
 #info2{
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
-.tile:hover .profile_img{
-  filter: brightness(40%);
-  transform: scale(1.25);
+.social{
+  transition: 0.5s ease;
+  margin: auto;
+  transform: scale(2);
+  opacity: 0;
+  margin-top: 50%;
 }
 
-.tile:hover .info{
+.icon-twitter ,.icon-linkedin{
+  color: white;
+  text-decoration: none;
+}
+
+.profile_img:hover .headshot{
+  filter: brightness(50%);
+  transition: 0.5s ease;
+}
+
+.profile_img:hover .social{
+  transition: 0.5s ease;
   opacity: 1;
-  filter: brightness(100%);
 }
-@media only screen and (max-width: 450px)
+
+@media only screen and (max-width: 480px)
 {
-  .headshot{
-    max-width: 55vw;
-    max-height: 55vw;
+  .profile_img{
+    text-align: center;
+    margin: auto;
   }
 
-  .row_spk{
-    margin-left: 0;
-    margin-right: 0;
+  .profile_img p{
+    padding-bottom: 3%
+  }
+
+  .headshot{
+    max-width: 30vh;
+    max-height: 30vh;
+  }
+
+  .info{
+    display: none;
+    opacity: 0;
+  }
+
+  .box{
+    display: block;
+    text-align: center;
+  }
+
+  .social{
+    margin-top: 45%;
   }
 }
