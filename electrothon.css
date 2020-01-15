@@ -377,9 +377,9 @@ div#tag_line h1{
     max-height: 30vh;
   }
 
-  .info{
-    display: none;
-    opacity: 0;
+  .info {
+    margin-left: -30%;
+    margin-right: -30%;
   }
 
   .box{
