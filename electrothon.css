@@ -280,3 +280,114 @@ div#tag_line h1{
     color: rgb(70, 83, 94);
   }
 }
+
+.headshot{
+  max-width: 41vh;
+  max-height: 41vh;
+  object-position: top;
+  object-fit: cover;
+  padding: 0.7rem;
+  display: block;
+  margin: 0 auto;
+  transition: 0.5s ease;
+}
+
+.box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  text-align: center;
+  padding-right: 13%;
+  padding-left: 13%;
+}
+
+.profile_img{
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  margin: auto;
+  display: grid;
+  text-align: center;
+}
+
+.info{
+  transition: 0.5s;
+  text-align: center;
+  font-weight: 600;
+  z-index: 999;
+  color: #000;
+  margin: auto;
+  font-size: 1em;
+  padding-left: 13%;
+  padding-right: 13%;
+
+}
+
+.box p{
+  font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word;
+}
+
+.profile_img p{
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #fff;
+  padding-bottom: 7%;
+}
+
+#info2{
+  text-align: center;
+  color: #000;
+}
+
+.social{
+  transition: 0.5s ease;
+  margin: auto;
+  transform: scale(2);
+  opacity: 0;
+  margin-top: 50%;
+}
+
+.icon-twitter ,.icon-linkedin{
+  color: white;
+  text-decoration: none;
+}
+
+.profile_img:hover .headshot{
+  filter: brightness(50%);
+  transition: 0.5s ease;
+}
+
+.profile_img:hover .social{
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 480px)
+{
+  .profile_img{
+    text-align: center;
+    margin: auto;
+  }
+
+  .profile_img p{
+    padding-bottom: 3%
+  }
+
+  .headshot{
+    max-width: 30vh;
+    max-height: 30vh;
+  }
+
+  .info {
+    margin-left: -30%;
+    margin-right: -30%;
+  }
+
+  .box{
+    display: block;
+    text-align: center;
+  }
+
+  .social{
+    margin-top: 45%;
+  }
+}
