@@ -42,16 +42,16 @@ and is wrapped around the whole page content, except for the footer in this exam
               <p>The NodeMCU development board is a powerful solution to program microcontrollers and be part of the Internet of Things (IoT). The NodeMCU development board, based on ESP8266EX, is a module with a microcontroller, integrated Wi-Fi receiver, and transmitter. NodeMCU supports several programming languages; hence, it is very easy to upload programs from any computer over a micro-USB port. I have been playing with the NodeMCU for quite a while now and, I have to say, it is a lot more fun than the other available IoT modules. When it comes to prototyping — just another perfect, relatively cheap, easy-to-learn, and user-friendly minuscule magic module!</p>
               <p><strong>NodeMCU V1.0</strong></p>
               <p>The first generation of the NodeMCU Development Kit had the version number V0.9. The second generation had the version number V1.0, and this newer version used ESP-12E (not ESP-12), which comes with 4 MB of flash memory. The new version comes with the CP2102 serial chip (not CH340) and it works really well and without a hassle. However, I noticed that, when it comes to many Chinese online vendors, there’s a blurring mix-up of generation and version names. The common name used by them for version 1.0 is V2, and most of those V2 boards are fabricated by or at least marked with “Amica.” Technically, it’s “NodeMCU V1.0 with ESP-12E module!”</p>
-              <img class="img-fluid" src="blog/img//post5/a1.png" alt="">
+              <img class="img-fluid center" src="blog/img//post5/a1.png" alt="">
               <p><br></p>
-              <img class="img-fluid" src="blog/img//post5/a2.png" alt="">
+              <img class="img-fluid center" src="blog/img//post5/a2.png" alt="">
               <p><br><strong>NodeMCU First Run</strong></p>
               <p>NodeMCU is a complete environment of hardware and software for IoT prototyping based on the Lua language. You can connect NodeMCU to your computer through a standard USB interface for power, programming, and debugging. Before using NodeMCU V1.0 for the first time, install the requisite USB driver (CP210x) on the operating system of your computer:Download it from: <a href="http://www.silabs.com/products/mcu/">here</a></p>
-              <img class="img-fluid" src="blog/img//post5/a3.png" alt="">
+              <img class="img-fluid center" src="blog/img//post5/a3.png" alt="">
               <p><br>Next, connect NodeMCU, run PuTTY to enter its Lua shell, and enter the test code to test the onboard LED in NodeMCU (also see following images). If everything is okay, you should able to connect NodeMCU with PuTTY, enter Lua shell, and test the on/off functions of the onboard blue indicator. If NodeMCU has no response in the PuTTY terminal, try to press the RST button on NodeMCU.</p>
               <p><strong>Comparing NodeMCU to Arduino</strong></p>
               <p>So, why would you choose to use a NodeMCU when the more widely-documented Arduino is around? Well, the NodeMCU has several distinct advantages. Before we detail them, however, we should state that the NodeMCU, technically, isn’t a device, but rather the firmware that loads onto one. In practice, you’ll see the NodeMCU firmware available for sale pre-loaded onto the board. If you already have an ESP8266, all of the connectivity options we’ll run through here will still apply.</p>
-              <img class="img-fluid" src="blog/img//post5/a4.png" alt="">
+              <img class="img-fluid center" src="blog/img//post5/a4.png" alt="">
               <p><br>There have been many different ESP modules over the years, each with their own advantages and drawbacks. There have been just two types of NodeMCU boards, however: versions 0.9 and 1.0. The 0.9 version is blue and comes loaded with the ESP-12 chip, while the 1.0 is black, and comes with the ESP-12E (which stands for ‘enhanced’). There are several key differences between the two chips, the most notable being that the later version comes with 22 pins and the earlier one comes with just 16.</p>
               <p>Given that the ESP8266 is a more recent release than the Arduino, it’s not surprising that it has stronger specs. There’s a 32-bit RISC processor clocked at 80MHz, along with a generous RAM complement and support for up to 16mb of external flash storage. The device is especially useful for IoT applications, thanks to its tiny footprint and built-in WiFi support.</p>
               <p>In all other aspects, however, the ESP is pretty much similar to the Arduino. There’s an on-board voltage regulator that ensures the cleanest possible power to the MCU itself, as well as a push-button reset and a USB connection for easy interface with your computer</p>
@@ -61,12 +61,12 @@ and is wrapped around the whole page content, except for the footer in this exam
               <ol>
                 <li>Open Arduino IDE and navigate to file -> preferences</li>
                 <li>In the space marked “additional Boards Manager URLs” add the following url: http://arduino.esp8266.com/stable/package_esp8266com_index.json</li>
-                <img class="img-fluid" src="blog/img//post5/a5.png" alt="">
+                <img class="img-fluid center" src="blog/img//post5/a5.png" alt="">
                 <p><br></p>
                 <li>Click “OK”</li>
                 <li>Navigate to the Boards Manager. You’ll find it under Tools>Board>Boards Manager.</li>
                 <li>Type “ESP8266” into the resulting search bar. Then install the package.</li>
-                <img class="img-fluid" src="blog/img//post5/a6.png" alt="">
+                <img class="img-fluid center" src="blog/img//post5/a6.png" alt="">
                 <p><br></p>
                 <li>Select the exact model. Go to Tools>Board and select “NodeMCU1.0 (ESP-12E module).”</li>
               </ol>
@@ -85,14 +85,14 @@ and is wrapped around the whole page content, except for the footer in this exam
                   <div class="arrow">
                     <a href="#"><span class="lnr text-white lnr-arrow-left"> </a>
                     </div>
-                    <div class="details">
-                      <p>Prev Post</p>
+                    <div class="details next1">
+                      <p><i class="fas fa-long-arrow-alt-left"></i> Prev Post</p>
                       <a href="post4.html"><h4>Best Coding Challenges Websites</h4></a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
-                    <div class="details">
-                      <p>Next Post</p>
+                    <div class="details next2">
+                      <p>Next Post <i class="fas fa-long-arrow-alt-right"></i></p>
                       <a href="post6.html"><h4>AR is expected to overcome VR</h4></a>
                     </div>
                     <div class="arrow">
@@ -102,7 +102,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 fixed">
                 <div class="blog_right_sidebar">
                   <aside class="single_sidebar_widget popular_post_widget">
                     <h3 class="widget_title">Popular Posts</h3>
