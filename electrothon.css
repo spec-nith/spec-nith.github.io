@@ -411,8 +411,6 @@ div#tag_line h1{
     margin-top: 45%;
   }
 }
-<<<<<<< HEAD
-=======
 
 #workshop{
   text-align: left;
@@ -449,4 +447,6 @@ div#tag_line h1{
     height: 60vh;
   }
 }
->>>>>>> b5c6dad39d8930e2f3e346ee7800a6ffa6013520
+#register{
+  margin-top: 3rem;
+}
