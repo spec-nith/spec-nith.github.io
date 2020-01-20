@@ -25,7 +25,14 @@ h1, h2, h3, h4, h5, h6 {
 .fixed{
  position: fixed;
  right: 0;
- top: 1;
+ margin-right: 1rem; 
+ top: 10rem;
+ box-shadow: 1px 3px #aaa;
+ transition: box-shadow 0.3s;
+}
+.fixed:hover{
+	box-shadow: 5px 10px #888888;
+	transition: box-shadow 0.4s;
 }
 }
 
