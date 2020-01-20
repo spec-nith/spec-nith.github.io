@@ -360,18 +360,7 @@ div#tag_line h1{
   transition: 0.5s ease;
   opacity: 1;
 }
-.center{
-  display: flex;
-  justify-content: center;
-}
-#bhu{
-  display: none;
-  border: 2px solid red;
-}
-#bhu:hover{
-  display: block;
-  border: 2px solid red;
-}
+
 @media only screen and (max-width: 480px)
 {
   .profile_img{
@@ -388,9 +377,9 @@ div#tag_line h1{
     max-height: 30vh;
   }
 
-  .info{
-    /*display: none;*/
-    opacity: 0;
+  .info {
+    margin-left: -30%;
+    margin-right: -30%;
   }
 
   .box{

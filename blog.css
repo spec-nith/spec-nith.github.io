@@ -6,10 +6,21 @@ div#first img{
   width: 5rem;
 }
 
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .img_container
 {
   text-align: center;
   display: block;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .img{
   height: 15vw!important;
