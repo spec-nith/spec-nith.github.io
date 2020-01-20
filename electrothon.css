@@ -391,3 +391,39 @@ div#tag_line h1{
     margin-top: 45%;
   }
 }
+
+#workshop{
+  text-align: left;
+  font-size: 1rem;
+}
+.workshop_{
+  font-weight: bold;
+}
+#work{
+  padding-bottom: 2rem!important;
+  padding-top: 2rem!important; 
+}
+#worksh{
+  font-weight: bold;
+  /*padding-bottom: 2rem;*/
+}
+@media only screen and (max-width: 768px){
+  #workshop_img
+  {
+    width: 75vw;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1400px){
+  #workshop_img{
+    width: 40vw;
+    height: 60vh;
+    padding-top: 5rem;
+  }
+}
+@media only screen and (min-width: 1440px){
+  #workshop_img{
+    width: 35vw;
+    height: 60vh;
+  }
+}
