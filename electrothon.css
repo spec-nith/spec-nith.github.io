@@ -363,7 +363,7 @@ div#tag_line h1{
   margin: auto;
   transform: scale(2);
   opacity: 0;
-  margin-top: 50%;
+  margin-top: 40%;
 }
 
 .icon-twitter ,.icon-linkedin{
@@ -421,7 +421,7 @@ div#tag_line h1{
 }
 #work{
   padding-bottom: 2rem!important;
-  padding-top: 2rem!important; 
+  padding-top: 2rem!important;
 }
 #worksh{
   font-weight: bold;
