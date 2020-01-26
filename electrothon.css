@@ -301,6 +301,10 @@ div#tag_line h1{
   }
 }
 
+.speakers{
+	padding-bottom: 4em;
+}
+
 .headshot{
   max-width: 41vh;
   max-height: 41vh;
@@ -338,9 +342,6 @@ div#tag_line h1{
   color: #000;
   margin: auto;
   font-size: 1em;
-  padding-left: 13%;
-  padding-right: 13%;
-
 }
 
 .box p{
@@ -398,8 +399,8 @@ div#tag_line h1{
   }
 
   .info {
-    margin-left: -30%;
-    margin-right: -30%;
+    margin-left: -15%;
+    margin-right: -15%;
   }
 
   .box{
