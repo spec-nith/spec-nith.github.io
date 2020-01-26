@@ -428,6 +428,15 @@ div#tag_line h1{
   font-weight: bold;
   /*padding-bottom: 2rem;*/
 }
+
+@media only screen and (min-width: 1450px){
+	.info{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+
+
 @media only screen and (max-width: 768px){
   #workshop_img
   {
