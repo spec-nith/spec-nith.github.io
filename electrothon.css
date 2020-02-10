@@ -35,6 +35,14 @@ p{
   background: rgba(0,0,0,0.0);
   border: 0;
 }
+
+.mile ul li{
+	position: relative;
+	padding:10px;
+	display: block;
+	clear: both;
+}
+
 .p{
   margin: 1rem 0 1rem 0;
 }
