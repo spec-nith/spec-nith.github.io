@@ -20,6 +20,7 @@
 		<link rel="stylesheet" type="text/css" href="style1.css">
 		<link rel="stylesheet" type="text/css" href="timeline.css">
 		<link rel="stylesheet" type="text/css" href="countdown.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
 		<link rel="stylesheet" href="gallery\fonts\icomoon\style.css">
 
 		<link rel="shortcut icon" href="imgs\headicon.ico"/>
@@ -156,7 +157,7 @@
 <!-- diversity end -->
 
 <!-- winners start -->
-		<div class="jumbotron odd">
+		<div class="jumbotron odd win_cont">
 		<div class="row">
 			<div>
 				<h1>Winners</h1>
@@ -166,72 +167,76 @@
 				We are proud to present the <span class="workshop_">winners</span> of <span class="workshop_">ELECTROTHON'20<span> :</p>
 			</div>
 		</div>
-		<div class="row">
-				<div class="col-sm-12 col-lg-6">
-					The winners of ELECTROTHON'20 : TEAM DRISHTI of NIT Hamirpur whose members are:<br>
-						<ol>
-							<li>Rishabh Dhenkawat</li>
-							<li>Uttkarsh Chaurasiya</li>
-							<li>Navdeep</li>
-							<li>Mohd Nomaan</li>
-						</ol>
-				</div>
-				<div class="d-none d-lg-block col-lg-1"></div>
-				<div class=" d-flex col-sm-12 col-lg-4 justify-content-center">
-					<img src="imgs\first.jpeg">
-				</div>
+		<div class="card gold win_common">
+			<img src="imgs\first.jpeg">
+			<div class="container inside-text">
+			<p>Team Drishti<br>
+			NIT Hamirpur</p>
+			<ol>
+				<li>Rishabh Dhenkawat</li>
+				<li>Uttkarsh Chaurasiya</li>
+				<li>Navdeep</li>
+				<li>Mohd Nomaan</li>
+			</ol>
+			<span class="icon"><img src="img\first-position.png"></span>
 		</div>
-						<div class="d-none d-lg-block col-lg-12"></div>
-		<div class="row">
-				<div class="col-sm-12 col-lg-6">
-					The runners up of ELECTROTHON'20: Team Clover from IIT ROORKEE:<br>
-						<ol>
-							<li>Saurabh Singh Gautam</li>
-							<li>Pulkit Jeph</li>
-							<li>Sagar Prateek</li>
-							<li>David Gokimummung</li>
-						</ol>
-				</div>
-				<div class="d-none d-lg-block col-lg-1"></div>
-				<div class=" d-flex col-sm-12 col-lg-4 justify-content-center">
-					<img src="imgs\second.jpeg">
-				</div>
 		</div>
-								<div class="d-none d-lg-block col-lg-12"></div>
-		<div class="row">
-				<div class="col-sm-12 col-lg-6">
-					The team who bagged the Best All Girl's Team prize was team MERAKI of NIT Hamirpur. The team members are as follows:<br>
-						<ol>
-							<li>Tanuja Pal</li>
-							<li>Anjali Ruhela</li>
-							<li>Kritika Shrivastava</li>
-							<li>Rani Jairaj</li>
-						</ol>
-				</div>
-				<div class="d-none d-lg-block col-lg-1"></div>
-				<div class=" d-flex col-sm-12 col-lg-4 justify-content-center">
-					<img src="imgs\third.jpeg">
-				</div>
+		<div class="card silver win_common">
+			<img src="imgs\second.jpeg">
+			<div class="container inside-text">
+			<p>Team Clover<br>
+			IIT Roorkee</p>
+			<ol>
+				<li>Saurabh Singh Gautam</li>
+				<li>Pulkit Jeph</li>
+				<li>Sagar Prateek</li>
+				<li>David Gokimummung</li>
+			</ol>
+			<span class="icon"><img src="img\second-position.png"></span>
+		</div>
+		</div>
+		<div class="card women win_common">
+			<img src="imgs\third.jpeg">
+			<div class="container inside-text">
+			<p>Team Meraki<br>
+			NIT Hamirpur</p>
+			<ol>
+				<li>Tanuja Pal</li>
+				<li>Anjali Ruhela</li>
+				<li>Kritika Shrivastava</li>
+				<li>Rani Jairaj</li>
+			</ol>
+			<span class="icon"><img src="img\women-icon.png"></span>
+		</div>
 		</div>
 	</div>
 <!-- winners end -->
 
-<!-- milestones begin -->
-<div class="jumbotron">
-<center><h1>Milestones</h1></center>
-<div class="row mile">
-		<ul>
-			<li><i class="far fa-dot-circle"></i> 1200+ Registrations</li>
-			<li><i class="far fa-dot-circle"></i> 400 shortlisted</li>
-			<li><i class="far fa-dot-circle"></i> 100+ innovative projects</li>
-			<li><i class="far fa-dot-circle"></i> 48 hours of hacking</li>
-			<li><i class="far fa-dot-circle"></i> 1000000+ lines of code</li>
-			<li><i class="far fa-dot-circle"></i> 18 sponsors</li>
-			<li><i class="far fa-dot-circle"></i> 800 cups of coffee consumed</li>
-			<li><i class="far fa-dot-circle"></i> 44 Github repos with 1000+ commits</li>
-			<li><i class="far fa-dot-circle"></i> 30k+ prizes</li>
-		</ul>
-</div>
+<!-- stones begin -->
+<div id="app" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Milestones</h1>
+      <div class="swiper-container">
+        <p class="swiper-control">
+          <button type="button" class="btn btn-default btn-sm prev-slide">Prev</button>
+          <button type="button" class="btn btn-default btn-sm next-slide">Next</button>
+        </p>
+        <div class="swiper-wrapper timeline">
+          <div class="swiper-slide" v-for="item in steps">
+            <!--<div class="status">
+              <span class="date">{{item.dateLabel}}<span>
+            </div>-->
+            <div class="status">
+              <span>{{item.title}}</span>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- milestones end -->
 
@@ -703,8 +708,38 @@ To ensure this, we have separate reserved seats for female participants as well 
 	<script type="text/javascript" src="devfolio.js"></script>
   <!-- <script type="text/javascript" src="countdown.js"></script> -->
 	<script type="text/javascript" src="js/faq.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
 	<script type="text/javascript">
+	const data = [
+{ dateLabel: '', title: '1200+ Registrations' },
+{ dateLabel: '', title: '400 shortlisted' },
+{ dateLabel: '', title: '100+ innovative projects' },
+{ dateLabel: '', title: '48 hours of hacking' },
+{ dateLabel: '', title: '18 sponsors' },
+{ dateLabel: '', title: '1000000+ lines of code' },
+{ dateLabel: '', title: '800 cups of coffee consumed' },
+{ dateLabel: '', title: '44 Github repos with 1000+ commits' },
+{ dateLabel: '', title: '30k+ prizes' }
+];
 
+new Vue({
+el: '#app',
+data: {
+	steps: data,
+},
+mounted() {
+	var swiper = new Swiper('.swiper-container', {
+		//pagination: '.swiper-pagination',
+		slidesPerView: 3,
+		paginationClickable: true,
+		grabCursor: true,
+		paginationClickable: true,
+		nextButton: '.next-slide',
+		prevButton: '.prev-slide',
+	});
+}
+})
 	</script>
 
 </body>
