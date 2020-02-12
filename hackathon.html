@@ -20,8 +20,9 @@
 		<link rel="stylesheet" type="text/css" href="style1.css">
 		<link rel="stylesheet" type="text/css" href="timeline.css">
 		<link rel="stylesheet" type="text/css" href="countdown.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 		<link rel="stylesheet" href="gallery\fonts\icomoon\style.css">
+
 
 		<link rel="shortcut icon" href="imgs\headicon.ico"/>
 
@@ -129,7 +130,8 @@
 				</div>
 			</div>
 			<div id="about_hack" class="col-sm-12 col-md-6 col-lg-7 order-1 order-lg-2">
-				<h1>About</h1>
+				<h1>About</h1>		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+
 				<p>Join hundreds of participants in Electrothon - A plentitude of opportunities where enthusiastic minds could brainstorm on solutions for challenging issues through technology. Put your skills to the test, and you could win amazing prizes and sharpen your competitive edge. So be ready to caffeinate, collaborate and celebrate.</p>
 			</div>
 		</div>
@@ -157,8 +159,8 @@
 <!-- diversity end -->
 
 <!-- winners start -->
-		<div class="jumbotron odd win_cont">
-		<div class="row">
+		<div class="jumbotron win_cont">
+		<div class="row head-winners">
 			<div>
 				<h1>Winners</h1>
 				A true leader always embraces challenges with an open mind and heart, which also makes him a winner. In search of this leader, team <span class="workshop_">SPEC</span> conducted <span class="workshop_">ELECTROTHON 2020</span> efficiently on 1st and 2nd of Feb.<br>
@@ -213,29 +215,64 @@
 <!-- winners end -->
 
 <!-- stones begin -->
-<div id="app" class="container">
-  <div class="row">
+<div id="app" class="jumbotron odd">
+  <div class="row app-swipe">
     <div class="col-md-12">
       <h1>Milestones</h1>
       <div class="swiper-container">
         <p class="swiper-control">
-          <button type="button" class="btn btn-default btn-sm prev-slide">Prev</button>
-          <button type="button" class="btn btn-default btn-sm next-slide">Next</button>
+          <button type="button" class="btn btn-default btn-sm swiper-button-prev"></button>
+          <button type="button" class="btn btn-default btn-sm swiper-button-next"></button>
         </p>
+				<br>
         <div class="swiper-wrapper timeline">
           <div class="swiper-slide" v-for="item in steps">
-            <!--<div class="status">
-              <span class="date">{{item.dateLabel}}<span>
-            </div>-->
             <div class="status">
-              <span>{{item.title}}</span>
+              <span>1200+ Registrations</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>400 shortlisted</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>100+ innovative projects</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>48 hours of hacking</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>18 sponsors</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>1000000+ lines of code</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>800 cups of coffee consumed</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>44 Github repos with 1000+ commits</span>
+            </div>
+          </div>
+					<div class="swiper-slide" v-for="item in steps">
+            <div class="status">
+              <span>30k+ prizes</span>
             </div>
           </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
   </div>
 </div>
 <!-- milestones end -->
@@ -708,39 +745,8 @@ To ensure this, we have separate reserved seats for female participants as well 
 	<script type="text/javascript" src="devfolio.js"></script>
   <!-- <script type="text/javascript" src="countdown.js"></script> -->
 	<script type="text/javascript" src="js/faq.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
-	<script type="text/javascript">
-	const data = [
-{ dateLabel: '', title: '1200+ Registrations' },
-{ dateLabel: '', title: '400 shortlisted' },
-{ dateLabel: '', title: '100+ innovative projects' },
-{ dateLabel: '', title: '48 hours of hacking' },
-{ dateLabel: '', title: '18 sponsors' },
-{ dateLabel: '', title: '1000000+ lines of code' },
-{ dateLabel: '', title: '800 cups of coffee consumed' },
-{ dateLabel: '', title: '44 Github repos with 1000+ commits' },
-{ dateLabel: '', title: '30k+ prizes' }
-];
-
-new Vue({
-el: '#app',
-data: {
-	steps: data,
-},
-mounted() {
-	var swiper = new Swiper('.swiper-container', {
-		//pagination: '.swiper-pagination',
-		slidesPerView: 3,
-		paginationClickable: true,
-		grabCursor: true,
-		paginationClickable: true,
-		nextButton: '.next-slide',
-		prevButton: '.prev-slide',
-	});
-}
-})
-	</script>
+	<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+	<script src="hack.js"></script>
 
 </body>
 </html>

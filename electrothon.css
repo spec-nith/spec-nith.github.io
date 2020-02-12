@@ -37,6 +37,11 @@ p{
 }
 /* Winners Begin */
 
+
+.head-winners{
+  text-align: center;
+}
+
 .win_cont{
   margin: auto;
   text-align: center;
@@ -63,7 +68,7 @@ p{
 .card img{
   width: 100%;
   height: auto;
-  min-height: 200px;
+  min-height: 250px;
   object-fit: cover;
   object-position: bottom;
 }
@@ -124,6 +129,23 @@ p{
 #app h1{
   font-size: 3.5rem;
 }
+
+.app-swipe{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  background-image: none!important;
+  position: absolute!important;
+  margin-top: 3px!important;
+  width: auto!important;
+  top: auto!important;
+
+}
+
+
+
 .timeline {
   margin: 50px 0;
   list-style-type: none;
