@@ -12,9 +12,9 @@ body {
   line-height: 1.6em;
 }
 
-ul, li {
+/* ul, li {
   list-style: none;
-}
+} */
 #faq_s h2{
   margin-left:8rem;
   font-weight: bold;
