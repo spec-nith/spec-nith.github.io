@@ -37,6 +37,9 @@ p{
 }
 /* Winners Begin */
 
+.yellow{
+  color: rgb(230, 149, 0);
+}
 
 .head-winners{
   text-align: center;
@@ -124,104 +127,57 @@ p{
 
 #app {
   padding: 50px 0;
+  text-align: center;
 }
 
 #app h1{
   font-size: 3.5rem;
 }
 
-.app-swipe{
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.swiper-button-prev, .swiper-button-next{
-  background-image: none!important;
-  position: absolute!important;
-  margin-top: 3px!important;
-  width: auto!important;
-  top: auto!important;
-
-}
-
-
-
-.timeline {
-  margin: 50px 0;
-  list-style-type: none;
-  display: flex;
-  padding: 0;
+.num-high{
+  font-size: 1.2rem;
   text-align: center;
-}
-.timeline li {
-  transition: all 200ms ease-in;
-}
-.timestamp {
-  width: 200px;
-  margin-bottom: 20px;
-  padding: 0px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black;
-  font-weight: 100
-}
-.status{
-  padding: 0px 40px;
-  display: flex;
-  justify-content: center;
-  border-top: 4px solid #3e70ff;
-  position: relative;
-  transition: all 200ms ease-in ;
-  color: black;
+  margin: auto;
 }
 
+.red{
+  color: red;
+}
 
-.status span {
-  font-weight: 600;
-  padding-top: 20px;
-  top: -15px;
+.blue{
+  color: blue;
 }
-.status span:before {
-  content: '';
-  width: 25px;
-  height: 25px;
-  background-color: #e8eeff;
-  border-radius: 25px;
-  border: 4px solid #3e70ff;
-  position: absolute;
-  top: -15px;
-  left: 42%;
-  transition: all 200ms ease-in;
+
+.green{
+  color: green;
 }
-.swiper-control {
+
+.text-mile{
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+}
+
+.alpha-table{
+  border: none;
+  width: 80%;
+  margin: auto;
+  height: 45vh;
+}
+
+.alignment{
+  margin: auto;
+  vertical-align: middle;
+}
+
+.just-center{
+  margin: auto;
   text-align: center;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 250px;
-  margin: 50px 0;
-  overflow: hidden;
-  padding: 0 20px 30px 20px;
-}
-.swiper-slide {
-  width: 200px;
-  text-align: center;
-  font-size: 18px;
-}
-.swiper-slide:nth-child(2n) {
-  width: 40%;
-}
-.swiper-slide:nth-child(3n) {
-  width: 20%;
-}
 
-@media only screen and (max-width: 480px){
-  .status span{
-    font-size: 0.9rem;
-  }
-}
+
+
 /*Milestones End*/
 
 
