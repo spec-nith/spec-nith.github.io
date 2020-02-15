@@ -224,6 +224,11 @@ p{
   padding-bottom: 2em;
   overflow: hidden;
 }
+
+.marg-2{
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
 .jumbotron{
   margin-bottom: 0;
 }
