@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" type="text/css" href="custom_navbar.css">
+  <link rel="shortcut icon" href="imgs/headicon.ico" />
+  <link rel="stylesheet" type="text/css" href="blog.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="blog/css/style2.css">
+</head>
+<body onload="document.body.style.opacity='1'">
+  <div class= "img_container" id="first">
+    <a href="blog.html"><img src="imgs\spec_logo.png"></a>
+  </div>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+    <!--================Blog Area =================-->
+    <section class="blog_area p_120 single-post-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="main_blog_details">
+              <h4>How to Use an API: Just the Basic</h4>
+              <div class="user_details">
+                <div class="float-right">
+                  <div class="media">
+                    <div class="media-body">
+                      <p>24 January, 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img class="img-fluid center" src="blog/img/post12/API.jpg" alt="">
+
+                  <p><br>APIs are less like USB ports or fire hoses than they are as a person at a help desk in a foreign country. An API will not give you all of a program&#39;s information or code (like a fire hose), because what would stop you from replicating the entire code base? Instead, an API provides you with data its programmers have made available to outside users. Even so, you have to know the language and ask the right questions to do anything with this data.</p>
+                  <p><strong>What is an API?</strong></p>
+                  <p>API stands for an application programming interface. The most important part of this name is <q>interface</q>, because an API mainly talks to a program for you. You still need to know the language to communicate with the program, but without an API, you won&#39;t get far.
+                  When programmers decide to make some of their data available to the public, they <q>expose endpoints</q> meaning they publish a portion of the language they&#39;ve used to build their program. Other programmers can then pull data from the application by making URLs or using HTTP clients (special programs that develop the URLs for you) to request data from those endpoints.
+                  Endpoints return text that&#39;s meant for computers to read, so it won&#39;t make complete sense if you don&#39;t understand the computer code used to write it.</p>
+
+                  <p><strong>Why Should You Use an API?</strong></p>
+                  <p>Computers make a lot of things more comfortable, especially tasks that involve collecting and sorting through tons of data. Let&#39;s say you wanted to know how many times a particular business partner submitted invoices to your company. You could feasibly go into your company&#39;s invoice records, scan the <q>from</q> data input, and print each invoice individually for your audit.
+                  On the other hand, if all invoices were uploaded to a central database, you could write a simple program that accesses that database and finds all the instances of the partner&#39;s name. This would take much less time and be much more accurate.</p>                 
+                  <p><strong>The architecture of an API</strong></p>
+                  <p>APIs consist of three parts:</p>
+                  <ul>
+                    <li>User: the person who makes a request</li>
+                    <li>Client: the computer that sends the request to the server</li>
+                    <li>Server: the computer that responds to the request</li>
+                  </ul>
+                  <p>Someone will build the server first since it acquires and holds data. Once that server is running, programmers publish documentation, including the endpoints where specific data can be found. This documentation tells outside programmers the structure of the data on the server. An external user can then query (or search) the info on the server, or build a program that runs searches on the database and transforms that information into a different, usable format.
+                  That&#39;s super confusing, so let&#39;s use a real example: an address book.</p>
+                  <p>Back in the analog days, you&#39;d receive a copy of the White Pages phone book, which listed every person in your town by name and address, in alphabetical order. If you needed a friend&#39;s address, you could look them up by the last name, find the address, then look up their street on the maps included in the back. This was a limited amount of information, and it took a long time to access. Now, through the magic of technology, all of that information can be found in a database.
+                  Let&#39;s build a database containing the White Pages for a fictional town called Happyville. The folks at Happyville_WP decided that when they built their database, they would create a few categories of information with nested data underneath. These are our endpoints, and they&#39;ll include all the information the API will release to an outside program.</p>
+                  <p>Here are the endpoints listed in the documentation for Happyville_WP:</p>
+                  <ul>
+                    <li>/names</li>
+                    <li>/first_name, /last_name</li>
+                    <li>/addresses</li>
+                    <li>/street_address, /email_address/</li>
+                    <li>/phones</li>
+                    <li>/home_phone, /mobile_phone</li>
+                  </ul>
+                  <p>This isn&#39;t all the information that could be collected about a person. Even if Happyville_WP collected more private information about the Happyville residents (like birthdates and social security numbers), this data would not be available to outside programmers without knowing the language of those endpoints.</p>
+                  <p>These endpoints tell you the language you must use to request information from the database. Should you want a list of all of the folks in Happyville with the last name Smith, you could do one of two things:</p>
+                  <ol>
+                    <li>1. Make a URL request in a browser for that information. This uses your internet browser as the client, and you will get back a text document in coding language to sort through. That URL might look something like this: http://api.happyville_wp.com/names?last_name=smith
+                    </li>
+                    <li>2. Use a program that requests the information and translates it into a usable form. You can code your application or use a ready-made HTTP client.</li>
+                  </ol>
+                  <p>The first option is great for making simple requests with only a few responses (all of the folks in a Happyville with the last name Xarlax, for example <wpr> I&#39;m pretty sure there are only six households with this name in Happyville). The second option requires more coding fluency but is excellent for programmers who want to use the database of another program to enhance their apps.</p>
+                  <p>Many companies use open APIs from larger companies like Google and Facebook to access data that might not otherwise be available. APIs, in this case, significantly lower the barriers to entry for smaller companies that would otherwise have to compile their data.</p>         
+                  <p><strong>Actions You Can Take Through an API</strong></p>
+                  <p>Wow. Okay, so an API is how two computers talk to each other. The server has the data and sets the language. At the same time, the client uses that language to ask for information from the server (FYI, servers do not send data without a client requesting data, but developers have found some ways around this with webhooks). APIs can do anything!</p>
+                  <p>Well, not so fast. The language and syntax of APIs severely limit their abilities. There are four types of actions an API can take:</p>
+                  <ol>
+                    <li>GET requests data from a server <wbr> can be status or specifics (like last_name)</li>
+                    <li>POST: sends changes from the client to the server; think of this as adding information to the server, like making a new entry</li>
+                    <li>PUT: revises or adds to existing information</li>
+                    <li>DELETE: deletes existing information</li>
+                  </ol>
+                  
+                  
+                  
+                  
+                  <p>When you combine the endpoints with these actions, you can search or update any available information over an API. You&#39;ll need to check the API documentation to find out how to code these actions, as they&#39;re all different.</p>
+                  <p>While we&#39;re talking about language and syntax, let&#39;s cover the ways you can request a server:</p>                  
+                  <p>HTTP: hypertext transfer protocol. This is how you got to our site in the first place &hyphen; by typing a URL in the search bar in your browser. This is a really easy way to access data, but it won&#39;t come back to you in a pretty format if you request a lot of information. We&#39;ll go into this further in just a second.</p>
+                  <p>Text formats: XML, JSON. These are the main languages for accessing data over an API. When you receive your data, you will need to wade through the XML or JSON code to understand what the server gave you.</p>
+                  <p><strong>Start Using an API</strong></p>
+                  <p>Many of the API uses you&#39;ll see in your daily business lives move information from one program to similar form fields in another program. This is especially useful when you&#39;re trying to share information that you would otherwise have to enter repeatedly &hyphen; e.g., sharing leads between your marketing automation platform and your CRM.</p>
+                  <p>The uses and examples we&#39;ll list here are much more basic and pull much less data than what your standard API is good for. But they&#39;ll give you a good idea of the steps in the API process.</p>
+                  <p>1. Most APIs require an API key. Once you find an API you want to play with, look in the documentation for access requirements. Most APIs will ask you to complete an identity verification, like signing in with your Google account. You&#39;ll get a unique string of letters and numbers to use when accessing the API, instead of just adding your email and password every time (which isn&#39;t very secure for more information on authorizations and verifications, read this).</p>
+                  <p>2. The easiest way to start using an API is by finding an HTTP client online, like REST-Client, Postman, or Paw. This ready-made (and often free) tools help you structure your requests to access existing APIs with the API key you received. You&#39;ll still need to know some of the syntaxes from the documentation, but there is very little coding knowledge required.</p>
+                  <p>3. The next best way to pull data from an API is by building a URL from the existing API documentation. This YouTube video explains how to remove location data from Google Maps via API, and then use those coordinates to find nearby photos on Instagram.
+                  Overall, an API request doesn&#39;t look that much different from a normal browser URL, but the returned data will be in a form that&#39;s easy for computers to read.</p>
+                  <p>Here&#39;s what happened when I requested information from the OpenWeather database in my web browser:
+                  Example URL from documentation&hyphen;request weather for a particular city: API.openweathermap.org/data/2.5/weather?q={city name}</p>
+                  <p>Type into your browser: API.openweathermap.org/data/2.5/weather?q=Nashville,TN&APIID={numberslettersnumbersletters}</p>
+                  <img class="img-fluid center" src="blog/img//post12/APIrun.jpg" alt="">
+                  <p><strong>Conclusions and Further Reading</strong></p>
+                  <p>An API is useful for pulling specific information from another program. If you know how to read the documentation and write requests, you can get lots of great data back, but it may be overwhelming to parse all of this. That&#39;s where developers come in. They can build programs that display data directly in an app or browser window in an easily consumable format.</p>
+                  <p>This article barely scrapes the iceberg that is API technology. I researched the web quite a bit to learn about APIs. These are the articles and videos that helped you the most:</p>
+                  <ul>
+                    <li><a href="https://gigaom.com/2010/10/29/using-apis-not-quite-as-hard-as-it-looks/" target="_blank">Using APIs: Not Quite as Hard as It Looks</a></li>
+                      <li><a href="https://www.codecademy.com/catalog/subject/all" target="_blank">How to Use APIs with JavaScript</li>
+                      <li><a href="https://blog.hubspot.com/marketing/how-to-use-apis" target="_blank">Web APIs for Non-Programmers</li>
+                      <li><a href="https://zapier.com/learn/apis/" target="_blank">Zapier API course</li>
+                      <li><a href="https://www.youtube.com/watch?v=7YcW25PHnAA" target="_blank">REST API Concepts and Examples</li>
+                      <li><a href="https://youtu.be/7YcW25PHnAA" target="_blank">What APIs Are and Why They&#39;re Important</a></li>  
+                  </ul
+
+            <div class="navigation-area">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                  <div class="arrow">
+                    <a href="#"><span class="lnr text-white lnr-arrow-left"> </a>
+                    </div>
+                    <div class="details next1">
+                      <p><i class="fas fa-long-arrow-alt-left"></i> Prev Post</p>
+                      <a href="post11.html"><h4>DeepFakes: AI-powered deception machines</h4></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                    <div class="details next2">
+                      <p>Next Post <i class="fas fa-long-arrow-alt-right"></i></p>
+                      <a href="post13.html"><h4>Quantum Computing</h4></a>
+                    </div>
+                    <div class="arrow">
+                      <a href="#"><span class="lnr text-white lnr-arrow-right"> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 fixed">
+                <div class="blog_right_sidebar">
+                  <aside class="single_sidebar_widget popular_post_widget">
+                    <h3 class="widget_title">Popular Posts</h3>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post9.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post9.html"><h3>14 Top Tech Skills in Demand in 2020</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post8.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post8.html"><h3>What is Blockchain?</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post6.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post6.html"><h3>AR is expected to overcome VR</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post5.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post5.html"><h3>An Introduction to NodeMCU</h3></a>
+                      </div>
+                    </div>
+                    <div class="br"></div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--================Blog Area =================-->
+
+        <!-- END w3-content -->
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script type="text/javascript" src="custom_navbar.js"></script>
+    </body>
+    </html>
