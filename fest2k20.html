@@ -1,161 +1,538 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
-	<meta charset="UTF-8">
-	<title>SPECFEST 2K20</title>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Codrops" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css"
-		href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Abril+Fatface" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Lato" rel="stylesheet">
-	<link rel="shortcut icon" href="spec.ico">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="pater.css">
-	<link rel="stylesheet" type="text/css" href="component.css">
-	<link rel="stylesheet" type="text/css" href="custom_navbar.css">
-	<link rel="stylesheet" href="gallery\css\style.css">
-  	<link rel="stylesheet" href="gallery\css\custom.css">
-  	<link rel="stylesheet" href="gallery\fonts\icomoon\style.css">
-  	<link rel="stylesheet" href="gallery\fonts\flaticon\font\flaticon.css">
-    <link rel="shortcut icon" href="imgs\headicon.ico" />
-    <link rel="stylesheet" type="text/css" href="fest_style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SPEC Fest</title>
+
+  <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link rel='stylesheet' id='wc-block-style-css'
+    href='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=2.5.14'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='woocommerce-layout-css'
+    href='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=4.0.1'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='woocommerce-smallscreen-css'
+    href='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=4.0.1'
+    type='text/css' media='only screen and (max-width: 0px)' />
+  <link rel='stylesheet' id='woocommerce-general-css'
+    href='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=4.0.1'
+    type='text/css' media='all' />
+  <style id='woocommerce-inline-inline-css' type='text/css'>
+    .woocommerce form .form-row .required {
+      visibility: visible;
+    }
+  </style>
+  <link rel='stylesheet' id='divi-fonts-css'
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='divi-style-css'
+    href='https://www.elegantthemes.com/layouts/wp-content/themes/Divi/style.css?ver=4.4.1' type='text/css'
+    media='all' />
+  <link rel='stylesheet' id='et-builder-googlefonts-cached-css'
+    href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPrata%3Aregular&#038;ver=5.3.2#038;subset=latin,latin-ext'
+    type='text/css' media='all' />
+  <link rel='stylesheet' id='dashicons-css'
+    href='https://www.elegantthemes.com/layouts/wp-includes/css/dashicons.min.css?ver=5.3.2' type='text/css'
+    media='all' />
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+  <script type='text/javascript' src='//cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js?ver=5.3.2'>
+  </script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/themes/Divi/core/admin/js/recaptcha.js?ver=5.3.2'></script>
+  <link rel='https://api.w.org/' href='https://www.elegantthemes.com/layouts/wp-json/' />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD"
+    href="https://www.elegantthemes.com/layouts/xmlrpc.php?rsd" />
+  <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+    href="https://www.elegantthemes.com/layouts/wp-includes/wlwmanifest.xml" />
+  <link rel='shortlink' href='https://www.elegantthemes.com/layouts/?p=223652' />
+  <link rel="alternate" type="application/json+oembed"
+    href="https://www.elegantthemes.com/layouts/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.elegantthemes.com%2Flayouts%2Fart-design%2Fart-gallery-event-page%2Flive-demo" />
+  <link rel="alternate" type="text/xml+oembed"
+    href="https://www.elegantthemes.com/layouts/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.elegantthemes.com%2Flayouts%2Fart-design%2Fart-gallery-event-page%2Flive-demo&#038;format=xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <noscript>
+    <style>
+      .woocommerce-product-gallery {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+  <link rel="icon" href="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/logo.png" sizes="32x32" />
+  <link rel="icon" href="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/logo.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed"
+    href="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/logo.png" />
+  <meta name="msapplication-TileImage"
+    content="https://www.elegantthemes.com/layouts/wp-content/uploads/2017/12/logo.png" />
+  <link rel="stylesheet" id="et-core-unified-223652-cached-inline-styles"
+    href="https://www.elegantthemes.com/layouts/wp-content/et-cache/223652/et-core-unified-223652-15848250308925.min.css"
+    onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
 </head>
 
-<body>
-<div class="site-wrap">
-
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+<body
+  class="page-template-default page page-id-223652 theme-Divi woocommerce-no-js et_pb_button_helper_class et_fullwidth_nav et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter linux et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+  <div id="page-container">
+    <header id="main-header" data-height-onload="66">
+      <div class="container clearfix et_menu_container">
+        <div class="title_container">
+          <h1>
+            <a href="https://www.elegantthemes.com/layouts/art-design/art-gallery-event-page"
+              title="Divi Builder Layout Pack">
+              SPEC Fest </a>
+          </h1>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-		<!-- ----------Start HEADER and NAV BAR---------- -->
-	<header class="site-navbar py-3" role="banner">
-
-  <div class="container-fluid">
-    <div class="row align-items-center">
-
-      <div class="col-6 col-xl-2" data-aos="fade-down">
-        <!-- <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">SPEC</a></h1>-->
-        <a href="index.html"><img src="gallery\bg-img\spec_logo.png" class="logo" /></a>
-      </div>
-      <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
-        <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
-
-          <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block" style="float: left;">
-            <li><a href="#ex">Exhibition</a></li>
-            <li><a href="#ev">Events</a></li>
-            
-          </ul>
-        </nav>
-      </div>
-
-      <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
-        <div class="d-none d-xl-inline-block">
-          <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-            <li>
-              <a href="https://www.facebook.com/spec.ece/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/SPEC__NITH" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/s.p.e.c_nith/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-            </li>
-            <li>
-              <a href="https://in.linkedin.com/in/s-p-e-c-nith-40214b197" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-
-      </div>
-
-    </div>
-  </div>
-
-</header>
-
-
-<!-- Nav Bar End -->
-
-
-<h1 class="heading"><span style="color: #292F33;">SPEC</span><span style="color: #66757F;">FEST</span><span style="color:#55ACEE;"> 2K20</span></h1>
-<a name="ex"></a>
-<div class="jumbotron odd">
-    <h1 class="title">Exhibition</h1>
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12">
-          <div class="contain-two">
-            <img src="img\exi.jpeg" />
+        <div id="et-top-navigation" data-height="66" data-fixed-height="40">
+          <nav id="top-menu-nav">
+            <ul id="top-menu" class="nav">
+              <li id="menu-item-223647"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223647"><a
+                  href="https://www.elegantthemes.com/layouts/art-design/art-gallery-landing-page/live-demo">Landing</a>
+              </li>
+              <li id="menu-item-223649"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223649"><a
+                  href="https://www.elegantthemes.com/layouts/art-design/art-gallery-home-page/live-demo">Home</a></li>
+              <li id="menu-item-223651"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223651"><a
+                  href="https://www.elegantthemes.com/layouts/art-design/art-gallery-events-page/live-demo">Events</a>
+              </li>
+              <li id="menu-item-223653"
+                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-223652 current_page_item menu-item-223653">
+                <a href="https://www.elegantthemes.com/layouts/art-design/art-gallery-event-page/live-demo"
+                  aria-current="page">Event</a></li>
+              <li id="menu-item-223655"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223655"><a
+                  href="https://www.elegantthemes.com/layouts/art-design/art-gallery-artist-page/live-demo">Artist</a>
+              </li>
+              <li id="menu-item-223657"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223657"><a
+                  href="https://www.elegantthemes.com/layouts/art-design/art-gallery-blog-page/live-demo">Blog</a></li>
+              <li id="menu-item-223659"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223659"><a
+                  href="https://www.elegantthemes.com/layouts/art-design/art-gallery-about-page/live-demo">About</a>
+              </li>
+              <li id="menu-item-223661"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-223661"><a
+                  href="https://www.elegantthemes.com/layouts/art-design/art-gallery-contact-page/live-demo">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="https://www.elegantthemes.com/layouts" class="et-cart-info">
+            <span></span>
+          </a>
+          <div id="et_mobile_nav_menu">
+            <div class="mobile_nav closed">
+              <span class="select_page">Select Page</span>
+              <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12">
-          <span class="list-type1">
-          <ul type="none">
-            <li>AR Classroom</li>
-            <li>Drishti</li>
-            <li>Smart Glove</li>
-            <li>Autonomous Drone</li>
-            <li>Quad Bot</li>
-            <li>AR Pro</li>
-            <li>Land Managment</li>
-          </ul>
-        </span>
-        <br><br>
-        <button type="button" class="btn btn-info "><a target="_blank" href="https://forms.gle/RrrNQsgPfTvr7CJ4A" class="butn">Register Here</a></button>
+      </div>
+      <div class="et_search_outer">
+        <div class="container et_search_form_container">
+          <form role="search" method="get" class="et-search-form" action="https://www.elegantthemes.com/layouts/">
+            <input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s"
+              title="Search for:" /> </form>
+          <span class="et_close_search_field"></span>
         </div>
-    </div>
-</div>
-
-<a name="ev"></a>
-
-<div class="jumbotron ">
-    <h1 class="title">Events</h1>
-    <div class="row cards">
-        <div class="card">
-            <img src="img\tick.png">
-            <div class="contain">
-              <h4><b>Naughts and Crosses</b></h4>
-              <p>Many tic tac toe have been combined to form a larger tic tac toe.  </p>
+      </div>
+    </header>
+    <div id="et-main-area">
+      <div id="main-content">
+        <article id="post-223652" class="post-223652 page type-page status-publish hentry">
+          <div class="entry-content">
+            <div id="et-boc" class="et-boc">
+              <div class="et-l et-l--post">
+                <div class="et_builder_inner_content et_pb_gutters3">
+                  <div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular">
+                    <div class="et_pb_row et_pb_row_0 et_pb_equal_columns et_pb_gutters2">
+                      <div class="et_pb_column et_pb_column_2_5 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h2>Tech Exhibition</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <a name="exhibition"></a>
+                      <div
+                        class="et_pb_column et_pb_column_3_5 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h2>Extra Space</h2>
+                            <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit.</h3>
+                            <p>Lsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                              labore et. dolor sit amet, adipiscing elit, sed eiusmod tempor incididunt ut labore
+                              et.Lsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et.
+                              Lsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et.
+                              Lsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor ut labore et.Lsum
+                              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                              et.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="et_pb_row et_pb_row_1">
+                      <div class="et_pb_column et_pb_column_3_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_image et_pb_image_0">
+                          <span class="et_pb_image_wrap "><img
+                              src="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-38.jpg"
+                              alt="" title=""
+                              srcset="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-38.jpg 800w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-38-254x114.jpg 254w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-38-533x239.jpg 533w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-38-510x229.jpg 510w"
+                              sizes="(max-width: 800px) 100vw, 800px" /></span>
+                        </div>
+                      </div>
+                      <div
+                        class="et_pb_column et_pb_column_1_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h4>Feb 02, 2020</h4>
+                          </div>
+                        </div>
+                        <div
+                          class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_tablet_center et_pb_module ">
+                          <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="">Register Next Time</a>
+                        </div>
+                        <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <p>Lsum dolor sit amet, consectetur adipiscin</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="et_pb_section et_pb_section_1 et_section_regular">
+                    <div class="et_pb_row et_pb_row_2">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div
+                          class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_center et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h3>Projetcs</h3>
+                            <h2>Featured Projetcs</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="et_pb_row et_pb_row_3">
+                      <div class="et_pb_column et_pb_column_1_2 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+                        <div
+                          class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_center et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <a href="#">AR Classroom</a><br />
+                            <a href="#">Smart Glove</a><br />
+                            <a href="#">Quad Bot</a><br />
+                            <a href="#">Land Managment</a><br />
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="et_pb_column et_pb_column_1_2 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div
+                          class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <a href="#">Drishti</a><br />
+                            <a href="#">Autonomous Drone</a><br />
+                            <a href="#">AR Pro</a><br />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular">
+                    <div class="et_pb_row et_pb_row_4">
+                      <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_7  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h3>Other Exhibitions</h3>
+                            <h2>Exhibition Preview</h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="et_pb_row et_pb_row_5">
+                      <div class="et_pb_column et_pb_column_1_4 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_image et_pb_image_1">
+                          <span class="et_pb_image_wrap "><img
+                              src="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-29.jpg"
+                              alt="" title=""
+                              srcset="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-29.jpg 400w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-29-254x254.jpg 254w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-29-100x100.jpg 100w"
+                              sizes="(max-width: 400px) 100vw, 400px" /></span>
+                        </div>
+                      </div>
+                      <div class="et_pb_column et_pb_column_1_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_image et_pb_image_2">
+                          <span class="et_pb_image_wrap "><img
+                              src="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art_gallery_04.jpg"
+                              alt="" title=""
+                              srcset="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art_gallery_04.jpg 400w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art_gallery_04-254x253.jpg 254w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art_gallery_04-100x100.jpg 100w"
+                              sizes="(max-width: 400px) 100vw, 400px" /></span>
+                        </div>
+                      </div>
+                      <div class="et_pb_column et_pb_column_1_4 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_image et_pb_image_3">
+                          <span class="et_pb_image_wrap "><img
+                              src="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-30.jpg"
+                              alt="" title=""
+                              srcset="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-30.jpg 400w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-30-254x253.jpg 254w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-30-100x100.jpg 100w"
+                              sizes="(max-width: 400px) 100vw, 400px" /></span>
+                        </div>
+                      </div>
+                      <div
+                        class="et_pb_column et_pb_column_1_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_image et_pb_image_4">
+                          <span class="et_pb_image_wrap "><img
+                              src="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-47.jpg"
+                              alt="" title=""
+                              srcset="https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-47.jpg 400w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-47-254x253.jpg 254w, https://www.elegantthemes.com/layouts/wp-content/uploads/2019/06/art-gallery-47-100x100.jpg 100w"
+                              sizes="(max-width: 400px) 100vw, 400px" /></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="et_pb_section et_pb_section_3 et_section_regular">
+                    <div class="et_pb_with_border et_pb_row et_pb_row_6 et_pb_gutters2">
+                      <div class="et_pb_column et_pb_column_1_4 et_pb_column_12  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_text et_pb_text_8  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h3>Address</h3>
+                            <p>1234 Divi St. #1000<br /> San Francisco, CA 23514, USA<br /> (246) 351-3613</p>
+                          </div>
+                        </div>
+                        <div class="et_pb_button_module_wrapper et_pb_button_1_wrapper  et_pb_module ">
+                          <a class="et_pb_button et_pb_button_1 et_pb_bg_layout_light" href="">Visit Us</a>
+                        </div>
+                      </div>
+                      <div class="et_pb_column et_pb_column_1_4 et_pb_column_13  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_text et_pb_text_9  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h3>Open Hours</h3>
+                            <p>Monday &#8211; Friday: 10am – 5pm<br /> Weekends: 10am – 9pm<br /> Holidays: Closed</p>
+                          </div>
+                        </div>
+                        <div class="et_pb_button_module_wrapper et_pb_button_2_wrapper  et_pb_module ">
+                          <a class="et_pb_button et_pb_button_2 et_pb_bg_layout_light" href="">Shop</a>
+                        </div>
+                        <div class="et_pb_button_module_wrapper et_pb_button_3_wrapper  et_pb_module ">
+                          <a class="et_pb_button et_pb_button_3 et_pb_bg_layout_light" href="">Today&#039;s Events</a>
+                        </div>
+                      </div>
+                      <div class="et_pb_column et_pb_column_1_4 et_pb_column_14  et_pb_css_mix_blend_mode_passthrough">
+                        <div class="et_pb_module et_pb_text et_pb_text_10  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h3>Follow</h3>
+                          </div>
+                        </div>
+                        <ul
+                          class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0 clearfix  et_pb_bg_layout_light">
+                          <li
+                            class='et_pb_social_media_follow_network_0 et_pb_social_icon et_pb_social_network_link  et-social-facebook et_pb_social_media_follow_network_0'>
+                            <a href='#' class='icon et_pb_with_border' title='Follow on Facebook' target="_blank"><span
+                                class='et_pb_social_media_follow_network_name' aria-hidden='true'>Follow</span></a></li>
+                          <li
+                            class='et_pb_social_media_follow_network_1 et_pb_social_icon et_pb_social_network_link  et-social-twitter et_pb_social_media_follow_network_1'>
+                            <a href='#' class='icon et_pb_with_border' title='Follow on Twitter' target="_blank"><span
+                                class='et_pb_social_media_follow_network_name' aria-hidden='true'>Follow</span></a></li>
+                          <li
+                            class='et_pb_social_media_follow_network_2 et_pb_social_icon et_pb_social_network_link  et-social-google-plus et_pb_social_media_follow_network_2'>
+                            <a href='#' class='icon et_pb_with_border' title='Follow on Google+' target="_blank"><span
+                                class='et_pb_social_media_follow_network_name' aria-hidden='true'>Follow</span></a></li>
+                          <li
+                            class='et_pb_social_media_follow_network_3 et_pb_social_icon et_pb_social_network_link  et-social-instagram et_pb_social_media_follow_network_3'>
+                            <a href='#' class='icon et_pb_with_border' title='Follow on Instagram' target="_blank"><span
+                                class='et_pb_social_media_follow_network_name' aria-hidden='true'>Follow</span></a></li>
+                        </ul>
+                      </div>
+                      <div
+                        class="et_pb_column et_pb_column_1_4 et_pb_column_15  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_11  et_pb_text_align_left et_pb_bg_layout_light">
+                          <div class="et_pb_text_inner">
+                            <h3>Subscribe</h3>
+                          </div>
+                        </div>
+                        <div
+                          class="et_pb_module et_pb_signup_0 et_pb_newsletter_layout_left_right et_pb_newsletter et_pb_subscribe clearfix  et_pb_text_align_left et_pb_bg_layout_light et_pb_no_bg et_pb_newsletter_description_no_title et_pb_newsletter_description_no_content">
+                          <div class="et_pb_newsletter_description et_multi_view_hidden"></div>
+                          <div class="et_pb_newsletter_form">
+                            <form method="post">
+                              <div class="et_pb_newsletter_result et_pb_newsletter_error"></div>
+                              <div class="et_pb_newsletter_result et_pb_newsletter_success">
+                                <h2>Success!</h2>
+                              </div>
+                              <div class="et_pb_newsletter_fields">
+                                <p
+                                  class="et_pb_newsletter_field et_pb_contact_field_last et_pb_contact_field_last_tablet et_pb_contact_field_last_phone">
+                                  <label class="et_pb_contact_form_label" for="et_pb_signup_email"
+                                    style="display: none;">Email</label>
+                                  <input id="et_pb_signup_email" class="input" type="text" placeholder="Email"
+                                    name="et_pb_signup_email">
+                                </p>
+                                <p class="et_pb_newsletter_button_wrap">
+                                  <a class="et_pb_newsletter_button et_pb_button" href="#" data-icon="">
+                                    <span class="et_subscribe_loader"></span>
+                                    <span class="et_pb_newsletter_button_text">Subscribe</span>
+                                  </a>
+                                </p>
+                              </div>
+                              <input type="hidden" value="mailchimp" name="et_pb_signup_provider" />
+                              <input type="hidden" value="11a914d1cc" name="et_pb_signup_list_id" />
+                              <input type="hidden" value="SlavaET" name="et_pb_signup_account_name" />
+                              <input type="hidden" value="true" name="et_pb_signup_ip_address" />
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div> 
-          <br>
-          <div class="card">
-            <img src="img\ar-hunt.png">
-            <div class="contain">
-              <h4><b>AR Treasure Hunt</b></h4>
-              <p>A Treasure Hunt where the participants will have to look for clues using their phones and explore the campus for the treasure.</p>
-            </div>
-          </div> 
+          </div>
+        </article>
+      </div>
+      <footer id="main-footer">
+        <div id="footer-bottom">
+          <div class="container clearfix">
+            <ul class="et-social-icons">
+              <li class="et-social-icon et-social-facebook">
+                <a href="#" class="icon">
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="et-social-icon et-social-twitter">
+                <a href="#" class="icon">
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li class="et-social-icon et-social-google-plus">
+                <a href="#" class="icon">
+                  <span>Google</span>
+                </a>
+              </li>
+              <li class="et-social-icon et-social-rss">
+                <a href="https://www.elegantthemes.com/layouts/feed" class="icon">
+                  <span>RSS</span>
+                </a>
+              </li>
+            </ul>
+            <p id="footer-info">Designed by <a href="https://www.elegantthemes.com"
+                title="Premium WordPress Themes">Elegant Themes</a> | Powered by <a
+                href="https://www.wordpress.org">WordPress</a></p>
+          </div>
+        </div>
+      </footer>
     </div>
-        
-    </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-
-<script src="gallery\js\main.js"></script>
-
+  </div>
+  <script type="text/javascript">
+    var c = document.body.className;
+    c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+    document.body.className = c;
+  </script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'>
+  </script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wc_add_to_cart_params = {
+      "ajax_url": "\/layouts\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/layouts\/?wc-ajax=%%endpoint%%",
+      "i18n_view_cart": "View cart",
+      "cart_url": "https:\/\/www.elegantthemes.com\/layouts",
+      "is_cart": "",
+      "cart_redirect_after_add": "no"
+    };
+    /* ]]> */
+  </script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.0.1'>
+  </script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'>
+  </script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var woocommerce_params = {
+      "ajax_url": "\/layouts\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/layouts\/?wc-ajax=%%endpoint%%"
+    };
+    /* ]]> */
+  </script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.0.1'>
+  </script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var wc_cart_fragments_params = {
+      "ajax_url": "\/layouts\/wp-admin\/admin-ajax.php",
+      "wc_ajax_url": "\/layouts\/?wc-ajax=%%endpoint%%",
+      "cart_hash_key": "wc_cart_hash_97021550e9eab2d14fdb9c3ac6541ec6",
+      "fragment_name": "wc_fragments_97021550e9eab2d14fdb9c3ac6541ec6",
+      "request_timeout": "5000"
+    };
+    /* ]]> */
+  </script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.0.1'>
+  </script>
+  <script type='text/javascript'>
+    /* <![CDATA[ */
+    var DIVI = {
+      "item_count": "%d Item",
+      "items_count": "%d Items"
+    };
+    var et_shortcodes_strings = {
+      "previous": "Previous",
+      "next": "Next"
+    };
+    var et_pb_custom = {
+      "ajaxurl": "https:\/\/www.elegantthemes.com\/layouts\/wp-admin\/admin-ajax.php",
+      "images_uri": "https:\/\/www.elegantthemes.com\/layouts\/wp-content\/themes\/Divi\/images",
+      "builder_images_uri": "https:\/\/www.elegantthemes.com\/layouts\/wp-content\/themes\/Divi\/includes\/builder\/images",
+      "et_frontend_nonce": "2af444016d",
+      "subscription_failed": "Please, check the fields below to make sure you entered the correct information.",
+      "et_ab_log_nonce": "bbecfe471b",
+      "fill_message": "Please, fill in the following fields:",
+      "contact_error_message": "Please, fix the following errors:",
+      "invalid": "Invalid email",
+      "captcha": "Captcha",
+      "prev": "Prev",
+      "previous": "Previous",
+      "next": "Next",
+      "wrong_captcha": "You entered the wrong number in captcha.",
+      "wrong_checkbox": "Checkbox",
+      "ignore_waypoints": "no",
+      "is_divi_theme_used": "1",
+      "widget_search_selector": ".widget_search",
+      "ab_tests": [],
+      "is_ab_testing_active": "",
+      "page_id": "223652",
+      "unique_test_id": "",
+      "ab_bounce_rate": "5",
+      "is_cache_plugin_active": "no",
+      "is_shortcode_tracking": "",
+      "tinymce_uri": ""
+    };
+    var et_frontend_scripts = {
+      "builderCssContainerPrefix": "#et-boc",
+      "builderCssLayoutPrefix": "#et-boc .et-l"
+    };
+    var et_pb_box_shadow_elements = [];
+    var et_pb_motion_elements = {
+      "desktop": [],
+      "tablet": [],
+      "phone": []
+    };
+    /* ]]> */
+  </script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/themes/Divi/js/custom.unified.js?ver=4.4.1'></script>
+  <script type='text/javascript'
+    src='https://www.elegantthemes.com/layouts/wp-content/themes/Divi/core/admin/js/common.js?ver=4.4.1'></script>
+  <script type='text/javascript' src='https://www.elegantthemes.com/layouts/wp-includes/js/wp-embed.min.js?ver=5.3.2'>
+  </script>
 </body>
+
 </html>

@@ -493,6 +493,9 @@ div#tag_line h1{
   color: #000;
   margin: auto;
   font-size: 1em;
+  overflow: hidden;
+  max-height: 38vh;
+
 }
 
 .box p{
