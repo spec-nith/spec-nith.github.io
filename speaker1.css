@@ -1,0 +1,32 @@
+h4 {
+    text-align: center;
+    margin: auto;
+}
+
+#info2 {
+    text-align: justify;
+    margin: auto;
+    padding: 4px;
+}
+
+.imgs {
+    object-fit: contain;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    margin: auto;
+    max-width: 40vw;
+}
+
+
+.row {
+    text-align: center !important;
+}
+
+body{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-bottom: 3vw;
+}
