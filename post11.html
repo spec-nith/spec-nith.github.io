@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" type="text/css" href="custom_navbar.css">
+  <link rel="shortcut icon" href="imgs/headicon.ico" />
+  <link rel="stylesheet" type="text/css" href="blog.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="blog/css/style2.css">
+</head>
+<body onload="document.body.style.opacity='1'">
+  <div class= "img_container" id="first">
+    <a href="blog.html"><img src="imgs\spec_logo.png"></a>
+  </div>
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+    <!--================Blog Area =================-->
+    <section class="blog_area p_120 single-post-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="main_blog_details">
+              <h4>DeepFakes: AI-powered deception machines</h4>
+              <div class="user_details">
+                <div class="float-right">
+                  <div class="media">
+                    <div class="media-body">
+                      <p>10 January, 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img class="img-fluid center" src="blog\img\post11\Deepfakes.jpg" alt="">
+              <p><br>Driven by computer vision and deep learning techniques, a new wave of imaging attacks has recently emerged, which allows anyone to create highly realistic "fake" videos easily. These false videos are known as <strong>Deep Fakes</strong>. While highly entertaining at times, DeepFakes can be used to perturb society, and some would argue that the pre-shock has already begun. A rogue DeepFake, which goes viral, can spread misinformation across the internet like wildfire.</p><p>Because DeepFakes contains a unique combination of realism and novelty, they are more difficult to detect on social networks as compared to traditional "bad" content like pornography and copyrighted movies. Video hashing might work for finding duplicates or copyright-infringing content, but not good enough for DeepFakes. To fight face-manipulating DeepFake AI, one needs an even stronger AI.</p><p>As today's DeepFakes are based on Deep Learning and Deep Learning tools like TensorFlow and PyTorch are accessible to anybody with a modern GPU, such face manipulation tools are particularly disruptive. The democratization of Artificial Intelligence has brought us near-infinite use-cases. From the DeepDream phenomenon of 2015 to the Deep Style Transfer Art apps of 2016, 2018 is the year of the DeepFake. Today's computer vision technology allows a hobbyist to create a Deep Fake video of just about any person they want performing any action they want, in a matter of hours, using commodity computer hardware.</p>
+
+              <p><br><strong>What is Deep Fake?</strong></p>
+              <p>A deep fake is a video generated from a modern computer vision puppeteering face-swap algorithm which can be used to generate a video of target person X performing target action A, usually given a video of another person Y performing action A. The underlying system learns two face models, one of target person X, and of for person Y, the person in the original video. It then determines a mapping between the two faces, which can be used to create the resulting "fake" video. Techniques for facial reenactment have been pioneered by movie studios for driving character animations from real actors' faces, but these techniques are now emerging as deep learning-based software packages, letting the deep convolutional neural networks do most of the work during model training.</p>
+
+              <p><br>Consider the following collage of faces. Can you guess which ones are real and which ones are DeepFakes?</p>
+
+
+              <img class="img-fluid center" src="blog\img\post11\find_fake.jpg" alt="">
+
+
+              <p><br>It is not so easy to tell which image is modified and which one is unadulterated. And if you do a little bit of searching for DeepFakes (warning, unless you are careful, you will encounter lots of pornographic content), you notice that the faces in those videos look very realistic.</p>
+              <p><br><strong>How are Deep Fakes made?</strong></p>
+
+              <p>While there are conceptually many different ways to make Deep Fakes, today we'll focus on two key underlying techniques: face detection from videos, and deep learning for creating frame alignments between source face X and target face Y.</p>
+
+
+              <p>A lot of this research started with the Face2face work presented at CVPR 2016. This paper was a modernization of the group's earlier SIGGRAPH paper and focused a lot more on the computer vision details. At this time the tools were good enough to create SIGGRAPH-quality videos, but it took a lot of work to put together a facial reenactment rig. In addition, the underlying algorithms did not use any deep learning, so a lot of domain-knowledge (i.e., face modeling expertise) went into making these algorithms work robustly. The TUM/Stanford guys filed their Real-time facial reenactment patent in 2016 [4], and have more recently worked on FaceForensics to detect such manipulated imagery.</p>
+
+              <p>In addition to the Face2face guys (who have now a handful of similarly themed papers), it is interesting to note that a lot of key early ideas in face puppeteering were pioneered by Ira Kemelmacher-Shlizerman who is now a computer vision and graphics assistant professor at University of Washington. She worked on early face puppeteering technology for the 2010 paper Being John Malkovich, continued with the Photobios work, and later founded Dreambit (based on a SIGGRAPH 2016 paper), which was acquired by Facebook. :-)</p>
+
+
+
+              <img class="img-fluid center" src="blog\img\post11\swapping.jpg" alt="">
+
+              <p><br></p>The origin of Ira's Dreambit system is the Transfiguring Portraits SIGGRAPH 2016 paper[6]. What's important to note is that this is 2016, and we're starting to see some use of Deep Learning. The transfiguring portraits work used a big mix of features, using some CNN features computed from early Caffe networks. It is not an entirely easy-to-use system at this point, but good enough to make SIGGRAPH videos, take one minute to generate other crisp outputs, and cool enough for Facebook to acquire.</p>
+
+              <p><br><strong>Fighting against DeepFakes</strong></p>
+              <p>There are now published algorithms that try to battle DeepFakes by determining if faces/videos are fake or not. FaceForensics introduces a large DeepFake dataset based on their earlier Face2face work. This dataset contains both real and "fake" Face to face output videos. More importantly, the new dataset is big enough to train a deep learning system to determine if an image is counterfeit. Also, they can do both 1.) determine which pixels have likely been manipulated, and 2.) perform a deep cleanup stage to make even better DeepFakes.</p>
+
+              <img class="img-fluid center" src="blog\img\post11\mask.jpg" alt="">
+
+              <p><br>Another fake detection approach, this time from a Berkeley AI Research group called Image Splice Detection, focuses on detecting where an image was spliced to create a false composite image. This allows them to determine which part of the model was likely "photoshopped," and the technique is not specific to faces. And because this is a 2018 paper, it should not be a surprise that this kind of work is all based on deep learning techniques.</p>
+
+              <p><strong>Concluding Remarks</strong></p>
+              <p>The new DeepFake tools were pioneered in the early 2010s and were producing SIGGRAPH-quality results by 2015. It was only a matter of years until DeepFake generators became publicly available. 2018's DeepFake generators, being written on top of open-source Deep Learning libraries, are much easier to use than the research systems from only a few years back. Today, just about any hobbyist with minimal computer programming knowledge and a GPU can build their DeepFakes.</p>
+
+              <p>Just as Deep Fakes are getting better, Generative Adversarial Networks are showing more promise for photorealistic image generation. It is likely that we will soon see lots of exciting new work on both the generative side (deep fake generation) and the discriminative side (deep fake detection and image forensics), which incorporate more and more ideas from the machine learning community.</p>
+
+              <div class="navigation-area">
+               <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                  <div class="arrow">
+                    <a href="#"><span class="lnr text-white lnr-arrow-left"> </a>
+                    </div>
+                    <div class="details next1">
+                      <p><i class="fas fa-long-arrow-alt-left"></i> Prev Post</p>
+                      <a href="post9.html"><h4>The Benefits of Open Source Software</h4></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                    <div class="details next2">
+                      <p>Next Post <i class="fas fa-long-arrow-alt-right"></i></p>
+                      <a href="post12.html"><h4>How to Use an API: Just the Basic </h4></a>
+                    </div>
+                    <div class="arrow">
+                      <a href="#"><span class="lnr text-white lnr-arrow-right"> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 fixed">
+                <div class="blog_right_sidebar">
+                  <aside class="single_sidebar_widget popular_post_widget">
+                    <h3 class="widget_title">Popular Posts</h3>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post9.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post9.html"><h3>14 Top Tech Skills in Demand in 2020</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post8.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post8.html"><h3>What is Blockchain?</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post6.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post6.html"><h3>AR is expected to overcome VR</h3></a>
+                      </div>
+                    </div>
+                    <div class="media post_item">
+                      <img src="blog/img/popular-post/post5.jpg" alt="post">
+                      <div class="media-body">
+                        <a href="post5.html"><h3>An Introduction to NodeMCU</h3></a>
+                      </div>
+                    </div>
+                    <div class="br"></div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--================Blog Area =================-->
+
+        <!-- END w3-content -->
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script type="text/javascript" src="custom_navbar.js"></script>
+    </body>
+    </html>
