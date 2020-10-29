@@ -614,3 +614,29 @@ div#tag_line h1{
 #register{
   margin-top: 3rem;
 }
+
+
+
+/*categories start*/
+
+
+
+#catimg{
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin-right: 190px;
+  margin-left: 40px;
+
+}
+
+#catcontent{
+  margin-right: 0;
+  width: 500px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+
+/*categories ends*/
