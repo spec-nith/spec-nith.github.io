@@ -233,8 +233,11 @@ p{
   margin-bottom: 0;
 }
 .female img{
-  width: 60vw;
+  margin-top: 40px;
+  width: 150vw;
   height: 60vw!important;
+  border-radius:230px;
+
 }
 .odd h1{
   font-size: 3.5rem;
@@ -622,21 +625,15 @@ div#tag_line h1{
 
 
 #catimg{
-  height: 300px;
-  width: 300px;
-  border-radius: 150px;
+  height: 400px;
+  width: 430px;
+ /* border-radius: 150px;*/
   margin-right: 190px;
   margin-left: 40px;
-
+  border-radius: 200px;
+  border-radius: 350px;
 }
 
-#catcontent{
-  margin-right: 0;
-  width: 500px;
-  margin-top: 20px;
-  text-align: center;
-
-}
 
 
 /*categories ends*/
