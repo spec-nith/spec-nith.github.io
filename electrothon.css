@@ -377,17 +377,9 @@ div#tag_line h1{
   font-size: 3rem;
   padding-bottom: 1rem;
 }
-@media screen and (min-width: 992px){
-  #diverse1 img{
-    width: 40vw;
-    height: 25vw!important;
-    margin: 9em 0 9em 0;
-    /* border: 2px solid red; */
-  }
-}
 @media screen and (min-width: 768px){
   #diverse img{
-    width: 25vw;
+    width: 35vw;
     height: 25vw!important;
     /* border: 2px solid red; */
   }
