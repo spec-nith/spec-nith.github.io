@@ -625,13 +625,10 @@ div#tag_line h1{
 
 
 #catimg{
-  height: 400px;
-  width: 430px;
- /* border-radius: 150px;*/
-  margin-right: 190px;
-  margin-left: 40px;
+  height: 30vw;
+  width: 30vw;
   border-radius: 200px;
-  border-radius: 350px;
+  margin-bottom: 50px;
 }
 
 
