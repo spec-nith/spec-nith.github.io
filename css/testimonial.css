@@ -1,0 +1,137 @@
+.testimonial-area{
+	
+    background: #0c253b;
+    padding-top: 8rem;
+    color: #c6cdd2;
+    
+}
+
+.testimonial-area h1{
+	
+    font-size: 3em;
+    color: white;
+    
+}
+.testimonial-title p{
+	
+	
+
+    padding: 0rem 5rem;
+}
+
+
+
+.client{
+    background: #c6cdd2;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    width: 70%;
+    border-radius: 3%;
+}
+.client-img{
+    /* width: max-content;
+    height: max-content; */
+    /* border: 10px solid #fff;
+    border-radius: 100%; */
+    width: 100%;
+}
+.headshot{
+    max-width: 41vh;
+    max-height: 41vh;
+    object-position: top;
+    object-fit: cover;
+    padding: 0.7rem;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s ease;
+  }
+.profile_img{
+	width: 65%;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    border: 10px solid ;
+    
+  }
+  .profile_img img{
+    border-radius: 50%;
+  }
+.profile_img p{
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #fff;
+    padding-bottom: 7%;
+  }
+  .icon-twitter ,.icon-linkedin{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  .icon-quote-left{
+      color: black;
+      text-decoration: none;
+      padding: 0;
+      margin-right: 1rem;
+  }
+  .icon-quote-right {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    float: right;
+
+  }
+.social{
+    transition: 0.5s ease;
+    margin: auto;
+    transform: scale(2);
+    opacity: 0;
+    margin-top: 40%;
+  }
+  .profile_img:hover .headshot{
+    filter: brightness(50%) drop-shadow(1px 1px 8px #313131);
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    
+  }
+  
+  .profile_img:hover .social{
+    transition: 0.5s ease;
+    opacity: 1;
+  }
+.about-client{
+    padding: 2rem 2rem;
+}
+.about-client h4{
+    font: normal 500 21px/20px var(--roboto);
+    color: #0c253b;
+}
+.about-client p{
+    font-size: 14px;
+    color: #0c253b;
+}
+.achie{
+    align-content: center;
+}
+.owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+.site-main.testimonial-area.owl-carousel.owl-dots.owl-dot.active span{
+    background: var(--primary-color2);
+    width: 12px;
+    height: 12px;
+}
+.para-testimonial{
+    margin-left: 1.8rem;
+    margin-right: 2.3rem;
+    text-align: justify;
+}
+.name-testi{
+    text-align: right;
+    padding-right: 2.0rem;
+    font-weight: bold;
+
+}
+

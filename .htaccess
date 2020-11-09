@@ -1,0 +1,5 @@
+# remove file extensions
+RewriteEngine on
+RewriteRule ^(.*).html$ http://domain.tld/$1 [R=301,L]
+RewriteRule ^(.*).htm$  http://domain.tld/$1 [R=301,L]
+RewriteRule ^(.*).php$  http://domain.tld/$1 [R=301,L]
