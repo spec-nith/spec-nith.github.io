@@ -634,15 +634,14 @@ height: 23em;
 
 #sponsorus{
 	margin-top: 100px;
-  margin: 2vw;
-	width: 250px;
+	width: 180px;
 	color: #eaf3fb;
 	height: 60px;
     display: block;
     text-align: center;
 	background:#0c253b;
 	border-radius: 30px;
-		font-size: 1.2em;
+		font-size: 1em;
 
 }
 
