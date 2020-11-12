@@ -21,19 +21,29 @@ a{
 	text-decoration: none!important;
 }
 
-.tagline{
 
-	letter-spacing: 6px;
-	font-family: Lato;
-	font-size: 19px;
-	 font-weight: 400;
-
+@media screen and (max-width: 600px){
+	.tagline{
+		letter-spacing: 2px;
+		font-family: Lato;
+		font-size: 15px;
+		font-weight: 100;
+	}
 }
 
-#title {
+@media screen and (min-width: 601px){
+	.tagline{
+		letter-spacing: 6px;
+		font-family: Lato;
+		font-size: 19px;
+		font-weight: 400;
+	}
+}
 
-    position: absolute;
-    top: 45%;
+@media screen and (min-width: 600px){
+	.title{
+		position: absolute;
+    top: 400px;
     left: 0;
     right: 0;
     color: #fff;
@@ -44,15 +54,62 @@ a{
     letter-spacing: 10px;
     margin-top: -50px;
     padding-left: 10px;
+	}
 }
 
-#title2 {
-    opacity: 0;
+@media screen and (max-width: 600px){
+	.title{
+		position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 1.3em;
+    letter-spacing: 10px;
+    margin-top: -50px;
+    padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.tagline{
+		letter-spacing: 2px;
+		font-family: Lato;
+		font-size: 15px;
+		font-weight: 100;
+	}
+}
+
+@media screen and (min-width: 601px){
+	.title2{
+		letter-spacing: 6px;
+		font-family: Lato;
+		font-size: 19px;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.title2{
+		opacity: 0;
+	animation: fadeUp .5s forwards;
+	animation-delay: .9s;
+    font-weight: 300;
+    font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 601px){
+	.tagline{
+		opacity: 0;
 	animation: fadeUp .5s forwards;
 	animation-delay: .9s;
     font-weight: 300;
     font-size: 25px;
-
+	}
 }
 
 
