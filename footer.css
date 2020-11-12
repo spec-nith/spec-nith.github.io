@@ -10,7 +10,7 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background: #2bbbad !important;
+    background: #0c253b !important;
     z-index: -1;
 }
 #footer h5{
