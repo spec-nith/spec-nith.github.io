@@ -37,24 +37,20 @@
 	align-content: center;
 	align-items: center;
 	text-align: center;
-	margin-top: 2em;
 	background-color: transparent!important;
   float: left;
   width: 45%;
-padding: 3em 2em 1em 2em;;
-  height:540px; /* Should be removed. Only for demonstration */
+/* padding: 3em 2em 1em 2em; */
 }
 .columnb {
 	background-color: transparent !important;
 	align-content: center ;
 	align-items: center;
 	text-align: center;
-	margin-top: 2em;
   float: left;
   width: 55%;
  padding-left: 1em;
 	padding-right:1em;
-  height: 540px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */

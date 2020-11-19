@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // Unix timestamp (in seconds) to count down to
-  var DaysFromNow = (new Date().getTime() / 1000) + (86400 * 93) +1;
+  var DaysFromNow = new Date("Feb 06, 2021 00:00:00").getTime() / 1000;
 
   // Set up FlipDown
   var flipdown = new FlipDown(DaysFromNow)
