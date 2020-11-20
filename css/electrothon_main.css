@@ -707,7 +707,15 @@ height: 23em;
 
 }
 
-
+#divsponsor{
+			width: 30%;
+			height: 30%;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+			padding-top:  90px;
+			padding-bottom: 30px;
+		}
 
 
 /*******bounce hover********/
