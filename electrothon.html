@@ -22,7 +22,8 @@
 		<link rel="stylesheet" href = "css/bootstrap.min.css">
 		<link rel="stylesheet" href = "css/all.min.css">
     <link rel="shortcut icon" href="imgs\headicon.ico"/>
-
+		<!--BAFFLE.JS LINK-->
+		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 		<!------animate.css & aos----->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -86,10 +87,11 @@
     <!-- header section starts -->
       <div class="title">
             <span class="electrothontitle">ELECTROTHON 2K21</span><br>
-		    <span class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span>
+			<!-- <span id="tagb" class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span> -->
+			<span id="tagb" class="tagline " >|SEARCH|</span>
             <br>
 			<div class="title2">
-			<span >6th Feb - 8th Feb</span>
+			<span id="dates">6th Feb - 8th Feb</span>
 				</div>
         </div>
 
@@ -679,7 +681,8 @@
 
 
 <!---------------------JS ------------------------->
-
+<!--baffle.js-->
+	<script src="js/animebaffle.js"></script>
   <!-------jquery----------->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
