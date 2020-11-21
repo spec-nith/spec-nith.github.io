@@ -688,7 +688,6 @@ height: 15em;
   -moz-box-shadow: 0px 8px 6px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 8px 6px -5px rgba(0, 0, 0, 0.75);
 }
-
 /***timeline title****/
 
 #timeline .timeline_title{
@@ -855,6 +854,16 @@ div .bounce_button:hover {
 	margin-right: 2em;
 	margin-left: 2em;
 }
+
+@media screen and (max-width: 700px){
+	#sponsorus{
+	margin-top: 2em;
+	margin-right: .5em;
+	margin-left: .5em;
+}
+	
+}
+
 
 #sponsorus:hover{
 	color: midnightblue;
