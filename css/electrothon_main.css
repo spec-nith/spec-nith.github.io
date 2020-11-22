@@ -874,13 +874,13 @@ div .bounce_button:hover {
 }
 
 @media screen and (max-width: 700px){
-#divsponsor{
-			width: 55%;
-			height: 40%;
+	#divsponsor{
+			width: 72%;
+			height: 45%;
 			margin-right: auto;
 			margin-left: auto;
 			display: block;
-			padding-top:  90px;
+			padding-top:  120px;
 			padding-bottom: 30px;
 		}
 	
