@@ -22,7 +22,8 @@
 		<link rel="stylesheet" href = "css/bootstrap.min.css">
 		<link rel="stylesheet" href = "css/all.min.css">
     <link rel="shortcut icon" href="imgs\headicon.ico"/>
-
+		<!--BAFFLE.JS LINK-->
+		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 		<!------animate.css & aos----->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -84,19 +85,20 @@
             <!-- navbar ends here -->
 
     <!-- header section starts -->
-      <div id="title">
+      <div class="title">
             <span class="electrothontitle">ELECTROTHON 2K21</span><br>
-		    <span class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span>
+			<!-- <span id="tagb" class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span> -->
+			<span id="tagb" class="tagline " >|SEARCH|</span>
             <br>
-			<div id="title2">
-			<span >6th Feb - 8th Feb</span>
+			<div class="title2">
+			<span id="dates">6th Feb - 8th Feb</span>
 				</div>
         </div>
 
     <!-- header section ends -->
 
 	<!----------------About start------------------->
-    <div id="about" style="padding-top: 20px;">
+    <div class="about" style="padding-top: 20px;">
 			<div class="columnb">
 				<div class="row justify-content-center d-flex">
 					<div class="col-lg-12" >
@@ -118,13 +120,13 @@
 						<p data-aos="zoom-in">Join hundreds of participants in Electrothon - A plentitude of opportunities where enthusiastic minds could brainstorm on solutions for challenging issues through technology. Put your skills to the test, and you could win amazing prizes and sharpen your competitive edge. So be ready to caffeinate, collaborate and celebrate.</p>
 					</div>
 
-					    <div class="col-lg-12">
+					    <div class="col-lg-12 ">
 						 <section id="count">
 			                <div id="countdown">
 			                     <div class="example">
 			                      <div id="flipdown" class="flipdown"></div>
 			                     </div>
-			                     </div> 
+			                     </div>
 			                </div>
 			                 <span id="countcontent">"Time was meaningless, except each moment was a countdown to the end."</span>
 		                  </section>
@@ -219,7 +221,9 @@
 
 
 		</div>
-
+<div class="col-lg-12 justify-content-center d-flex">
+			 <a><button id="register" title="Registrations will start soon!" disabled>Register Here</button></a>
+				</div>
 
 
 	</div>
@@ -317,43 +321,95 @@
 				    </div>
 
 				</div>
+				<!-- gold spons -->
+				<img src="imgs/sponsors/gold.png" id="divsponsor">
 				<div class="row d-flex justify-content-center align-items-center spon" >
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button " >
 						<a target="_blank" href="https://www.wolfram.com/?source=nav" target="_blank"><img src="imgs\sponsors\wolfram.png"></a>
 					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://rosenfeldmedia.com/" target="_blank"><img src="imgs/sponsors/rosenfeld-removebg-preview.png"></a>
-					</div>
+					
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://codingblocks.com/" target="_blank"><img src="imgs/sponsors/coding-blocks.png"></a>
 					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.sashido.io/en/" target="_blank"><img src="imgs/sponsors/sashi-do.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://echoar.xyz/" target="_blank"><img src="imgs/sponsors/echoAR.png"></a>
+					</div>
+
+				</div>
+
+
+				<!-- silver sponsors -->
+
+				<img src="imgs/sponsors/silver.png" id="divsponsor">
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
+					
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://rosenfeldmedia.com/" target="_blank"><img src="imgs/sponsors/rosenfeld-removebg-preview.png"></a>
+					</div>
+	
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.interviewcake.com" target="_blank"><img src="imgs/sponsors/InterviewCake_horizontal.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://balsamiq.com/" target="_blank"><img src="imgs/sponsors/balsamiq.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.framer.com/company/" target="_blank"><img src="imgs/sponsors/framer.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://interwebs.host/" target="_blank"><img src="imgs/sponsors/interwebshost.png"></a>
+					</div>
+					
+				</div>
+
+
+				<!-- bronze sponsors -->
+
+				<img src="imgs/sponsors/bronze.png" id="divsponsor">
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://www.taskade.com/" target="_blank"><img src="imgs/sponsors/taskade.png" style="height: 150px;width: 120px;"></a>
 					</div>
+
+				</div>
+
+
+
+				<!-- custom sponsors -->
+
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
+			
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://givemycertificate.com" target="_blank"><img src="imgs\sponsors\GMC_logo.png"></a>
 					</div>
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://streamyard.com" target="_blank"><img src="imgs/sponsors/streamyard.png"></a>
 					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://www.interviewcake.com" target="_blank"><img src="imgs/sponsors/InterviewCake_horizontal.png"></a>
-					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://balsamiq.com/" target="_blank"><img src="imgs/sponsors/balsamiq.png"></a>
-					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://www.sashido.io/en/" target="_blank"><img src="imgs/sponsors/sashi-do.png"></a>
-					</div>
+					
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://1password.com/" target="_blank"><img src="imgs/sponsors/1password.png"></a>
 					</div>
+
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://echoar.xyz/" target="_blank"><img src="imgs/sponsors/echoAR.png"></a>
+						<a target="_blank" href="https://1password.com/" target="_blank"><img src="imgs/sponsors/zulip.svg"  style="height: 150px;width: 120px;"></a>
 					</div>
+					
 
 				</div>
+
+
 	      </div>
         <div class="d-flex justify-content-center">
           <a href="mailto:spec@nith.ac.in" target="_blank"><button id="sponsorus">Want to Sponsor Us?</button></a>
@@ -627,7 +683,8 @@
 
 
 <!---------------------JS ------------------------->
-
+<!--baffle.js-->
+	<script src="js/animebaffle.js"></script>
   <!-------jquery----------->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

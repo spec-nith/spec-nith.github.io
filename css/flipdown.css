@@ -41,7 +41,7 @@
 }
 /* Rotor group headings */
 .flipdown.flipdown__theme-light .rotor-group-heading:before {
-  color: #EEEEEE;
+  color: #0c253b;
 }
 /* Delimeters */
 .flipdown.flipdown__theme-light .rotor-group:nth-child(n+2):nth-child(-n+3):before,
@@ -68,9 +68,13 @@
 
 /* END OF THEMES */
 
-.flipdown {
+.flipdown { 
+	
+	align-content: center;
+	align-items: center;
+	text-align: center;
   overflow: visible;
-  width: 510px;
+  width: 700px !important;
   height: 110px;
 }
 
@@ -78,6 +82,7 @@
   position: relative;
   float: left;
   padding-right: 30px;
+	
 }
 
 .flipdown .rotor-group:last-child {
