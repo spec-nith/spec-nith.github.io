@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>Electrothon'21</title>
-		
+
 		 <!--bootstrapCDN--->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-		
+
 		<!------CSS files ----->
 		<link rel="stylesheet" type="text/css" href="css/electrothon_main.css">
 		<link rel="stylesheet" type="text/css" href="css/flipdown.css">
@@ -21,7 +22,12 @@
 		<link rel="stylesheet" href = "css/bootstrap.min.css">
 		<link rel="stylesheet" href = "css/all.min.css">
 
-    
+    <link rel="shortcut icon" href="imgs/electrothon%20logo%202021%20(1).png"/>
+
+
+		<!--BAFFLE.JS LINK-->
+		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
 		<!------animate.css & aos----->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -31,21 +37,21 @@
 		<!------fontawesome---->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-        
-    
-	
+
+
+
     </head>
     <body>
        <div class="section">
-           
+
            <div class="context">
-			   
-			   
+
+
                <!--------------------- navbar starts here ----------->
-			   
+
                 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
                     <a id="brand" class="navbar-brand" href="index.html">
-                        <img src="imgs\logo.png" width="110" height="70" id="logo">
+                        <img src="imgs/electrothon%20logo%202021%20(1).png" width="80" height="70" id="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background: #fff;">
                         <span class="navbar-toggler-icon"></span>
@@ -83,53 +89,52 @@
             <!-- navbar ends here -->
 
     <!-- header section starts -->
-      <div id="title">
+      <div class="title">
             <span class="electrothontitle">ELECTROTHON 2K21</span><br>
-		    <span class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span>
+			<!-- <span id="tagb" class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span> -->
+			<span id="tagb" class="tagline " >|SEARCH|</span>
             <br>
-			<div id="title2">
-			<span >6th Feb - 8th Feb</span>
+			<div class="title2">
+			<span id="dates">6th Feb - 8th Feb</span>
 				</div>
         </div>
-			   
+
     <!-- header section ends -->
 
 	<!----------------About start------------------->
-    <div id="about" style="padding-top: 20px;">
+    <div class="about" style="padding-top: 20px;">
 			<div class="columnb">
 				<div class="row justify-content-center d-flex">
 					<div class="col-lg-12" >
 						<div id="about_img" class="bounce_button">
 						<img  src="imgs/about.jpg">
 						</div>
-					 
+
 					</div>
 					</div>
 		    </div>
 
 			<div class="columna" >
 				<div class="row justify-content-center d-flex">
-					
+
 			      <div class="col-lg-12">
 					<div id="about_hack" >
 						<h1 data-aos="zoom-in">ABOUT</h1>
 		                <hr class="abouthr">
 						<p data-aos="zoom-in">Join hundreds of participants in Electrothon - A plentitude of opportunities where enthusiastic minds could brainstorm on solutions for challenging issues through technology. Put your skills to the test, and you could win amazing prizes and sharpen your competitive edge. So be ready to caffeinate, collaborate and celebrate.</p>
 					</div>
-					
-					    <div class="col-lg-12">
+
+					    <div class="col-lg-12 ">
 						 <section id="count">
 			                <div id="countdown">
 			                     <div class="example">
 			                      <div id="flipdown" class="flipdown"></div>
-			       
-			                     </div> 
+			                     </div>
+			                     </div>
 			                </div>
 			                 <span id="countcontent">"Time was meaningless, except each moment was a countdown to the end."</span>
 		                  </section>
 						</div>
-					  
-					  
 					</div>
 			      </div>
 			</div>
@@ -138,9 +143,9 @@
 
 		<!----------about end------------------->
 
-    </div>    
+    </div>
     <!-- contect id div ends here -->
-            
+
 
             <div id="video" class="video-container">
                 <div class="color-overlay"></div>
@@ -152,15 +157,15 @@
     </div>
 
     <!-- class section div ends here-->
-            
-		
-		
+
+
+
 <!--------------------Diversity section-------------->
 	<a name="diversity"></a>
-	
+
 	<div class="curved">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,96L80,133.3C160,171,320,245,480,250.7C640,256,800,192,960,186.7C1120,181,1280,235,1360,261.3L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-		
+
 		<div id="diverse" class="jumbotron odd" >
 		<div class="row">
 			<div class="col-lg-6" id="diversity">
@@ -168,89 +173,91 @@
 				<hr class="diversityhr" align="center">
 				<p data-aos="zoom-in">A platform which provides an opportunity for women to meet their peers, interact with potential mentors, and to test their abaility to leverage technology to solve real-world problems. It's time for women participants to showcase their true talents and build ideas. Electrothon supports the theme - <span class="large">"Think equal, build smart, innovate for change"</span>, and promotes women developers around the globe. With that spirit, we invite women innovators, developers, creaters, designers and hackathon enthusiasts to showcase their projects and take them to the next level.</p>
 			</div>
-	
+
 			<div class="col-lg-6  d-flex justify-content-center female" id="female">
 				<div data-aos="fade-left">
 				<div class="about-img bounce_button">
 					<img src="imgs/diversity.jpg" id="female-img">
 				</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
 	<!--svg lower part-->
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,170.7C384,160,480,128,576,138.7C672,149,768,203,864,208C960,213,1056,171,1152,144C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-		
+
 	</div>
 	<!--------------------------------Diversity Section end--------------->
-		
-		
-		
-		
+
+
+
+
 
    <!-------------------Categories Section Stars----------->
 		<div id="categories">
 			<div class="row justify-content-center d-flex">
-				
+
 			<div class="col-lg-12 justify-content-center d-flex">
 				<div class="categories">
 			PROJECT CATEGORIES
 					<hr class="categorieshr">
-			</div>				
+			</div>
 				</div>
-	
-		
-		
+
+
+
 		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t1.png">			
-		</div>
-		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t2.png">			
+		<img src="imgs/t1.png">
 		</div>
 		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t3.png">			
+		<img src="imgs/t2.png">
 		</div>
 		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t4.png">			
+		<img src="imgs/t3.png">
 		</div>
 		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t5.png">			
+		<img src="imgs/t4.png">
 		</div>
-		
-		
+		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
+		<img src="imgs/t5.png">
 		</div>
-	
-	
-	
+
+
+		</div>
+<div class="col-lg-12 justify-content-center d-flex">
+			 <a><button id="register" title="Registrations will start soon!" disabled>Register Here</button></a>
+				</div>
+
+
 	</div>
-		
+
 <!---------------Gategories section end------>
 
-	
-	
-<!-- --------------timeline starts here ------>
-	
-	
 
-	
+
+<!-- --------------timeline starts here ------>
+
+
+
+
 
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,181.3C672,181,768,203,864,224C960,245,1056,267,1152,245.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 <section id="timeline">
 <div class="timeline_title" >TIMELINE </div>
-			
+
 	<div class='screenpart' id='part3'>
 			<hr class="timehr">
 		        <div id="exp_timeline"></div>
 		        <div>
-					
+
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Registration<br> Commences</p></div>
 		                    <div class="exp_poste"><p>12.00 A.M.</p></div>
 		                    <div class="exp_annee"><p>Dec 07, 2020</p></div>
 		                </div>
-		            </div>     
+		            </div>
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Registration<br> Ends</p></div>
@@ -264,14 +271,14 @@
 		                    <div class="exp_poste"><p>12.00 P.M.</p></div>
 		                    <div class="exp_annee"><p>Jan 10, 2021</p></div>
 		                </div>
-		            </div> 
+		            </div>
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Proposal <br>Shortlisting</p></div>
 		                    <div class="exp_poste"><p>12.00 P.M.</p></div>
 		                    <div class="exp_annee"><p>Jan 20, 2021</p></div>
 		                </div>
-		            </div> 
+		            </div>
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Electrothon <br>D-Day</p></div>
@@ -285,92 +292,147 @@
 		                    <div class="exp_poste"><p>Job</p></div>
 		                    <div class="exp_annee"><p>Date / Time</p></div>
 		                </div>
-		            </div> --> 
+		            </div> -->
 		        </div>
 		        <div>
-		            <div class="back"></div>  
-		            <div class="back"></div>  
-		            <div class="back"></div>  
-		            <div class="back"></div>  
-		            <div class="back"></div>  
+		            <div class="back"></div>
+		            <div class="back"></div>
+		            <div class="back"></div>
+		            <div class="back"></div>
+		            <div class="back"></div>
 		        </div>
-		
+
 	</div>
 </section>
-		
+
 <!--------------------timeline ends here--------------------->
-	
-	
-	
-	
-	
+
+
+
+
+
 	<!------------------ SPONSORS start---------------------------->
-	
+
 	<section id="sponsorss">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,90.7C384,75,480,53,576,58.7C672,64,768,96,864,106.7C960,117,1056,107,1152,96C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-		
+
 		<div id="sponsor">
 			<div class="container_sponsor">
 				<div class="row justify-content-center d-flex">
 					<div class="col-lg-12 justify-content-center d-flex">
-						
+
 					<div class="sponsor_title" data-aos="zoom-out">SPONSORS<br><hr class="sponsorhr"></div>
 				    </div>
-				
+
 				</div>
+				<!-- gold spons -->
+				<img src="imgs/sponsors/gold.png" id="divsponsor">
 				<div class="row d-flex justify-content-center align-items-center spon" >
-					
+
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button " >
 						<a target="_blank" href="https://www.wolfram.com/?source=nav" target="_blank"><img src="imgs\sponsors\wolfram.png"></a>
 					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://rosenfeldmedia.com/" target="_blank"><img src="imgs/sponsors/rosenfeld-removebg-preview.png"></a>
-					</div>
+					
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://codingblocks.com/" target="_blank"><img src="imgs/sponsors/coding-blocks.png"></a>
 					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.sashido.io/en/" target="_blank"><img src="imgs/sponsors/sashi-do.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://echoar.xyz/" target="_blank"><img src="imgs/sponsors/echoAR.png"></a>
+					</div>
+
+				</div>
+
+
+				<!-- silver sponsors -->
+
+				<img src="imgs/sponsors/silver.png" id="divsponsor">
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
+					
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://rosenfeldmedia.com/" target="_blank"><img src="imgs/sponsors/rosenfeld-removebg-preview.png"></a>
+					</div>
+	
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.interviewcake.com" target="_blank"><img src="imgs/sponsors/InterviewCake_horizontal.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://balsamiq.com/" target="_blank"><img src="imgs/sponsors/balsamiq.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.framer.com/company/" target="_blank"><img src="imgs/sponsors/framer.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://interwebs.host/" target="_blank"><img src="imgs/sponsors/interwebshost.png"></a>
+					</div>
+					
+				</div>
+
+
+				<!-- bronze sponsors -->
+
+				<img src="imgs/sponsors/bronze.png" id="divsponsor">
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://www.taskade.com/" target="_blank"><img src="imgs/sponsors/taskade.png" style="height: 150px;width: 120px;"></a>
 					</div>
+
+				</div>
+
+
+
+				<!-- custom sponsors -->
+
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
+			
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://givemycertificate.com" target="_blank"><img src="imgs\sponsors\GMC_logo.png"></a>
 					</div>
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://streamyard.com" target="_blank"><img src="imgs/sponsors/streamyard.png"></a>
 					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://www.interviewcake.com" target="_blank"><img src="imgs/sponsors/InterviewCake_horizontal.png"></a>
-					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://balsamiq.com/" target="_blank"><img src="imgs/sponsors/balsamiq.png"></a>
-					</div>
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://www.sashido.io/en/" target="_blank"><img src="imgs/sponsors/sashi-do.png"></a>
-					</div>
+					
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://1password.com/" target="_blank"><img src="imgs/sponsors/1password.png"></a>
 					</div>
+
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://echoar.xyz/" target="_blank"><img src="imgs/sponsors/echoAR.png"></a>
+						<a target="_blank" href="https://1password.com/" target="_blank"><img src="imgs/sponsors/zulip.svg"  style="height: 150px;width: 120px;"></a>
 					</div>
 					
+
 				</div>
+
+
 	      </div>
-		<a href="mailto:spec@nith.ac.in" target="_blank"><button id="sponsorus">Want to Sponsor Us?</button></a>
-	        <a href="mailto:spec@nith.ac.in" target="_blank"><button id="sponsorus">Contact Us</button></a>
-			
-		
+        <div class="d-flex justify-content-center">
+          <a href="mailto:spec@nith.ac.in" target="_blank"><button id="sponsorus">Want to Sponsor Us?</button></a>
+                <a href="mailto:spec@nith.ac.in" target="_blank"><button id="sponsorus">Contact Us</button></a>
+        </div>
+
+
+
 		</div>
 
 	</section>
-		
-	<!---------------------------sponsors section end------------------>	
-		
-		
-		
-	
+
+	<!---------------------------sponsors section end------------------>
+
+
+
+
 	<!----------TESTIMONIAL SECTION START-------------------------->
-	
+
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,250.7C480,267,600,245,720,229.3C840,213,960,203,1080,202.7C1200,203,1320,213,1380,218.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 	     <section class="testimonial-area" id="testimonial-area">
         <div class="container-fluid">
@@ -404,9 +466,9 @@
 	                <p class="name-testi">
 	                    <span>-Bhuvana Meenakshi Koteeswaran</span><br>
 	                    <span>(Mozilla Evangelist | Tech Speaker)</span>
-	                    
+
 	                </p>
-	                
+
 	              </div>
 	            </div>
 	            <div class="client row">
@@ -425,9 +487,9 @@
 	                <p class="name-testi">
 	                    <span>-Himanshu Shankar</span><br>
 	                    <span>(Entrepreneur | Product Developer)</span>
-	                    
+
 	                </p>
-	                
+
 	              </div>
 	            </div>
 	            <div class="client row">
@@ -446,9 +508,9 @@
 	                <p class="name-testi">
 	                    <span>-Prateek Narang</span><br>
 	                    <span>(Co-Founder Coding Blocks)</span>
-	                    
+
 	                </p>
-	                
+
 	              </div>
 	            </div>
 	            <div class="client row">
@@ -467,9 +529,9 @@
 	                <p class="name-testi">
 	                    <span>-Dr. Dharmendra Singh Yadav</span><br>
 	                    <span>(Officer In-Charge, SPEC)</span>
-	                    
+
 	                </p>
-	                
+
 	              </div>
 	            </div>
 	          </div>
@@ -477,15 +539,15 @@
         </div>
       </section>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,96L60,80C120,64,240,32,360,48C480,64,600,128,720,149.3C840,171,960,149,1080,128C1200,107,1320,85,1380,74.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-	
+
 		<!-----------------------TESTIMONIAL SECTION ENDS---------------------->
 
 
 
 
-	
+
 	<!--------------------------------FAQs start----------------------->
-	
+
 	<div id="FAQs">
 		<span class="faq_title"><h1  >FAQs</h1></span>
 		<hr class="faqhr">
@@ -574,83 +636,80 @@
 	</div>
  </div>
 
-	
-	
-	
-	
-		
-		
+
+
+
+
+
+
 		<!---- footer start -->
- 
+
 		<footer>
 		   <div class="container_footer">
-			   
-				   
+
+
 			  <div class="back-to-top">
-			    <a href="#video"><i class="fas fa-chevron-up"></i></a>  
+			    <a href="#video"><i class="fas fa-chevron-up"></i></a>
 			   </div>
-			   
+
 			   <div class="footer-content">
 			   <div class="footer-content-about animate-up">
-					<a href="https://hackcodeofconduct.org/2012-electrothon" target="_blank"><H4>Code Of Conduct</H4></a>	 
+					<a href="https://hackcodeofconduct.org/2012-electrothon" target="_blank"><H4>Code Of Conduct</H4></a>
 					  <h5><i class="far fa-envelope"></i> spec@nith.ac.in</h5>
-						 
-				 
-				   
+
+
+
 	 <div class="row d-flex justify-content-center align-items-center" id="social_icons">
-		<div class="d-sm-none d-lg-block col-lg-4"></div>
 			<div class="col-lg-4">
 				<div class="row">
-					<div class="col-sm-3 d-flex justify-content-center align-items-center">
+					<div class="col-3 d-flex justify-content-center align-items-center">
 						<a target="_blank" href="https://www.facebook.com/spec.ece/"><i class="fab fa-facebook-f fa-2x"></i></a></div>
-					
-					<div class="col-sm-3 d-flex justify-content-center align-items-center">
+
+					<div class="col-3 d-flex justify-content-center align-items-center">
 						<a target="_blank" href="https://instagram.com/s.p.e.c_nith?utm_source=ig_profile_share&igshid=1dd01jvv7xk83"><i class="fab fa-instagram fa-2x"></i></a></div>
-					
-					<div class="col-sm-3 d-flex justify-content-center align-items-center">
+
+					<div class="col-3 d-flex justify-content-center align-items-center">
 						<a target="_blank" href="https://www.linkedin.com/in/s-p-e-c-nith-40214b197/"><i class="fab fa-linkedin-in fa-2x"></i></a></div>
-					
-					<div class="col-sm-3 d-flex justify-content-center align-items-center">
+
+					<div class="col-3 d-flex justify-content-center align-items-center">
 						<a target="_blank" href="https://twitter.com/SPEC__NITH"><i class="fab fa-twitter fa-2x"></i></a></div>
 				</div>
 			</div>
-
-			<div class="d-sm-none d-lg-block col-lg-4"></div>
-
 		</div>
 </div>
-				 
+
 			   </div>
-			   
+
 			</div>
 		</footer>
-	
-	
-		
+
+
+
 
 <!---------------------JS ------------------------->
-    
+<!--baffle.js-->
+	<script src="js/animebaffle.js"></script>
   <!-------jquery----------->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		
+
   <!-- Bootstrap js file-->
-  <script src="js/bootstrap.min.js"></script>	
-				
-	<!---------JS files----->	
+  <script src="js/bootstrap.min.js"></script>
+
+	<!---------JS files----->
 	<script src="js/newfaq.js"></script>
 	<script src="js/testimonial_main.js"></script>
 	<script src="vendors/Owl-Carousel/js/owl.carousel.min.js"></script>
 	<script src="js/owl_carousel_theme.js"></script>
     <script type="text/javascript" src="js/flipdown.js"></script>
     <script type="text/javascript" src="js/electrothon_main.js"></script>
-    
+
     <!--Animate Script-->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 	  AOS.init();
 	</script>
-    
+
 	<!-----navbar------->
 	<script type="text/javascript">
 		    $(window).on('scroll',function(){
@@ -658,16 +717,16 @@
 					 $('nav').addClass('black');
 				 }
 				else
-					{  
+					{
 					  $('nav').removeClass('black');
 					}
 			})
 		</script>
-		
-    
-	   <!--------bootstrap ------->	
+
+
+	   <!--------bootstrap ------->
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-				
+
     </body>
 </html>
