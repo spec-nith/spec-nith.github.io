@@ -6,23 +6,17 @@ body{
 	align-content: center!important ;
 	text-decoration: none;
 	height: 100% !important;
-	
-
 }
-
-
 
 .pulse {
   animation-name: pulse;
   animation-duration: 1s;
 }
 
-
 a{
 
 	text-decoration: none!important;
 }
-
 
 @media screen and (max-width: 600px){
 	.tagline{
