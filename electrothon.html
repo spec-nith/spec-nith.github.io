@@ -21,12 +21,7 @@
 		<link rel="stylesheet" href="vendors/Owl-Carousel/css/owl.theme.default.min.css">
 		<link rel="stylesheet" href = "css/bootstrap.min.css">
 		<link rel="stylesheet" href = "css/all.min.css">
-
     <link rel="shortcut icon" href="imgs/electrothon%20logo%202021%20(1).png"/>
-
-
-		<!--BAFFLE.JS LINK-->
-		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 
 		<!------animate.css & aos----->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"/>
@@ -50,7 +45,7 @@
                <!--------------------- navbar starts here ----------->
 
                 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-                    <a id="brand" class="navbar-brand" href="index.html">
+                    <a id="brand" class="navbar-brand" href="electrothon.html">
                         <img src="imgs/electrothon%20logo%202021%20(1).png" width="80" height="70" id="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background: #fff;">
@@ -91,11 +86,10 @@
     <!-- header section starts -->
       <div class="title">
             <span class="electrothontitle">ELECTROTHON 2K21</span><br>
-			<!-- <span id="tagb" class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span> -->
-			<span id="tagb" class="tagline " >|SEARCH|</span>
+		    <span class="tagline " >SEARCH| PLAN| ENGAGE| CREATE</span>
             <br>
 			<div class="title2">
-			<span id="dates">6th Feb - 8th Feb</span>
+			<span >6th Feb - 8th Feb</span>
 				</div>
         </div>
 
@@ -326,7 +320,8 @@
 
 				</div>
 				<!-- gold spons -->
-				<img src="imgs/sponsors/gold.png" id="divsponsor">
+				<div id="divsponsor">Gold Sponsor</div>
+				<hr class="sponsorhr">
 				<div class="row d-flex justify-content-center align-items-center spon" >
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button " >
@@ -350,7 +345,8 @@
 
 				<!-- silver sponsors -->
 
-				<img src="imgs/sponsors/silver.png" id="divsponsor">
+				<div id="divsponsor">Silver Sponsor</div>
+				<hr class="sponsorhr">
 				<div class="row d-flex justify-content-center align-items-center spon" >
 
 					
@@ -379,7 +375,8 @@
 
 				<!-- bronze sponsors -->
 
-				<img src="imgs/sponsors/bronze.png" id="divsponsor">
+				<div id="divsponsor">Bronze Sponsor</div>
+				<hr class="sponsorhr">
 				<div class="row d-flex justify-content-center align-items-center spon" >
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
@@ -412,6 +409,47 @@
 					
 
 				</div>
+				
+								<!-- Community partner-->
+
+				<div id="divsponsor">Community Partner</div>
+				<hr class="sponsorhr">
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
+					
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://dsc.community.dev/university-of-wisconsin-madison/" target="_blank"><img src="imgs/sponsors/DSC.png"></a>
+					</div>
+	
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.ieeesbnitdgp.com/" target="_blank"><img src="imgs/sponsors/IEEE%20SB%20NITD%20logo.png"></a>
+					</div>
+
+					
+					
+				</div>
+
+									<!-- Media partner-->
+
+				<div id="divsponsor">Media Partner</div>
+				
+				<div class="row d-flex justify-content-center align-items-center spon" >
+
+					
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.jagran.com" target="_blank"><img src="imgs/sponsors/Dainik_Jagran_newspaper_logo-removebg-preview.png"></a>
+					</div>
+	
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.divyahimachal.com" target="_blank"><img src="imgs/sponsors/Divya-Himachal-removebg-preview.png"></a>
+					</div>
+
+					
+					
+				</div>
+				
+				
+				
 
 
 	      </div>
@@ -653,6 +691,9 @@
 			   </div>
 
 			   <div class="footer-content">
+				   <div class="m-3 col-lg-12 d-flex justify-content-center align-items-center"><a href="index.html">
+					   <img id="frontlogo" src="imgs/spec%20logo%20white.png" width="250" height="150"></a>
+				</div>
 			   <div class="footer-content-about animate-up">
 					<a href="https://hackcodeofconduct.org/2012-electrothon" target="_blank"><H4>Code Of Conduct</H4></a>
 					  <h5><i class="far fa-envelope"></i> spec@nith.ac.in</h5>
@@ -687,8 +728,7 @@
 
 
 <!---------------------JS ------------------------->
-<!--baffle.js-->
-	<script src="js/animebaffle.js"></script>
+
   <!-------jquery----------->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
