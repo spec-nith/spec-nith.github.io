@@ -6,6 +6,8 @@ body{
 	align-content: center!important ;
 	text-decoration: none;
 	height: 100% !important;
+	
+
 }
 
 
@@ -1085,7 +1087,7 @@ div .bounce_button:hover {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 25px;
+  width: 26px;
 	background: #212F3C;
 }
 
@@ -1098,11 +1100,64 @@ div .bounce_button:hover {
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	height: 10em !important;
-  background: #1F618D; 
+  background:  #3bb4e4; 
   border-radius: 10px !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #5DADE2; 
+  background: #1F618D; 
+}
+
+
+#preloader{
+pointer-events: none !important;
+	  position: fixed;
+    z-index: 1111; 
+   padding-top: 14%;
+	  background: black;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.preloader img {
+	
+    margin: auto;
+  	background:  no-repeat center;
+    background-size: 150px;
+    width: 270px;
+    height: 270px;
+	margin-right: 1em;
+}
+
+
+.preloader2 {
+  border: 5px solid #28d0e8;
+  border-top: 5px solid  #5d7de9;
+  border-radius: 50%;
+  width: 235px;
+  height: 230px;
+  animation: spin 1s ease-in-out infinite ;
+  position: relative;
+  margin: auto;
+  top: -250px;
+	
+	
+	
+}
+
+
+#preloader {
+  transition:.9s ease;
+}
+
+#context {
+  opacity:0;/*Remove display and hide opacity*/
+ }
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
