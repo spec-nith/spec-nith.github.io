@@ -69,6 +69,7 @@
 /* END OF THEMES */
 
 .flipdown { 
+	align-items: center!important;
 	
 	align-content: center;
 	align-items: center;
