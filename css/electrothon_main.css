@@ -8,19 +8,15 @@ body{
 	height: 100% !important;
 }
 
-
-
 .pulse {
   animation-name: pulse;
   animation-duration: 1s;
 }
 
-
 a{
 
 	text-decoration: none!important;
 }
-
 
 @media screen and (max-width: 600px){
 	.tagline{
@@ -124,18 +120,6 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*background video */
 
@@ -333,6 +317,7 @@ footer{
 	color: white;
 	font-size: 2rem;
 	padding: 2rem;
+	margin-bottom: 0;
 	animation: up 2s infinite;
 	text-decoration: none;
 
@@ -340,6 +325,7 @@ footer{
 
 .footer-content{
 	/*overflow:hidden*/
+	margin-top: 0;
 	text-decoration: none;
 
 }
@@ -417,14 +403,11 @@ height: 17em;
   z-index: 0;
 }
 	
-	.front_content .exp_entreprise{
-		font-size: 0.9em!important;
-	}
-	
+
 	.front {
 		text-align: center!important;
   position: absolute;
-  width: 15.6vw !important;
+  width: 15.7vw !important;
   background-color: #eaf3fb;
   color: #000;
   height: 19vw !important;
@@ -588,24 +571,31 @@ height: 17em;
 }
 .exp_entreprise {
   position: absolute;
-  top: 65% !important;
+  top: 68% !important;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.2vw;
+  font-size: 1.15vw;
   white-space: nowrap;
 }
+	
+	
+		.front_content .exp_entreprise{
+		font-size: 0.71em!important;
+	}
+	
+	
 .exp_poste {
   padding-top: 12%;
-  font-size: 0.6em !important;
+  font-size: 0.56em !important;
   position: absolute;
-  top: 14%;
+  top: 20% !important;
   left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .exp_annee {
   white-space: nowrap;
-  font-size: 0.6em !important;
+  font-size: 0.56em !important;
   position: absolute;
   bottom: 100% !important;
   left: 80%;
@@ -934,6 +924,8 @@ height: 17em;
 
 }
 
+
+
 .testimonialhr{
 	width: 12em;
 	background-color: #676e77;
@@ -946,8 +938,13 @@ height: 17em;
 }
 
 #divsponsor{
-			width: 35%;
-			height: 40%;
+	color: black;
+	
+			font-size: 2em;
+     text-align: center;
+	font-style: bold;
+	font-weight: 700 !important;
+	
 			margin-right: auto;
 			margin-left: auto;
 			display: block;
@@ -1066,4 +1063,83 @@ div .bounce_button:hover {
 
 #register:hover{
 	cursor:help;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 26px;
+	background: #212F3C;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 15px !important;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+	height: 10em !important;
+  background:  #3bb4e4; 
+  border-radius: 10px !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1F618D; 
+}
+
+
+#preloader{
+pointer-events: none !important;
+	  position: fixed;
+    z-index: 1111; 
+   padding-top: 14%;
+	  background: black;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.preloader img {
+	
+    margin: auto;
+  	background:  no-repeat center;
+    background-size: 150px;
+    width: 270px;
+    height: 270px;
+	margin-right: 1em;
+}
+
+
+.preloader2 {
+  border: 5px solid #28d0e8;
+  border-top: 5px solid  #5d7de9;
+  border-radius: 50%;
+  width: 235px;
+  height: 230px;
+  animation: spin 1s ease-in-out infinite ;
+  position: relative;
+  margin: auto;
+  top: -250px;
+	
+	
+	
+}
+
+
+#preloader {
+  transition:.9s ease;
+}
+
+#context {
+  opacity:0;/*Remove display and hide opacity*/
+ }
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

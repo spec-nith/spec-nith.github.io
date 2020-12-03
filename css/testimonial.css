@@ -19,6 +19,17 @@
     padding: 0rem 5rem;
 }
 
+@media screen and (max-width: 700px)
+{
+	.client{
+    background: #c6cdd2;
+    box-shadow: var(--box-shadow);
+    padding: 0.4em;
+    width: 96% !important;
+    border-radius: 3%;
+}
+	
+}
 
 
 .client{
