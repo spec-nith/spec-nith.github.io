@@ -14,6 +14,7 @@
 
 @media(max-width: 550px) {
   .example {
-    width: 400px !important;
+	
+    width: 450px !important;
     height: 160px;
   }
