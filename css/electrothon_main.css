@@ -275,6 +275,9 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 
+
+
+
 		#categories img{
 			border: 5px solid #212f3e;
 			height: 16em;
@@ -906,6 +909,18 @@ height: 17em;
 	font-size: 1em;
     
 }
+#sponsorus:hover{
+	margin-top: 100px;
+	width: 180px;
+	color: white !important;
+	height: 60px;
+    display: block;
+    text-align: center;
+	background: -webkit-linear-gradient(right, #0c253b,#2778be);
+	border-radius: 30px;
+	font-size: 1em;
+    
+}
 
 #register{
 	align-self: center;
@@ -1201,3 +1216,8 @@ pointer-events: none !important;
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
+
+
