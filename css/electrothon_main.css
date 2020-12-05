@@ -36,10 +36,12 @@ a{
 	}
 }
 
+
+
 @media screen and (min-width: 769px){
 	.title{
 		position: absolute;
-    top: 400px;
+    top: 300px;
     left: 0;
     right: 0;
     color: #fff;
@@ -900,14 +902,16 @@ height: 17em;
 }
 
 .spon{
-	margin-left: 3.5em!important;
-	margin-right: 3.5em!important;
+	padding: 0em !important;
+	margin-left: 15vw!important;
+	margin-right: 15vw!important;
 }
 
 .sponsor img{
 
-	padding: 1em 0em 1em 0em;
-  width:16rem;
+	padding: 0em 0em 0em 0em;
+  width:11rem;
+	
 }
 .mar img{
     margin: 1rem 0 2rem 0;
@@ -917,10 +921,18 @@ height: 17em;
 	margin-bottom: 0em;
 	margin-top: -1em;
 	font-size: 3.5em ;
+	font-weight: 500;
 	letter-spacing: 2px;
 	font-family: Manjari,sans-serif;
 }
 
+@media screen and (max-width: 700px){
+	.sponsor img{
+
+	padding: 1em 0em 1em 0em !important;
+  width:13rem !important;
+}
+}
 
 /***********hr*/
 
@@ -954,12 +966,12 @@ height: 17em;
 }
 
 #divsponsor{
-	color: black;
+	color: #141c27;
 
-			font-size: 2em;
+			font-size: 3em;
      text-align: center;
 	font-style: bold;
-	font-weight: 700 !important;
+	font-weight: 500 !important;
 
 			margin-right: auto;
 			margin-left: auto;
@@ -968,7 +980,7 @@ height: 17em;
 			padding-bottom: 30px;
 		}
 
-img #divsponsor{
+img #sponsor{
 
 }
 
