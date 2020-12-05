@@ -305,6 +305,36 @@ p,h1,h2,h3,h4,h5,h6{
 	padding: 0em 4em 0em 4em;
 }
 
+
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  top: 20%;
+  font-size: 13px;
+  height: 210px;
+  left: 27%;
+  margin-left: -60px;
+  background-color: #0c253b;
+  color: #fff;
+  border-radius: 20px;
+  
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.info:hover .tooltiptext {
+  visibility: visible;
+}
+
+
     /************************FOOTER********************/
 
 footer{
@@ -871,10 +901,10 @@ height: 17em;
 	height: 60px;
     display: block;
     text-align: center;
-	background:#0c253b;
+	background: -webkit-linear-gradient(left, #0c253b,#2778be);
 	border-radius: 30px;
-		font-size: 1em;
-
+	font-size: 1em;
+    
 }
 
 #register{

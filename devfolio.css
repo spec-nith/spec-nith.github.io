@@ -3,9 +3,9 @@
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-color: #3770FF;
-    border-radius: 3px;
-    border: none;
+    background-color:  #0c253b;
+    border-radius: 43px;
+    border: 1px solid #fff;
     color: #FFFFFF;
     cursor: pointer;
     display: -ms-flexbox;
@@ -26,9 +26,9 @@
     -ms-flex-align: center;
     -webkit-box-align: center;
     align-items: center;
-    background-color: #3770FF;
-    border-radius: 3px;
-    border: none;
+    background-color:  #0c253b;
+    border-radius: 43px;
+    border: 1px solid #fff;
     color: #FFFFFF;
     cursor: pointer;
     display: -ms-flexbox;
@@ -48,6 +48,7 @@
     cursor: pointer;
 }
 
-#devfolio-apply-now:hover {
+/*#devfolio-apply-now:hover {
     background-color: #2954BF !important;
 }
+*/
