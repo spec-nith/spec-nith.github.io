@@ -36,7 +36,7 @@ a{
 	}
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 769px){
 	.title{
 		position: absolute;
     top: 400px;
@@ -53,10 +53,10 @@ a{
 	}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 	.title{
 		position: absolute;
-    top: 140px;
+    top: 150px;
     left: 0;
     right: 0;
     color: #fff;
@@ -137,11 +137,27 @@ a{
   color: white;
 }
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+@media screen and (max-width: 600px){
+	.video-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.video_back{
+		width: 100vw;
+		height: 40vh;
+	}
+}
+
+@media screen and (min-width: 601px){
+	.video-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.video_back{
+		width: 100vw;
+	}
 }
 
 .color-overlay {
@@ -392,7 +408,7 @@ height: 23em;
 
 @media screen and (max-width: 700px) {
 .screenpart {
-	
+
 	text-align: center;
 	align-content: center;
 	align-items: center;
@@ -402,7 +418,7 @@ height: 17em;
   position: relative;
   z-index: 0;
 }
-	
+
 
 	.front {
 		text-align: center!important;
@@ -425,7 +441,7 @@ height: 17em;
   margin-top: 5em !important;
   z-index: 1;
 }
-	
+
 	#exp_timeline {
 	background: -webkit-linear-gradient(left, #0c253b,#eaf3fb);
   /*background-image: linear-gradient(
@@ -577,13 +593,13 @@ height: 17em;
   font-size: 1.15vw;
   white-space: nowrap;
 }
-	
-	
+
+
 		.front_content .exp_entreprise{
 		font-size: 0.71em!important;
 	}
-	
-	
+
+
 .exp_poste {
   padding-top: 12%;
   font-size: 0.56em !important;
@@ -602,11 +618,11 @@ height: 17em;
   transform: translate(-50%, -99%);
   text-align: center;
 }
-	
-	
-	
-	
-	
+
+
+
+
+
 }
 
 
@@ -939,12 +955,12 @@ height: 17em;
 
 #divsponsor{
 	color: black;
-	
+
 			font-size: 2em;
      text-align: center;
 	font-style: bold;
 	font-weight: 700 !important;
-	
+
 			margin-right: auto;
 			margin-left: auto;
 			display: block;
@@ -953,7 +969,7 @@ height: 17em;
 		}
 
 img #divsponsor{
-	
+
 }
 
 
@@ -1011,7 +1027,7 @@ div .bounce_button:hover {
 	margin-right: .5em;
 	margin-left: .5em;
 }
-	
+
 }
 
 
@@ -1033,7 +1049,7 @@ div .bounce_button:hover {
 			padding-top:  120px;
 			padding-bottom: 30px;
 		}
-	
+
 }
 
 
@@ -1075,27 +1091,27 @@ div .bounce_button:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px black; 
+  box-shadow: inset 0 0 5px black;
   border-radius: 15px !important;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	height: 10em !important;
-  background:  #3bb4e4; 
+  background:  #3bb4e4;
   border-radius: 10px !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #1F618D; 
+  background: #1F618D;
 }
 
 
 #preloader{
 pointer-events: none !important;
 	  position: fixed;
-    z-index: 1111; 
+    z-index: 1111;
    padding-top: 14%;
 	  background: black;
     width: 100%;
@@ -1104,7 +1120,7 @@ pointer-events: none !important;
 }
 
 .preloader img {
-	
+
     margin: auto;
   	background:  no-repeat center;
     background-size: 150px;
@@ -1124,9 +1140,9 @@ pointer-events: none !important;
   position: relative;
   margin: auto;
   top: -250px;
-	
-	
-	
+
+
+
 }
 
 
