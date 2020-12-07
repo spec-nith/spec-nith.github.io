@@ -280,8 +280,8 @@ p,h1,h2,h3,h4,h5,h6{
 
 		#categories img{
 			border: 5px solid #212f3e;
-			height: 16em;
-			width: 16em;
+			height: 17em ;
+			width: 17em;
 			transition: 0.9s;
 			padding: 0.8em;
 			margin: 2em;
@@ -293,7 +293,7 @@ p,h1,h2,h3,h4,h5,h6{
 	background: white;
 	box-shadow: 1px 1px 1px 1px;
 
-}
+} 
 
 
 		.categories{
@@ -1216,6 +1216,24 @@ pointer-events: none !important;
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
+
+
+.fst{
+	text-transform: capitalize !important;
+	margin-left: 5px;
+}
+
+
+#devfolio-apply-now{
+	text-transform:capitalize !important;
+	margin-right: .8em;
+	margin-left: .8em;
+}
+
+
 
 
 
