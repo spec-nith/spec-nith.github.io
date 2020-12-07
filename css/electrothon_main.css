@@ -1,4 +1,5 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');*/
+ @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,500&display=swap');
 
 body{
 	font-family: Manjari,sans-serif !important;
@@ -270,6 +271,11 @@ p,h1,h2,h3,h4,h5,h6{
 
 /********CATEGORIES******/
 
+
+
+
+
+
 .categorieshr{
 	width: 8em;
 }
@@ -311,31 +317,133 @@ p,h1,h2,h3,h4,h5,h6{
 
 
 
-.tooltiptext {
-  visibility: hidden;
-  width: 250px;
-  top: 20%;
-  font-size: 13px;
-  height: 210px;
-  left: 27%;
-  margin-left: -60px;
-  background-color: #0c253b;
-  color: #fff;
-  border-radius: 20px;
-  
-  padding: 10px;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
 
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
 
-.info:hover .tooltiptext {
-  visibility: visible;
+ .container {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     
+     width: 100%;
 }
+ .container .work-sample-card {
+     max-width: 300px;
+     height: 215px;
+     position: relative;
+     background-color: #fff;
+     margin: 50px 10px;
+     padding: 20px 15px;
+     display: flex;
+     flex-direction: column;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+     transition: 0.3s ease-in-out;
+     width: 100%;
+}
+ .container .work-sample-card:hover {
+     height: 360px;
+}
+ .container .work-sample-card:hover .content {
+     visibility: visible;
+     opacity: 1;
+     margin-top: -50px;
+     transition-delay: 0.3s;
+}
+ .container .work-sample-card:hover .titr {
+     opacity: 0;
+     visibility: hidden;
+}
+ .container .work-sample-card .imgBx {
+     position: relative;
+     height: 180px;
+     min-height: 180px;
+     max-height: 180px;
+     width: 100%;
+     top: -60px;
+     align-self: center;
+     z-index: 0;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: 50%;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+}
+ .container .work-sample-card .content {
+     margin-top: -140px;
+     padding: 10px 15px;
+     text-align: center;
+     visibility: hidden;
+     opacity: 0;
+     transition: 0.3s ease-in-out;
+}
+ .container .work-sample-card .content h2, .container .work-sample-card .content p {
+     color: #335;
+     margin: 0 0 7px;
+}
+ .container .work-sample-card .content .title {
+     font-size: 15px;
+}
+ .container .work-sample-card .content a {
+     text-decoration: none;
+     color: #01579b;
+}
+ .container .work-sample-card .titr {
+     transition: 0.3s ease-in-out;
+     width: 100%;
+     position: absolute;
+     bottom: 15px;
+     text-align: center;
+     right: 0px;
+     left: 0;
+}
+ .container .work-sample-card .titr h1 {
+     color: #003c6c;
+     font-size: 20px;
+}
+ @media only screen and (min-width: 768px) {
+     .work-sample-card {
+         margin: 30px 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+         .description{
+            font-size: 10px;
+            font-family: 'Spectral', serif;
+         }
+
+          .container .work-sample-card:hover {
+                 height: 420px;
+            }
+
+        
+}
+ 
+
+ .description{
+    font-size: 13px;
+   font-family: 'Spectral', serif;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /************************FOOTER********************/
