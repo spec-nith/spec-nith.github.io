@@ -1312,7 +1312,7 @@ pointer-events: none !important;
 
 
 #preloader {
-  transition:.9s ease;
+  transition:.6s ease;
 }
 
 #context {
