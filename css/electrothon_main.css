@@ -1045,6 +1045,77 @@ height: 17em;
 }
 
 
+
+/****************challenges section begins here*********************/
+
+.challenges{
+
+  margin-top: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+
+}
+
+
+.card{
+  background: #E5E7E9!important;
+  border-radius: 20px;
+  height: 370px;
+  border:1px solid #0c253b!important;
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 50px 0 50px 0!important;
+}
+
+.card img{
+  padding: 30px;
+}
+
+
+.card-body{
+
+      background: #0c253b;
+      border-radius: 50px 0 50px 0;
+      color: #fff;
+}
+
+.card-text{
+  font-size: 13px;
+  font-family: 'Spectral', serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/****************challenges section ends here*********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***** sponsor*****///
 
 
