@@ -422,7 +422,7 @@ p,h1,h2,h3,h4,h5,h6{
 
  .description{
     font-size: 13px;
-   font-family: 'Spectral', serif;
+   font-family: , serif;
  }
 
 
@@ -443,10 +443,17 @@ p,h1,h2,h3,h4,h5,h6{
 
 
 
-
+img .card-img-top{
+	align-content: center;
+	align-items: center;
+	align-self: center;
+}
 
 
     /************************FOOTER********************/
+
+
+
 
 footer{
 	margin-top: 5em !important;
@@ -597,7 +604,7 @@ height: 17em;
     #1c2b2d
   );*/
   height: 13vw !important;
-  width: 95% !important;
+  width: 95% !	important;
   margin: auto;
   margin-top: 5em !important;
   margin-left: 50%;
@@ -1049,25 +1056,40 @@ height: 17em;
 /****************challenges section begins here*********************/
 
 .challenges{
-
+margin-bottom: 7em !important;
   margin-top: 20px;
-  width: 90%;
+  width: 100%;
+	align-content: center;
+	align-items: center;
+	text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 50px;
 
 }
 
 
 .card{
-  background: #E5E7E9!important;
+  background: whitesmoke !important;
   border-radius: 20px;
   height: 370px;
   border:1px solid #0c253b!important;
   padding: 10px;
   margin-bottom: 50px;
   border-radius: 50px 0 50px 0!important;
+	transition: 0.9;
 }
+
+
+/*.card:hover{
+		transform: scale(1.1);
+	background: #E5E7E9 !important;
+	box-shadow: 1px 1px 1px 1px;
+	
+}*/
+
+
+
 
 .card img{
   padding: 30px;
@@ -1075,15 +1097,23 @@ height: 17em;
 
 
 .card-body{
-
-      background: #0c253b;
+     
+      background: #212F3C ; /*#0c253b*/
       border-radius: 50px 0 50px 0;
       color: #fff;
 }
 
+.card-body:hover{
+     
+      background: #2E4053; /*#0c253b*/
+      border-radius: 50px 0 50px 0;
+      color: #fff;
+}
+
+
 .card-text{
-  font-size: 13px;
-  font-family: 'Spectral', serif;
+  font-size: 12px;
+  font-family: , serif;
 }
 
 
@@ -1188,6 +1218,7 @@ height: 17em;
 	background-color: #676e77;
 
 }
+
 
 #divsponsor{
 	color: #141c27;
@@ -1416,5 +1447,164 @@ pointer-events: none !important;
 
 
 
+
+
+
+
+
+/* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+	
+margin-bottom: 0em !important;
+	
+   background-color: #0c253b!important;
+	padding: 0em 6em 0em 6em;
+}
+
+ .techhr{
+	width: 12em !important;
+	background-color: #676e77;
+
+}
+
+.below{
+	padding-top:2em;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+
+
+.card2{
+	border-radius: 1em;
+	padding: 1em !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0c253b;
+    border-color: #0c253b;
+}
+
+#team {
+	
+    padding: 60px 0;
+}
+
+#team .section-title {
+	font-size: 3em !important;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card2 {
+	
+    border: none;
+    background: whitesmoke;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card2,
+.backside .card2 {
+    min-height: 312px;
+}
+
+.backside .card2 a {
+    font-size: 18px;
+    color: #0c253b !important;
+}
+
+.frontside .card2 .card-title2,
+.backside .card2 .card-title2 {
+    color: #0c253b!important;
+}
+
+.frontside .card2 .card-body2 img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
 
 
