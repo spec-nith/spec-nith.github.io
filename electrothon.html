@@ -23,7 +23,8 @@
 		<link rel="stylesheet" href = "css/bootstrap.min.css">
 		<link rel="stylesheet" href = "css/all.min.css">
     <link rel="shortcut icon" href="imgs/electrothon%20logo%202021%20(1).png"/>
-
+ 
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!--BAFFLE.JS LINK-->
 		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 		<!------animate.css & aos----->
@@ -43,9 +44,9 @@
     <body onload="preloader()">
 
 			    <div class="preloaderBg" id="preloader" onload="preloader()">
-    <div class="preloader"> <img src="imgs/electrothon%20logo%202021%20(1).png"></div>
-    <div class="preloader2"></div>
-  </div>
+				    <div class="preloader"> <img src="imgs/electrothon%20logo%202021%20(1).png"></div>
+				    <div class="preloader2"></div>
+				</div>
 
        <div class="section">
 
@@ -59,7 +60,7 @@
                <!--------------------- navbar starts here ----------->
 
                 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light fixed-top">
-                    <a id="brand" class="navbar-brand" href="index.html">
+                    <a id="brand" class="navbar-brand" href="#">
                         <img src="imgs/electrothon%20logo%202021%20(1).png" width="75" height="70" id="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background: #fff;">
@@ -108,6 +109,9 @@
 				</div>
         <div class="col-lg-12 justify-content-center d-flex">
         			 <button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
+			
+	<a href="https://discord.gg/cjMMRs7tHs" target="_blank"><button id="devfolio-apply-now"> <img src="imgs/Discord-Logo-White.png" class="logo" style="height:40px;width:40px;margin-right:8px">Join our Discord</button></a>
+			         
 
         				</div>
         </div>
@@ -115,7 +119,7 @@
     <!-- header section ends -->
 
 	<!----------------About start------------------->
-    <div class="about" style="padding-top: 20px;">
+    <div class="about" style="padding-top: 20px;" id="about">
 			<div class="columnb">
 				<div class="row justify-content-center d-flex">
 					<div class="col-lg-12" >
@@ -162,7 +166,7 @@
 
             <div id="video" class="video-container">
                 <div class="color-overlay"></div>
-                <video autoplay loop height="100%" width="100%" muted>
+                <video class="video_back" autoplay loop muted>
                     <source src="imgs/bgvideo.mp4" type="video/mp4">
                 </video>
             </div>
@@ -208,33 +212,161 @@
 
 
    <!-------------------Categories Section Stars----------->
-		<div id="categories">
+	<div id="categories" >
 			<div class="row justify-content-center d-flex">
 
-			<div class="col-lg-12 justify-content-center d-flex">
-				<div class="categories">
-			PROJECT CATEGORIES
-					<hr class="categorieshr">
-			</div>
+				<div class="col-lg-12 justify-content-center d-flex ">
+					<div class="categories">
+				        PROJECT CATEGORIES
+						<hr class="categorieshr">
+				    </div>
 				</div>
 
 
 
-		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t1.png">
-		</div>
-		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t2.png">
-		</div>
-		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t3.png">
-		</div>
-		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t4.png">
-		</div>
-		<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex">
-		<img src="imgs/t5.png">
-		</div>
+			   <!--  <div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex info ">
+				
+				
+				<img class="content-image"  src="imgs/t1.png">
+			
+				</div>
+				<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex info">
+				<img src="imgs/t2.png">
+					 
+					
+				</div>
+				<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex info">
+				<img src="imgs/t3.png">
+				</div>
+				<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex info">
+				<img src="imgs/t4.png">
+				</div>
+				<div data-aos="zoom-in" class="col-lg-3 justify-content-center d-flex info">
+				<img src="imgs/t5.png">
+				</div> -->
+
+
+				<div class="row">
+                                    
+
+
+                                        
+                                      <div class="col-lg-4 col-md-6 col-sm-12">
+                                          
+                                            <section class="container">
+
+                                              <div class="work-sample-card">
+                                                  <div class="imgBx" style="background-image: url(imgs/t1.png)"></div>
+
+                                                  <div class="content">
+                                                   <!--  <h2 class="title">Description</h2> -->
+                                                    <p class="description">Wisdom in post industrial world is knowing when to advance forward and when to step back to consider the consequences of our decisions. While being cocooned by technology, we have dismissed the thoughts about things that nature, and not technology can provide. So get creative and lead your team on the quest to find the right balance.</p>
+                                                  </div>
+
+                                                  <div class="titr">
+                                                    <h1>I</h1>
+                                                  </div>
+                                              </div>
+
+                                            </section>
+
+
+                                      </div>
+
+
+                                      <div class="col-lg-4 col-md-6 col-sm-12">
+                                          
+                                            <section class="container">
+
+                                              <div class="work-sample-card">
+                                                  <div class="imgBx" style="background-image: url(imgs/t2.png)"></div>
+
+                                                  <div class="content">
+                                                   <!--  <h2 class="title">Description</h2> -->
+                                                    <p class="description">We all know at least one person who dreams of launching their own brand, or maybe you yourselves plan to do so. Browse this category for some of the problems faced by the organizations and individuals in the business, furthermore take upon the challenge to find creative solutions for these issues.</p>
+                                                  </div>
+
+                                                  <div class="titr">
+                                                    <h1>II</h1>
+                                                  </div>
+                                              </div>
+
+                                            </section>
+
+
+                                      </div>
+
+
+                                      <div class="col-lg-4 col-md-6 col-sm-12">
+                                          
+                                            <section class="container">
+
+                                              <div class="work-sample-card">
+                                                  <div class="imgBx" style="background-image: url(imgs/t3.png)"></div>
+
+                                                  <div class="content">
+                                                   <!--  <h2 class="title">Description</h2> -->
+                                                    <p class="description">Change is inevitable and let's accept that there is no going back to the routines we had before Corona hit us. But what we can do now is find ways to upgrade our lives and of those around us in the 'New Normal'. Well if your mind is changing gears while reading this then Congratulations! We proudly provide you a platform to shape your ideas.</p>
+                                                  </div>
+
+                                                  <div class="titr">
+                                                    <h1>III</h1>
+                                                  </div>
+                                              </div>
+
+                                            </section>
+
+
+                                      </div>
+
+                                      <div class="col-lg-6 col-md-6 col-sm-12">
+                                          
+                                            <section class="container">
+
+                                              <div class="work-sample-card">
+                                                  <div class="imgBx" style="background-image: url(imgs/t4.png)"></div>
+
+                                                  <div class="content">
+                                                    <!-- <h2 class="title">Description</h2> -->
+                                                    <p class="description">Technology has been tearing us apart in the epoch of time we are currently in, but there is one thing with the ability to bind us all together - Culture. What we need is the right balance between the two for the smooth functioning of this complex social institute called life. We invite you to work upon creating nuanced technology while respecting our culture.</p>
+                                                  </div>
+
+                                                  <div class="titr">
+                                                    <h1>IV</h1>
+                                                  </div>
+                                              </div>
+
+                                            </section>
+
+
+                                      </div>
+
+                                      <div class="col-lg-6 col-md-6 col-sm-12">
+                                          
+                                            <section class="container">
+
+                                              <div class="work-sample-card">
+                                                  <div class="imgBx" style="background-image: url(imgs/t5.png);"></div>
+
+                                                  <div class="content">
+<!--                                                     <h2 class="title">Description</h2> -->
+                                                    <p class="description">Once new products have been developed secretly and behind closed doors, today a targeted integration of customers, researchers, suppliers and partners into the innovation activities takes place. If none of the above mentioned categories excites you, you are free to come up with an innovation of your own.</p>
+                                                  </div>
+
+                                                  <div class="titr">
+                                                    <h1>V</h1>
+                                                  </div>
+                                              </div>
+
+                                            </section>
+
+
+                                      </div>
+                                      
+                        </div>
+
+
+
 
 
 		</div>
@@ -264,35 +396,35 @@
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Registration<br> Commences</p></div>
-		                    <div class="exp_poste"><p>12.00 A.M.</p></div>
+		                  <!--  <div class="exp_poste"><p>12.00 A.M.</p></div>-->
 		                    <div class="exp_annee"><p>Dec 07, 2020</p></div>
 		                </div>
 		            </div>
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Registration<br> Ends</p></div>
-		                    <div class="exp_poste"><p>12.00 P.M.</p></div>
-		                    <div class="exp_annee"><p>Dec 24, 2020</p></div>
+		                   <!-- <div class="exp_poste"><p>12.00 P.M.</p></div>-->
+		                    <div class="exp_annee"><p>Dec 30, 2020</p></div>
 		                </div>
 		            </div>
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Idea<br> Submission</p></div>
-		                    <div class="exp_poste"><p>12.00 P.M.</p></div>
+		                   <!-- <div class="exp_poste"><p>12.00 P.M.</p></div>-->
 		                    <div class="exp_annee"><p>Jan 10, 2021</p></div>
 		                </div>
 		            </div>
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Proposal <br>Shortlisting</p></div>
-		                    <div class="exp_poste"><p>12.00 P.M.</p></div>
+		                    <!--<div class="exp_poste"><p>12.00 P.M.</p></div>-->
 		                    <div class="exp_annee"><p>Jan 20, 2021</p></div>
 		                </div>
 		            </div>
 		            <div class="front">
 		                <div class="front_content">
 		                    <div class="exp_entreprise"><p>Electrothon <br>D-Day</p></div>
-		                    <div class="exp_poste"><p>09.00 A.M.</p></div>
+		                    <!--<div class="exp_poste"><p>09.00 A.M.</p></div>-->
 		                    <div class="exp_annee"><p>Feb 6, 2021</p></div>
 		                </div>
 		            </div>
@@ -318,13 +450,273 @@
 <!--------------------timeline ends here--------------------->
 
 
+<!-- ---------------challenges section begins here-------------- -->
 
+
+<section id="challenges">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,90.7C384,75,480,53,576,58.7C672,64,768,96,864,106.7C960,117,1056,107,1152,96C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+		<div class="row justify-content-center d-flex">
+					<div class="col-lg-12 justify-content-center d-flex">
+
+					<div class="sponsor_title" data-aos="zoom-out">CHALLENGES<br><hr class="sponsorhr"></div>
+				    </div>
+
+		</div>
+
+
+		<section class="challenges justify-content-center d-flex">
+					<div class="row justify-content-center d-flex">
+					  
+					                    
+
+					                    <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center d-flex">
+					                                  
+					                                  <div class="card" style="width: 18rem;">
+					                                    <img class="card-img-top" src="imgs/sponsors/tezos_2.png" alt="Card image cap">
+					                                    <div class="card-body">
+					                                      <h6 class="card-title">Requirements :</h6>
+					                                      <p class="card-text">The project must be Dapp built on  Tezos.</p>
+					                                      <h6 class="card-title">Prizes :</h6>
+					                                      <p class="card-text">1. ₹10,000 for best Dapp built on Tezos<br>
+					                                        2. ₹5000 for Runners-up Dapp built on Tezos
+
+					                                      </p>
+					                                    </div>
+					                                  </div>
+
+					                    </div>
+
+					                    <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center d-flex">
+					                                  
+					                                  <div class="card" style="width: 18rem;">
+					                                    <img class="card-img-top" src="imgs/sponsors/cipherschools.jpeg" alt="Card image cap">
+					                                    <div class="card-body">
+					                                    <h6 class="card-title">Requirements :</h6>
+					                                      <p class="card-text">The project must be involving <strong>Web Devlopment</strong>.</p>
+					                                      <h6 class="card-title">Prizes :</h6>
+					                                      <p class="card-text">1. 100% discount to the winners under the WebApp development category<br></p>
+					                                     
+					                                    </div>
+					                                  </div>
+
+					                    </div>
+
+					                    <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center d-flex">
+					                                  
+					                                  <div class="card" style="width: 18rem;">
+					                                    <img class="card-img-top" src="imgs/sponsors/portis_2.png" alt="Card image cap">
+					                                    <div class="card-body">
+					                                     <h6 class="card-title">Requirements :</h6>
+					                                      <p class="card-text">The project must be Dapp built on  Portis.</p>
+					                                      <h6 class="card-title">Prizes :</h6>
+					                                      <p class="card-text">1. ₹15,000 (in crypto) for best Dapp built on Portis<br>
+					                                      </p>
+					                                    </div>
+					                                  </div>
+
+					                    </div>
+
+					                    <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center d-flex">
+					                                  
+					                                  <div class="card" style="width: 18rem;height: 455px;">
+					                                    <img class="card-img-top" src="imgs/sponsors/matic_2.png" alt="Card image cap">
+					                                    <div class="card-body">
+					                                       <h6 class="card-title">Requirements :</h6>
+					                                      <p class="card-text">The project must be built on Ethereum or Ethereum and Matic.</p>
+					                                      <h6 class="card-title">Prizes :</h6>
+					                                      <p class="card-text">1. ₹10,000 for the best hack built on Ethereum <br>
+					                                       2. ₹15,000 for the best hack built on Ethereum + Matic<br>
+					                                       3. Eligibility to apply for internship/full-time roles and seed funding of up to 5,000 USD for winners!
+					                                      </p>
+					                                    </div>
+					                                  </div>
+
+					                    </div>
+
+					                    <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center d-flex">
+					                                  
+					                                  <div class="card" style="width: 18rem;height: 455px;">
+					                                    <img class="card-img-top" src="imgs/sponsors/echoAR_2.png" alt="Card image cap">
+					                                   
+					                                    <div class="card-body">
+					                                      <h6 class="card-title">Requirements :</h6>
+					                                      <p class="card-text">Winners MUST use the echoAR platform as part of their project to be eligible for a reward.</p>
+					                                      <h6 class="card-title">Prizes :</h6>
+					                                      <p class="card-text">1. $50 Amazon gift card(per team) <br>
+					                                       2. 1-month free Business Tier access(per team member)<br>
+					                                       3. Selected projects will be featured on our “Inspiration” Page
+					                                      </p>
+					                                    </div>
+					                                  </div>
+
+					                    </div>
+
+					                      <div class="col-lg-4 col-md-6 col-sm-12 justify-content-center d-flex">
+					                                  
+					                                  <div class="card justify-content-center d-flex" style="width: 18rem; height:455px;" >
+					                                    <img class="card-img-top " style="width: 250px;height: 100px;" src="imgs/sponsors/sashi-do.png" alt="Card image cap">
+					                                    <div class="card-body">
+					                                      <h6 class="card-title">Requirements :</h6>
+					                                      <p class="card-text">The participants must create a short overview of the project, the tech they've used, and post in on <a href="https://dev.to/">https://dev.to/</a> and then submit the link to us at <a href="team@sashido.io">team@sashido.io</a> for review and 3 most interesting projects will be selected.</p>
+					                                      <h6 class="card-title">Prizes :</h6>
+					                                      <p class="card-text">1. Short blog post for the top projects and special prizes. <br>
+					                                       2. Top posts will get re-shared through thier social media channels.<br>
+					                                       3. Proficient writing and speaking skills in English might be able to get an Internship.
+
+					                                      </p>
+					                                    </div>
+					                                  </div>
+
+					                    </div>
+
+
+
+
+
+					</div>
+
+</section> 
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+<!-- ---------------challenges section end here-------------- -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- Team -->
+<!--	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,181.3C672,181,768,203,864,224C960,245,1056,267,1152,245.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+<section id="team" class="pb-5">
+ 
+        <h5 class="section-title h1">TECH SPEAKERS </h5>
+	<hr class="techhr">
+        <div class="row d-flex justify-content-center below">
+			
+
+          <div class="col-xs-12 col-lg-6 col-md-6 d-flex justify-content-center">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card2">
+                                <div class="card-body2 text-center">
+                                    <p><img class=" img-fluid" src="img/tech_spkr_1.png" alt="card image"></p>
+                                    <h4 class="card-title2">Sunlimetech</h4>
+                                    <p class="card-text2">This is basic card with image on top, title, description and button.</p>
+                                    <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card2">
+                                <div class="card-body2 text-center mt-4">
+                                    <h4 class="card-title2">Sunlimetech</h4>
+                                    <p class="card-text2">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+			
+      <div class="col-xs-12 col-lg-6 col-md-6 d-flex justify-content-center">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card2">
+                                <div class="card-body2 text-center">
+                                    <p><img class=" img-fluid" src="img/tech_spkr_2.jpg" alt="card image"></p>
+                                    <h4 class="card-title2">Sunlimetech</h4>
+                                    <p class="card-text2">This is basic card with image on top, title, description and button.</p>
+                                    <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card2">
+                                <div class="card-body2 text-center mt-4">
+                                    <h4 class="card-title2">Sunlimetech</h4>
+                                    <p class="card-text2">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,160L48,165.3C96,171,192,181,288,170.7C384,160,480,128,576,138.7C672,149,768,203,864,208C960,213,1056,171,1152,144C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+-->
+
+
+	
+	
 
 
 	<!------------------ SPONSORS start---------------------------->
 
 	<section id="sponsorss">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,90.7C384,75,480,53,576,58.7C672,64,768,96,864,106.7C960,117,1056,107,1152,96C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+		
 
 		<div id="sponsor">
 			<div class="container_sponsor">
@@ -355,6 +747,27 @@
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://echoar.xyz/" target="_blank"><img src="imgs/sponsors/echoAR_2.png"></a>
 					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://devfolio.co/" target="_blank"><img src="imgs/sponsors/devfolio_2.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.digitalocean.com/" target="_blank"><img src="imgs/sponsors/do_2.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://matic.network/" target="_blank"><img src="imgs/sponsors/matic_2.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.portis.io/" target="_blank"><img src="imgs/sponsors/portis_2.png"></a>
+					</div>
+
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://tezos.com/" target="_blank"><img src="imgs/sponsors/tezos_2.png"></a>
+					</div>
+
 
 				</div>
 
@@ -401,34 +814,28 @@
 				<div class="row d-flex justify-content-center align-items-center spon" >
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://www.taskade.com/" target="_blank"><img src="imgs/sponsors/taskade.png" style="height: 150px;width: 120px;"></a>
+						<a target="_blank" href="https://www.taskade.com/" target="_blank"><img src="imgs/sponsors/taskade.png"></a>
 					</div>
 
-                    <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://workshopxr.in/" target="_blank"><img src="imgs/sponsors/aiborne.png"></a>
 					</div>
-				</div>
-
-
-
-				<!-- custom sponsors -->
-
-				<div class="row d-flex justify-content-center align-items-center spon" >
+				
 
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://givemycertificate.com" target="_blank"><img src="imgs\sponsors\GMC_logo.png"></a>
+						<a target="_blank" href="https://givemycertificate.com" target="_blank"><img src="imgs\sponsors\GMC_logo.png" ></a>
 					</div>
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://streamyard.com" target="_blank"><img src="imgs/sponsors/streamyard.png"></a>
 					</div>
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://1password.com/" target="_blank"><img src="imgs/sponsors/1password.png"></a>
+						<a target="_blank" href="https://1password.com/" target="_blank"><img src="imgs/sponsors/1password.png"  ></a>
 					</div>
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://1password.com/" target="_blank"><img src="imgs/sponsors/zulip.svg"  style="height: 150px;width: 120px;"></a>
+						<a target="_blank" href="https://zulip.com/" target="_blank"><img src="imgs/sponsors/zulip-logo-gradient.png"  ></a>
 					</div>
 
 
@@ -458,15 +865,16 @@
 				<div id="divsponsor">Media Partner</div>
 				<hr class="sponsorhr">
 				<div class="row d-flex justify-content-center align-items-center spon" >
-
+ 
+					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
+						<a target="_blank" href="https://www.divyahimachal.com" target="_blank"><img src="imgs/sponsors/Divya-Himachal-removebg-preview.png"></a>
+					</div>
 
 					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
 						<a target="_blank" href="https://www.jagran.com" target="_blank"><img src="imgs/sponsors/Dainik_Jagran_newspaper_logo-removebg-preview.png"></a>
 					</div>
 
-					<div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center sponsor mar bounce_button">
-						<a target="_blank" href="https://www.divyahimachal.com" target="_blank"><img src="imgs/sponsors/Divya-Himachal-removebg-preview.png"></a>
-					</div> --
+					 
 
 
 
@@ -489,10 +897,8 @@
 	</section>
 
 	<!---------------------------sponsors section end------------------>
-
-
-
-
+	
+	
 	<!----------TESTIMONIAL SECTION START-------------------------->
 
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c253b" fill-opacity="1" d="M0,128L60,154.7C120,181,240,235,360,250.7C480,267,600,245,720,229.3C840,213,960,203,1080,202.7C1200,203,1320,213,1380,218.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
@@ -611,16 +1017,16 @@
 	<!--------------------------------FAQs start----------------------->
 
 	<div id="FAQs">
-		<span class="faq_title"><h1  >FAQs</h1></span>
+		<span class="faq_title"><h1>FAQs</h1></span>
 		<hr class="faqhr">
 		<div class="accordion">
 		  <div class="accordion-item">
 		    <div class="accordion-item-header">
-		      Do I need to have some specific qualification to be a participant for the Electrothon?
+		      Do I need to have some specific qualifications to be a participant for the Electrothon?
 		    </div>
 		    <div class="accordion-item-body">
 		      <div class="accordion-item-body-content">
-		        Yes, you must be a student from any University/College in India.
+		        Yes, you must be a student from any designated University/College.
 		      </div>
 		    </div>
 		  </div>
@@ -630,7 +1036,7 @@
 		    </div>
 		    <div class="accordion-item-body">
 		      <div class="accordion-item-body-content">
-		        Apart from the technologies mention on the website, we have an Innovation section, in which the participants can give their own ideas on recent technologies.
+		       You can propose solutions based on the themes mentioned in the project category. Technology does not matter.
 		      </div>
 		    </div>
 		  </div>
@@ -640,7 +1046,7 @@
 		    </div>
 		    <div class="accordion-item-body">
 		      <div class="accordion-item-body-content">
-		        Yes, there is no restriction here.
+		     Yes, there is no restriction here. We also welcome inter-college teams.
 		      </div>
 		    </div>
 		  </div>
@@ -656,11 +1062,11 @@
 		  </div>
 		  <div class="accordion-item">
 		    <div class="accordion-item-header">
-		      What is selection criteria?
+		      What are the selection criteria?
 		    </div>
 		    <div class="accordion-item-body">
 		      <div class="accordion-item-body-content">
-		        Evaluation criteria will include novelty of the idea, complexity, clarity and details in the prescribed format, feasibility, practicability, sustainability, scale of impact, user experience and potential for future work progression.scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+		     Evaluation criteria will include novelty of the idea, complexity, clarity and details in the prescribed format, feasibility, practicability, sustainability, scale of impact, user experience and potential for future prospects.
 		      </div>
 		    </div>
 		  </div>
@@ -670,7 +1076,7 @@
 		    </div>
 		    <div class="accordion-item-body">
 		      <div class="accordion-item-body-content">
-		        The winners will be awarded prizes worth 30k. The participants will get a certificate of participation and a platform to showcase their talent to get more exposure.
+		     The winners will be awarded prizes worth 30k. The short-listed participants will get certificates, schwags and a platform to showcase their talents. There will be special prizes for the best hack built on the APIs and SDKs of the partner companies.
 		      </div>
 		    </div>
 		  </div>
@@ -680,18 +1086,49 @@
 		    </div>
 		    <div class="accordion-item-body">
 		      <div class="accordion-item-body-content">
-		        We want to create an environment that embraces new ideas and technology solutions at the industry level. A place where technology designers and developers can come to help real life problems which can be solved through engineering. We know it takes longer than a weekend to build great solutions, but this is ample time to form teams of good people and begin creating great solutions.
+We want to create an environment that embraces new ideas and technology solutions at the industry level. A place where technology designers and developers can come to help real life problems which can be solved through engineering. We know it takes longer than a weekend to build great solutions, but this is ample time to form teams of good people and begin creating great solutions.
 		      </div>
 		    </div>
 		  </div>
 		  <div class="accordion-item">
 		    <div class="accordion-item-header">
-		      How does SPEC promote diversity?
+		      How does Electrothon promote diversity?
 		    </div>
 		    <div class="accordion-item-body">
 		      <div class="accordion-item-body-content">
-		       To promote active participation of females, we encourage female participation via targeted events/workshops. Also, we strictly follow our code of conduct to make a welcoming, safe and comfortable environment for everyone.
-		To ensure this, we have separate reserved seats for female participants as well as cash prizes up to Rs. 5000 for the best female-only team.
+		       To promote active participation of females, we encourage female participation via targeted events/workshops. Also, we strictly follow our code of conduct to make a welcoming, safe and comfortable environment for everyone. To ensure this, we have separate prizes worth 10k for the best female-only team.
+		      </div>
+		    </div>
+		  </div>
+			
+			 <div class="accordion-item">
+		    <div class="accordion-item-header">
+		Do we need to apply in teams?
+		    </div>
+		    <div class="accordion-item-body">
+		      <div class="accordion-item-body-content">
+		     Yes, the hackathon requires you to register in a team of a minimum of 2 and a maximum of 4 participants.
+		      </div>
+		    </div>
+		  </div>
+			
+			 <div class="accordion-item">
+		    <div class="accordion-item-header">
+		    Are there any sponsored challenges and API prizes?
+		    </div>
+		    <div class="accordion-item-body">
+		      <div class="accordion-item-body-content">
+		      There will be API prizes from multiple sponsors to build a hack on top of their APIs or SDKs. Keep an eye out on the website and social media handles, where we'll be adding more ideas to hack on closer to the event. Teams are free to pick from them as well.
+		      </div>
+		    </div>
+		  </div>
+			 <div class="accordion-item">
+		    <div class="accordion-item-header">
+		   What if I have more queries?
+		    </div>
+		    <div class="accordion-item-body">
+		      <div class="accordion-item-body-content">
+		   You can reach out to us any time at spec@nith.ac.in as well as our social media platforms
 		      </div>
 		    </div>
 		  </div>
@@ -793,7 +1230,7 @@
 		var preload= document.getElementById('preloader');
 
 function preloader() {
-  preloadTime = setTimeout(showPage, 2500);
+  preloadTime = setTimeout(showPage, 100);
 }
 
 
