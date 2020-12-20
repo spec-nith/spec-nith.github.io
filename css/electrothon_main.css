@@ -421,6 +421,7 @@ p,h1,h2,h3,h4,h5,h6{
  
 
  .description{
+	 font-weight: 600;
     font-size: 13px;
    font-family: , serif;
  }
@@ -1370,6 +1371,12 @@ aside:hover section{
 	margin-left: 15vw!important;
 	margin-right: 15vw!important;
 }
+
+.cps img{
+	width:8rem !important;
+	height: auto
+}
+
 
 .sponsor img{
 
