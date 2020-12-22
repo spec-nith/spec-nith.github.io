@@ -67,6 +67,19 @@ body{font-family: Manjari,sans-serif;
 
 
 	/*****************IMG border************/
+
+
+
+
+#carouselExampleControls{
+	width: 80% !important;
+}
+
+
+
+
+
+
 	.about-img{
 		position: relative;
 			align-content: center ;
