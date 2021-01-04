@@ -1716,6 +1716,9 @@ margin-bottom: 0em !important;
 	padding-right: 7vw;
 }
 
+.flip{
+	margin-bottom: 4.7em !important;
+}
 
 .card2{
 	border-radius: 1em;
@@ -1795,6 +1798,7 @@ margin-bottom: 0em !important;
 }
 
 .backside {
+	
     position: absolute;
     top: 0;
     left: 0;
@@ -1807,6 +1811,10 @@ margin-bottom: 0em !important;
     -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.speak img {
+	 width: 15em !important;
 }
 
 .frontside,
@@ -1831,6 +1839,8 @@ margin-bottom: 0em !important;
 .backside .card2 {
     min-height: 312px;
 }
+
+
 
 .backside .card2 a {
     font-size: 18px;
