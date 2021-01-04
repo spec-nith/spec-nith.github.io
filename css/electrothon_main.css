@@ -310,7 +310,7 @@ p,h1,h2,h3,h4,h5,h6{
 		}
 
 #categories{
-	margin-bottom: 0em;
+	margin-bottom: 3em;
 	padding: 0em 4em 0em 4em;
 }
 
@@ -341,7 +341,7 @@ p,h1,h2,h3,h4,h5,h6{
      width: 100%;
 }
  .container .work-sample-card:hover {
-     height: 360px;
+     height: 376px;
 }
  .container .work-sample-card:hover .content {
      visibility: visible;
@@ -459,7 +459,7 @@ img .card-img-top{
 footer{
 	margin-top: 5em !important;
 	text-align: center;
-	padding: 5em;
+	padding: 2em 2em 3em 2em !important;
 	background-color: #141c27;
 	color: white;
 	position: relative;
@@ -475,6 +475,7 @@ footer{
 	left:50%;
 	transform: translateX(-50%);
 	border-radius: 50%;
+	
 	text-decoration: none;
 
 }
@@ -504,23 +505,45 @@ footer{
 	font-size:1.7rem;
 
 	font-weight: 300;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 .footer-content h5{
 	color: aliceblue;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
+}
+#social_icons{
+	
+	padding: 0 2em 0 2em;
 }
 
 #social_icons i{
+	
+	
 	color: aliceblue;
 	!important;
 
 }
 
 #social_icons i:hover{
-	opacity: -2;
-	transition: 2s;
-	color: aliceblue;
+	
+	transition: .4s;
+	transform: scale(1.1);
+}
+
+@media screen and (min-width: 740px){
+	.designed{
+	margin-top: 4em;
+		padding-left: 8vw !important;
+	padding-right: 8vw !important;
+	
+}
+}
+
+@media screen and (max-width: 700px) {
+		.designed{
+			padding-right: 1em !important;
+			margin-top: 4em;
+	padding: 20px !important; }
 }
 
 
@@ -1057,8 +1080,8 @@ height: 17em;
 /****************challenges section begins here*********************/
 
 .challenges{
-margin-bottom: 7em !important;
-  margin-top: 20px;
+margin-bottom: 2em !important;
+  margin-top: 2em;
   width: 100%;
 	align-content: center;
 	align-items: center;
@@ -1099,7 +1122,7 @@ aside {
 aside:hover {
   
   border-radius: 5px;
-  height: 430px;
+  height: 480px;
   width: 350px;
   box-shadow: 0 0 70px 10px #fff;
 }
@@ -1655,9 +1678,10 @@ pointer-events: none !important;
 
 
 #devfolio-apply-now{
+	border-radius: 22px !important;
 	text-transform:capitalize !important;
-	margin-right: .8em;
-	margin-left: .8em;
+	margin-top: .5em;
+	
 }
 
 
@@ -1692,6 +1716,9 @@ margin-bottom: 0em !important;
 	padding-right: 7vw;
 }
 
+.flip{
+	margin-bottom: 4.7em !important;
+}
 
 .card2{
 	border-radius: 1em;
@@ -1718,7 +1745,7 @@ margin-bottom: 0em !important;
 }
 
 #team .section-title {
-	font-size: 3em !important;
+	font-size: 2em !important;
     text-align: center;
     color: white;
     margin-bottom: 50px;
@@ -1771,6 +1798,7 @@ margin-bottom: 0em !important;
 }
 
 .backside {
+	
     position: absolute;
     top: 0;
     left: 0;
@@ -1783,6 +1811,10 @@ margin-bottom: 0em !important;
     -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.speak img {
+	 width: 15em !important;
 }
 
 .frontside,
@@ -1808,6 +1840,8 @@ margin-bottom: 0em !important;
     min-height: 312px;
 }
 
+
+
 .backside .card2 a {
     font-size: 18px;
     color: #0c253b !important;
@@ -1819,9 +1853,181 @@ margin-bottom: 0em !important;
 }
 
 .frontside .card2 .card-body2 img {
+	padding: 2em;
     width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    height: 190px;
+   
+}
+
+/***********problem statement**/
+
+.pbs{
+	border-radius: 10px;
+	background-color: #0c253b;
+	color: aliceblue;
+}
+
+.pbs:hover{
+	border-radius: 10px;
+	background-color: #1F618D;
+	color: aliceblue;
+}
+
+.chal{
+	font-size:1em !important;
+	border-radius: 10px;
+	background-color: #1F618D;
+	color: aliceblue;
+}
+
+.chal:hover{
+	border-radius: 10px;
+	background-color:  #0c253b;
+	color: aliceblue;
+}
+/***icons***/
+
+ .discord{
+		background-color: #7289da;
+	color:white;
+}
+
+.icons{
+	z-index: 99;
+	position: fixed;
+	top:40%;
+	left:0%;
+	width: 180px;
+	display:flex;
+	flex-direction: column;
+}
+
+.icons a{ 
+
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 9px;
+	font-size: 19px;
+	font-family: Oswald , sans-serif;
+	margin:1px;
+	text-align: right;
+	border-radius: 0px 50px 50px 0px;
+	transform: translate( -139px, 0px);
+	transition: 1s;
+}
+.icons a:hover{
+	transform: translate( 0px, 0px);
+	color: black;
+}
+
+.icons a i{
+	margin-left: 0.8em;
+	margin-right: 0.5em;
+	
 }
 
 
+
+.facebook{
+	background-color: darkslateblue;
+	color:white;
+}
+
+.youtube{
+	background-color: red;
+	color:white;
+}
+
+.twitter{
+	background-color: deepskyblue;
+	color:white;
+}
+
+.instagram{
+	background-color: crimson;
+	color:white;
+}
+
+.linkedin{
+	background-color:blue;
+		color:white;
+}
+
+/***********designed*********8/
+
+.client-imgd{
+    /* width: max-content;
+    height: max-content; */
+    /* border: 10px solid #fff;
+    border-radius: 100%; */
+    width: 100%;
+}
+.headshotd{
+    max-width: 21;
+    max-height: 21vh;
+    object-position: top;
+    object-fit: cover;
+    padding: 0.7rem;
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s ease;
+  }
+.profile_imgd{
+	width: 65%;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    margin: auto;
+    display: grid;
+    text-align: center;
+   
+    
+  }
+  .profile_imgd img{
+	  margin: 0 1em 0 1em;
+	  border: 2px solid white;
+	  width: 6em !important;
+	  height: 6em !important;
+    border-radius: 50%;
+  }
+.footer-content-about {
+padding: 2em;
+}
+
+.sociald{
+    transition: 0.5s ease;
+    margin: auto;
+    transform: scale(2);
+    opacity: 0;
+    margin-top: 40%;
+  }
+  .profile_imgd:hover .headshotd{
+    filter: brightness(50%) drop-shadow(1px 1px 8px #313131);
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    
+  }
+
+h5 .des{
+	font-size: 1.2em;
+}
+
+.named{
+	font-size: 1em !important;
+	margin-top: 1em;
+}
+
+  .profile_imgd h5{
+	margin-top:1em !important;
+}
+  
+.profile_img p{
+	font-size82em !important ;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #fff;
+    padding-bottom: 7%;
+  } 
+  .profile_imgd:hover .sociald{
+	  
+    transition: 0.5s ease;
+    opacity: 1;
+  }
