@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');*/
+  /*@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');*/
  @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,500&display=swap');
 
 body{
@@ -225,6 +225,7 @@ nav.black{
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 400;
+    font-size: 13px;
     padding: 0 30px!important;
     /* border: 2px solid red; */
 /*    margin: 10px 0px;*/
