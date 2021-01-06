@@ -465,7 +465,7 @@ img .card-img-top{
 footer{
 	margin-top: 5em !important;
 	text-align: center;
-	padding: 2em 2em 3em 2em !important;
+	padding: 2em 2em 2em 2em !important;
 	background-color: #141c27;
 	color: white;
 	position: relative;
@@ -538,17 +538,21 @@ footer{
 
 @media screen and (min-width: 740px){
 	.designed{
-	margin-top: 4em;
-		padding-left: 8vw !important;
-	padding-right: 8vw !important;
+		align-content: center;
+		text-align: center;
+	margin-top: 2em;
+		padding-left: 9vw !important;
+	padding-right: 9vw !important;
 	
 }
 }
 
 @media screen and (max-width: 700px) {
 		.designed{
+			margin-left: -2.7em !important;
+			padding-left: 1em !important;
 			padding-right: 1em !important;
-			margin-top: 4em;
+			margin-top: 1em;
 	padding: 20px !important; }
 }
 
@@ -1956,7 +1960,7 @@ margin-bottom: 0em !important;
 }
 
 .linkedin{
-	background-color:blue;
+	background-color: #0e76a8;
 		color:white;
 }
 
@@ -1992,12 +1996,41 @@ margin-bottom: 0em !important;
   .profile_imgd img{
 	  margin: 0 1em 0 1em;
 	  border: 2px solid white;
-	  width: 6em !important;
-	  height: 6em !important;
+	  width: 8em !important;
+	  height: 8em !important;
     border-radius: 50%;
   }
+
+@media screen and (max-width: 700px){
+	.footer-content-about {
+	color: white;
+padding: 1em;
+		margin-left: -1.4em !important;
+	margin-top: 1.5em;
+	text-align: left!important;
+}
+}
+	
 .footer-content-about {
+	color: white;
 padding: 2em;
+	margin-left: 0em;
+	margin-top: 1.5em;
+	text-align: left !important;
+}
+
+.discordf{
+	margin-left: -0.2em;
+}
+
+#frontlogo{
+	margin-top: 3em;
+}
+
+.footer-content-about h5:hover{
+	color: skyblue;
+
+	text-align: left !important;
 }
 
 .sociald{
@@ -2018,9 +2051,19 @@ h5 .des{
 	font-size: 1.2em;
 }
 
+a .named:hover{
+	color: skyblue;
+	transform: translate(1.1);
+	
+}
+
+a .named{
+	transition: 0.3s;
+}
+
 .named{
 	font-size: 1em !important;
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 
   .profile_imgd h5{
@@ -2028,7 +2071,7 @@ h5 .des{
 }
   
 .profile_img p{
-	font-size82em !important ;
+	font-size: 2em !important ;
     font-family: 'Helvetica Neue', sans-serif;
     color: #fff;
     padding-bottom: 7%;
