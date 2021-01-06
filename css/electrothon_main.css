@@ -540,7 +540,7 @@ footer{
 	.designed{
 		align-content: center;
 		text-align: center;
-	margin-top: 2em;
+	margin-top: 3em;
 		padding-left: 9vw !important;
 	padding-right: 9vw !important;
 	
@@ -1089,9 +1089,14 @@ height: 17em;
 
 /****************challenges section begins here*********************/
 
+#challenges{
+	margin-top: 4em !important;
+}
+
+
 .challenges{
-margin-bottom: 2em !important;
-  margin-top: 2em;
+margin-bottom: 1em !important;
+  margin-top: 1em !important;
   width: 100%;
 	align-content: center;
 	align-items: center;
@@ -1401,8 +1406,8 @@ aside:hover section{
 
 .spon{
 	padding: 0em !important;
-	margin-left: 15vw!important;
-	margin-right: 15vw!important;
+	margin-left: 16vw!important;
+	margin-right: 16vw!important;
 }
 
 .cps img{
@@ -1414,7 +1419,8 @@ aside:hover section{
 .sponsor img{
 
 	padding: 0em 0em 0em 0em;
-  width:11rem;
+  width:10rem;
+	
 	
 }
 .mar img{
@@ -1473,7 +1479,7 @@ aside:hover section{
 #divsponsor{
 	color: #141c27;
 
-			font-size: 3em;
+			font-size: 2.4em;
      text-align: center;
 	font-style: bold;
 	font-weight: 500 !important;
@@ -1786,6 +1792,10 @@ margin-bottom: 0em !important;
     transform: rotateY(180deg);
 }
 
+.card-text2{
+	font-size: 1em;
+}
+
 .mainflip {
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
@@ -1808,7 +1818,7 @@ margin-bottom: 0em !important;
 }
 
 .backside {
-	
+	padding: 2px !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -1849,6 +1859,7 @@ margin-bottom: 0em !important;
 .backside .card2 {
     min-height: 312px;
 }
+
 
 
 
