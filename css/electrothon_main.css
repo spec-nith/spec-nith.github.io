@@ -465,7 +465,7 @@ img .card-img-top{
 footer{
 	margin-top: 5em !important;
 	text-align: center;
-	padding: 2em 2em 2em 2em !important;
+	padding: 2em 2em 0em 2em !important;
 	background-color: #141c27;
 	color: white;
 	position: relative;
@@ -2048,6 +2048,7 @@ padding: 2em;
   }
 
 h5 .des{
+	text-align: center !important;
 	font-size: 1.2em;
 }
 
