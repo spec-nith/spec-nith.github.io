@@ -1882,6 +1882,22 @@ margin-bottom: 0em !important;
    
 }
 
+.frontside .card2 .card-body2 img {
+	padding: 2em;
+	margin-top: 1.5em;
+    width: 250px;
+    height: 180px;
+   
+}
+
+.frontside .card2 .card-body2  .i_h img {
+	padding: 3.6em 1em 1.5em 1em !important;
+	margin-top: 1.5em;
+    width: 280px;
+    height: 180px !important;
+   
+}
+
 /***********problem statement**/
 
 .pbs{
