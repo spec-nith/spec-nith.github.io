@@ -2061,6 +2061,19 @@ a .named{
 	transition: 0.3s;
 }
 
+.sociald{
+    transition: 0.5s ease;
+    margin: auto;
+    transform: scale(2);
+    opacity: 0;
+    margin-top: 40%;
+  }
+  .profile_imgd:hover .headshotd{
+    filter: brightness(50%) drop-shadow(1px 1px 8px #313131);
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    
+  }
 
 
 .named{
@@ -2101,7 +2114,7 @@ a .named{
 	   margin-top: 2em !important;
 	   margin-bottom: 2em !important;
 	   margin: 1em;
-	   padding-bottom: 2em;
+	   padding: 3em !important;
     position: relative;
     width: 320px;
     height: 460px;
@@ -2144,7 +2157,58 @@ a .named{
   transition: 0.5s;
   z-index: 0;
   }
-  
+  ]
+
+.middle:hover{
+	
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+.middle {
+	
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} 
+.middle i{
+	width: 4em !important;
+}
+
+.iconl i {
+	
+	z-index: 0 !important;
+	color: aliceblue;
+	margin-top: 3em !important;
+	top:50% !important;
+}
+
+
+
+.imgBx{
+	 transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.imgBx:hover .image {
+  opacity: 0.3;
+}
+
+.imgBx:hover .middle {
+  opacity: 1;
+}
+
+
    .card_ac:hover .imgBx
   {
     bottom: 80px;
@@ -2158,6 +2222,8 @@ a .named{
       height: 100%;
       object-fit: cover;
   }
+
+
 
 
 .details h2 a{
@@ -2174,6 +2240,10 @@ a .named{
 
 }
 
+.details .adv_2{
+	padding-top: 1em !important;
+}
+
    .card_ac .details{
 	   padding-top: 10px !important;
 	   padding: 3px;
@@ -2182,7 +2252,7 @@ a .named{
       left: 5px;
       right: 5px;
       bottom: 10px;
-      height: 110px;
+      height: 105px;
       text-align: center;
   }
 
