@@ -173,6 +173,11 @@ a{
   opacity: 0.5;
 }
 
+#dates{
+	margin-bottom: 2em !important;
+	
+}
+
 /*navbar*/
 
 
@@ -183,7 +188,7 @@ body,html{
 #logo{
 
 	height: 3.2em;
-	margin-right: 90px;
+	margin-right: 15px;
 }
 
 @media screen and (max-width: 700px){
@@ -460,7 +465,7 @@ img .card-img-top{
 footer{
 	margin-top: 5em !important;
 	text-align: center;
-	padding: 2em 2em 3em 2em !important;
+	padding: 2em 2em 0em 2em !important;
 	background-color: #141c27;
 	color: white;
 	position: relative;
@@ -533,17 +538,21 @@ footer{
 
 @media screen and (min-width: 740px){
 	.designed{
-	margin-top: 4em;
-		padding-left: 8vw !important;
-	padding-right: 8vw !important;
+		align-content: center;
+		text-align: center;
+	margin-top: 3em;
+		padding-left: 9vw !important;
+	padding-right: 9vw !important;
 	
 }
 }
 
 @media screen and (max-width: 700px) {
 		.designed{
+			margin-left: -2.7em !important;
+			padding-left: 1em !important;
 			padding-right: 1em !important;
-			margin-top: 4em;
+			margin-top: 1em;
 	padding: 20px !important; }
 }
 
@@ -1080,9 +1089,14 @@ height: 17em;
 
 /****************challenges section begins here*********************/
 
+#challenges{
+	margin-top: 4em !important;
+}
+
+
 .challenges{
-margin-bottom: 2em !important;
-  margin-top: 2em;
+margin-bottom: 1em !important;
+  margin-top: 1em !important;
   width: 100%;
 	align-content: center;
 	align-items: center;
@@ -1392,8 +1406,8 @@ aside:hover section{
 
 .spon{
 	padding: 0em !important;
-	margin-left: 15vw!important;
-	margin-right: 15vw!important;
+	margin-left: 16vw!important;
+	margin-right: 16vw!important;
 }
 
 .cps img{
@@ -1405,7 +1419,8 @@ aside:hover section{
 .sponsor img{
 
 	padding: 0em 0em 0em 0em;
-  width:11rem;
+  width:10rem;
+	
 	
 }
 .mar img{
@@ -1438,6 +1453,7 @@ aside:hover section{
 
 
 #FAQs{
+	margin-top: 3em;
 	margin-bottom: 10em;
 }
 
@@ -1464,7 +1480,7 @@ aside:hover section{
 #divsponsor{
 	color: #141c27;
 
-			font-size: 3em;
+			font-size: 2.4em;
      text-align: center;
 	font-style: bold;
 	font-weight: 500 !important;
@@ -1777,6 +1793,10 @@ margin-bottom: 0em !important;
     transform: rotateY(180deg);
 }
 
+.card-text2{
+	font-size: 1em;
+}
+
 .mainflip {
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
@@ -1799,7 +1819,7 @@ margin-bottom: 0em !important;
 }
 
 .backside {
-	
+	padding: 2px !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -1843,6 +1863,7 @@ margin-bottom: 0em !important;
 
 
 
+
 .backside .card2 a {
     font-size: 18px;
     color: #0c253b !important;
@@ -1858,6 +1879,22 @@ margin-bottom: 0em !important;
 	margin-top: 1.5em;
     width: 250px;
     height: 180px;
+   
+}
+
+.frontside .card2 .card-body2 img {
+	padding: 2em;
+	margin-top: 1.5em;
+    width: 250px;
+    height: 180px;
+   
+}
+
+.frontside .card2 .card-body2  .i_h img {
+	padding: 3.6em 1em 1.5em 1em !important;
+	margin-top: 1.5em;
+    width: 280px;
+    height: 180px !important;
    
 }
 
@@ -1946,12 +1983,12 @@ margin-bottom: 0em !important;
 }
 
 .instagram{
-	background-color: crimson;
+	background-color: #DD2A7B;
 	color:white;
 }
 
 .linkedin{
-	background-color:blue;
+	background-color: #0e76a8;
 		color:white;
 }
 
@@ -1987,12 +2024,57 @@ margin-bottom: 0em !important;
   .profile_imgd img{
 	  margin: 0 1em 0 1em;
 	  border: 2px solid white;
-	  width: 6em !important;
-	  height: 6em !important;
+	  width: 8em !important;
+	  height: 8em !important;
     border-radius: 50%;
   }
+
+@media screen and (max-width: 700px){
+	.footer-content-about {
+	color: white;
+padding: 1em;
+		margin-left: -1.4em !important;
+	margin-top: 1.5em;
+	text-align: left!important;
+}
+}
+	
 .footer-content-about {
+	color: white;
 padding: 2em;
+	margin-left: 0em;
+	margin-top: 1.5em;
+	text-align: left !important;
+}
+
+.discordf{
+	margin-left: -0.2em;
+}
+
+#frontlogo{
+	margin-top: 3em;
+}
+
+.footer-content-about h5:hover{
+	color: skyblue;
+
+	text-align: left !important;
+}
+
+
+h5 .des{
+	text-align: center !important;
+	font-size: 1.2em;
+}
+
+a .named:hover{
+	color: skyblue;
+	transform: translate(1.1);
+	
+}
+
+a .named{
+	transition: 0.3s;
 }
 
 .sociald{
@@ -2009,13 +2091,10 @@ padding: 2em;
     
   }
 
-h5 .des{
-	font-size: 1.2em;
-}
 
 .named{
 	font-size: 1em !important;
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 
   .profile_imgd h5{
@@ -2023,7 +2102,7 @@ h5 .des{
 }
   
 .profile_img p{
-	font-size82em !important ;
+	font-size: 2em !important ;
     font-family: 'Helvetica Neue', sans-serif;
     color: #fff;
     padding-bottom: 7%;
@@ -2037,23 +2116,31 @@ h5 .des{
 
 /********************advisory comm************************/
 
+
 .advisory{
-	margin-bottom:4em !important;
+	text-align: center !important;
+	margin-top: 2em !important;
+	margin-bottom:3em !important;
 	padding-left: 6em;
 	padding-right: 6em;
 	padding: 1em !important;
 }
 
    .card_ac{
+	   margin-top: 2em !important;
+	   margin-bottom: 2em !important;
+	   margin: 1em;
+	   padding: 3em !important;
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 320px;
+    height: 460px;
     background: #141c27;
     margin: 0 auto;
 	   margin-bottom: 4em !important;
     border-radius: 4px;
     box-shadow:0 2px 10px rgba(0,0,0,.2);
   }
+
    .card_ac:before,
    .card_ac:after
   {
@@ -2086,7 +2173,58 @@ h5 .des{
   transition: 0.5s;
   z-index: 0;
   }
-  
+  ]
+
+.middle:hover{
+	
+  transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+.middle {
+	
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} 
+.middle i{
+	width: 4em !important;
+}
+
+.iconl i {
+	
+	z-index: 0 !important;
+	color: aliceblue;
+	margin-top: 3em !important;
+	top:50% !important;
+}
+
+
+
+.imgBx{
+	 transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.imgBx:hover .image {
+  opacity: 0.3;
+}
+
+.imgBx:hover .middle {
+  opacity: 1;
+}
+
+
    .card_ac:hover .imgBx
   {
     bottom: 80px;
@@ -2101,12 +2239,36 @@ h5 .des{
       object-fit: cover;
   }
 
+
+
+
+.details h2 a{
+	color: aliceblue !important;
+}
+
+.details h2 a:hover{
+	color: skyblue!important;
+}
+
+.card_ac .adv_icon{
+	
+	height: 150px !important;
+
+}
+
+.details .adv_2{
+	padding-top: 1em !important;
+}
+
    .card_ac .details{
+	   padding-top: 10px !important;
+	   padding: 3px;
+	   background-color:#141c27; 
       position: absolute;
-      left: 10px;
-      right: 10px;
+      left: 5px;
+      right: 5px;
       bottom: 10px;
-      height: 60px;
+      height: 105px;
       text-align: center;
   }
 
@@ -2120,10 +2282,9 @@ h5 .des{
   } 
 
   .card_ac .details h2 span{
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  color: #E5E7E9;
   display: block;
   margin-top: 5px;
    } 
-
