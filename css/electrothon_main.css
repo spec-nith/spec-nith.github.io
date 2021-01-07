@@ -1453,6 +1453,7 @@ aside:hover section{
 
 
 #FAQs{
+	margin-top: 3em;
 	margin-bottom: 10em;
 }
 
@@ -2044,19 +2045,6 @@ padding: 2em;
 	text-align: left !important;
 }
 
-.sociald{
-    transition: 0.5s ease;
-    margin: auto;
-    transform: scale(2);
-    opacity: 0;
-    margin-top: 40%;
-  }
-  .profile_imgd:hover .headshotd{
-    filter: brightness(50%) drop-shadow(1px 1px 8px #313131);
-    transition: 0.5s ease;
-    transform: scale(1.1);
-    
-  }
 
 h5 .des{
 	text-align: center !important;
@@ -2072,6 +2060,8 @@ a .named:hover{
 a .named{
 	transition: 0.3s;
 }
+
+
 
 .named{
 	font-size: 1em !important;
@@ -2097,23 +2087,31 @@ a .named{
 
 /********************advisory comm************************/
 
+
 .advisory{
-	margin-bottom:4em !important;
+	text-align: center !important;
+	margin-top: 2em !important;
+	margin-bottom:3em !important;
 	padding-left: 6em;
 	padding-right: 6em;
 	padding: 1em !important;
 }
 
    .card_ac{
+	   margin-top: 2em !important;
+	   margin-bottom: 2em !important;
+	   margin: 1em;
+	   padding-bottom: 2em;
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 320px;
+    height: 460px;
     background: #141c27;
     margin: 0 auto;
 	   margin-bottom: 4em !important;
     border-radius: 4px;
     box-shadow:0 2px 10px rgba(0,0,0,.2);
   }
+
    .card_ac:before,
    .card_ac:after
   {
@@ -2161,12 +2159,30 @@ a .named{
       object-fit: cover;
   }
 
+
+.details h2 a{
+	color: aliceblue !important;
+}
+
+.details h2 a:hover{
+	color: skyblue!important;
+}
+
+.card_ac .adv_icon{
+	
+	height: 150px !important;
+
+}
+
    .card_ac .details{
+	   padding-top: 10px !important;
+	   padding: 3px;
+	   background-color:#141c27; 
       position: absolute;
-      left: 10px;
-      right: 10px;
+      left: 5px;
+      right: 5px;
       bottom: 10px;
-      height: 60px;
+      height: 110px;
       text-align: center;
   }
 
@@ -2180,10 +2196,9 @@ a .named{
   } 
 
   .card_ac .details h2 span{
-  font-weight: 500;
-  font-size: 16px;
-  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  color: beige;
   display: block;
   margin-top: 5px;
    } 
-
