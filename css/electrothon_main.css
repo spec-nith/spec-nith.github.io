@@ -1734,7 +1734,7 @@ margin-bottom: 0em !important;
 }
 
 .flip{
-	margin-bottom: 4.7em !important;
+	margin-bottom: 4.8em !important;
 }
 
 .card2{
@@ -1861,6 +1861,10 @@ margin-bottom: 0em !important;
     min-height: 312px;
 }
 
+
+.frontside .card2 .maincard {
+	width: 700px !important;
+}
 
 
 
@@ -2116,7 +2120,11 @@ a .named{
 
 /********************advisory comm************************/
 
-
+.details .adv_1{
+	letter-spacing: 1px !important;
+	padding-left: 3px;
+	padding-right: auto;
+}
 .advisory{
 	text-align: center !important;
 	margin-top: 2em !important;
@@ -2209,9 +2217,12 @@ a .named{
 	top:50% !important;
 }
 
-
+.image{
+	border: 1px solid white;
+}
 
 .imgBx{
+	
 	 transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -2219,6 +2230,12 @@ a .named{
 .imgBx:hover .image {
   opacity: 0.3;
 }
+
+.details{margin-left: 4px;
+	margin-right: 4px;
+	border-top: 1px solid white;
+}
+
 
 .imgBx:hover .middle {
   opacity: 1;
@@ -2257,7 +2274,11 @@ a .named{
 }
 
 .details .adv_2{
-	padding-top: 1em !important;
+	padding-top: .8em !important;
+}
+
+.details .adv_3{
+	padding-top: .5em !important;
 }
 
    .card_ac .details{
