@@ -1734,7 +1734,7 @@ margin-bottom: 0em !important;
 }
 
 .flip{
-	margin-bottom: 4.7em !important;
+	margin-bottom: 4.8em !important;
 }
 
 .card2{
@@ -1861,6 +1861,10 @@ margin-bottom: 0em !important;
     min-height: 312px;
 }
 
+
+.frontside .card2 .maincard {
+	width: 700px !important;
+}
 
 
 
