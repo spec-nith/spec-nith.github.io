@@ -2274,7 +2274,11 @@ a .named{
 }
 
 .details .adv_2{
-	padding-top: 1em !important;
+	padding-top: .8em !important;
+}
+
+.details .adv_3{
+	padding-top: .5em !important;
 }
 
    .card_ac .details{
