@@ -188,7 +188,8 @@ body,html{
 #logo{
 
 	height: 3.2em;
-	margin-right: 15px;
+	margin-left: 25px;
+	margin-right: 35px !important;
 }
 
 @media screen and (max-width: 700px){
@@ -1578,7 +1579,7 @@ aside:hover section{
 			font-size: 2.4em;
      text-align: center;
 	font-style: bold;
-	font-weight: 500 !important;
+	font-weight: 700 !important;
 
 			margin-right: auto;
 			margin-left: auto;
