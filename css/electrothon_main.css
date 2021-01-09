@@ -2000,6 +2000,7 @@ margin-bottom: 0em !important;
 
 /***********problem statement**/
 
+
 .pbs{
 	border-radius: 10px;
 	background-color: #0c253b;
@@ -2024,6 +2025,15 @@ margin-bottom: 0em !important;
 	background-color:  #0c253b;
 	color: aliceblue;
 }
+.frontside .card2 .card-body2 .iotiot img {
+	padding: 1em 2em 2em 1em !important;
+	margin-left: 2em;
+	margin-right: 2em;
+    width: 210px !important;
+    height: 200px !important;
+   
+}
+
 /***icons***/
 
  .discord{
