@@ -188,7 +188,8 @@ body,html{
 #logo{
 
 	height: 3.2em;
-	margin-right: 15px;
+	margin-left: 25px;
+	margin-right: 35px !important;
 }
 
 @media screen and (max-width: 700px){
@@ -1380,7 +1381,102 @@ aside:hover section{
 
 
 
+/*******speakers section starts here**************/
 
+#speaker{
+  background: #0c253b;
+}
+
+
+
+
+.speaker .container .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.speaker .container .card .content {
+  position: absolute;
+  bottom: -160px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: bottom 0.5s;
+  transition-delay: 0.65s;
+}
+.speaker .container .card:hover .content {
+  bottom: 0;
+  transition-delay: 0s;
+}
+.speaker .container .card .content .contentBx h3 {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 15px;
+  line-height: 1.1em;
+  transition: 0.5s;
+  transition-delay: 0.6s;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.speaker .container .card:hover .content .contentBx h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.speaker .container .card .content .contentBx h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+.speaker .container .card .content .sci {
+  position: relative;
+  bottom: 10px;
+  display: flex;
+}
+.speaker .container .card .content .sci li {
+  list-style: none;
+  margin: 0 10px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.2s * var(--i));
+}
+
+.speaker .container .card:hover .content .sci li {
+  transform: translateY(0);
+  opacity: 1;
+}
+.speaker .container .card .content .sci li a {
+  color: white;
+  font-size: 24px;
+}
+
+
+
+
+
+
+
+
+/******speakers section ends here**************/
 
 
 
@@ -1401,7 +1497,7 @@ aside:hover section{
 
 
 #sponsor{
-
+ margin-bottom: 2em !important;
 }
 
 .spon{
@@ -1483,7 +1579,7 @@ aside:hover section{
 			font-size: 2.4em;
      text-align: center;
 	font-style: bold;
-	font-weight: 500 !important;
+	font-weight: 700 !important;
 
 			margin-right: auto;
 			margin-left: auto;
@@ -1734,7 +1830,7 @@ margin-bottom: 0em !important;
 }
 
 .flip{
-	margin-bottom: 4.7em !important;
+	margin-bottom: 4.8em !important;
 }
 
 .card2{
@@ -1794,7 +1890,7 @@ margin-bottom: 0em !important;
 }
 
 .card-text2{
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 .mainflip {
@@ -1861,6 +1957,10 @@ margin-bottom: 0em !important;
     min-height: 312px;
 }
 
+
+.frontside .card2 .maincard {
+	width: 700px !important;
+}
 
 
 
@@ -2123,7 +2223,7 @@ a .named{
 }
 .advisory{
 	text-align: center !important;
-	margin-top: 2em !important;
+	margin-top: 7em !important;
 	margin-bottom:3em !important;
 	padding-left: 6em;
 	padding-right: 6em;
@@ -2270,7 +2370,11 @@ a .named{
 }
 
 .details .adv_2{
-	padding-top: 1em !important;
+	padding-top: .8em !important;
+}
+
+.details .adv_3{
+	padding-top: .5em !important;
 }
 
    .card_ac .details{
