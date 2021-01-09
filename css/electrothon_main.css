@@ -1998,6 +1998,13 @@ margin-bottom: 0em !important;
    
 }
 
+.frontside .card2 .card-body2 .iotiot img {
+	padding: 1em 2em 2em 1em !important;
+	margin-left: 2em;
+	margin-right: 2em;
+    width: 210px !important;
+	height: 200px !important;}
+
 /***********problem statement**/
 
 
