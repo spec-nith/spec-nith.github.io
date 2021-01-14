@@ -1525,7 +1525,7 @@ aside:hover section{
 
 .sponsor_title{
 	margin-bottom: 0em;
-	margin-top: -1em;
+	margin-top: 3em !important;
 	font-size: 3.5em ;
 	font-weight: 500;
 	letter-spacing: 2px;
