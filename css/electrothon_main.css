@@ -1525,12 +1525,30 @@ aside:hover section{
 
 .sponsor_title{
 	margin-bottom: 0em;
-	margin-top: -1em;
+	margin-top: 3em !important;
 	font-size: 3.5em ;
 	font-weight: 500;
 	letter-spacing: 2px;
 	font-family: Manjari,sans-serif;
 }
+
+.prizes_title{
+	margin-bottom: 0em;
+	margin-top: 1.6em;
+	font-size: 3.5em ;
+	font-weight: 500;
+	letter-spacing: 2px;
+	font-family: Manjari,sans-serif;
+}
+.mentors_title{
+	margin-bottom: 1.6em;
+	margin-top: 2em;
+	font-size: 3.5em ;
+	font-weight: 500;
+	letter-spacing: 2px;
+	font-family: Manjari,sans-serif;
+}
+
 
 @media screen and (max-width: 700px){
 	.sponsor img{
@@ -2002,7 +2020,7 @@ margin-bottom: 0em !important;
 .frontside .card2 .card-body2  .iotiot img {
 	padding: 2em 2em 0em 2em !important;
 	margin-top: 0 !important;
-    width: 270px;
+    width: 260px !important;
     height: 260px !important;
    
 }
@@ -2241,7 +2259,7 @@ a .named{
 }
 .advisory{
 	text-align: center !important;
-	margin-top: 7em !important;
+	margin-top: 11em !important;
 	margin-bottom:3em !important;
 	padding-left: 6em;
 	padding-right: 6em;
