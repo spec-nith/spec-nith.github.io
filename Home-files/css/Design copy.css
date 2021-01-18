@@ -1,0 +1,27 @@
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  padding: 5% 0;
+  padding-bottom:22%;
+  margin: -110px 0;
+  opacity: 0;
+
+}
+
+.slideshow.in {
+  animation: in 1s ease-in both;
+}
+
+.slideshow > img {
+  max-height: 60vh;
+  max-width: 100%;
+  width: 70%;
+  object-fit: contain;
+}
+
+@keyframes in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

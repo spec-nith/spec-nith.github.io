@@ -1,0 +1,102 @@
+
+
+.container5{
+  width: 1100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  left: 160px;
+  top: -60px;
+}
+
+.container5 .card5{
+  position: relative;
+  cursor: pointer;
+}
+
+.container5 .card5 .face{
+  width: 250px;
+  height: 300px;
+  transition: 0.5s;
+}
+
+.container5 .card5 .face.face1{
+  position: relative;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(201px);
+}
+
+.container5 .card5:hover .face.face1{
+  background: #000;/*background*/
+  transform: translateY(0);
+  border-radius: 5%;
+}
+
+.container5 .card5 .face.face1 .content{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.container5 .card5:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.container5 .card5 .face.face1 .content img{
+  position: relative;
+  max-width: 248px;
+  top: 20px;
+  border-radius: 5%;
+}
+
+.container5 .card5 .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  top:20px;
+  line-height: 28px;
+
+}
+
+.container5 .card5 .face.face2{
+  position: relative;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(-100px);
+}
+
+.container5 .card5:hover .face.face2{
+  transform: translateY(0);
+}
+
+.container5 .card5 .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+  font-size:small;
+  font-weight: 200px;
+  line-height: 18px;
+}
+
+.container5 .card5 .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #fff;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+
+.container5 .card5 .face.face2 .content a:hover{
+  background: #333;
+  color: #fff;
+}
