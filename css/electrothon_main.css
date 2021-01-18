@@ -1526,6 +1526,14 @@ aside:hover section{
 		width: 17em !important;
 	}
 }
+
+@media screen and (max-width: 700px){
+	.spon .gfg img{
+	
+		margin-top: 1em;
+
+	}
+}
 	
 	
 
