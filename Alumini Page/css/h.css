@@ -1,0 +1,49 @@
+.nav-link{
+    color: white !important;
+}
+.navbar-nav li{
+    margin: 10px;
+}
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+    display: block;   
+}
+.wreqwr{
+    background-color: rgba(0,0,0,1);
+}
+#foot{
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+#fimg{
+    max-width: 100%;
+    height: auto;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    transition: 0.2s linear;
+}
+.link:hover{
+    color: #ccc;
+    font-size: 27px;
+}
+.social i{
+    font-size: 30px;
+    margin : 15px;
+}
+.navbar-toggler-icon{
+    color: white;
+    
+}
+.speclogo{
+    width: 50%;
+    height: 50%;
+}
+.navbar-nav li a:hover{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transition: 0.2s ease;
+}
