@@ -11,9 +11,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>SPEC | Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+	<meta name="description" content="SPEC Website" />
+	<meta name="keywords" content="SPEC Electrothon NIT Hamirpur" />
+	<meta name="author" content="SPEC" />
 
 
 <link rel="icon" href="./Home-files/assets/spec-logo-white1.png" type="image/icon type">
@@ -276,6 +276,15 @@
 			background-color: rgba(0, 0, 0, 0.904) !important;
 			transition: background-color 200ms linear;
 		}
+		#star-svg {
+  position: fixed;
+  top: 75px;
+  left: -720px;
+  width: 1600px;
+  height: 818px;
+  margin: -75px 0 0 -78px;
+  z-index: 5000;
+}
 	</style>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -312,7 +321,50 @@
 				<source src="./Home-files/assets/tunnel.mp4" type="video/mp4">
 			</video>
 		</div>
+		<svg id="star-svg" width="5" height="1060" viewBox="0 0 5 1060" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<line id="star-path" x1="0.999998" y1="-0.00194174" x2="3.05825" y2="1060" stroke="#FFD000" stroke-width="2"/>
+			</svg>
 
+			<script>// Get a reference to the <path>
+				var path = document.querySelector('#star-path');
+				
+				// Get length of path... ~577px in this case
+				var pathLength = path.getTotalLength();
+				
+				// Make very long dashes (the length of the path itself)
+				path.style.strokeDasharray = pathLength + ' ' + pathLength;
+				
+				// Offset the dashes so the it appears hidden entirely
+				path.style.strokeDashoffset = pathLength;
+				
+				// Jake Archibald says so
+				// https://jakearchibald.com/2013/animated-line-drawing-svg/
+				path.getBoundingClientRect();
+				
+				// When the page scrolls...
+				window.addEventListener("scroll", function(e) {
+				 
+				  // What % down is it? 
+				  // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
+				  // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
+				  var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+					
+				  // Length to offset the dashes
+				  var drawLength = pathLength * scrollPercentage;
+				  
+				  // Draw in reverse
+				  path.style.strokeDashoffset = pathLength - drawLength;
+					
+				  // When complete, remove the dash array, otherwise shape isn't quite sharp
+				 // Accounts for fuzzy math
+				  if (scrollPercentage >= 0.99) {
+					path.style.strokeDasharray = "none";
+					
+				  } else {
+					path.style.strokeDasharray = pathLength + ' ' + pathLength;
+				  }
+				  
+				});</script>
 		<!--<div style="background-color: rgba(0, 0, 0, 0.5);" class="gradient"></div>-->
 		<div class="container">
 			<div class="text-wrap">
@@ -912,7 +964,7 @@
 						<li><a href="../Electrothon/electrothon.html">Electrothon 3.0</a></li>
 						<li><a href="./Gallery/gallery.html">Gallery</a></li>
 						<li><a href="./Team Page/team-2k20.html">Team SPEC</a></li>
-						<li><a href="./Alumini Page/Our-Alumini.html">Our Alumini</a></li>
+						<li><a href="./Alumini Page/Our-Alumini.html">Our Alumni</a></li>
 						<li><button class="dropdown-btn"
 								style="color: white; font-size: 18px; font-weight: 700;">E-books
 								<i class="fa fa-caret-down"></i>
