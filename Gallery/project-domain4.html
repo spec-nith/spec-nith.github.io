@@ -23,6 +23,25 @@
                 transform: scale(3);
             }
         }
+        #sblist, #snlist, #pplist{
+    position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+      font-size: 1rem;
+      color: #212529;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: .25rem;
+   }
     </style>
 </head>
 <body>
@@ -73,21 +92,90 @@
                         <a class="nav-link" href="../Alumini Page/Our-Alumini.html" style="color: white;">Alumni</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-                            E-Books
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#" style="color:black;">Subject Books</a>
-                            <a class="dropdown-item" href="#" style="color: black;">Subject Notes</a>
-                            <a class="dropdown-item" href="#" style="color: black;">Past Papers</a>
-                        </div>
-                    </li>
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" id="ebook"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+      E-Books
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <ul>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="sbfunc()" id="navbarDropdownMenuLink" role="button" id="sb"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" color: black!important;">
+            Subject Books
+          </a>
+          <div id="sblist"  class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF" style="color: black;">Third Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO" style="color: black;">Final Year</a>
+
+          </div>
+        </li>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="snfunc()" id="navbarDropdownMenuLink" role="button" id="sn"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black!important;">
+            Subject Notes
+          </a>
+          <div id="snlist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j" style="color: black;">Third Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r" style="color: black;">Final Year</a>
+
+          </div>
+        </li>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="ppfunc()" id="navbarDropdownMenuLink" role="button" id="pp"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black!important;">
+            Past Papers
+          </a>
+          <div id="pplist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="#" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="#" style="color: black;">Third Year</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
   
                 </ul>
             </div>
         </div>
     </nav>
+    
+    
+    
+  <script>
+    function sbfunc(){
+      console.log("chal hat")
+      if(document.getElementById("sblist").style.display !== "block"){
+        document.getElementById("sblist").style.display = "block";
+      }
+      else if(document.getElementById("sblist").style.display !== "none"){
+        document.getElementById("sblist").style.display = "none";
+      }
+    }
+    function snfunc(){
+      console.log("chal hat")
+      if(document.getElementById("snlist").style.display !== "block"){
+        document.getElementById("snlist").style.display = "block";
+      }
+      else if(document.getElementById("snlist").style.display !== "none"){
+        document.getElementById("snlist").style.display = "none";
+      }
+    }
+    function ppfunc(){
+      console.log("chal hat")
+      if(document.getElementById("pplist").style.display !== "block"){
+        document.getElementById("pplist").style.display = "block";
+      }
+      else if(document.getElementById("pplist").style.display !== "none"){
+        document.getElementById("pplist").style.display = "none";
+      }
+    }
+
+  </script>
     <h1 style="font-weight: bold; color: #fff; z-index: 10; letter-spacing: 5px; padding: 3rem;" class="text-center">Embedded Systems</h1>
 <main class="page-content">
     <div class="card">
