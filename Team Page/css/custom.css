@@ -1,0 +1,21 @@
+.view {
+    max-height: 27vh;
+    min-height: 27vh;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+  }
+  
+  .logo {
+    max-height: 35px;
+    max-width: 45px;
+    object-fit: contain;
+  }
+  
+  #swiper-img {
+    object-fit: cover;
+  }
+  
+  .transparent{
+      opacity: 0;
+  }
