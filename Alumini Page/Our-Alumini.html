@@ -6,7 +6,7 @@
     <meta name="keywords" content="Our Alumini, VIVEKKUMAR, SAMYAK&nbsp;MEHTA, DEEPALISHARMA, POORVI&nbsp;AGRAWAL, PRAVALLIKACHANTI, SARTHAKJAIN, HITESH&nbsp;SANDAL, ISHA&nbsp;BHARWAL, VISHAV&nbsp;SHARMA, KARAN SINGH PARMAR, UPPAL KALITA">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Our Alumini</title>
+    <title>Our Alumni</title>
     <link rel="stylesheet" href="css/nicepage.css" media="screen">
 	  <link rel="icon" href="images/speclogowhite.png" type="image/icon type">
 
@@ -42,6 +42,25 @@
         transform: scale(1.5);
       }
     }
+	    #sblist, #snlist, #pplist{
+    position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+      font-size: 1rem;
+      color: #212529;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: .25rem;
+   }
     </style>
   </head>
   <body class="u-black u-body u-overlap u-overlap-contrast u-overlap-transparent">
@@ -78,21 +97,87 @@
                       <a class="nav-link" href="../Alumini Page/Our-Alumini.html" style="color: white;">Alumni</a>
                   </li>
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-                          E-Books
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#" style="color:black;">Subject Books</a>
-                          <a class="dropdown-item" href="#" style="color: black;">Subject Notes</a>
-                          <a class="dropdown-item" href="#" style="color: black;">Past Papers</a>
-                      </div>
-                  </li>
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" id="ebook"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+      E-Books
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <ul>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="sbfunc()" id="navbarDropdownMenuLink" role="button" id="sb"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" color: black!important;">
+            Subject Books
+          </a>
+          <div id="sblist"  class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF" style="color: black;">Third Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO" style="color: black;">Final Year</a>
+
+          </div>
+        </li>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="snfunc()" id="navbarDropdownMenuLink" role="button" id="sn"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black!important;">
+            Subject Notes
+          </a>
+          <div id="snlist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j" style="color: black;">Third Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r" style="color: black;">Final Year</a>
+
+          </div>
+        </li>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="ppfunc()" id="navbarDropdownMenuLink" role="button" id="pp"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black!important;">
+            Past Papers
+          </a>
+          <div id="pplist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="#" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="#" style="color: black;">Third Year</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
 
               </ul>
           </div>
       </div>
   </nav>
+	   <script>
+    function sbfunc(){
+      console.log("chal hat")
+      if(document.getElementById("sblist").style.display !== "block"){
+        document.getElementById("sblist").style.display = "block";
+      }
+      else if(document.getElementById("sblist").style.display !== "none"){
+        document.getElementById("sblist").style.display = "none";
+      }
+    }
+    function snfunc(){
+      console.log("chal hat")
+      if(document.getElementById("snlist").style.display !== "block"){
+        document.getElementById("snlist").style.display = "block";
+      }
+      else if(document.getElementById("snlist").style.display !== "none"){
+        document.getElementById("snlist").style.display = "none";
+      }
+    }
+    function ppfunc(){
+      console.log("chal hat")
+      if(document.getElementById("pplist").style.display !== "block"){
+        document.getElementById("pplist").style.display = "block";
+      }
+      else if(document.getElementById("pplist").style.display !== "none"){
+        document.getElementById("pplist").style.display = "none";
+      }
+    }
+
+  </script>
     <section class="u-black u-clearfix u-section-1" id="sec-70a3">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-align-center u-custom-font u-font-montserrat u-text u-text-palette-3-light-3 u-title u-text-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">Our <span class="u-text-palette-3-light-2" style="font-weight: 700;">Alumini</span>
@@ -257,11 +342,11 @@
             </div>
           </div>
         </div>
-        <img src="images/Karan-min.jpg" alt="" class="u-border-1 u-border-palette-3-light-3 u-image u-image-round u-preserve-proportions u-radius-22 u-image-3" data-image-width="2072" data-image-height="2222" data-animation-name="rollIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
-        <img src="images/Vishav-min.jpeg" alt="" class="u-border-1 u-border-palette-3-light-3 u-image u-image-round u-preserve-proportions u-radius-22 u-image-4" data-image-width="1280" data-image-height="1280" data-animation-name="rollIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+        <img src="images/Vishav-min.jpeg" alt="" class="u-border-1 u-border-palette-3-light-3 u-image u-image-round u-preserve-proportions u-radius-22 u-image-3" data-image-width="2072" data-image-height="2222" data-animation-name="rollIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
+        <img src="images/Karan-min.jpg" alt="" class="u-border-1 u-border-palette-3-light-3 u-image u-image-round u-preserve-proportions u-radius-22 u-image-4" data-image-width="1280" data-image-height="1280" data-animation-name="rollIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
         <div class="u-align-center u-container-style u-group u-palette-3-light-3 u-radius-22 u-shape-round u-group-3" data-animation-name="rotateIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
           <div class="u-container-layout u-container-layout-3">
-            <h2 class="u-custom-font u-font-montserrat u-subtitle u-text u-text-palette-1-dark-3 u-text-7">VISHAV&nbsp;<br>SHARMA
+            <h2 class="u-custom-font u-font-montserrat u-subtitle u-text u-text-palette-1-dark-3 u-text-7">KARAN SINGH PARMAR
             </h2>
             <h4 class="u-custom-font u-font-montserrat u-text u-text-palette-3-dark-1 u-text-8">Samsung Delhi</h4>
             <p class="u-text u-text-palette-5-dark-2 u-text-9">Batch 2020</p>
@@ -273,7 +358,7 @@
         </div>
         <div class="u-align-center u-container-style u-group u-palette-3-light-3 u-radius-22 u-shape-round u-group-4" data-animation-name="rotateIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
           <div class="u-container-layout u-container-layout-4">
-            <h2 class="u-custom-font u-font-montserrat u-subtitle u-text u-text-palette-1-dark-3 u-text-10">KARAN SINGH PARMAR</h2>
+            <h2 class="u-custom-font u-font-montserrat u-subtitle u-text u-text-palette-1-dark-3 u-text-10">VISHAV&nbsp;<br>SHARMA</h2>
             <h4 class="u-custom-font u-font-montserrat u-text u-text-palette-3-dark-1 u-text-11">Nokia</h4>
             <p class="u-text u-text-palette-5-dark-2 u-text-12">Batch 2021</p>
             <div class="u-social-icons u-spacing-10 u-social-icons-4">
