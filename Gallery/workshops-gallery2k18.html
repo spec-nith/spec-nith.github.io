@@ -12,7 +12,8 @@
     <title>SPEC | Gallery-Workshops</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./assets/spec-logo-white.png" type="image/icon type">
+    <link rel="icon" href="../Home-files/assets/spec-logo-white1.png" type="image/icon type">
+    <link rel="apple-touch-icon" href="../Home-files/assets/spec-logo-white1.png">
 
     <!-- header ki hai ye 4 files -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -41,6 +42,28 @@
                 flex-wrap: wrap;
                 left: 50%;
             } */
+            .sub-dropdown-menu{position: relative;
+    top: 80%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    padding-left: 5px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
         @media only screen and (max-width: 600px) {
             .navbar-toggle {
                 position: relative;
@@ -87,10 +110,35 @@
                     <li class="dropdown">
                         <a style="color: white;" class="dropdown-toggle" data-toggle="dropdown" href="#">E-books <span
                                 class="caret"></span></a>
-                        <ul style="background-color: white; color: black;" class="dropdown-menu">
-                            <li><a href="#">Page 1-1</a></li>
-                            <li><a href="#">Page 1-2</a></li>
-                            <li><a href="#">Page 1-3</a></li>
+                        <ul id="dropdown-menu" style="background-color: white; color: black;" class="dropdown-menu">
+                            <li><a onclick="sbfunc()">Subject Books <span
+                                class="caret"></span></a>
+                                <div id="sblist"  class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_" style="color:black;">First Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC" style="color: black;">Second Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF" style="color: black;">Third Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO" style="color: black;">Final Year</a><br>
+                        
+                                  </div>
+                            </li>
+                            <li><a onclick="snfunc()">Subject Notes <span
+                                class="caret"></span></a>
+                                <div id="snlist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt" style="color:black;">First Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9" style="color: black;">Second Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j" style="color: black;">Third Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r" style="color: black;">Final Year</a><br>
+                        
+                                  </div>
+                            </li>
+                            <li><a onclick="ppfunc()">Past Papers <span
+                                class="caret"></span></a>
+                                <div id="pplist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1xhNMyx-A7Twg9XdsF6EZsmX-H8KaJoGq" style="color:black;">First Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1HOfMim4Fit6gRWh-8eEOXzNrHy097kTw" style="color: black;">Second Year</a><br>
+                                    <a class="dropdown-item" href="https://drive.google.com/drive/folders/1ZPqZOYGo-uRwsqgiX_VldQqgwFHGu7iU" style="color: black;">Third Year</a><br>
+                                  </div>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -101,6 +149,36 @@
             </div>
         </div>
     </nav>
+    <script>
+        function sbfunc(){
+        //   console.log("chal hat")
+          if(document.getElementById("sblist").style.display !== "block"){
+            document.getElementById("sblist").style.display = "block";
+          }
+          else if(document.getElementById("sblist").style.display !== "none"){
+            document.getElementById("sblist").style.display = "none";
+          }
+        }
+        function snfunc(){
+        //   console.log("chal hat")
+          if(document.getElementById("snlist").style.display !== "block"){
+            document.getElementById("snlist").style.display = "block";
+          }
+          else if(document.getElementById("snlist").style.display !== "none"){
+            document.getElementById("snlist").style.display = "none";
+          }
+        }
+        function ppfunc(){
+        //   console.log("chal hat")
+          if(document.getElementById("pplist").style.display !== "block"){
+            document.getElementById("pplist").style.display = "block";
+          }
+          else if(document.getElementById("pplist").style.display !== "none"){
+            document.getElementById("pplist").style.display = "none";
+          }
+        }
+    
+      </script>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
