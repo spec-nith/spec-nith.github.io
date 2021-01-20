@@ -1,0 +1,2810 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lato" rel="stylesheet">
+    <link rel="apple-touch-icon" href="../Home-files/assets/spec-logo-white1.png">
+	<link rel="icon" href="../Home-files/assets/spec-logo-white1.png" type="image/icon type">
+<!--     <link rel="shortcut icon" href="spec.ico"> -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/pater.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
+    <link rel="stylesheet" type="text/css" href="css/custom_navbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="css/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/fonts/flaticon/font/flaticon.css">
+    <link rel="shortcut icon" href="./assets/headicon.ico">
+    <link rel="stylesheet" href="css/h.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: #000;
+        }
+        .name{
+            color: #fff;
+        }
+        @media only screen and (max-width: 600px){
+            .caption__name, .caption__post{
+                color: #fff;
+            }
+            .speclogo{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                transform: scale(3);
+            }
+
+        }
+	    #sblist, #snlist, #pplist{
+    position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+      font-size: 1rem;
+      color: #212529;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0,0,0,.15);
+      border-radius: .25rem;
+   }
+
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg sticky-top wreqwr" style="background-color: black;">
+        <div class="container">
+            <a class="navbar-brand" style="padding: 0;" href="../index.html"><img src="assets/spec-logo-white.png"
+                    height="70" class="d-inline-block align-top" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ><i class="fa fa-navicon" style="color: #ffffff; font-size: 25px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse"></div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" style="color: white;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Workshop Page/Workshops.html" style="color: white;">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BLOGS/Blogs.html" style="color: white;">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Team Page/team-2k20.html" style="color: white;">Team SPEC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Gallery/gallery.html" style="color: white;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Electrothon/electrothon.html" style="color: white;">Electrothon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Alumini Page/Our-Alumini.html" style="color: white;">Alumni</a>
+                    </li>
+                    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" id="ebook"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+      E-Books
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <ul>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="sbfunc()" id="navbarDropdownMenuLink" role="button" id="sb"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" color: black!important;">
+            Subject Books
+          </a>
+          <div id="sblist"  class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF" style="color: black;">Third Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO" style="color: black;">Final Year</a>
+
+          </div>
+        </li>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="snfunc()" id="navbarDropdownMenuLink" role="button" id="sn"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black!important;">
+            Subject Notes
+          </a>
+          <div id="snlist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j" style="color: black;">Third Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r" style="color: black;">Final Year</a>
+
+          </div>
+        </li>
+        <li style="list-style: none;" class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" onclick="ppfunc()" id="navbarDropdownMenuLink" role="button" id="pp"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black!important;">
+            Past Papers
+          </a>
+          <div id="pplist" class="sub-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1xhNMyx-A7Twg9XdsF6EZsmX-H8KaJoGq" style="color:black;">First Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1HOfMim4Fit6gRWh-8eEOXzNrHy097kTw" style="color: black;">Second Year</a>
+            <a class="dropdown-item" href="https://drive.google.com/drive/folders/1ZPqZOYGo-uRwsqgiX_VldQqgwFHGu7iU" style="color: black;">Third Year</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </li>
+  
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<script>
+    function sbfunc(){
+      console.log("chal hat")
+      if(document.getElementById("sblist").style.display !== "block"){
+        document.getElementById("sblist").style.display = "block";
+      }
+      else if(document.getElementById("sblist").style.display !== "none"){
+        document.getElementById("sblist").style.display = "none";
+      }
+    }
+    function snfunc(){
+      console.log("chal hat")
+      if(document.getElementById("snlist").style.display !== "block"){
+        document.getElementById("snlist").style.display = "block";
+      }
+      else if(document.getElementById("snlist").style.display !== "none"){
+        document.getElementById("snlist").style.display = "none";
+      }
+    }
+    function ppfunc(){
+      console.log("chal hat")
+      if(document.getElementById("pplist").style.display !== "block"){
+        document.getElementById("pplist").style.display = "block";
+      }
+      else if(document.getElementById("pplist").style.display !== "none"){
+        document.getElementById("pplist").style.display = "none";
+      }
+    }
+
+  </script>
+
+
+    <div class="site-wrap">
+
+        <!-- <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div> -->
+        <!-- ----------Start HEADER and NAV BAR---------- -->
+        <!-- <header class="site-navbar py-3" role="banner">
+
+            <div class="container-fluid">
+                <div class="row align-items-center">
+
+                    <div class="col-6 col-xl-2" data-aos="fade-down"> -->
+                        <!-- <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">SPEC</a></h1>-->
+                        <!-- <a href="index.html"><img src="./spec_logo.png" class="logo" /></a>
+                    </div>
+                    <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+                        <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+
+                            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                                <li><a href="index.html#about_index">About</a></li>
+                                <li><a href="workshops.html">Workshops</a></li>
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li class="active"><a href="team_page_final.html">Team SPEC</a></li>
+                                <li class="has-children">
+                                    <a href="gallery.html">Gallery</a>
+                                    <ul class="dropdown">
+                                        <li><a href="gallery_fest.html">SPEC Fest</a></li>
+                                        <li><a href="gallery_events.html">Events</a></li>
+                                        <li><a href="gallery_workshops.html">Workshops</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="electrothon.html">ELECTROTHON</a></li>
+                                <li class="has-children"><a href="#">E-Books</a>
+                                    <ul class="dropdown">
+                                        <li class="has-children"><a href="#">Subject Books</a>
+                                            <ul class="dropdown">
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_">First
+                                                        Year</a></li>
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/open?id=1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC">Second
+                                                        Year</a></li>
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/open?id=1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF">Third
+                                                        Year</a></li>
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/open?id=1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO">Final
+                                                        Year</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-children"><a href="#">Subject Notes</a>
+                                            <ul class="dropdown">
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/open?id=1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt">First
+                                                        Year</a></li>
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/open?id=1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9">Second
+                                                        Year</a></li>
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/open?id=1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j">Third
+                                                        Year</a></li>
+                                                <li><a target="_blank"
+                                                        href="https://drive.google.com/drive/u/5/folders/1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r">Final
+                                                        Year</a></li>
+                                            </ul>
+                                        </li>
+                                </li>
+                                <li class="has-children"><a href="#">Past Papers</a>
+                                    <ul class="dropdown">
+                                        <li><a target="_blank"
+                                                href="https://drive.google.com/open?id=1xhNMyx-A7Twg9XdsF6EZsmX-H8KaJoGq">First
+                                                Year</a></li>
+                                        <li><a target="_blank"
+                                                href="https://drive.google.com/open?id=1HOfMim4Fit6gRWh-8eEOXzNrHy097kTw">Second
+                                                Year</a></li>
+                                        <li><a target="_blank"
+                                                href="https://drive.google.com/open?id=1ZPqZOYGo-uRwsqgiX_VldQqgwFHGu7iU">Third
+                                                Year</a></li>
+                                    </ul>
+                                </li>
+                                </li>
+                            </ul>
+                            </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
+                        <div class="d-none d-xl-inline-block">
+                            <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0"
+                                data-class="social">
+                                <li>
+                                    <a href="https://www.facebook.com/spec.ece/" class="pl-0 pr-3"><span
+                                            class="icon-facebook"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/SPEC__NITH" class="pl-3 pr-3"><span
+                                            class="icon-twitter"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/s.p.e.c_nith/" class="pl-3 pr-3"><span
+                                            class="icon-instagram"></span></a>
+                                </li>
+                                <li>
+                                    <a href="https://in.linkedin.com/in/s-p-e-c-nith-40214b197" class="pl-3 pr-3"><span
+                                            class="icon-linkedin"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
+                            style="position: relative; top: 3px;"><a href="#"
+                                class="site-menu-toggle js-menu-toggle text-black"><span
+                                    class="icon-menu h3"></span></a></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </header> -->
+
+        <!-- ----------End HEADER and NAV BAR---------- -->
+        <img id="one" src="./assets/circle.png">
+        <img id="two" src="./assets/semi.png">
+        <img id="three" src="./assets/semi_another.png">
+        <img id="four" src="./assets/circle.png">
+        <main>
+            <div class="para">
+                <!--<h1 class="name">Final year members</h1>
+				<section class="content content--c2">
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\garima_maam.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Garima Sood</h2>
+								<h4 class="tilter__description">President</h4>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/garimasood06" class="btn btn-outline-primary"
+										target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://www.linkedin.com/in/garima-sood96/" class="btn btn-outline-info"
+										target="_blank"><i class="fab fa-linkedin-in"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Garima Sood</p>
+							<p class="caption__post">President</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\anurag_sir.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Anurag Dubey</h2>
+								<h4 class="tilter__description">Vice-President</h4>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/anurag.dubey.9421" class="btn btn-outline-primary"
+										target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://www.linkedin.com/in/anurag-dubey-00b226130/"
+										class="btn btn-outline-info" target="_blank"><i
+											class="fab fa-linkedin-in"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Anurag Dubey</p>
+							<p class="caption__post">Vice-President</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\mohit_sir.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Mohit Sipani</h2>
+								<h4 class="tilter__description">Technical Head</h4>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/mr.sipani" class="btn btn-outline-primary"
+										target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://www.linkedin.com/in/mohitsipani25/"
+										class="btn btn-outline-info target=" _blank""><i
+											class="fab fa-linkedin-in"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Mohit Sipani</p>
+							<p class="caption__post">Technical Head</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\smily_maam.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Smily Mahajan</h2>
+								<h4 class="tilter__description">Finance Head</h4>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/smily.mahajan.52" class="btn btn-outline-primary"
+										target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://www.linkedin.com/in/smily-mahajan-498159159/"
+										class="btn btn-outline-info" target="_blank"><i
+											class="fab fa-linkedin-in"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Smily Mahajan</p>
+							<p class="caption__post">Finance Head</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\poorvi_maam.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Poorvi Agarwal</h2>
+								<h4 class="tilter__description">Technical Head</h4>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/profile.php?id=100010013229338"
+										class="btn btn-outline-primary" target="_blank"><i
+											class="fab fa-facebook-f"></i></a>
+									<a href="https://www.linkedin.com/in/poorvi-agrawal-133883148/"
+										class="btn btn-outline-info" target="_blank"><i
+											class="fab fa-linkedin-in"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Poorvi Agarwal</p>
+							<p class="caption__post">Technical Head</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\ayush_sir.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Ayush Saklani</h2>
+								<h4 class="tilter__description">Network Head</h4>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/ayush099" class="btn btn-outline-primary"
+										target="_blank"><i class="fab fa-facebook-f"></i></a>
+									<a href="https://www.linkedin.com/in/ayushsaklani/" class="btn btn-outline-info"
+										target="_blank"><i class="fab fa-linkedin-in"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Ayush Saklani</p>
+							<p class="caption__post">Network Head</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\deepali_maam.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Deepali Sharma</h2>
+								<h4 class="tilter__description">Creative Head</h4>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/profile.php?id=100009755884984"
+										class="btn btn-outline-primary" target="_blank"><i
+											class="fab fa-facebook-f"></i></a>
+									<a href="https://www.linkedin.com/in/deepali-sharma-929aa0b9/"
+										class="btn btn-outline-info" target="_blank"><i
+											class="fab fa-linkedin-in"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Deepali Sharma</p>
+							<p class="caption__post">Creative Head</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<hr class="type">-->
+
+
+
+                <!-- Final Year 19-20
+			<h1 class="name">Final Year Members</h1>
+			<section class="content content--c2">
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\sarthak1.jpg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Sarthak Jain</h2>
+							<h4 class="tilter__description">President</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/sarthak2907" class="btn btn-outline-primary"
+									target="_blank"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/sarthak-jain29/" class="btn btn-outline-info"
+									target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Sarthak Jain</p>
+						<p class="caption__post">President</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\karan_sir.jpg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Karan Singh Parmar</h2>
+							<h4 class="tilter__description">Vice-President</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/karan.parmar.963871" class="btn btn-outline-primary"
+									target="_blank"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/karan-parmar-b99b25151/"
+									class="btn btn-outline-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Karan Singh Parmar</p>
+						<p class="caption__post">Vice-President</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\hs.jpg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Hitesh Sandal</h2>
+							<h4 class="tilter__description">Creative Head</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/hitesh.sandal" class="btn btn-outline-primary"
+									target="_blank"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/hitesh-sandal-289896138/"
+									class="btn btn-outline-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Hitesh Sandal</p>
+						<p class="caption__post">Creative Head</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\isha.jpeg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Isha Bharwal</h2>
+							<h4 class="tilter__description">Creative Head</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/profile.php?id=100002564445655"
+									class="btn btn-outline-primary" target="_blank"><i
+										class="fab fa-facebook-f"></i></a>
+										<a href="https://www.linkedin.com/in/isha-bharwal-41250a194/"
+											class="btn btn-outline-info" target="_blank"><i
+												class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Isha Bharwal</p>
+						<p class="caption__post">Creative Head</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\uppal.jpg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Uppal Kalita</h2>
+							<h4 class="tilter__description">Technical Head</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/uppal.kalita" class="btn btn-outline-primary"
+									target="_blank"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/uppal-kalita-0a6a4b103/"
+									class="btn btn-outline-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Uppal Kalita</p>
+						<p class="caption__post">Technical Head</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\vishav.jpeg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Vishav Sharma</h2>
+							<h4 class="tilter__description">Technical Head</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/vishav.sharma.1771" class="btn btn-outline-primary"
+									target="_blank"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/vishav-sharma-928249136/"
+									class="btn btn-outline-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Vishav Sharma</p>
+						<p class="caption__post">Technical Head</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\pravallika.jpeg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Pravallika Chanti</h2>
+							<h4 class="tilter__description">Public Relations Head</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/pravallika.chanti.3" class="btn btn-outline-primary"
+									target="_blank"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/pravallika-chanti-85b59a175/"
+									class="btn btn-outline-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Pavallika Chanti</p>
+						<p class="caption__post">Public Relations Head</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\vivek.jpg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Vivek Kumar</h2>
+							<h4 class="tilter__description">Finance Head</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/profile.php?id=100005529285987"
+									class="btn btn-outline-primary" target="_blank"><i
+										class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/vivek-kumar-3a4b45150/"
+									class="btn btn-outline-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Vivek Kumar</p>
+						<p class="caption__post">Finance Head</p>
+					</div>
+				</div>
+				<div class="tilter tilter--4">
+					<figure class="tilter__figure border">
+						<img class="tilter__image" src="assets\team_images\siddhartha.jpg" />
+						<div class="tilter__deco tilter__deco--shine"></div>
+						<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+						<figcaption class="tilter__caption" text='0' id="desc">
+							<h2 class="tilter__title">Siddhartha Kumar Singh</h2>
+							<h4 class="tilter__description">Web-Development Head</h4>
+							<h3 class="tilter__title"></h3>
+							<p class="tilter__description">
+								<a href="https://www.facebook.com/profile.php?id=100012161313383"
+									class="btn btn-outline-primary" target="_blank"><i
+										class="fab fa-facebook-f"></i></a>
+								<a href="https://www.linkedin.com/in/siddhartha-kumar-singh-0a81a5148/"
+									class="btn btn-outline-info" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+							</p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+					<div class="caption">
+						<p class="caption__name">Siddhartha Kumar Singh</p>
+						<p class="caption__post">Web-Development Head</p>
+					</div>
+				</div>
+			</section>
+			</div> -->
+
+                <!-- Final Year 20-21 -->
+                <h1 class="name">Final Year Members</h1>
+                <br>
+                <section class="content content--c2">
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\hritik.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Hritik Bansal</h2>
+                                <h4 class="tilter__description">President</h4>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/hritik.bansal.1" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/hritik-bansal-653a62160/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Hritik Bansal</p>
+                            <p class="caption__post">President</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\deepak.jpeg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Deepak Kamat</h2>
+                                <h4 class="tilter__description">Vice President</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/deepak.kamat.7127" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/deepak-kamat-a67792148/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Deepak Kamat</p>
+                            <p class="caption__post">Vice President</p>
+                        </div>
+                    </div>
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\akshat.jpeg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Akshat Gupta</h2>
+                                <h4 class="tilter__description">Technical Lead</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/akshat1947" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/akshat-gupta-6a683412b/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Akshat Gupta</p>
+                            <p class="caption__post">Teachnical Lead</p>
+                        </div>
+                    </div>
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\monga.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Hitesh Chander Monga</h2>
+                                <h4 class="tilter__description">Technical Lead</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/hitesh.monga.393" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/hitesh-c-monga-16a493156/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Hitesh Chander Monga</p>
+                            <p class="caption__post">Technical Lead</p>
+                        </div>
+                    </div>
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\aman.jpg" style="height: 350px" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Aman Chhabra</h2>
+                                <h4 class="tilter__description">Creative Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/aman.chhabra.165" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/aman-chhabra-8a9725171/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Aman Chhabra</p>
+                            <p class="caption__post">Creative Head</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\aradhita.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Aradhita Sharma</h2>
+                                <h4 class="tilter__description">Creative Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/aradhita21" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/aradhita-sharma-80a313161/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Aradhita Sharma</p>
+                            <p class="caption__post">Creative Head</p>
+                        </div>
+                    </div>
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\sanjana.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Sanjana Bansal</h2>
+                                <h4 class="tilter__description">Finance Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/sanjana.bansal.3" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/sanjana27" class="btn btn-outline-info"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Sanjana Bansal</p>
+                            <p class="caption__post">Finance Head</p>
+                        </div>
+                    </div>
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\pallove.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Pallove Nautiyal</h2>
+                                <h4 class="tilter__description">Finance Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/pallove.nautiyal?ref=br_rs"
+                                        class="btn btn-outline-primary" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/pallove-nautiyal-913205160/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Pallove Nautiyal</p>
+                            <p class="caption__post">Finance Head</p>
+                        </div>
+                    </div>
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\simble.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Simble Choudhary</h2>
+                                <h4 class="tilter__description">Public Relation Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/profile.php?id=100015078796087"
+                                        class="btn btn-outline-primary" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/simble-choudhary-088145160/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Simble Choudhary</p>
+                            <p class="caption__post">Public Relation Head</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\nave.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Naveen Verma</h2>
+                                <h4 class="tilter__description">Public Relation Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/imcoolnaveen.verma"
+                                        class="btn btn-outline-primary" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/naveen-verma-b12b97160/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Naveen Verma</p>
+                            <p class="caption__post">Public Relation Head</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\jyoti.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Jyoti Kashyap</h2>
+                                <h4 class="tilter__description">Web Development Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/profile.php?id=100005264328192"
+                                        class="btn btn-outline-primary" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/jyoti-kashyap-4b3676156/"
+                                        class="btn btn-outline-info" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Jyoti Kashyap</p>
+                            <p class="caption__post">Web Development Head</p>
+                        </div>
+                    </div>
+
+
+                    <div class="tilter tilter--4">
+                        <figure class="tilter__figure border">
+                            <img class="tilter__image" src="assets\team_images\ankit.jpg" />
+                            <div class="tilter__deco tilter__deco--shine"></div>
+                            <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                            <figcaption class="tilter__caption" text='0' id="desc">
+                                <h2 class="tilter__title">Ankit Thakur</h2>
+                                <h4 class="tilter__description">Web Development Head</h4>
+                                <h3 class="tilter__title"></h3>
+                                <p class="tilter__description">
+                                    <a href="https://www.facebook.com/ankit.thakur379" class="btn btn-outline-primary"
+                                        target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/in/ankitthakur01/" class="btn btn-outline-info"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </p>
+                            </figcaption>
+                            <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                <path d="M20.5,20.5h260v375h-260V20.5z" />
+                            </svg>
+                        </figure>
+                        <div class="caption">
+                            <p class="caption__name">Ankit Thakur</p>
+                            <p class="caption__post">Web Development Head</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- 3rd year -->
+                <div class="para">
+                    <h1 class="name">Coordinators</h1>
+                    <br>
+                    <section class="content content--c2">
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image " src="assets\team_images\anurag.jpg" style="height: 350px "  />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Anurag Agarwal</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/profile.php?id=100009663852419"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Anurag Agarwal</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\yuvraj.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Yuvraj Kadale</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/yuvraj.kadale.37"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.linkedin.com/in/yuvraj-kadale-859725171/"
+                                            class="btn btn-outline-info" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Yuvraj Kadale</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\sakshi.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Sakshi Koundal</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/sakshikoundal.50"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Sakshi Kaundal</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\yash.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Yash Prakash Gupta</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/yash.p.gupta.1"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.linkedin.com/in/yash-prakash-gupta-a61040181"
+                                            class="btn btn-outline-info" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Yash Prakash Gupta</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\vanshika.jpeg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Vanshika Sharma</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Vanshika Sharma</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\dhenkawat.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Rishabh Dhenkawat</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/rishabh.dhenkawat"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.linkedin.com/in/rishabh-dhenkawat-a63737173/"
+                                            class="btn btn-outline-info" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Rishabh Dhenkawat</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\chandan.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Chandan Verma</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/profile.php?id=100013956102745"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Chandan Verma</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\isha2.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Isha Mittal</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Isha Mittal</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\saurabh.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Saurabh Kumar Mishra</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/saurabhkumar.mishra.5872"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Saurabh Kumar Mishra</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\dheeraj.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Dheeraj Vattikonda</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/dheeraj.vattikonda.5"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Dheeraj Vattikonda</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\dishant.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Dishant</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/dishant.dhillon"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Dishant</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\kartik.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Kartik Aggarwal</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Kartik Aggarwal</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\nikhil.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Nikhil Kumar Singh</h2>
+                                    <h4 class="tilter__description">Coordinator</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/profile.php?id=100028418077024"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.linkedin.com/in/nikhil-kumar-singh-b7496717a/"
+                                            class="btn btn-outline-info" target="_blank"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Nikhil Kumar Singh</p>
+                                <p class="caption__post">Coordinator</p>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- 2nd year -->
+                    <h1 class="name">Executive Members</h1>
+                    <br>
+                    <section class="content content--c2">
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\aditi.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Aditi Agarwal</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Aditi Agarwal</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\avishrant.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Avishrant Sharma</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Avishrant Sharma</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\mehak.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Mehak</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Mehak</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\rishabh.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Rishabh Verma</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/profile.php?id=100006345451434"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Rishabh Verma</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\ritik.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Ritik Dhiman</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/ritik.dhiman.988"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Ritik Dhiman</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\shubham_1.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Shubham Gupta</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Shubham Gupta</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\sitaram.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Sitaram Rathi</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Sitaram Rathi</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\swagat.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Swagat Raj</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <a href="https://www.facebook.com/swagat.raj.790"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Swagat Raj</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\urvashi.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Urvashi</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Urvashi</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div> -->
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Sachin jaat.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Sachin jaat</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Sachin jaat</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Spriha.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Spriha Gautam </h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Spriha Gautam </p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\kanishkaditya.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Kanishkaditya shukla</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Kanishkaditya shukla</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Nabin nath.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Nabin Nath</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Nabin Nath</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Arnab.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Arnab</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Arnab</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Aayush.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Ayush Verma</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Ayush Verma</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div> -->
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Mihir jain.jpg" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Mihir Jain</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Mihir Jain</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Yashaswini.jpeg" style="height: 350px" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Yashaswini Sharma</h2>
+                                    <h4 class="tilter__description">Executive Member</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Yashaswini Sharma</p>
+                                <p class="caption__post">Executive Member</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <!-- 1nd year -->
+                    <h1 class="name">Volunteers</h1>
+                    <br>
+                    <section class="content content--c2">
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\abhimanyu.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Abhimanyu Singh Jadaun</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Abhimanyu Singh Jadaun</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\adarsh.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Adarsh Singh</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Adarsh Singh</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\agrim.jpeg" style="height: 350px" />
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Agrim Kaundal</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Agrim Kaundal</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Aman2.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Aman Jagotra</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <!--<a href="https://www.facebook.com/profile.php?id=100006345451434"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>-->
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Aman Jagotra</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\anjali.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Anjali Vats</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <!--<a href="https://www.facebook.com/ritik.dhiman.988"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>-->
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Anjali Vats</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\ankita.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Ankita</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Ankita</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\anshul.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Anshul Rana</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Anshul Rana</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\Anurag.jpeg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Anurag Tripathi</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                    <h3 class="tilter__title"></h3>
+                                    <p class="tilter__description">
+                                        <!--<a href="https://www.facebook.com/swagat.raj.790"
+                                            class="btn btn-outline-primary" target="_blank"><i
+                                                class="fab fa-facebook-f"></i></a>-->
+                                    </p>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Anurag Tripathi</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\harshita.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Harshita Jain</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Harshita Jain</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div> 
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\jaivardhan.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Jaivardhan Singh</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Jaivardhan Singh</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\kartikc.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Kartik Chauhan</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Kartik Chauhan</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\khushdeep.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Khushdeep Jain</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Khushdeep Jain</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\lovekesh.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Lovekesh Bansal</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Lovekesh Bansal</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\prashant.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Prashant</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Prashant</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\priya.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Priya</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Priya</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div> 
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\priyanshu.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Priyanshu</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Priyanshu</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\sai.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Sai Shivam</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Sai Shivam</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\samanvya.JPG" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Samanvay</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Samanvay</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\sandesh.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Sandesh</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Sandesh</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\saubhagya.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Saubhagya</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Saubhagya</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\stuti.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Stuti</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Stuti</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\sudhanshu.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Sudhanshu</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Sudhanshu</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\suyashb.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Suyash Barwal</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Suyash Barwal</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+
+                        <div class="tilter tilter--4">
+                            <figure class="tilter__figure border">
+                                <img class="tilter__image" src="assets\team_images\suyashs.jpg" style="height: 350px"/>
+                                <div class="tilter__deco tilter__deco--shine"></div>
+                                <div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+                                <figcaption class="tilter__caption" text='0' id="desc">
+                                    <h2 class="tilter__title">Suyash Sachdeva</h2>
+                                    <h4 class="tilter__description">Volunteer</h4>
+                                </figcaption>
+                                <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+                                    <path d="M20.5,20.5h260v375h-260V20.5z" />
+                                </svg>
+                            </figure>
+                            <div class="caption">
+                                <p class="caption__name">Suyash Saachdeva</p>
+                                <p class="caption__post">Volunteer</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+                <footer id="foot">
+                    <div class="container text-center d-flex flex-column">
+                        <div class="container w-50 pl-5 pr-5" style="overflow: hidden;">
+                            <img class="speclogo" src="./assets/spec-logo-white.png" id="fimg">
+                        </div> 
+                        <a class="link mb-2" href="mailto:spec@nith.ac.in"><i class="fa fa-envelope"> spec@nith.ac.in</i></a>
+                        <div class="social mb-2">
+                            <a href="https://www.facebook.com/spec.ece" ><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/spec-nith/about/"><i class="fa fa-linkedin" ></i></a>
+                            <a href="https://twitter.com/SPEC__NITH"><i class="fa fa-twitter"></i> </a>
+                            <a href="https://www.instagram.com/s.p.e.c_nith/?hl=en"><i class="fa fa-instagram"></i> </a>
+                        </div>
+                        <span class="my-3">&copy;  2021, SPEC NITH</span>
+                    </div>
+                    
+                </footer>
+               
+            
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <!-- Popper JS -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                <!-- Latest compiled JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <script>
+                    const $dropdown = $(".dropdown");
+                    const $dropdownToggle = $(".dropdown-toggle");
+                    const $dropdownMenu = $(".dropdown-menu");
+                    const showClass = "show";
+            
+                    $(window).on("load resize", function () {
+                        if (this.matchMedia("(min-width: 768px)").matches) {
+                            $dropdown.hover(
+                                function () {
+                                    const $this = $(this);
+                                    $this.addClass(showClass);
+                                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                                    $this.find($dropdownMenu).addClass(showClass);
+                                },
+                                function () {
+                                    const $this = $(this);
+                                    $this.removeClass(showClass);
+                                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                                    $this.find($dropdownMenu).removeClass(showClass);
+                                }
+                            );
+                        } else {
+                            $dropdown.off("mouseenter mouseleave");
+                        }
+                    }); 
+                </script>
+
+
+
+                <!-- 1st year
+				<h1 class="name">Volunteers</h1>
+				<section class="content content--c2">
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\abhinav.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Abhinav Sharma</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+								<h3 class="tilter__title"></h3>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/profile.php?id=10001160110217" class="btn btn-outline-primary"
+										target="_blank"><i class="fab fa-facebook-f"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Abhinav Sharma</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\aditi.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Aditi Agarwal</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Aditi Agarwal</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\allenpreet.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Allenpreet Singh</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Allenpreet Singh</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\avishrant.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+									<h2 class="tilter__title">Avishrant Verma</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Avishrant Verma</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\esheta.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Esheta</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+								<h3 class="tilter__title"></h3>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/profile.php?id=100004355595373" class="btn btn-outline-primary"
+										target="_blank"><i class="fab fa-facebook-f"></i></a>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Esheta</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\mehak.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Mehak</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Mehak</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\rishabh.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Rishabh Verma</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+								<h3 class="tilter__title"></h3>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/profile.php?id=100006345451434"
+										class="btn btn-outline-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Rishabh Verma</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\ritik.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Ritik Dhiman</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+								<h3 class="tilter__title"></h3>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/ritik.dhiman.988"
+										class="btn btn-outline-primary" target="_blank"><i	class="fab fa-facebook-f"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Ritik Dhiman</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\ritika.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Ritika</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Ritika</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\samarjeet.jpg"/>
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Samarjeet Kashyap</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Samarjeet Kashyap</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\shubham.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Shubham Gupta</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Shubham Gupta</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\sitaram.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Sitaram Rathi</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Sitaram Rathi</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\swagat.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Swagat Raj</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+								<h3 class="tilter__title"></h3>
+								<p class="tilter__description">
+									<a href="https://www.facebook.com/swagat.raj.790"
+										class="btn btn-outline-primary" target="_blank"><i class="fab fa-facebook-f"></i></a>
+								</p>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Swagat Raj</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\urvashi.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Urvashi</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Urvashi</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+					<div class="tilter tilter--4">
+						<figure class="tilter__figure border">
+							<img class="tilter__image" src="assets\team_images\yashaswani.jpg" />
+							<div class="tilter__deco tilter__deco--shine"></div>
+							<div class="tilter__deco tilter__deco--overlay " text='0' id="img"></div>
+							<figcaption class="tilter__caption" text='0' id="desc">
+								<h2 class="tilter__title">Yashaswani Sharma</h2>
+								<h4 class="tilter__description">Volunteer</h4>
+							</figcaption>
+							<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+								<path d="M20.5,20.5h260v375h-260V20.5z" />
+							</svg>
+						</figure>
+						<div class="caption">
+							<p class="caption__name">Yashaswani Sharma</p>
+							<p class="caption__post">Volunteer</p>
+						</div>
+					</div>
+				</section>
+				</div>
+			</div>-->
+
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+                    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+                <script src="js/imagesloaded.pkgd.min.js"></script>
+                <script src="js/anime.min.js"></script>
+                <script src="js/sample.js"></script>
+                <script src="js/main2.js"></script>
+                <div class="para">
+                    <script>
+                        (function () {
+                            var tiltSettings = [
+                                {},
+                                {
+                                    movement: {
+                                        imgWrapper: {
+                                            translation: { x: 10, y: 10, z: 30 },
+                                            rotation: { x: 0, y: -10, z: 0 },
+                                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                                        },
+                                        lines: {
+                                            translation: { x: 10, y: 10, z: [0, 70] },
+                                            rotation: { x: 0, y: 0, z: -2 },
+                                            reverseAnimation: { duration: 2000, easing: 'easeOutExpo' }
+                                        },
+                                        caption: {
+                                            rotation: { x: 0, y: 0, z: 2 },
+                                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                                        },
+                                        overlay: {
+                                            translation: { x: 10, y: -10, z: 0 },
+                                            rotation: { x: 0, y: 0, z: 2 },
+                                            reverseAnimation: { duration: 2000, easing: 'easeOutExpo' }
+                                        },
+                                        shine: {
+                                            translation: { x: 100, y: 100, z: 0 },
+                                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                                        }
+                                    }
+                                },
+                                {
+                                    movement: {
+                                        imgWrapper: {
+                                            rotation: { x: -5, y: 10, z: 0 },
+                                            reverseAnimation: { duration: 900, easing: 'easeOutCubic' }
+                                        },
+                                        caption: {
+                                            translation: { x: 30, y: 30, z: [0, 40] },
+                                            rotation: { x: [0, 15], y: 0, z: 0 },
+                                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                                        },
+                                        overlay: {
+                                            translation: { x: 10, y: 10, z: [0, 20] },
+                                            reverseAnimation: { duration: 1000, easing: 'easeOutExpo' }
+                                        },
+                                        shine: {
+                                            translation: { x: 100, y: 100, z: 0 },
+                                            reverseAnimation: { duration: 900, easing: 'easeOutCubic' }
+                                        }
+                                    }
+                                },
+                                {
+                                    movement: {
+                                        imgWrapper: {
+                                            rotation: { x: -5, y: 10, z: 0 },
+                                            reverseAnimation: { duration: 50, easing: 'easeOutQuad' }
+                                        },
+                                        caption: {
+                                            translation: { x: 20, y: 20, z: 0 },
+                                            reverseAnimation: { duration: 200, easing: 'easeOutQuad' }
+                                        },
+                                        overlay: {
+                                            translation: { x: 5, y: -5, z: 0 },
+                                            rotation: { x: 0, y: 0, z: 6 },
+                                            reverseAnimation: { duration: 1000, easing: 'easeOutQuad' }
+                                        },
+                                        shine: {
+                                            translation: { x: 50, y: 50, z: 0 },
+                                            reverseAnimation: { duration: 50, easing: 'easeOutQuad' }
+                                        }
+                                    }
+                                },
+                                {
+                                    movement: {
+                                        imgWrapper: {
+                                            translation: { x: 0, y: -8, z: 0 },
+                                            rotation: { x: 3, y: 3, z: 0 },
+                                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                                        },
+                                        lines: {
+                                            translation: { x: 15, y: 15, z: [0, 15] },
+                                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                                        },
+                                        overlay: {
+                                            translation: { x: 0, y: 8, z: 0 },
+                                            reverseAnimation: { duration: 600, easing: 'easeOutExpo' }
+                                        },
+                                        caption: {
+                                            translation: { x: 10, y: -15, z: 0 },
+                                            reverseAnimation: { duration: 900, easing: 'easeOutExpo' }
+                                        },
+                                        shine: {
+                                            translation: { x: 50, y: 50, z: 0 },
+                                            reverseAnimation: { duration: 1200, easing: 'easeOutExpo' }
+                                        }
+                                    }
+                                },
+                                {
+                                    movement: {
+                                        lines: {
+                                            translation: { x: -5, y: 5, z: 0 },
+                                            reverseAnimation: { duration: 1000, easing: 'easeOutExpo' }
+                                        },
+                                        caption: {
+                                            translation: { x: 15, y: 15, z: 0 },
+                                            rotation: { x: 0, y: 0, z: 3 },
+                                            reverseAnimation: { duration: 1500, easing: 'easeOutElastic', elasticity: 700 }
+                                        },
+                                        overlay: {
+                                            translation: { x: 15, y: -15, z: 0 },
+                                            reverseAnimation: { duration: 500, easing: 'easeOutExpo' }
+                                        },
+                                        shine: {
+                                            translation: { x: 50, y: 50, z: 0 },
+                                            reverseAnimation: { duration: 500, easing: 'easeOutExpo' }
+                                        }
+                                    }
+                                },
+                                {
+                                    movement: {
+                                        imgWrapper: {
+                                            translation: { x: 5, y: 5, z: 0 },
+                                            reverseAnimation: { duration: 800, easing: 'easeOutQuart' }
+                                        },
+                                        caption: {
+                                            translation: { x: 10, y: 10, z: [0, 50] },
+                                            reverseAnimation: { duration: 1000, easing: 'easeOutQuart' }
+                                        },
+                                        shine: {
+                                            translation: { x: 50, y: 50, z: 0 },
+                                            reverseAnimation: { duration: 800, easing: 'easeOutQuart' }
+                                        }
+                                    }
+                                },
+                                {
+                                    movement: {
+                                        lines: {
+                                            translation: { x: 40, y: 40, z: 0 },
+                                            reverseAnimation: { duration: 1500, easing: 'easeOutElastic' }
+                                        },
+                                        caption: {
+                                            translation: { x: 20, y: 20, z: 0 },
+                                            rotation: { x: 0, y: 0, z: -5 },
+                                            reverseAnimation: { duration: 1000, easing: 'easeOutExpo' }
+                                        },
+                                        overlay: {
+                                            translation: { x: -30, y: -30, z: 0 },
+                                            rotation: { x: 0, y: 0, z: 3 },
+                                            reverseAnimation: { duration: 750, easing: 'easeOutExpo' }
+                                        },
+                                        shine: {
+                                            translation: { x: 100, y: 100, z: 0 },
+                                            reverseAnimation: { duration: 750, easing: 'easeOutExpo' }
+                                        }
+                                    }
+                                }];
+
+                            function init() {
+                                var idx = 0;
+                                [].slice.call(document.querySelectorAll('div.tilter')).forEach(function (el, pos) {
+                                    idx = pos % 2 === 0 ? idx + 1 : idx;
+                                    new TiltFx(el, tiltSettings[idx - 1]);
+                                });
+                            }
+
+                            // Preload all images.
+                            imagesLoaded(document.querySelector('main'), function () {
+                                document.body.classList.remove('loading');
+                                init();
+                            });
+
+
+                        })();
+                    </script>
+                    <script>
+                        particlesJS.load('particles-js', 'particles.json', function () {
+                            console.log('particles.js config loaded');
+                        });
+                    </script>
+                    <script type="text/javascript" src="js/custom_navbar.js"></script>
+                    <script type="text/javascript" src="js/custom.js"></script>
+
+
+        </main>
+</body>
+
+</html>
