@@ -11,9 +11,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>SPEC | Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-	<meta name="author" content="FreeHTML5.co" />
+	<meta name="description" content="SPEC Website" />
+	<meta name="keywords" content="SPEC Electrothon NIT Hamirpur" />
+	<meta name="author" content="SPEC" />
 
 
 <link rel="icon" href="./Home-files/assets/spec-logo-white1.png" type="image/icon type">
@@ -108,8 +108,19 @@
 			.text-container{
 				height: fit-content;
 			}
+		/*	#star-svg {
+  position: fixed;
+  top: 75px;
+  left: -347px;
+  width: 1600px;
+  height: 818px;
+  margin: -75px 0 0 -78px;
+  z-index:0;
+}*/
 		}
-
+		::-webkit-scrollbar {
+    display: none;
+}
 
 		/*----  Main Style  ----*/
 		#cards_landscape_wrap-2 {
@@ -210,8 +221,8 @@
 			/* background: linear-gradient(180deg, #444, #888); */
 			background-color: #000;
 			color: #fff;
-			border: 1px solid #fff;
-			height: 80vh;
+			border: 1px solid #000;
+			height: 60vh;
 		}
 
 		body {
@@ -276,6 +287,71 @@
 			background-color: rgba(0, 0, 0, 0.904) !important;
 			transition: background-color 200ms linear;
 		}
+		@media only screen and (min-width: 601px){
+			
+		
+		#star-svg {
+  position: fixed;
+  top: 75px;
+  left: 718px;
+  width: 1600px;
+  height: 818px;
+  margin: -75px 0 0 -78px;
+  z-index:0;
+}}
+		
+	
+		.top{
+			margin-top: 3em !important;
+		}
+		
+#contact_i i{
+	color: #AF7AC5;
+	margin-bottom: 0.3em;
+	margin-top: 0.2em;
+}
+
+@media screen and (min-width: 768px){
+#contact_i{ 
+	height: 66vh;
+	width: 40em ;
+	background-color:#191919 !important;
+	padding-top: 6.5em !important;
+	padding: 0em;
+	margin-top:0em;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 5em !important ;
+}
+	
+	#cont{
+			padding-right: 4em;
+			padding-left: 4em;
+		}
+}
+
+@media screen and (max-width: 768px){
+#contact_i{
+	height: 50vh;
+	width: 95% ;
+	background-color:#191919 !important;
+	padding-top: 4em !important;
+	padding: 2em;
+	margin-top:0em;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 1em !important ;
+}
+	#cont{
+			padding-right: 0em;
+			padding-left: 0em;
+		}
+	
+}
+		
+		
 	</style>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -312,7 +388,50 @@
 				<source src="./Home-files/assets/tunnel.mp4" type="video/mp4">
 			</video>
 		</div>
+		<svg id="star-svg" width="5" height="1060" viewBox="0 0 5 1060" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<line id="star-path" x1="0.999998" y1="-0.00194174" x2="3.05825" y2="1060" stroke="#FFD000" stroke-width="2"/>
+			</svg>
 
+			<script>// Get a reference to the <path>
+				var path = document.querySelector('#star-path');
+				
+				// Get length of path... ~577px in this case
+				var pathLength = path.getTotalLength();
+				
+				// Make very long dashes (the length of the path itself)
+				path.style.strokeDasharray = pathLength + ' ' + pathLength;
+				
+				// Offset the dashes so the it appears hidden entirely
+				path.style.strokeDashoffset = pathLength;
+				
+				// Jake Archibald says so
+				// https://jakearchibald.com/2013/animated-line-drawing-svg/
+				path.getBoundingClientRect();
+				
+				// When the page scrolls...
+				window.addEventListener("scroll", function(e) {
+				 
+				  // What % down is it? 
+				  // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
+				  // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
+				  var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+					
+				  // Length to offset the dashes
+				  var drawLength = pathLength * scrollPercentage;
+				  
+				  // Draw in reverse
+				  path.style.strokeDashoffset = pathLength - drawLength;
+					
+				  // When complete, remove the dash array, otherwise shape isn't quite sharp
+				 // Accounts for fuzzy math
+				  if (scrollPercentage >= 0.99) {
+					path.style.strokeDasharray = "none";
+					
+				  } else {
+					path.style.strokeDasharray = pathLength + ' ' + pathLength;
+				  }
+				  
+				});</script>
 		<!--<div style="background-color: rgba(0, 0, 0, 0.5);" class="gradient"></div>-->
 		<div class="container">
 			<div class="text-wrap">
@@ -480,9 +599,9 @@
 						<div class="row">
 							<div class="col-md-12 col-md-offset--1 subtext">
 								<h3 style=" font-size: 18px; text-align: justify; font-weight: 300; padding-left: 4%; padding-right: 4% ;"
-									class="to-animate">SPEC is being run under the aegis of the Electronics and Communication Department, NIT Hamirpur. We at SPEC, organize various events, workshops, and competitions to pique the scientific temperament of the students. The society is reputed for conducting a national level hackathon: ELECTROTHON, one of the most ingenious, diverse and out-of-the-box hackathons. It witnesses a whopping number of participants from a plethora of diverse fields and universities. ELECTROTHON has been a budding ground to many mind-boggling ideas and inventions, a platform for the upcoming innovators and bold entrepreneurs. The event is majorly manifested by guest-talks, project exhibitions and a 48 hour grinding hackathon. 
-									It also conducts its yearly technical fest, SPEC FEST covering advancements and marvels of the tech world, along with a display of year-long projects. Comprising events, workshops and exhibitions that provide diverse opportunities for students to enlighten their inquisitive minds, SPEC helps maintain an apt atmosphere to gain technical skills and widen their vision to their venture of growth. Students work all year long in building projects, organising workshops and thriving to create a change.
-									From hands-on workshops for freshmen to high school students, SPEC believes in giving a platform to the young, dynamic, eager to learn engineers to convert their theoretical knowledge into useful innovative projects, creating a difference in the society. 
+									class="to-animate">SPEC is being run under the aegis of the Electronics and Communication Department, NIT Hamirpur. We at SPEC, organize various events, workshops, and competitions to pique the scientific temperament of the students. The society is reputed for conducting a national level hackathon: ELECTROTHON, one of the most ingenious and diverse hackathon. ELECTROTHON has been a budding ground to many mind-boggling ideas and inventions, a platform for the upcoming innovators and bold entrepreneurs. The event is majorly manifested by guest-talks, project exhibitions and a 48 hour grinding hackathon. 
+									It also conducts its yearly technical fest, SPEC FEST covering advancements and marvels of the tech world, along with a display of year-long projects. Comprising events, workshops and exhibitions that provide diverse opportunities for students to enlighten their inquisitive minds. Students work all year long in building projects, organising workshops and thriving to create a change.
+									SPEC believes in giving a platform to the young, dynamic, eager to learn engineers to convert their theoretical knowledge into useful innovative projects. 
 									
 									</h3>
 							</div>
@@ -524,7 +643,7 @@
 							style="padding-left: 60px; padding-right: 60px; padding-bottom: 40px;">
 							<div class="row">
 								<img src="./Home-files/assets/AR-min.jpg"
-									style="height:260px ; width:100% ; border: 1px solid #4d004d; border-radius: 2%;">
+									style="height:260px ; width:100% ; border: 1px solid #560056; border-radius: 2%;">
 							</div>
 							<br>
 							<div class="row">
@@ -538,7 +657,7 @@
 							</div>
 							<div class="center">
 								<div class="btn" onclick="location.href='./Gallery/project-domain1.html';"
-									style="cursor: pointer; border: 1px solid #4d004d; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); align-content: center; text-align: center; ">
+									style="cursor: pointer; border: 1px solid #560056; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); align-content: center; text-align: center; ">
 									Projects</div>
 							</div>
 							<!--<div class="row"><button class="btn" style="cursor: pointer; border: 1px solid #3498db; background-color: transparent; height: 50px; width: 200px; color: #3498db; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); " >Projects</div></div>-->
@@ -548,7 +667,7 @@
 							style="padding-left: 60px; padding-right: 60px; padding-bottom: 40px;">
 							<div class="row">
 								<img src="./Home-files/assets/ML2-min.jpg"
-									style="height:260px ; width:100% ; border: 1px solid #4d004d; border-radius: 2%;">
+									style="height:260px ; width:100% ; border: 1px solid #560056; border-radius: 2%;">
 							</div>
 							<br>
 							<div class="row">
@@ -559,7 +678,7 @@
 							</div>
 							<div class="center">
 								<div class="btn" onclick="location.href='./Gallery/project-domain2.html';"
-									style="cursor: pointer; border: 1px solid #4d004d; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
+									style="cursor: pointer; border: 1px solid #560056; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
 									Projects</div>
 							</div>
 						</div>
@@ -568,7 +687,7 @@
 							style="padding-left: 60px; padding-right: 60px; padding-bottom: 40px;">
 							<div class="row">
 								<img src="./Home-files/assets/WD1-min.jpg"
-									style="height:260px ; width:100% ; border: 1px solid #4d004d; border-radius: 2%;">
+									style="height:260px ; width:100% ; border: 1px solid #560056; border-radius: 2%;">
 							</div>
 							<br>
 							<div class="row">
@@ -580,7 +699,7 @@
 							</div>
 							<div class="center">
 								<div class="btn" onclick="location.href='./Gallery/project-domain3.html';"
-									style="cursor: pointer; border: 1px solid #4d004d; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
+									style="cursor: pointer; border: 1px solid #560056; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
 									Projects</div>
 							</div>
 						</div>
@@ -591,7 +710,7 @@
 							style="padding-left: 60px; padding-right: 60px; padding-bottom: 40px;">
 							<div class="row">
 								<img src="./Home-files/assets/ES1-min.jpg"
-									style="height:260px ; width:100% ; border: 1px solid #4d004d; border-radius: 2%;">
+									style="height:260px ; width:100% ; border: 1px solid #560056; border-radius: 2%;">
 							</div>
 							<br>
 							<div class="row">
@@ -605,7 +724,7 @@
 							</div>
 							<div class="center">
 								<div class="btn" onclick="location.href='./Gallery/project-domain4.html';"
-									style="cursor: pointer; border: 1px solid #4d004d; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
+									style="cursor: pointer; border: 1px solid #560056; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
 									Projects</div>
 							</div>
 						</div>
@@ -614,7 +733,7 @@
 							style="padding-left: 60px; padding-right: 60px; padding-bottom: 40px;">
 							<div class="row">
 								<img src="./Home-files/assets/iot.jpg"
-									style="height:260px ; width:100% ; border: 1px solid #4d004d; border-radius: 2%;">
+									style="height:260px ; width:100% ; border: 1px solid #560056; border-radius: 2%;">
 							</div>
 							<br>
 							<div class="row">
@@ -625,7 +744,7 @@
 							</div>
 							<div class="center">
 								<div class="btn" onclick="location.href='./Gallery/project-domain5.html';"
-									style="cursor: pointer; border: 1px solid #4d004d; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
+									style="cursor: pointer; border: 1px solid #560056; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
 									Projects</div>
 							</div>
 						</div>
@@ -634,7 +753,7 @@
 							style="padding-left: 60px; padding-right: 60px; padding-bottom: 40px;">
 							<div class="row">
 								<img src="./Home-files/assets/MD.png"
-									style="height:260px ; width:100% ; border: 1px solid #4d004d; border-radius: 2%;">
+									style="height:260px ; width:100% ; border: 1px solid #560056; border-radius: 2%;">
 							</div>
 							<br>
 							<div class="row">
@@ -646,7 +765,7 @@
 							</div>
 							<div class="center">
 								<div class="btn" onclick="location.href='./Gallery/project-domain6.html';"
-									style="cursor: pointer; border: 1px solid #4d004d; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
+									style="cursor: pointer; border: 1px solid #560056; background-color: transparent; height: 50px; width: 55%; font-size: 1.5em; box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); padding-bottom: 40px;">
 									Projects</div>
 							</div>
 						</div>
@@ -761,7 +880,7 @@
 										<div class="text-box">
 											<div class="image-box">
 												<img src="./Home-files/assets/dsy.png" alt=""
-													style="background-size: cover; height:195px; width: 100%">
+													style="background-size: cover; height:191px; width: 100%">
 											</div>
 											<div class="text-container">
 												<h6 style="color: #fff;">Dr. Dharmendra Singh Yadav</h6>
@@ -843,16 +962,33 @@
 								<!--</div>-->
 							</div>
 						</div>
+						<hr id="line-scroll" style="width: 100%; color: blanchedalmond;"> 
 					</div>
 				</div>
 
 			</section>
 
+		  <div class="row align-content-center justify-content-center d-flex" id="cont">
+	  
+	  <div class="col-lg-6 align-content-center justify-content-center d-flex"> 
+		  
+	
+		   <div id="contact_i" class=" align-content-center justify-content-center d-flex">
+	  <i class="fa fa-envelope-o  fa-3x mb-2" aria-hidden="true"></i><br> spec@nith.ac.in<br>
+			   	  <i class="fa fa-instagram fa-3x mb-3" aria-hidden="true"></i><br> s.p.e.c_nith <br>
+		  <i class="fa fa-linkedin  fa-3x" aria-hidden="true"></i><br>S.P.E.C NITH
+	
+		  </div>
+		  
+	  </div>
+	  
+		<div class="col-lg-6 align-content-center justify-content-center d-flex">
+			
 			<div id="fh5co-footer" role="contentinfo">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 to-animate"></div>
-						<div class="col-md-4 to-animate">
+			
+						<div class="col-md-6 to-animate top">
 							<h2 style="text-align: center; font-weight: 700; font-size: 40px;" class="section-title">To
 								<span style="color: #732673;">Contact</span> Us
 								<hr width="20%" style="color: #732673">
@@ -883,7 +1019,8 @@
 					</div>
 				</div>
 			</div>
-
+	  </div>
+			</div>
 
 
 			<div class="container-fluid">
@@ -912,7 +1049,7 @@
 						<li><a href="../Electrothon/electrothon.html">Electrothon 3.0</a></li>
 						<li><a href="./Gallery/gallery.html">Gallery</a></li>
 						<li><a href="./Team Page/team-2k20.html">Team SPEC</a></li>
-						<li><a href="./Alumini Page/Our-Alumini.html">Our Alumini</a></li>
+						<li><a href="./Alumini Page/Our-Alumini.html">Our Alumni</a></li>
 						<li><button class="dropdown-btn"
 								style="color: white; font-size: 18px; font-weight: 700;">E-books
 								<i class="fa fa-caret-down"></i>
