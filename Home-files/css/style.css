@@ -972,4 +972,33 @@ h1, h2, h3, h4, h5, h6 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #4d4d4d;
+
 }
+
+
+
+
+#fh5co-services{
+	margin-bottom: 8em !important;
+}
+
+/******readomre*********/
+#more {display: none;}
+
+#myBtn{
+	margin-top: 5px;
+	border-radius: 10px;
+color: white;
+background-color:black;
+}
+
+.image-box img{
+	border: px solid white;
+	
+	
+}
+
+#foot .social{
+	color: white !important;
+}
+
