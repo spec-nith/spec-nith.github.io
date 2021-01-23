@@ -27,7 +27,7 @@ body{font-family: Manjari,sans-serif;
 	font-weight: 500;
 	letter-spacing: 2px;
 	color: white;
-	font-family: Manjari,sans-serif;	
+	 font-family: arial,sans-serif;	
 }
 
 	#diversity p{
@@ -42,6 +42,7 @@ body{font-family: Manjari,sans-serif;
 		}
 
 		#diversity h1{
+			 font-family: arial,sans-serif;
 		  text-align: center;
 		  font-size: 3rem;
 		  padding-bottom: 1rem;

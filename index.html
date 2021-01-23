@@ -12,12 +12,11 @@
 	<title>SPEC | Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="SPEC Website" />
-	<meta name="keywords" content="SPEC Electrothon NIT Hamirpur" />
-	<meta name="author" content="SPEC" />
+	<meta name="keywords" content="SPEC Electrothon NIT Hamirpur Society for Promotion of Electronics Culture" />
+	<meta name="author" content="SPEC NITH" />
 
 
 <link rel="icon" href="./Home-files/assets/spec-logo-white1.png" type="image/icon type">
-<link rel="apple-touch-icon" href="../Home-files/assets/spec-logo-white1.png">
 
 
 
@@ -107,6 +106,10 @@
 			}
 			.text-container{
 				height: fit-content;
+			}
+			#star-svg{
+				right: 5px;
+				left: auto;
 			}
 		}
 
@@ -210,8 +213,8 @@
 			/* background: linear-gradient(180deg, #444, #888); */
 			background-color: #000;
 			color: #fff;
-			border: 1px solid #fff;
-			height: 50vh;
+			/* border: 1px solid #fff;
+			height: 55rem; */
 		}
 
 		body {
@@ -277,13 +280,13 @@
 			transition: background-color 200ms linear;
 		}
 		#star-svg {
-  position: fixed;
-  top: 75px;
-  left: -720px;
-  width: 1600px;
-  height: 818px;
-  margin: -75px 0 0 -78px;
-  z-index: 5000;
+  			position: fixed;
+  			top: 75px;
+  			left: 93%;
+ 			/* width: 1600px; */
+  			height: 818px;
+  			margin: -75px 0 0 -78px;
+ 			z-index: 10;
 }
 	</style>
 
@@ -321,50 +324,53 @@
 				<source src="./Home-files/assets/tunnel.mp4" type="video/mp4">
 			</video>
 		</div>
+
 		<svg id="star-svg" width="5" height="1060" viewBox="0 0 5 1060" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<line id="star-path" x1="0.999998" y1="-0.00194174" x2="3.05825" y2="1060" stroke="#FFD000" stroke-width="2"/>
 			</svg>
 
 			<script>// Get a reference to the <path>
 				var path = document.querySelector('#star-path');
-				
+
 				// Get length of path... ~577px in this case
 				var pathLength = path.getTotalLength();
-				
+
 				// Make very long dashes (the length of the path itself)
 				path.style.strokeDasharray = pathLength + ' ' + pathLength;
-				
+
 				// Offset the dashes so the it appears hidden entirely
 				path.style.strokeDashoffset = pathLength;
-				
+
 				// Jake Archibald says so
 				// https://jakearchibald.com/2013/animated-line-drawing-svg/
 				path.getBoundingClientRect();
-				
+
 				// When the page scrolls...
 				window.addEventListener("scroll", function(e) {
-				 
+
 				  // What % down is it? 
 				  // https://stackoverflow.com/questions/2387136/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript/2387222#2387222
 				  // Had to try three or four differnet methods here. Kind of a cross-browser nightmare.
 				  var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-					
+
 				  // Length to offset the dashes
 				  var drawLength = pathLength * scrollPercentage;
-				  
+
 				  // Draw in reverse
 				  path.style.strokeDashoffset = pathLength - drawLength;
-					
+
 				  // When complete, remove the dash array, otherwise shape isn't quite sharp
 				 // Accounts for fuzzy math
 				  if (scrollPercentage >= 0.99) {
 					path.style.strokeDasharray = "none";
-					
+
 				  } else {
 					path.style.strokeDasharray = pathLength + ' ' + pathLength;
 				  }
-				  
+
 				});</script>
+
+
 		<!--<div style="background-color: rgba(0, 0, 0, 0.5);" class="gradient"></div>-->
 		<div class="container">
 			<div class="text-wrap">
@@ -532,11 +538,10 @@
 						<div class="row">
 							<div class="col-md-12 col-md-offset--1 subtext">
 								<h3 style=" font-size: 18px; text-align: justify; font-weight: 300; padding-left: 4%; padding-right: 4% ;"
-									class="to-animate">SPEC is being run under the aegis of the Electronics and Communication Department, NIT Hamirpur. We at SPEC, organize various events, workshops, and competitions to pique the scientific temperament of the students. The society is reputed for conducting a national level hackathon: ELECTROTHON, one of the most ingenious, diverse and out-of-the-box hackathons. It witnesses a whopping number of participants from a plethora of diverse fields and universities. ELECTROTHON has been a budding ground to many mind-boggling ideas and inventions, a platform for the upcoming innovators and bold entrepreneurs. The event is majorly manifested by guest-talks, project exhibitions and a 48 hour grinding hackathon. 
-									It also conducts its yearly technical fest, SPEC FEST covering advancements and marvels of the tech world, along with a display of year-long projects. Comprising events, workshops and exhibitions that provide diverse opportunities for students to enlighten their inquisitive minds, SPEC helps maintain an apt atmosphere to gain technical skills and widen their vision to their venture of growth. Students work all year long in building projects, organising workshops and thriving to create a change.
-									From hands-on workshops for freshmen to high school students, SPEC believes in giving a platform to the young, dynamic, eager to learn engineers to convert their theoretical knowledge into useful innovative projects, creating a difference in the society. 
-									
-									</h3>
+									class="to-animate">SPEC is being run under the aegis of the Electronics and Communication Department, NIT Hamirpur. We at SPEC, organize various events, workshops, and competitions to pique the scientific temperament of the students. The society is reputed for conducting a national level hackathon: ELECTROTHON, one of the most ingenious and diverse hackathon. ELECTROTHON has been a budding ground to many mind-boggling ideas and inventions, a platform for the upcoming innovators and bold entrepreneurs. The event is majorly manifested by guest-talks, project exhibitions and a 48 hour grinding hackathon.
+									It also conducts its yearly technical fest, SPEC FEST covering advancements and marvels of the tech world, along with a display of year-long projects. Comprising events, workshops and exhibitions that provide diverse opportunities for students to enlighten their inquisitive minds. Students work all year long in building projects, organising workshops and thriving to create a change.
+									SPEC believes in giving a platform to the young, dynamic, eager to learn engineers to convert their theoretical knowledge into useful innovative projects. 
+</h3>
 							</div>
 						</div>
 					</div>
@@ -722,9 +727,9 @@
 					</div>
 				</div> -->
 			<section id="fh5co-counter-section" class="fh5co-counters">
-				<div class="container">
-					<div class="row to-animate">
-						<div class="col-md-3 text-center">
+				<div class="container align-content-center justify-content-center d-flex">
+					<div class="row to-animate align-content-center justify-content-center d-flex">
+						<div class="col-md-3 text-center align-content-center justify-content-center d-flex">
 							<span id="count" style="font-size: 30px;
 								display: block;
 								color: white;
@@ -739,12 +744,12 @@
 							<span style="color: white;" class="fh5co-counter-label">SPEC Members</span>
 						</div>
 						<div class="col-md-2 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="25" data-speed="2000"
+							<span class="fh5co-counter js-counter" data-from="0" data-to="16" data-speed="2000"
 								data-refresh-interval="50"></span>
 							<span style="color: white;" class="fh5co-counter-label">Finished Projects</span>
 						</div>
 						<div class="col-md-4 text-center">
-							<span class="fh5co-counter js-counter" data-from="0" data-to="2187" data-speed="2000"
+							<span class="fh5co-counter js-counter" data-from="0" data-to="5000" data-speed="2000"
 								data-refresh-interval="50"></span>
 							<span style="color: white;" class="fh5co-counter-label">No. of Participants</span>
 						</div>
@@ -769,7 +774,7 @@
 
 			<!-- Topic Cards -->
 
-			<section id="fh5co-team" data-section="team">
+			<section onscroll="line()" id="fh5co-team" data-section="team">
 				<div style="background-color: #000;" id="cards_landscape_wrap-2">
 					<div class="container">
 						<h2 style="font-size: 40px; font-weight: 700; text-align: center; " class="to-animate">
@@ -780,7 +785,7 @@
 
 						<div class="row">
 							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-								<a href="">
+								
 									<div class="card-flyer">
 										<div class="text-box">
 											<div class="image-box">
@@ -805,10 +810,10 @@
 											</div>
 										</div>
 									</div>
-								</a>
+								
 							</div>
 							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-								<a href="">
+								
 									<div class="card-flyer">
 										<div class="text-box">
 											<div class="image-box">
@@ -832,13 +837,13 @@
 											</div>
 										</div>
 									</div>
-								</a>
+								
 							</div>
 
 							<!-- </div> -->
 							<!--<div class="row"> -->
 							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-								<a href="">
+								
 									<div class="card-flyer">
 										<div class="text-box">
 											<div class="image-box">
@@ -849,25 +854,15 @@
 											<div class="text-container">
 												<h6 style="color: #fff;">Mr. Hritik Bansal</h6>
 												<h6 style="color: #732673;">President, SPEC</h6>
-												<p style="color: #fff;">'If your actions inspire others to dream more,
-													learn
-													more,
-													do more and become
-													more, you are a leader.’ We, as Team SPEC believe, each of us has a
-													leader
-													within us, blazing with ideas and motivation. We believe in
-													spreading this
-													light
-													of enlightenment, joy, and learning to all people. The motto of ‘We
-													Rise, We
-													Shine’ is what we have been abiding by.</p>
+												<p style="color: #fff;">“Not all of us, do great things. But we can all do small things, with great effort, and together we can do something great.”  SPEC as a team has always believed in giving equal opportunities to everyone, bringing their ideas and talent to light and encouraging them to step out of their cocoon. Our team’s motto “We rise, we shine” truly reflects in our lives </p>
+													
 											</div>
 										</div>
 									</div>
-								</a>
+								
 							</div>
 							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-								<a href="">
+								
 									<div class="card-flyer">
 										<div class="text-box">
 											<div class="image-box">
@@ -891,11 +886,12 @@
 											</div>
 										</div>
 									</div>
-								</a>
 								<!--</div>-->
 							</div>
 						</div>
+						<hr id="line-scroll" style="width: 100%; color: blanchedalmond;"> 
 					</div>
+					
 				</div>
 
 			</section>
@@ -1035,10 +1031,10 @@
 					<a class="link mb-2" href="mailto:spec@nith.ac.in"><i class="fa fa-envelope">
 							spec@nith.ac.in</i></a>
 					<div class="social mb-2">
-					<a href="https://www.facebook.com/spec.ece"><i class="fa fa-facebook"></i></a>
-					<a href="https://www.linkedin.com/company/spec-nith/about/"><i class="fa fa-linkedin" ></i></a>
-					<a href="https://twitter.com/SPEC__NITH"><i class="fa fa-twitter"></i> </a>
-					<a href="https://www.instagram.com/s.p.e.c_nith/?hl=en"><i class="fa fa-instagram"></i> </a>
+						<a target="_blank" href="https://www.facebook.com/spec.ece"><i class="fa fa-facebook"></i> </a>
+						<a target="_blank" href="https://www.linkedin.com/company/spec-nith/about/"><i class="fa fa-linkedin"></i> </a>
+						<a target="_blank" href="https://twitter.com/SPEC__NITH"><i class="fa fa-twitter"></i> </a>
+						<a target="_blank" href="https://www.instagram.com/s.p.e.c_nith/?hl=en"><i class="fa fa-instagram"></i> </a>
 					</div>
 					<span style="font-weight: 200;" class="my-3">&copy; 2021, SPEC NITH</span>
 				</div>
@@ -1192,6 +1188,25 @@
 			<script src="./Home-files/js/jquery.countTo.js"></script>
 			<!-- Main JS (Do not remove) -->
 			<script src="./Home-files/js/main.js"></script>
+			<!------------Read more button----------------->
+		<script>
+			
+				function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+			</script>
 
 </body>
 
