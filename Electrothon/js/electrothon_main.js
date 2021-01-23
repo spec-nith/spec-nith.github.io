@@ -26,3 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
   var ver = document.getElementById('ver');
   ver.innerHTML = flipdown.version;
 });
+
+
