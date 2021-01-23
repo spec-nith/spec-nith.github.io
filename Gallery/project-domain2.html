@@ -23,7 +23,23 @@
                 transform: scale(3);
             }
         }
-        #sblist, #snlist, #pplist{
+        .card:nth-child(1):before {
+    background-image: url(./assets/overlay.png), url(./assets/bcancer.webp);
+    background-position: center;
+}
+.card:nth-child(2):before {
+    background-image: url(./assets/overlay.png), url(./assets/mlnote.jpg);
+    background-position: center;
+}
+.card:nth-child(3):before {
+    background-image: url(./assets/overlay.png), url(./assets/eclass.jpg);
+    background-position: center;
+}
+.card:nth-child(4):before {
+    background-image: url(./assets/overlay.png), url(./assets/vspeedml.jpeg);
+    background-position: center;
+    }
+    #sblist, #snlist, #pplist{
       position: absolute;
       top: 100%;
       left: 0;
