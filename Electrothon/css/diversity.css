@@ -22,7 +22,7 @@ body{font-family: Manjari,sans-serif;
 .pr_tit{
 	text-align: center !important;
 	margin-bottom: 3em;
-	margin-top: 0em;
+	margin-top: 0em !IMPORTANT;
 	font-size: 3.6em ;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -540,3 +540,138 @@ main img{
    transition: all 300ms ease;
    z-index: 0;
 }
+
+
+/*************TROPHY**********/
+
+@media screen and (max-width: 700px){
+	
+ #trophy-container {
+	 TOP:7EM !IMPORTANT;
+	 width: 150px;
+	 height: 150px;
+	 position: relative;
+	align-content: center;
+	 align-items: center;
+	 transform: translateY(-50%) scale(1.5);
+
+	 right: 0 !IMPORTANT;
+	 margin: 0;
+	 	 margin-left: -2EM !IMPORTANT;
+
+}
+ #trophy {
+	 width: auto;
+	 height: 100px;
+	 position: absolute;
+	 top: calc(100% - 100px*.5);
+	 transform: translateY(-50%);
+	 left: 0;
+	 right: 0;
+	 margin: 0 auto;
+	 
+}	
+	
+}
+
+
+ #trophy-container {
+	 margin-bottom: -2EM !IMPORTANT;
+	 	 margin-left: -2EM !IMPORTANT;
+	 width: 150px;
+	 height: 150px;
+	 position: relative;
+	align-content: center;
+	 align-items: center;
+	 transform: translateY(-50%) scale(1.5);
+	 left: 0 !IMPORTANT;
+	 right: 0 !IMPORTANT;
+	 margin: 0;
+}
+ #trophy {
+	 width: auto;
+	 height: 100px;
+	 position: absolute;
+	 top: calc(100% - 100px*.5);
+	 transform: translateY(-50%);
+	 left: 0;
+	 right: 0;
+	 margin: 0 auto;
+}
+ #trophy path.trophy-star {
+	 fill: #0c253b;
+}
+ #trophy path.trophy-body {
+	 fill: #0c253b;
+}
+ .star {
+	 width: 50px;
+	 position: absolute;
+	 top: 18%;
+	 left: 0;
+	 right: 20%;
+	 margin: 0 auto;
+	 transform: scale(0.5);
+	 animation: star 1.5s ease-in-out 0s infinite alternate;
+}
+ .star.star1 {
+	 top: -5%;
+   LEFT:-30%;
+}
+ .star.star2 {
+	 top: 0%;
+   LEFT:0;
+}
+ .star.star3 {
+	 top: -10%;
+	 left: 50%;
+	 transform: scale(1.2);
+}
+ .star .star-path {
+	 fill: gold;
+	 stroke: gold;
+}
+ @keyframes star {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0.2;
+	}
+}
+ .spotlight {
+	
+	 height: auto;
+	 width: 30px;
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 margin: 0 auto;
+	 transform-origin: 50% 100%;
+}
+ .spotlight.spotlight1 {
+	 left: 40%;
+	 animation: spotlight 5s ease-in-out 0s infinite alternate;
+}
+ .spotlight.spotlight2 {
+	 right: 40%;
+	 animation: spotlight2 5s ease-in-out 0s infinite alternate;
+}
+ @keyframes spotlight {
+	 from {
+		 transform: rotate(-45deg) scale(3, 1);
+	}
+	 to {
+		 transform: rotate(45deg) scale(3, 1);
+	}
+}
+ @keyframes spotlight2 {
+	 from {
+		 transform: rotate(45deg) scale(3, 1);
+	}
+	 to {
+		 transform: rotate(-45deg) scale(3, 1);
+	}
+}
+ 
