@@ -2320,7 +2320,8 @@ margin: 0 auto;
 background: #676e77;
 margin-bottom: 40px;
 }
-.shop{
+.shop{padding-top: 2em;
+	padding-right: 2em;
   background: #0c253b;
 }
 
@@ -2329,15 +2330,19 @@ margin-bottom: 40px;
   margin: 0 auto;
 }
   .workshops .card{
+	  margin-top: 3em;
+	  border: 0 !important;
       width: 20rem;
   }
     .card img{
-      height: 20rem;
-      border-radius: 20px;
-      margin-bottom: -20px;
+		
+      height:100%;
+		width: 100%;
+      margin-bottom: -15px;
    }
 
   .card-body{
+	  background-color: #0c253b;
      display: flex;
      justify-content: center;align-items: center;
    }
