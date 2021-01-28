@@ -2268,6 +2268,89 @@ a .named{
   }
 
 
+
+
+
+
+
+/************WORKSHOP SECTION BEGINS HERE***************/
+.work_title{
+  margin-top: 0em;
+  padding-top: 0em;
+  background-color:#0c253b;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Manjari,sans-serif;
+  letter-spacing: 2px;
+  font-size: 3.5em;
+}
+
+
+#work_hor{
+width: 20%;
+margin: 0 auto;
+background: #676e77;
+margin-bottom: 40px;
+}
+.shop{
+  background: #0c253b;
+}
+
+.shrink{
+  width: 55%;
+  margin: 0 auto;
+}
+  .workshops .card{
+      width: 20rem;
+  }
+    .card img{
+      height: 20rem;
+      border-radius: 20px;
+      margin-bottom: -20px;
+   }
+
+  .card-body{
+     display: flex;
+     justify-content: center;align-items: center;
+   }
+  @media screen and (max-width: 768px){
+  .workshop{
+     width: 75%;
+  }
+  #work_hor{
+    width: 60%;
+  }
+  .shrink{
+  width: 75%;
+  margin: 0 auto;
+}
+.workshops{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+    .worskhops .card{
+    width: 16rem;
+    
+}
+}
+
+/************WORKSHOP SECTION ENDS HERE****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********************advisory comm************************/
 
 .details .adv_1{
