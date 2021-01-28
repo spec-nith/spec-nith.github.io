@@ -1,115 +1,5 @@
   /*@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');*/
  @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,500&display=swap');
-.g-text {
-  font-size:4vw !important;
-  font-family: arial,sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(#141c27, #5D6D7E);
- -webkit-background-clip: text;
-   -moz-background-clip: text;
-  background-clip: text;
- -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-fill-color: transparent;
-  color: #141c27;
-  font-weight: 500;
-
-}
-
-
-
-.g-text_sub{
-  font-size:2.3vw !important;
-  font-family: arial,sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(#5D6D7E, #141c27);
- -webkit-background-clip: text;
-   -moz-background-clip: text;
-  background-clip: text;
- -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-fill-color: transparent;
-  color: #141c27;
-  font-weight: 700;
-
-}
-
-@media screen and (max-width: 700px){
-	
-	.g-text {
-  font-size:11vw !important;
-  font-family: arial,sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(#141c27, #5D6D7E);
- -webkit-background-clip: text;
-   -moz-background-clip: text;
-  background-clip: text;
- -webkit-text-fill-color: #141c27;
-  -moz-text-fill-color: #141c27;
-  text-fill-color: #141c27;
-  color: #141c27;
-  font-weight: 600;
-
-}
-	
-
-	
-	.g-text_sub {
-  font-size:6vw !important;
-  font-family: arial,sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(#141c27, #5D6D7E);
- -webkit-background-clip: text;
-   -moz-background-clip: text;
-  background-clip: text;
- -webkit-text-fill-color: #141c27;
-  -moz-text-fill-color: #141c27;
-  text-fill-color: #141c27;
-  color: #141c27;
-  font-weight: 700;
-
-}
-	
-		#g-text_faq {
-  font-size:5vw !important;
-  font-family: arial,sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(#141c27, #5D6D7E);
- -webkit-background-clip: text;
-   -moz-background-clip: text;
-  background-clip: text;
- -webkit-text-fill-color: #141c27;
-  -moz-text-fill-color: #141c27;
-  text-fill-color: #141c27;
-  color: #141c27;
-  color: #141c27;
-  font-weight: 600;
-
-}
-}
-
-.g-text_faq {
-	margin-top: 3em;
-  font-size:1.5vw !important;
-  font-family: arial,sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(#141c27, #5D6D7E);
- -webkit-background-clip: text;
-   -moz-background-clip: text;
-  background-clip: text;
- -webkit-text-fill-color: #141c27;
-  -moz-text-fill-color: #141c27;
-  text-fill-color: #141c27;
-  color: #141c27;
-  font-weight: 500;
-
-}
 
 body{
 	font-family: Manjari,sans-serif !important;
@@ -1152,7 +1042,7 @@ height: 17em;
 	align-items: center;
 	text-align: center;
 	color: white;
-	 font-family: arial,sans-serif;
+	font-family: Manjari,sans-serif;
 	letter-spacing: 2px;
 	font-size: 3.5em;
 }
@@ -1218,9 +1108,7 @@ margin-bottom: 1em !important;
 
 }
 
-#pstitle{
-	 font-family: arial,sans-serif !important;
-}
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto);
@@ -1656,7 +1544,10 @@ aside:hover section{
 .sponsor_title{
 	margin-bottom: 0em;
 	margin-top: 3em !important;
-
+	font-size: 3.5em ;
+	font-weight: 500;
+	letter-spacing: 2px;
+	font-family: Manjari,sans-serif;
 }
 
 .prizes_title{
