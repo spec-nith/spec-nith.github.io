@@ -1382,15 +1382,34 @@ aside:hover section{
 
 
 /*******speakers section starts here**************/
-
-#speaker{
+@media screen and (max-width: 700px){
+	#speaker{
+	padding-top: 4em ;
+	padding-bottom: 4em;
   background: #0c253b;
+		padding-left:0em !important;
+	padding-right: 0em !important;
+
+}
+}
+#speaker{
+	padding-top: 4em;
+	padding-bottom: 4em;
+  background: #0c253b;
+	padding-left:9em;
+	padding-right: 9em;
+}
+
+.title-h1{
+	
+	font-size: 3.5em !important;
+	
 }
 
 
 
-
 .speaker .container .card {
+	
   position: relative;
   width: 300px;
   height: 400px;
@@ -1403,6 +1422,7 @@ aside:hover section{
   align-items: center;
 }
 .speaker .container .card .content {
+	padding-top: .9em;
   position: absolute;
   bottom: -160px;
   width: 100%;
@@ -1410,14 +1430,14 @@ aside:hover section{
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 0;
   flex-direction: column;
   backdrop-filter: blur(15px);
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  transition: bottom 0.5s;
-  transition-delay: 0.65s;
+  transition: bottom 0.3s;
+  transition-delay: -2s;
 }
 .speaker .container .card:hover .content {
   bottom: 0;
@@ -1426,15 +1446,16 @@ aside:hover section{
 .speaker .container .card .content .contentBx h3 {
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.9em;
   text-align: center;
-  margin: 20px 0 15px;
-  line-height: 1.1em;
+  margin-bottom: 0 !important;
+  line-height: 1em;
   transition: 0.5s;
-  transition-delay: 0.6s;
+  transition-delay: 0.1s;
   opacity: 0;
+	
   transform: translateY(-20px);
 }
 .speaker .container .card:hover .content .contentBx h3 {
@@ -1442,22 +1463,24 @@ aside:hover section{
   transform: translateY(0);
 }
 .speaker .container .card .content .contentBx h3 span {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 300;
   text-transform: initial;
 }
 .speaker .container .card .content .sci {
+	left:-2em;
   position: relative;
-  bottom: 10px;
+  bottom: 130px;
+	height: 50px !important;
   display: flex;
 }
 .speaker .container .card .content .sci li {
   list-style: none;
-  margin: 0 10px;
+  margin: 0 0px;
   transform: translateY(40px);
   transition: 0.5s;
   opacity: 0;
-  transition-delay: calc(0.2s * var(--i));
+  transition-delay: calc(0.1s * var(--i));
 }
 
 .speaker .container .card:hover .content .sci li {
@@ -1469,7 +1492,10 @@ aside:hover section{
   font-size: 24px;
 }
 
-
+.spea{
+	padding-left: 1em;
+	padding-right: 1em;
+}
 
 
 
@@ -2268,6 +2294,96 @@ a .named{
   }
 
 
+
+
+
+
+
+/************WORKSHOP SECTION BEGINS HERE***************/
+.work_title{
+  margin-top: 0em;
+  padding-top: 0em;
+  background-color:#0c253b;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Manjari,sans-serif;
+  letter-spacing: 2px;
+  font-size: 3.5em;
+}
+
+
+#work_hor{
+width: 20%;
+margin: 0 auto;
+background: #676e77;
+margin-bottom: 40px;
+}
+.shop{padding-top: 2em;
+	padding-right: 2em;
+  background: #0c253b;
+}
+
+.shrink{
+  width: 55%;
+  margin: 0 auto;
+}
+  .workshops .card{
+	  margin-bottom: 3em;
+	  margin-top: 3em;
+	  border: 0 !important;
+      width: 20rem;
+  }
+    .card img{
+		border: 1px solid white;
+		
+      height:100%;
+		width: 100%;
+      margin-bottom: 0px;
+   }
+
+  .card-body{
+	  background-color: #0c253b;
+     display: flex;
+     justify-content: center;align-items: center;
+   }
+  @media screen and (max-width: 768px){
+  .workshop{
+     width: 75%;
+  }
+  #work_hor{
+    width: 60%;
+  }
+  .shrink{
+  width: 75%;
+  margin: 0 auto;
+}
+.workshops{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+    .worskhops .card{
+    width: 16rem;
+    
+}
+}
+
+/************WORKSHOP SECTION ENDS HERE****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********************advisory comm************************/
 
 .details .adv_1{
@@ -2277,7 +2393,7 @@ a .named{
 }
 .advisory{
 	text-align: center !important;
-	margin-top: 11em !important;
+	margin-top: -3em !important;
 	margin-bottom:3em !important;
 	padding-left: 6em;
 	padding-right: 6em;
