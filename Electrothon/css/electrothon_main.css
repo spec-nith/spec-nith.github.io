@@ -1384,8 +1384,9 @@ aside:hover section{
 /*******speakers section starts here**************/
 @media screen and (max-width: 700px){
 	#speaker{
+	
 	padding-top: 4em ;
-	padding-bottom: 4em;
+	padding-bottom: 12vh !important;
   background: #0c253b;
 		padding-left:0em !important;
 	padding-right: 0em !important;
@@ -1396,8 +1397,8 @@ aside:hover section{
 	padding-top: 4em;
 	padding-bottom: 4em;
   background: #0c253b;
-	padding-left:9em;
-	padding-right: 9em;
+	padding-left:4em;
+	padding-right: 4em;
 }
 
 .title-h1{
@@ -1412,8 +1413,9 @@ aside:hover section{
 	
   position: relative;
   width: 300px;
-  height: 400px;
-  margin: 20px;
+  height: 380px;
+  margin: 0px;
+	margin-bottom: 2.4em;
   overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -1504,6 +1506,131 @@ aside:hover section{
 
 /******speakers section ends here**************/
 
+
+/*******judges section starts here**************/
+@media screen and (max-width: 700px){
+	#judges{
+	
+	padding-top: 4em ;
+	padding-bottom: 12vh !important;
+  background: #0c253b;
+		padding-left:0em !important;
+	padding-right: 0em !important;
+
+}
+}
+#judges{
+	padding-top: 4em;
+	padding-bottom: 4em;
+  background: #0c253b;
+	padding-left:4em;
+	padding-right: 4em;
+}
+
+.title-h1{
+	
+	font-size: 3.5em !important;
+	
+}
+
+
+
+.judges .container .card {
+	
+  position: relative;
+  width: 300px;
+  height: 380px;
+  margin: 0px;
+	margin-bottom: 2.4em;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.judges .container .card .content {
+	padding-top: .9em;
+  position: absolute;
+  bottom: -160px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  transition: bottom 0.3s;
+  transition-delay: -2s;
+}
+.judges .container .card:hover .content {
+  bottom: 0;
+  transition-delay: 0s;
+}
+.judges .container .card .content .contentBx h3 {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 1.9em;
+  text-align: center;
+  margin-bottom: 0 !important;
+  line-height: 1em;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+  opacity: 0;
+	
+  transform: translateY(-20px);
+}
+.judges .container .card:hover .content .contentBx h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.judges .container .card .content .contentBx h3 span {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: initial;
+}
+.judges .container .card .content .sci {
+	left:-2em;
+  position: relative;
+  bottom: 130px;
+	height: 50px !important;
+  display: flex;
+}
+.judges .container .card .content .sci li {
+  list-style: none;
+  margin: 0 0px;
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
+}
+
+.judges .container .card:hover .content .sci li {
+  transform: translateY(0);
+  opacity: 1;
+}
+.judgess .container .card .content .sci li a {
+  color: white;
+  font-size: 24px;
+}
+
+.spea{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
+
+
+
+
+/******judges section ends here**************/
 
 
 
@@ -1611,7 +1738,7 @@ aside:hover section{
 
 
 #FAQs{
-	margin-top: 3em;
+	margin-top: 10em;
 	margin-bottom: 10em;
 }
 
