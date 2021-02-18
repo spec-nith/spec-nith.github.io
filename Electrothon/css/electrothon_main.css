@@ -2440,19 +2440,6 @@ a .named{
   font-size: 3.5em;
 }
 
-.judge_title{
-  margin-top: 0em;
-  padding-top: 0em;
-  background-color:#E5E7E9;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  color: #212529;
-  font-family: Manjari,sans-serif;
-  letter-spacing: 2px;
-  font-size: 3.5em;
-}
-
 
 #work_hor{
 width: 20%;
@@ -2464,11 +2451,7 @@ margin-bottom: 40px;
 	padding-right: 2em;
   background: #0c253b;
 }
-.judge{
-  padding-top: 2em;
-	padding-right: 2em;
-  background: #E5E7E9!important;
-}
+
 .shrink{
   width: 55%;
   margin: 0 auto;
@@ -2489,11 +2472,6 @@ margin-bottom: 40px;
 
   .card-body{
 	  background-color: #0c253b;
-     display: flex;
-     justify-content: center;align-items: center;
-   }
-   .judge-card-body{
-	  background-color: #E5E7E9;
      display: flex;
      justify-content: center;align-items: center;
    }
