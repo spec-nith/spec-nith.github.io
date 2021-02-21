@@ -86,3 +86,42 @@
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
+
+.cont{
+  text-align: center;
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: auto;
+}
+.cont h1{
+  text-transform: uppercase;
+  display: block;
+}
+.text1{
+  margin-bottom: 0.625rem;
+  background-color: #0c253b;
+  position: relative;
+  animation: text 3s 1;
+  padding-top: 0.625rem;
+}
+.text2{
+  font-size: 2.5vh;
+  color: #6ab04c;
+  margin-bottom: 10px;
+}
+
+@keyframes text {
+  0%{
+    margin-bottom: -2.5rem;
+  }
+  30%{
+    letter-spacing: 1.188rem;
+    margin-bottom: -2.5rem;
+  }
+  85%{
+    letter-spacing: 0.5rem;
+    margin-bottom: -2.5rem;
+  }
+}
