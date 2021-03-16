@@ -25,14 +25,37 @@
 
 	<style>
 		body {
-			padding: 0;
-			margin: 0;
-		}
-
-		canvas {
-			vertical-align: top;
-		}
-	</style>
+		padding: 0;
+		margin: 0;
+	}
+	
+	canvas {
+		vertical-align: top;
+	}
+	
+	.dropdown-btn,
+	.dropdown-btn-sb,
+	.dropdown-btn-sn,
+	.dropdown-btn-pp {
+		outline: none;
+		background: transparent;
+		border: none;
+		font-weight: bold;
+	}
+	
+	.dropdown-btn-sb,
+	.dropdown-btn-sn,
+	.dropdown-btn-pp {
+		position: relative;
+		display: block;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	.dropdown-btn:active {
+		border: none;
+	}
+</style>
 
 
 	<!-- header files start -->
@@ -108,16 +131,49 @@
 						<a class="nav-link" href="Alumini Page/Our-Alumini.html">Alumni</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							E-Books
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Subject Books</a>
-							<a class="dropdown-item" href="#">Subject Notes</a>
-							<a class="dropdown-item" href="#">Past Papers</a>
-						</div>
-					</li>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <button class="dropdown-btn-sb" id="subject_book" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" font-size: 18px; font-weight: 400;">Subject Books <i class="fa fa-caret-down"></i></button>
+                            <div class="sb-container" style="display : none; ">
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_">First
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC">Second
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF">Third
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO">Final
+                                    Year</a><br>
+                            </div>
+                            <button class="dropdown-btn-sn" id="notes" style=" font-size: 18px; font-weight: 400;">Subject Notes <i class="fa fa-caret-down"></i></button>
+                            <div class="sn-container" style="display : none; ">
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt">First
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9">Second
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j">Third
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/u/0/folders/1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r">Final
+                                    Year</a><br>
+                            </div>
+                            <button class="dropdown-btn-pp" id=" papers" style=" font-size: 18px; font-weight: 400;">Past Papers <i class="fa fa-caret-down"></i></button>
+                            <div class="pp-container" style="display : none; ">
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1xhNMyx-A7Twg9XdsF6EZsmX-H8KaJoGq">First
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1HOfMim4Fit6gRWh-8eEOXzNrHy097kTw">Second
+                                    Year</a><br>
+                                <a style="font-weight: normal;" target="_blank" href="https://drive.google.com/drive/folders/1ZPqZOYGo-uRwsqgiX_VldQqgwFHGu7iU">Third
+                                    Year</a><br>
+                            </div>
+                        </div>
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Subject Books</a>
+                            <a class="dropdown-item" href="#">Subject Notes</a>
+                            <a class="dropdown-item" href="#">Past Papers</a>
+                        </div> -->
+                    </li>
 
 				</ul>
 			</div>
@@ -521,10 +577,9 @@
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K20</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
-						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<p>Inaugurating with opening ceremony, SPECFEST 2k20 was an exhilarating event to look back on.
+							The treasure hunt with a fun inculcation of AR, was immensely enjoyed by the students sprinting all around the college to decode clues. It was followed by Atharva- an annual open exhibition of projects.</p>
+						<a class="read_more" href="./Gallery/specfest-gallery2k20.html">See More</a>
 					</div>
 				</div>
 			</div>
@@ -533,10 +588,9 @@
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K19</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
+						<p>SPECFEST 2k19 was a breed of its own. Team spec organised this year with the them of beloved book amd film series Harry Potter in mind. With amazing events and fun games like Forbidden forest and quiditch which enables the players to use robots in a fun and interesting way, this year's SPECFEST was nothing more than pure magic.
 						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<a class="read_more" href="./Gallery/specfest-gallery2k19.html">See More</a>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -555,10 +609,9 @@
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K18</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
+						<p>The perfect amalgamation of technical events ,workshops and fun events like naughts and crosses did make SPECFEST 2k18 a great success.SPECFEST 2k18 did set new bars of zenith and also left some inspirational footsteps for the coming years to follow.
 						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<a class="read_more" href="./Gallery/specfest-gallery2k18.html">See More</a>
 					</div>
 				</div>
 			</div>
@@ -567,10 +620,9 @@
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K17</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
+						<p>Specfest has always been the most momentous and illustrious event of NIT Hamirpur. These events have always provided a stage for students to showcase their extraordinary talents while having fun.
 						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<a class="read_more" href="./Gallery/specfest-gallery.html">See More</a>
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -627,6 +679,115 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 	<script src="Specfest/js/owl.carousel.min.js"></script>
 	<script src="Specfest/js/custom.js"></script>
+	<script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+
+        var dropdown = document.getElementsByClassName("dropdown-btn-sb");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+
+        var dropdown = document.getElementsByClassName("dropdown-btn-sn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+
+        var dropdown = document.getElementsByClassName("dropdown-btn-pp");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+    <!-- <div id="map" class="fh5co-map"></div> -->
+
+
+    <script src="./Home-files/js/Design copy.js"></script>
+
+
+
+    <!-- jQuery -->
+    <script src="./Home-files/Box/js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="./Home-files/Box/js/bootstrap.min.js"></script>
+    <script src="./Home-files/Box/js/menu.js"></script>
+    <script src="./Home-files/Box/js/animated-headline.js"></script>
+    <script src="./Home-files/Box/js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="./Home-files/Box/js/custom.js"></script>
+
+
+
+
+    <!-- visit counter js file -->
+    <script src="./Home-files/js/count.js"></script>
+
+    <!-- jQuery -->
+    <script src="./Home-files/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="./Home-files/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="./Home-files/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="./Home-files/js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="./Home-files/js/jquery.stellar.min.js"></script>
+    <!-- Counters -->
+    <script src="./Home-files/js/jquery.countTo.js"></script>
+    <!-- Main JS (Do not remove) -->
+    <script src="./Home-files/js/main.js"></script>
+    <script>
 	<!-- covido template js files end -->
 
 </body>
