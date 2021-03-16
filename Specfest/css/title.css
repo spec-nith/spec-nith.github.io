@@ -1,0 +1,71 @@
+
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  height: 100%;
+}
+/*.text-box {
+  font-size: 100px;
+  letter-spacing: 25px;
+  word-spacing: 12px;
+  text-transform: uppercase;
+  color: transparent;
+}*/
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+}
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  margin-left:20px;
+  margin-right:20px;
+  word-spacing: normal;
+  letter-spacing: 5px;  
+  border: 1px solid white;
+  /*background: black;*/
+  cursor: pointer;
+}
+ .star {
+  animation: star 10s ease-out infinite;
+  width:100%;
+  height:auto;
+} 
+@keyframes star {
+  0% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-0.75em);
+  }
+  20% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateZ(-1000em);
+  }
+}
+.starwars-demo {
+  perspective: 800px;
+  transform-style: preserve3d;
+} 
