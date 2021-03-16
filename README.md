@@ -1,2 +1,2 @@
 # spec.github.io
-Website for SPEC
+Website for Team SPEC
