@@ -804,10 +804,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #8C7676;
+  background: #ffffff;
 }
 .btn:hover, .btn:active, .btn:focus {
-  background: #393e46 !important;
+  background: #f7e2ff !important;
   color: #fff;
   outline: none !important;
 }
@@ -1001,4 +1001,3 @@ background-color:black;
 #foot .social{
 	color: white !important;
 }
-
