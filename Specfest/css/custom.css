@@ -127,4 +127,12 @@
     margin-left:20px ;
     margin-right: 20px;
   }
+  #question h1{
+    padding: 2rem;
+    max-width: 80%;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    left: 2rem;
+  }
 }
