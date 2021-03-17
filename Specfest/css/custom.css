@@ -1,6 +1,6 @@
 .title{
     /* margin-top: 6rem; */
-    font-family: "Star jedi",arial;
+    font-family: 'Star Jedi', arial;
     transform: translateY(-120%);
     background: transparent;
     color: transparent;
@@ -27,7 +27,7 @@
     position: absolute;
     text-align: center;
     top: -30%;
-    z-index: 2000;
+    /* z-index: 2000; */
     letter-spacing: .3rem;
     /* background-color: #000; */
     font-family:Arial, Helvetica, sans-serif;
@@ -107,6 +107,7 @@
     margin-top: 10rem;
     top: -15rem;
     font-size: 8rem;
+    margin-bottom: 2rem;
   }
   .speclogo{
     transform: scale(3);
