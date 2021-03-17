@@ -1,6 +1,6 @@
 .title{
     /* margin-top: 6rem; */
-    font-family: "Star jedi",arial;
+    font-family: 'Star Jedi', arial;
     transform: translateY(-120%);
     background: transparent;
     color: transparent;
@@ -27,7 +27,7 @@
     position: absolute;
     text-align: center;
     top: -30%;
-    z-index: 2000;
+    /* z-index: 2000; */
     letter-spacing: .3rem;
     /* background-color: #000; */
     font-family:Arial, Helvetica, sans-serif;
@@ -80,6 +80,7 @@
   .page{
     right: -25%;
     width: 150%;
+    height: 90vh;
   }
   .desk{
     display: none;
@@ -92,8 +93,9 @@
     margin-top: -50vh;
   }
   .headline{
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
+    margin-top: -5rem;
     /* animation: none; */
     /* overflow: visible; */
   }
@@ -102,8 +104,10 @@
     display: block;
   }
   .title{
+    margin-top: 10rem;
     top: -15rem;
-    font-size: 6rem;
+    font-size: 8rem;
+    margin-bottom: 2rem;
   }
   .speclogo{
     transform: scale(3);
@@ -126,5 +130,13 @@
   .cases{
     margin-left:20px ;
     margin-right: 20px;
+  }
+  #question h1{
+    padding: 2rem;
+    max-width: 80%;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    left: 2rem;
   }
 }

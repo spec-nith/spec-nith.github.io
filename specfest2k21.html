@@ -4,12 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SPECFEST 2021</title>
+
+	<title>SPEC | SPECFEST 2021</title>
 	<meta name="description" content="STAR WARS Kylo Ren Page Preloader in CSS" />
 	<meta name="keywords" content="css, animation, preloader, web development, css-only" />
 	<meta name="author" content="Petr Urbánek for Codrops" />
 	<link rel="shortcut icon" href="Specfest/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+	<link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="Specfest/css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="Specfest/css/component.css" />
 	<link rel="stylesheet" type="text/css" href="Specfest/pater/pater.css" />
@@ -21,8 +23,6 @@
 
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/addons/p5.sound.min.js"></script>
 
-	<script type="text/javascript" src="app.js"></script>
-
 	<style>
 		body {
 			padding: 0;
@@ -31,6 +31,29 @@
 
 		canvas {
 			vertical-align: top;
+		}
+
+		.dropdown-btn,
+		.dropdown-btn-sb,
+		.dropdown-btn-sn,
+		.dropdown-btn-pp {
+			outline: none;
+			background: transparent;
+			border: none;
+			font-weight: bold;
+		}
+
+		.dropdown-btn-sb,
+		.dropdown-btn-sn,
+		.dropdown-btn-pp {
+			position: relative;
+			display: block;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.dropdown-btn:active {
+			border: none;
 		}
 	</style>
 
@@ -75,7 +98,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top wreqwr">
 		<div class="container">
-			<a class="navbar-brand" style="padding: 0;" href="homepage.html"><img src="imgs/spec logo white.png"
+			<a class="navbar-brand" style="padding: 0; display: inline-block !important; vertical-align: top !important; width: 10rem;" href="./index.html"><img src="Specfest/spec logo white.png"
 					height="70" class="d-inline-block align-top" alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,15 +131,67 @@
 						<a class="nav-link" href="Alumini Page/Our-Alumini.html">Alumni</a>
 					</li>
 					<li class="nav-item dropdown">
+
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							E-Books
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Subject Books</a>
-							<a class="dropdown-item" href="#">Subject Notes</a>
-							<a class="dropdown-item" href="#">Past Papers</a>
+							<button class="dropdown-btn-sb" id="subject_book" role="button" data-toggle="dropdown"
+								aria-haspopup="true" aria-expanded="false"
+								style=" font-size: 18px; font-weight: 400;">Subject Books <i
+									class="fa fa-caret-down"></i></button>
+							<div class="sb-container" style="display : none; ">
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1sRPe_ZRnSZQROUNtiDFdIrP87IrmTPI_">First
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1kUqer7j2q-p3JLx_yhf8uqrjByyoHRZC">Second
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1XGTe2XI_iu9mDTbdOkLuvSFUOZDS_xYF">Third
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1mXrj5KdIYTfb01b_PCnoasAA8MBIpZEO">Final
+									Year</a><br>
+							</div>
+							<button class="dropdown-btn-sn" id="notes"
+								style=" font-size: 18px; font-weight: 400;">Subject Notes <i
+									class="fa fa-caret-down"></i></button>
+							<div class="sn-container" style="display : none; ">
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1UNN6vWwD3OghWKXXYk5jsrPC-esnzAtt">First
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1lP76R5LvfFHVYH5yQlC2aZFOaIqu2yV9">Second
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1UqkfxmiAw5hJgbcZFW_mWRGHYW8uVp-j">Third
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/u/0/folders/1iOvrFP12trGkyyi4pre4e9wdoyPHpP8r">Final
+									Year</a><br>
+							</div>
+							<button class="dropdown-btn-pp" id=" papers"
+								style=" font-size: 18px; font-weight: 400;">Past Papers <i
+									class="fa fa-caret-down"></i></button>
+							<div class="pp-container" style="display : none; ">
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1xhNMyx-A7Twg9XdsF6EZsmX-H8KaJoGq">First
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1HOfMim4Fit6gRWh-8eEOXzNrHy097kTw">Second
+									Year</a><br>
+								<a style="font-weight: normal;" target="_blank"
+									href="https://drive.google.com/drive/folders/1ZPqZOYGo-uRwsqgiX_VldQqgwFHGu7iU">Third
+									Year</a><br>
+							</div>
 						</div>
+						<!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Subject Books</a>
+                            <a class="dropdown-item" href="#">Subject Notes</a>
+                            <a class="dropdown-item" href="#">Past Papers</a>
+                        </div> -->
 					</li>
 
 				</ul>
@@ -333,16 +408,18 @@
 				<div class="col-md-4">
 					<!-- <i><img style="position: relative; left: 0; bottom: 20rem; width: 50%;" src="images/ship.png" alt="#" /></i> -->
 				</div>
-				<div class="col-md-4 title-icon"><i><img style="position:relative; bottom: 5rem;" src="Specfest/images/sw7.png"
-							alt="#" /></i></div>
+				<div class="col-md-4 title-icon"><i><img loading="lazy" style="position:relative; bottom: 5rem;"
+							src="Specfest/images/sw7.png" alt="#" /></i></div>
 				<div class="col-md-4">
 					<!-- <i><img style="position: relative; right: 0%; bottom: 20rem; width: 50%;" src="images/ship.png" alt="#" /></i> -->
 				</div>
 			</div>
 		</div>
 	</main>
-	<h1 style="position:relative; top: -60vh;" class="headline mobile">Coming for all of you from somwhere far,<br
-			class="break-title">far away from
+
+	<h1 style="position:relative; top: -60vh;" class="headline mobile">Coming for all of<br class="break-title">you from
+		somwhere far,<br class="break-title">far away from
+
 		NITH...&nbsp;</h1>
 
 	<!-- about -->
@@ -388,13 +465,14 @@
 			<div class="row d_flex">
 				<div class=" col-md-4">
 					<div class="latest text_align_center">
-						<figure><img src="Specfest/images/sw6.jpg" alt="#" /></figure>
+						<figure><img loading="lazy" src="Specfest/images/sw6.jpg" alt="#" /></figure>
 						<!-- <a class="read_more" href="cases.html">Read More</a> -->
 						<div class="nostrud">
 							<h3>Bounty Hunt</h3>
 							<p>Team Spec is back to recharge those neurons with the greatest event tailormade just for
 								you. This Bounty-Hunt brings forth an opportunity to traverse through the infinite
 								universe of mind boggling riddles, exciting ciphers and many other brainstorming
+
 								problems. All you need is a team and excellent problem solving skills to win some amazing perks
 								including cash prizes. If you think you have a keen eye for things that aren't very straightforward but
 								cryptic? Then we invite you to this little brainstorming event on 20th March, 2021 to join in
@@ -406,7 +484,7 @@
 				</div>
 				<div class=" col-md-4">
 					<div class="latest text_align_center">
-						<figure><img src="Specfest/images/sw4.webp" alt="#" /></figure>
+						<figure><img loading="lazy" src="Specfest/images/sw4.webp" alt="#" /></figure>
 						<!-- <a class="read_more" href="cases.html">Read More</a> -->
 						<div class="nostrud">
 							<h3>Holocron</h3>
@@ -419,19 +497,23 @@
 				</div>
 				<div class=" col-md-4">
 					<div class="latest text_align_center">
-						<figure><img src="Specfest/images/sw4.jpeg" alt="#" /></figure>
+						<figure><img loading="lazy" src="Specfest/images/sw4.jpeg" alt="#" /></figure>
 						<!-- <a class="read_more" href="cases.html">Read More</a> -->
 						<div class="nostrud">
 							<h3>Empire Rush</h3>
 							<p>“In my experience there is no such thing as luck”: Obi-wan(Star wars)
-								Let's test your luck in the game of Empire Rush tailor made just for you to break the monotony of long boring Wikipedia pages.
-								
-								Gazing over the various Wikipedia pages going from links to links, buckle up to win the race in just intensifying 2:30 minutes each of numerous challenges.
-								Be there at the initial point of this marathon by joining the room with the code provided. Just remember "it's never too late to try". Find as many paths as soon as you can because the points will be awarded on your clicks and time.
-								
-								
+								Let's test your luck in the game of Empire Rush tailor made just for you to break the
+								monotony of long boring Wikipedia pages.
+
+								Gazing over the various Wikipedia pages going from links to links, buckle up to win the
+								race in just intensifying 2:30 minutes each of numerous challenges.
+								Be there at the initial point of this marathon by joining the room with the code
+								provided. Just remember "it's never too late to try". Find as many paths as soon as you
+								can because the points will be awarded on your clicks and time.
+
+
 								All you need is a little vision to crack this game. See you on 19th Of March,2021
-								</p>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -447,6 +529,7 @@
 				<div class="col-md-12">
 					<div class="titlepage text_align_center">
 						<h2 style="color: black;">IoTIoT Industrial Training</h2>
+
 						<p style="color: black!important;">Prime yourself for the enlightening first event, the first episode in the series which can be
 							your first step towards industrial exposure. So relish all the knowledge you can!
 						</p>
@@ -463,11 +546,13 @@
 							<div class="item">
 								<div class="protect_box text_align_center">
 									<div class="desktop">
-										<i><img src="Specfest/images/sw5.png" alt="#" /></i>
+										<i><img loading="lazy" src="Specfest/images/sw5.png" alt="#" /></i>
 										<h3> Day 1</h3>
-										<span><p>Industry Software</p>
-										<p>Development</p>
-									<p>Methodologies and Tools</p></span>
+										<span>
+											<p>Industry Software</p>
+											<p>Development</p>
+											<p>Methodologies and Tools</p>
+										</span>
 									</div>
 									<!-- <a class="read_more" href="protect.html">Read More</a> -->
 								</div>
@@ -475,11 +560,13 @@
 							<div class="item">
 								<div class="protect_box text_align_center">
 									<div class="desktop">
-										<i><img src="Specfest/images/sw3.png" alt="#" /></i>
+										<i><img loading="lazy" src="Specfest/images/sw3.png" alt="#" /></i>
 										<h3> Day 2</h3>
-										<span><p>Code Refaracting,</p>
-										<p>Coporate Etiquette and</p>
-									<p>Communication</p></span>
+										<span>
+											<p>Code Refaracting,</p>
+											<p>Coporate Etiquette and</p>
+											<p>Communication</p>
+										</span>
 									</div>
 									<!-- <a class="read_more" href="#">Register Now</a> -->
 								</div>
@@ -487,21 +574,25 @@
 							<div class="item">
 								<div class="protect_box text_align_center">
 									<div class="desktop">
-										<i><img src="Specfest/images/sw6.png" alt="#" /></i>
+										<i><img loading="lazy" src="Specfest/images/sw6.png" alt="#" /></i>
 										<h3> Day 3</h3>
-										<span><p>Team Play and</p>
-										<p>presentation with industry</p>
-									<p>judges</p></span>
+										<span>
+											<p>Team Play and</p>
+											<p>presentation with industry</p>
+											<p>judges</p>
+										</span>
 									</div>
 									<!-- <a class="read_more" href="protect.html">Read More</a> -->
 								</div>
 							</div>
 						</div>
 						<div class="text_align_center">
-							<a class="read_more" href="#">Register Now</a>
+
+							<a class="read_more" target="_blank" href="http://iotiot.in/preoffice4/">Register Now</a>
 						</div>
 					</div>
-					
+
+
 				</div>
 			</div>
 		</div>
@@ -515,16 +606,17 @@
 			<div class="row d_flex grid">
 				<div class="col-md-6">
 					<div class="coronata_img text_align_center">
-						<figure><img src="Specfest/images/sp5.jpg" alt="#" /></figure>
+						<figure><img loading="lazy" src="Specfest/images/sp5.jpg" alt="#" /></figure>
 					</div>
 				</div>
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K20</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
-						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<p>Inaugurating with opening ceremony, SPECFEST 2k20 was an exhilarating event to look back on.
+							The treasure hunt with a fun inculcation of AR, was immensely enjoyed by the students
+							sprinting all around the college to decode clues. It was followed by Atharva- an annual open
+							exhibition of projects.</p>
+						<a class="read_more" href="./Gallery/specfest-gallery2k20.html">See More</a>
 					</div>
 				</div>
 			</div>
@@ -533,15 +625,17 @@
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K19</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
+						<p>SPECFEST 2k19 was a breed of its own. Team spec organised this year with the them of beloved
+							book amd film series Harry Potter in mind. With amazing events and fun games like Forbidden
+							forest and quiditch which enables the players to use robots in a fun and interesting way,
+							this year's SPECFEST was nothing more than pure magic.
 						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<a class="read_more" href="./Gallery/specfest-gallery2k19.html">See More</a>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="coronata_img text_align_center">
-						<figure><img src="Specfest/images/sp26.jpg" alt="#" /></figure>
+						<figure><img loading="lazy" src="Specfest/images/sp26.jpg" alt="#" /></figure>
 					</div>
 				</div>
 			</div>
@@ -549,16 +643,17 @@
 			<div class="row d_flex grid">
 				<div class="col-md-6">
 					<div class="coronata_img text_align_center">
-						<figure><img src="Specfest/images/sp28.jpg" alt="#" /></figure>
+						<figure><img loading="lazy" src="Specfest/images/sp28.jpg" alt="#" /></figure>
 					</div>
 				</div>
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K18</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
+						<p>The perfect amalgamation of technical events ,workshops and fun events like naughts and
+							crosses did make SPECFEST 2k18 a great success.SPECFEST 2k18 did set new bars of zenith and
+							also left some inspirational footsteps for the coming years to follow.
 						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<a class="read_more" href="./Gallery/specfest-gallery2k18.html">See More</a>
 					</div>
 				</div>
 			</div>
@@ -567,15 +662,16 @@
 				<div class="col-md-6 oder1">
 					<div class="titlepage text_align_left">
 						<h2>SPECFEST 2K17</h2>
-						<p>when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
-							normal distribution of letters, as opposed to using
+						<p>Specfest has always been the most momentous and illustrious event of NIT Hamirpur. These
+							events have always provided a stage for students to showcase their extraordinary talents
+							while having fun.
 						</p>
-						<a class="read_more" href="coronata.html">See More</a>
+						<a class="read_more" href="./Gallery/specfest-gallery.html">See More</a>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="coronata_img text_align_center">
-						<figure><img src="Specfest/images/sp29.jpg" alt="#" /></figure>
+						<figure><img loading="lazy" src="Specfest/images/sp29.jpg" alt="#" /></figure>
 					</div>
 				</div>
 			</div>
@@ -589,6 +685,7 @@
 			<h2>Bounty Hunt Start</h2>
 			<br>
 			<p style="padding:30px; font-size: 20px;">Hey Einstein!
+
 				Stuck with cracking those monotonous problems and completing your assignments? Don’t worry! Team Spec is back to recharge those neurons with the greatest event tailormade just for you. Here you go!!</p>
 		</div>
 		<div id="chart"></div>
@@ -603,7 +700,7 @@
 	<footer id="foot">
 		<div class="container text-center d-flex flex-column">
 			<div class="container w-50 pl-5 pr-5" style="overflow: hidden;">
-				<img class="speclogo" src="spec logo white.png" id="fimg">
+				<img loading="lazy" class="speclogo" src="./Specfest/spec logo white.png" id="fimg">
 			</div>
 			<a class="link mb-2" href="mailto:spec@nith.ac.in"><i class="fa fa-envelope"> spec@nith.ac.in</i></a>
 			<div class="social mb-2">
@@ -627,8 +724,76 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 	<script src="Specfest/js/owl.carousel.min.js"></script>
 	<script src="Specfest/js/custom.js"></script>
-	<!-- covido template js files end -->
+	<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
 
-</body>
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
 
-</html>
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn-sb");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn-sn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn-pp");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+
+
+	
+</body >
+
+</html >
