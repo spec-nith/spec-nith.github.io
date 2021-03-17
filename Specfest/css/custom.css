@@ -80,6 +80,7 @@
   .page{
     right: -25%;
     width: 150%;
+    height: 90vh;
   }
   .desk{
     display: none;
@@ -94,6 +95,7 @@
   .headline{
     font-size: 1.5rem;
     width: 100%;
+    margin-top: -5rem;
     /* animation: none; */
     /* overflow: visible; */
   }
@@ -102,8 +104,9 @@
     display: block;
   }
   .title{
+    margin-top: 10rem;
     top: -15rem;
-    font-size: 6rem;
+    font-size: 8rem;
   }
   .speclogo{
     transform: scale(3);
