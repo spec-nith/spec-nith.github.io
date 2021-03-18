@@ -17,6 +17,10 @@
 	<link rel="stylesheet" type="text/css" href="Specfest/pater/pater.css" />
 	<script>document.documentElement.className = 'js';</script>
 
+	<!-- plane css start -->
+	<link rel="stylesheet" type="text/css" href="Specfest/css/plane.css" />
+	<!-- plane css ends -->
+
 	<!-- FOR STAR BG FILES START -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
 
@@ -98,8 +102,10 @@
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top wreqwr">
 		<div class="container">
-			<a class="navbar-brand" style="padding: 0; display: inline-block !important; vertical-align: top !important; width: 10rem;" href="./index.html"><img src="Specfest/spec logo white.png"
-					height="70" class="d-inline-block align-top" alt=""></a>
+			<a class="navbar-brand"
+				style="padding: 0; display: inline-block !important; vertical-align: top !important; width: 10rem;"
+				href="./index.html"><img src="Specfest/spec logo white.png" height="70" class="d-inline-block align-top"
+					alt=""></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon">
@@ -205,7 +211,7 @@
 			<h1 class="headline desk">Coming for all of you from somwhere far,<br class="break-title">far away from
 				NITH...&nbsp;</h1>
 			<h1 style="top: -100vh;" class="title mobile">SPEC FEST<br>2k21</h1>
-			<h1 style="top: -15rem;" class="title desk">SPEC &emsp;&emsp;&emsp; FEST<br></h1>
+			<h1 style="top: -15rem;" class="title desk">SPEC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FEST<br></h1>
 			<h1 style="top: 5rem;" class="title desk">2K21</h1>
 			<!-- <img class="pater__img" src="pater/phone.png" alt="Phone with theme" /> -->
 			<div class="page-content">
@@ -449,6 +455,18 @@
 	</div>
 	<!-- end about -->
 
+	<!-- plane start -->
+	<canvas id="c"></canvas>
+	<!-- <h1 class="heading">Hello World</h1> -->
+	<script>
+		window.b = document.body;
+		window.a = document.getElementsByTagName('canvas')[0];
+		window.c = window.a.getContext('2d');
+		window.d = document;
+		document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
+	</script>
+	<!-- plane ends -->
+
 	<!-- events -->
 	<div class="cases">
 		<div class="container-fluid">
@@ -473,11 +491,14 @@
 								you. This Bounty-Hunt brings forth an opportunity to traverse through the infinite
 								universe of mind boggling riddles, exciting ciphers and many other brainstorming
 
-								problems. All you need is a team and excellent problem solving skills to win some amazing perks
-								including cash prizes. If you think you have a keen eye for things that aren't very straightforward but
-								cryptic? Then we invite you to this little brainstorming event on 20th March, 2021 to join in
+								problems. All you need is a team and excellent problem solving skills to win some
+								amazing perks
+								including cash prizes. If you think you have a keen eye for things that aren't very
+								straightforward but
+								cryptic? Then we invite you to this little brainstorming event on 20th March, 2021 to
+								join in
 								this exhilarating quest among hundred others for the finest bounty-hunters out there!
-								
+
 							</p>
 						</div>
 					</div>
@@ -488,8 +509,14 @@
 						<!-- <a class="read_more" href="cases.html">Read More</a> -->
 						<div class="nostrud">
 							<h3>Holocron</h3>
-							<p>Clear the decks and garner your wits for a riveting AR-based fun contest to test your mettle and transport you to the mystical world of Star Wars. 
-								The bout is going to be simple. You'll be given ten folders containing ten pictures each. Scan the pictures and, lo and behold, an enigmatic clue will pop up on one particular picture in each folder. The clue might baffle you initially and leave you scratching your head for a while, but mark my words, the answer lies in the clue itself. If this still doesn't help you reach the answer, just spare a glance at the picture on which the clue is augmented and you'll be all set to go.
+							<p>Clear the decks and garner your wits for a riveting AR-based fun contest to test your
+								mettle and transport you to the mystical world of Star Wars.
+								The bout is going to be simple. You'll be given ten folders containing ten pictures
+								each. Scan the pictures and, lo and behold, an enigmatic clue will pop up on one
+								particular picture in each folder. The clue might baffle you initially and leave you
+								scratching your head for a while, but mark my words, the answer lies in the clue itself.
+								If this still doesn't help you reach the answer, just spare a glance at the picture on
+								which the clue is augmented and you'll be all set to go.
 								We hope to see you with your best foot forward on the __ of March.
 								Till then, let the zest augment!</p>
 						</div>
@@ -530,7 +557,8 @@
 					<div class="titlepage text_align_center">
 						<h2 style="color: black;">IoTIoT Industrial Training</h2>
 
-						<p style="color: black!important;">Prime yourself for the enlightening first event, the first episode in the series which can be
+						<p style="color: black!important;">Prime yourself for the enlightening first event, the first
+							episode in the series which can be
 							your first step towards industrial exposure. So relish all the knowledge you can!
 						</p>
 					</div>
@@ -686,7 +714,8 @@
 			<br>
 			<p style="padding:30px; font-size: 20px;">Hey Einstein!
 
-				Stuck with cracking those monotonous problems and completing your assignments? Don’t worry! Team Spec is back to recharge those neurons with the greatest event tailormade just for you. Here you go!!</p>
+				Stuck with cracking those monotonous problems and completing your assignments? Don’t worry! Team Spec is
+				back to recharge those neurons with the greatest event tailormade just for you. Here you go!!</p>
 		</div>
 		<div id="chart"></div>
 		<div id="question">
@@ -717,6 +746,9 @@
 	<script type="text/javascript" src="Specfest/js/h.js"></script>
 	<script type="text/javascript" src="Specfest/js/spinning.js"></script>
 
+	<!-- plane js start -->
+	<script src="Specfest/js/plane.js"></script>
+	<!-- plane js ends -->
 	<!-- covido template js files start -->
 	<!-- Javascript files-->
 	<script src="Specfest/js/jquery.min.js"></script>
@@ -793,7 +825,7 @@
 
 
 
-	
-</body >
 
-</html >
+</body>
+
+</html>

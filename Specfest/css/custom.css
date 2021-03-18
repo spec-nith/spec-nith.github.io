@@ -1,3 +1,4 @@
+@import url(https://allfont.net/allfont.css?fonts=star-jedi);
 .title{
     /* margin-top: 6rem; */
     font-family: 'Star Jedi', arial;
@@ -6,7 +7,7 @@
     color: transparent;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #40e0d0;
-    font-size: 9rem;
+    font-size: 8vw;
     line-height:1em;
     letter-spacing: 1rem;
     text-align: center;
@@ -93,7 +94,7 @@
     margin-top: -50vh;
   }
   .headline{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
     margin-top: -5rem;
     /* animation: none; */
@@ -104,10 +105,10 @@
     display: block;
   }
   .title{
-    margin-top: 10rem;
-    top: -15rem;
+    margin-top: 12rem;
+    /* top: -15rem; */
     font-size: 8rem;
-    margin-bottom: 2rem;
+    padding-bottom: 5rem;
   }
   .speclogo{
     transform: scale(3);

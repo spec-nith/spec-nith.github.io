@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECFEST | MEET PAGE</title>
+    <title>Star Wars Opening Crawl</title>
+</head>
+
+<style>
+    body {
+        background: url("stars.png");
+        background-size: cover;
+        overflow: hidden;
+        color: #ffb13a;
+    }
+
+    .crawl {
+        font-family: Arial, sans-serif;
+        text-align: justify;
+        margin: 0 auto;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 80px;
+        width: 1000px;
+        height: 1600px;
+        transform: perspective(250px) rotateX(20deg);
+        animation: scrollCrawl 100s linear;
+    }
+
+    .preheader {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .header {
+        text-align: center;
+        margin: 0 0 100px 0;
+    }
+
+    @keyframes scrollCrawl {
+        0% {
+            transform: perspective(250px) rotateX(20deg) translateY(680px);
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: perspective(250px) rotateX(20deg) translateY(-4000px);
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="crawl">
+        <p class="preheader">HEY HUNTER</p>
+        <h2 class="header">THIS IS THE WAY</h2>
+        <p>
+            Luke Skywalker has vanished. In his absence, the sinister FIRST ORDER
+            has risen from the ashes of the Empire and will not rest until
+            Skywalker, the last Jedi, has been destroyed.
+        </p>
+        <!-- <p>
+            With the support of the REPUBLIC, General Leia Organa leads a brave
+            RESISTANCE. She is desperate to find her brother Luke and gain his help
+            in restoring peace and justice to the galaxy.
+        </p>
+        <p>
+            Leia has sent her most daring pilot on a secret mission to Jakku, where
+            an old ally has discovered a clue to Luke's whereabouts....
+        </p> -->
+    </div>
+</body>
+<script>
+    import "./styles.css";
+
+    document.getElementById("app").innerHTML = `
+<h1>Hello Vanilla!</h1>
+<div>
+  We use Parcel to bundle this sandbox, you can find more info about Parcel
+  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
+</div>
+`;
+
+</script>
+
+</html>
