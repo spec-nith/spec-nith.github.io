@@ -13,6 +13,9 @@
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
 }
+#question h1{
+  font-size: 2rem;
+}
 
 @keyframes glow {
     from {

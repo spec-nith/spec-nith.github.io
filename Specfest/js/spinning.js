@@ -11,61 +11,91 @@ var padding = { top: 20, right: 40, bottom: 0, left: 0 },
 //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
 var data = [
   {
-    label: "Dell LAPTOP",
+    label: "The Rise of Skywalker",
     value: 1,
     question:
-      "What CSS property is used for specifying the area between the content and its border?"
-  }, // padding
+      `My cat is facing a paradox  
+      To be or not to be?
+      Yet I can't find her corpse    
+      You can help by at least finding me`
+  }, // schordinger
   {
-    label: "IMAC PRO",
+    label: "The Last Jedi",
     value: 2,
-    question: "What CSS property is used for changing the font?"
-  }, //font-family
+    question: `Just spare a glance at my map 
+    from above
+    And you will realize that I look like an armadillo
+    I'm greatest and the most powerful in the world
+    But, ironically, a duck ruined me, you know:(`
+  }, //america
   {
-    label: "SUZUKI",
+    label: "The Force Awakens",
     value: 3,
-    question: "What CSS property is used for changing the color of text?"
-  }, //color
+    question: `Shining with a green light
+    I hold the flame of pride, you all cherish me deeply, 
+    Because you are birds in cages, who only see 50 stars in the sky
+    So why have you been wearing me as footwear for ages?`
+  }, //liberty
   {
-    label: "HONDA",
+    label: "Return of the Jedi",
     value: 4,
-    question: "What CSS property is used for changing the boldness of text?"
-  }, //font-weight
+    question: `What I want to say is They have ruined the most beautiful gathering place of your college by making a hole in between it
+    I've always been there to satisfy your hunger pangs
+    I know you miss your beloved ice tea and all the views of hamirpur I hope you soon experience the college spark!`
+  }, //nescafe
   {
-    label: "FERRARI",
+    label: "The Empire Strikes Back",
     value: 5,
-    question: "What CSS property is used for changing the size of text?"
-  }, //font-size
+    question: `Black ribbed, eerie breath and mechanical hiss
+    Be with me or become my enemy
+    My saber is now red, earlier used to be blue
+    Are you enjoying this star wars based clue?`
+  }, //darkVader
   {
-    label: "APARTMENT",
+    label: "A New Hope",
     value: 6,
     question:
-      "What CSS property is used for changing the background color of a box?"
-  }, //background-color
+      `Heyy do you know my name?? Don't search on Google, search on Bing. Still can't find it?? 
+      Could it beeeeeeeeeee more annoying?
+      Well, First I am stuck in an atm vestibule and then people don't know me.
+      I wanna have a puff and interest you in a sarcastic comment. Just make me happy and tell my FULL name.`
+  }, //chandler
   {
-    label: "IPAD PRO",
+    label: " Rogue One",
     value: 7,
     question:
-      "Which word is used for specifying an HTML tag that is inside another tag?"
-  }, //nesting
+      `You use me on the place where world makes software 
+      figure it out, till then let me take from this cake a bit!`
+  }, //fork
   {
-    label: "LAND",
+    label: "The Mandlorian",
     value: 8,
     question:
-      "Which side of the box is the third number in: margin:1px 1px 1px 1px; ?"
-  }, //bottom
+      `Flying disc got lost and so were we,
+      Play games Or create community 
+      I hope you won't disapprove
+     That my rhythm makes you groove`
+  }, //discord
   {
-    label: "MOTOROLLA",
+    label: "Revelations",
     value: 9,
     question:
-      "What are the fonts that don't have serifs at the ends of letters called?"
-  }, //sans-serif
+      `The pride of Yankees 
+      Multi-talented Artist 
+      Eight times gramophone conqueror 
+      Still Faced Skin issues
+      Guess the name of the superstar`
+  }, //michaelJackson
   {
-    label: "BMW",
+    label: "The Battle for Endor",
     value: 10,
     question:
-      "With CSS selectors, what character prefix should one use to specify a class?"
-  }
+      `This is all we know, you know what I did for you.
+      I was a sick boy for you, 
+      My love brought you closer to me
+      Just don't take this away from me, don't let me down.
+       I will be there for you just call me name`
+  } //theChainsmokers 
 ];
 var svg = d3
   .select("#chart")
@@ -177,10 +207,10 @@ svg
   .attr(
     "transform",
     "translate(" +
-      (w + padding.left + padding.right) +
-      "," +
-      (h / 2 + padding.top) +
-      ")"
+    (w + padding.left + padding.right) +
+    "," +
+    (h / 2 + padding.top) +
+    ")"
   )
   .append("path")
   .attr("d", "M-" + r * 0.15 + ",0L0," + r * 0.05 + "L0,-" + r * 0.05 + "Z")
