@@ -14,11 +14,12 @@ var data = [
     label: "The Rise of Skywalker",
     value: 1,
     question:
-      `My cat is facing a paradox  
-      To be or not to be?
-      Yet I can't find her corpse    
-      You can help by at least finding me`
-  }, // schordinger
+      `I'm not a cook
+      I can help u to cook some apps and i can assist to make bots to serve
+      but I don't cook food
+      I can help you if you are a language freak
+      I can be a host to revive you my geek`
+  }, //codeChef
   {
     label: "The Last Jedi",
     value: 2,
@@ -39,27 +40,28 @@ var data = [
   {
     label: "Return of the Jedi",
     value: 4,
-    question: `What I want to say is They have ruined the most beautiful gathering place of your college by making a hole in between it
+    question: `They have ruined the most beautiful gathering place of your college by making a hole in between it
     I've always been there to satisfy your hunger pangs
     I know you miss your beloved ice tea and all the views of hamirpur I hope you soon experience the college spark!`
   }, //nescafe
   {
     label: "The Empire Strikes Back",
     value: 5,
-    question: `Black ribbed, eerie breath and mechanical hiss
-    Be with me or become my enemy
-    My saber is now red, earlier used to be blue
-    Are you enjoying this star wars based clue?`
-  }, //darkVader
+    question: `Yes, my country is responsible for the current chaos
+    Still stuck at home!
+    All thanks to me
+    My name is enough to make a cricket team.`
+  }, //xiJinping
   {
     label: "A New Hope",
     value: 6,
     question:
-      `Heyy do you know my name?? Don't search on Google, search on Bing. Still can't find it?? 
-      Could it beeeeeeeeeee more annoying?
-      Well, First I am stuck in an atm vestibule and then people don't know me.
-      I wanna have a puff and interest you in a sarcastic comment. Just make me happy and tell my FULL name.`
-  }, //chandler
+      `Tables turn, bridges burn and ship sink
+      But we felt really bad when this one did
+      For inside it blossomed a “rose” so pretty!
+      “We are still flying”
+      `
+  }, //titanic
   {
     label: " Rogue One",
     value: 7,
@@ -72,7 +74,7 @@ var data = [
     value: 8,
     question:
       `Flying disc got lost and so were we,
-      Play games Or create community 
+      Play games or create community 
       I hope you won't disapprove
      That my rhythm makes you groove`
   }, //discord
