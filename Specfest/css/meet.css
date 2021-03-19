@@ -155,3 +155,11 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+.box__body-infos a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.box__body-infos a:hover{
+  color: #6e408d;
+}
