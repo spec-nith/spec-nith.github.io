@@ -1,12 +1,18 @@
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import Gallery from './components/Gallery/Gallery';
+import GallerySecondary from './components/Gallery/GallerySecondary';
+
 import './App.css';
 import React from 'react';
 import Navbar from './components/UI/Navbar';
 
+
 function App() {
-  return (<React.Fragment>
+  return (
+  <React.Fragment>
   <Navbar/>
-  <Home/>
+  {/* <Home/> */}
+  <GallerySecondary /> 
   </React.Fragment>
   );
 }

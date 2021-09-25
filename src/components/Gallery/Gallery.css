@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+.gallery-main{
+    min-height: 1000px;
+    background-color: rgb(52, 64, 82);
+    display:flex;
+    flex-direction: row;
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
+
+
+
+
+.main-container {
+    width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5em;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  
+  
+  
+}
+.main-container .internal-con {
+
+  flex-shrink: 0;
+  width: 16em;
+  height: 28em;
+  outline: 0.25em solid rgb(25, 45, 75);
+  transition: 1s;
+  position: relative;
+  margin : 2rem;
+
+}
+.main-container .internal-con:not(:last-child) {
+  margin-right: 1.5em;
+}
+.main-container .internal-con .background:after,
+.main-container .internal-con .text > * {
+  transition: transform 200ms, opacity 200ms;
+}
+.main-container .internal-con .background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 100ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+.main-container .internal-con .background:before, .main-container .internal-con .background:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main-container .internal-con .background:before {
+  opacity: 0;
+}
+.main-container .internal-con .background:after {
+  opacity: 0.4;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(23, 86, 181, 0.6) 70%, #04152f 100%);
+}
+.main-container .internal-con .text {
+  cursor: default;
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  bottom: -2.5em;
+}
+.main-container .internal-con .text .gallery-card-title-small {
+  font-weight: 100;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+.main-container .internal-con .text .gallery-card-title {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.main-container .internal-con .text .gallery-card-title-medium {
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+.main-container .internal-con .text .btn-prime {
+  width: 8rem;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 0.375em 0.5em;
+  background: #1a61cb;
+  text-align: center;
+  opacity: 0;
+  
+}
+.main-container .internal-con.hover, .main-container .internal-con:hover {
+
+  outline: 0.875em solid rgb(25, 45, 75);
+  transition: 300ms;
+}
+.main-container .internal-con.hover .background, .main-container .internal-con:hover .background {
+  transition: 125ms;
+  top: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: -0.5em;
+}
+.main-container .internal-con.hover .background:after, .main-container .internal-con:hover .background:after {
+  opacity: 1;
+}
+.main-container .internal-con.hover .text > *, .main-container .internal-con:hover .text > * {
+  transform: translate3d(0, -3.5rem, 0);
+}
+.main-container .internal-con.hover .text .gallery-card-title-small, .main-container .internal-con:hover .text .gallery-card-title-small {
+  transition-delay: 0ms;
+}
+.main-container .internal-con.hover .text .gallery-card-title, .main-container .internal-con:hover .text .gallery-card-title {
+  transition-delay: 60ms;
+}
+.main-container .internal-con.hover .text .gallery-card-title-medium, .main-container .internal-con:hover .text .gallery-card-title-medium {
+  transition-delay: 110ms;
+}
+.main-container .internal-con.hover .text .btn-prime, .main-container .internal-con:hover .text .btn-prime {
+  opacity: 1;
+  transition-delay: 150ms;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+.container-int {
+  background-color:#04152f;
+  box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel:hover {
+  flex: 5;
+}
+
+.panel:hover h3 {
+  opacity: 1;
+  transition: opacity .3s ease-in 0.5s;
+}
+
+@media(max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  
+  .panel:nth-of-type(4), .panel:nth-of-type(5) {
+    display: none;
+  }
+}
