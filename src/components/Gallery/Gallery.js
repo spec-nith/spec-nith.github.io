@@ -27,7 +27,9 @@ let galleryCards = [{
     link: "",
     img : `url('https://source.unsplash.com/random/?food')`
 }];
-export default function Gallery() {
+
+export default function Gallery(props) {
+
     
     return (
         <div className='gallery-main'>
@@ -38,6 +40,7 @@ export default function Gallery() {
         </div>
     )
 }
+
 
 const GalleryComponent = galleryCards.map((props)=>{
     

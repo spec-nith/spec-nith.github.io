@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
-
+import {Link} from 'react-router-dom';
 const navbar=()=>(
   <nav className="bg-gray-800">
   <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -27,13 +27,13 @@ const navbar=()=>(
         <div className="hidden sm:block sm:ml-6">
           <div className="flex space-x-4">
             
-            <a to="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+            <Link to="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</Link>
 
-            <a to="/gallery" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+            <Link to="/gallery" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</Link>
 
-            <a to="/gallery" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Heading3</a>
+            <Link to="/gallerysec" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Heading3</Link>
 
-            <a to="/gallery" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Heading4</a>
+            <Link to="/image" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Heading4</Link>
           </div>
         </div>
       </div>
