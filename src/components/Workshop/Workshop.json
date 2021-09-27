@@ -1,0 +1,17 @@
+{
+    "workshops" : [
+        {   
+            "number":"15",
+            "name":"Competative Programming",
+            "content":"Greetings from Team SPEC! Tired of the monotony of staying stuck at your home and looking for something intellectually stimulating to do? Wishing to add certain skills to your resume? Well, we have just the right thing for your techno-savvy mind!Electrothon in collaboration with @cipherschools brings for you a workshop on Competitive Coding and Data Structures. Brace yourself for an exhilarating session with Mr Arun Kudiyal, Subject Matter Expert at Apple and Head, Web-D at Cipher Schools who will help you gain the essence of competitive coding. Prime yourself for proficiency and let the technical fervour escalate!"
+        },
+
+        {
+            "number":"14",
+            "name":"Web Development",
+            "content":"Greetings from Team SPEC! Tired of the monotony of staying stuck at your home and looking for something intellectually stimulating to do? Wishing to add certain skills to your resume? Well, we have just the right thing for your techno-savvy mind!Electrothon in collaboration with @cipherschools brings for you a workshop on Competitive Coding and Data Structures. Brace yourself for an exhilarating session with Mr Arun Kudiyal, Subject Matter Expert at Apple and Head, Web-D at Cipher Schools who will help you gain the essence of competitive coding. Prime yourself for proficiency and let the technical fervour escalate!"
+        }
+
+
+    ]
+}

@@ -1,11 +1,11 @@
 import React from 'react';
 import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
-import GallerySecondary from './components/Gallery/GallerySecondary';
-import ImageContainer from './components/Gallery/ImageContainer';
+import Alumni from './components/alumni/alumni';
 import './App.css';
 import Navbar from './components/UI/Navbar';
-
+import Workshop from './components/Workshop/Workshop';
+import Team from './components/TeamPage/TeamPage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,14 +19,18 @@ function App() {
   <React.Fragment>
   <Navbar/>
   <Switch>
-          <Route path="/gallerysec">
-            <GallerySecondary />
+          <Route path="/alumni">
+            <Alumni / >
+          
           </Route>
           <Route path="/gallery">
             <Gallery />
           </Route>
-          <Route path="/image">
-            <ImageContainer />
+          <Route path="/workshop">
+            <Workshop/>
+          </Route>
+          <Route path="/team">
+            <Team />
           </Route>
           <Route path="/">
             <Home />

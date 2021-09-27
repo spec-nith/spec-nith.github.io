@@ -1,7 +1,10 @@
 import React from 'react';
-import logo from '../../assets/logo.png';
+
 import {Link} from 'react-router-dom';
-const navbar=()=>(
+const navbar=()=>{
+  const logo="https://wallpaperaccess.com/full/1132656.jpg"
+  return(
+
   <nav className="bg-gray-800">
   <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
     <div className="relative flex items-center justify-between h-16">
@@ -31,9 +34,10 @@ const navbar=()=>(
 
             <Link to="/gallery" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</Link>
 
-            <Link to="/gallerysec" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Heading3</Link>
+            <Link to="/alumni" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">alumni</Link>
 
-            <Link to="/image" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Heading4</Link>
+            <Link to="/workshop" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">workshop</Link>
+            <Link to="/team" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">team</Link>
           </div>
         </div>
       </div>
@@ -52,5 +56,5 @@ const navbar=()=>(
     </div>
   </div>
 </nav>
-);
+)};
 export default navbar;

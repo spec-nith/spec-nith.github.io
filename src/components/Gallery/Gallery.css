@@ -351,21 +351,20 @@
   transition: opacity 0.8s;
 }
 #nextButton:hover {
-    opacity: 0.7;
+    opacity: 0.2;
 }
 @media screen and (min-width: 768px) {
   #nextButton {
     font-size: 3em;
   }
 }
-
 #prevButton {
   color: #fff;
   font-size: 2em;
   transition: opacity 0.8s;
 }
 #prevButton :hover {
-  opacity: 0.7;
+  opacity: 0.2;
 }
 @media screen and (min-width: 768px) {
   #prevButton{
@@ -383,12 +382,16 @@
   right: 4rem;
 }
 #exitButton:hover {
-    opacity: 0.7;
+    opacity: 0.2;
 }
 @media screen and (min-width: 768px) {
   #exitButton{
     font-size: 3em;
   }
 }
+.disabled{
+  opacity: 0.2;
+}
+
 
 
