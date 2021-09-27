@@ -4,7 +4,6 @@ import Gallery from './components/Gallery/Gallery';
 import GallerySecondary from './components/Gallery/GallerySecondary';
 import ImageContainer from './components/Gallery/ImageContainer';
 import './App.css';
-
 import Navbar from './components/UI/Navbar';
 
 import {
