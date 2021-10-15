@@ -94,7 +94,7 @@ padding: 3em 2em 1em 2em;;
 
 		  }
 		 #about_img:before{
-			position: absolute;
+			position: relative;
 		content: "";
 		right:40px;
 		top:35px;
