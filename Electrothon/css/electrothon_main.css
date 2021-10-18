@@ -146,21 +146,40 @@ a{
 		top: 0;
 		left: 0;
 	}
-	.video_back{
-		width: 100vw;
-		height: 40vh;
+  .video_back{
+		height: 346px;
+    width: 100vw;
 	}
+
+  #about_img img{
+    height: 328px;
+    padding-top: 3px;
+    margin-top: 99px;
+  }
+  #about_hack{
+    padding-top: 178px;
+  }
+  .cont{
+    padding-bottom: 462px;
+  }
 }
 
 @media screen and (min-width: 601px){
 	.video-container {
 		position: absolute;
-		top: 0;
+    top: -114px;
 		left: 0;
 	}
-	.video_back{
-		width: 100vw;
-	}
+  .video_back{
+    height : 950px;
+    width: 100vw;
+
+  }
+  #about_img img{
+  height :576px; 
+   width:  723px; 
+  }
+
 }
 
 .color-overlay {
