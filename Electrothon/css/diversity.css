@@ -34,10 +34,11 @@ body{font-family: Manjari,sans-serif;
 				padding: 1.6em;
 		padding-left: 3em;
 		padding-right: 3em;
-		letter-spacing: 1px;
+		letter-spacing: 1;
+    font-size: 1.2em;
 			   text-align: justify;
 			   word-break: break-word;
-			   line-height: 1.3rem;
+			   line-height: 2.3rem;
 
 		}
 

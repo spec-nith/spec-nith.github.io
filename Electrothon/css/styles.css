@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+sans);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
 .snip1515 {
   font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
@@ -90,9 +91,9 @@
 .cont{
   text-align: center;
   position: relative;
-  top: 25%;
+  padding-top: 3rem;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%);
   margin: auto;
 }
 .cont h1{
