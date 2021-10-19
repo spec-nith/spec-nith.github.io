@@ -91,9 +91,9 @@
 .cont{
   text-align: center;
   position: relative;
-  top: 25%;
+  padding-top: 3rem;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%);
   margin: auto;
 }
 .cont h1{
