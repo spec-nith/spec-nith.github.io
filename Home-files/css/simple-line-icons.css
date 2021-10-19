@@ -13,7 +13,7 @@
  Use the following CSS code if you want to have a class per icon.
  Instead of a list of all class selectors, you can use the generic [class*="icon-"] selector, but it's slower:
 */
-.icon-user,
+
 .icon-people,
 .icon-user-female,
 .icon-user-follow,
@@ -207,9 +207,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-user:before {
-  content: "\e005";
-}
+
 .icon-people:before {
   content: "\e001";
 }
