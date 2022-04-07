@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SPEC | SPECFEST 2021</title>
+	<meta name="description" content="STAR WARS Kylo Ren Page Preloader in CSS" />
+	<meta name="keywords" content="css, animation, preloader, web development, css-only" />
+	<meta name="author" content="Petr Urbánek for Codrops" />
+	<link rel="shortcut icon" href="Specfest/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+	<link href="https://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="Specfest/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="Specfest/css/component.css" />
+	<link rel="stylesheet" type="text/css" href="Specfest/pater/pater.css" />
+
+	<link rel="stylesheet" type="text/css" href="Specfest/fonts/japanese-font.css" />
+	<link rel="stylesheet" type="text/css" href="Specfest/fonts/heading-font.css" />
+
+	<script>document.documentElement.className = 'js';</script>
+
+	<!-- plane css start -->
+	<link rel="stylesheet" type="text/css" href="Specfest/css/plane.css" />
+	<!-- plane css ends -->
+
+	<!-- FOR STAR BG FILES START -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/addons/p5.sound.min.js"></script>
+	
+	<style type="text/css">
+		.about_heading {
+			font-family: 'romaji_minchoregular';
+			letter-spacing: 0.5rem;
+		}
+	</style>
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			overflow-x:hidden ;
+		}
+		.specfest-bg{
+        height: 90vh;
+		width: 100vw;
+		max-height: 108vh;
+		max-width: 100vw;
+		}
+		.event-image{
+			border-radius: 30px;
+			height:17rem;
+			width:30rem;
+			max-height:17rem;
+			max-width:30rem;
+		}
+		.about-image{
+			max-width: 25rem;
+		}
+		.specfest-tagline{
+			font-family: 'kamikazeregular';
+			position: absolute;
+			z-index: 4;
+			top: 8rem;
+			left:3rem;
+			width: 20rem;
+		}
+		.specfest-tag-text{
+			color: #fff;
+			font-size:2rem;
+			line-height:4rem;
+			letter-spacing: 0.1rem;
+		}
+		@media screen and (max-width: 768px) {
+			.event-image{
+				height:13rem;
+				width:17rem;
+				max-height:15rem;
+				max-width:25rem;
+			}
+			.about-image{
+				max-width: 20rem;
+			}	
+			.specfest-bg{
+				height: 40vh;
+				}
+		.specfest-tagline{
+					left: 1rem;
+					top:7rem;
+					width: 9rem;
+}
+.specfest-tag-text{
+	color: #EEEEEE;
+    font-size: 0.75rem;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+}
+				
+		}
+		.dropdown-btn,
+		.dropdown-btn-sb,
+		.dropdown-btn-sn,
+		.dropdown-btn-pp {
+			outline: none;
+			background: transparent;
+			border: none;
+			font-weight: bold;
+		}
+
+		.dropdown-btn-sb,
+		.dropdown-btn-sn,
+		.dropdown-btn-pp {
+			position: relative;
+			display: block;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.dropdown-btn:active {
+			border: none;
+		}
+	</style>
+
+
+	<!-- header files start -->
+	<link rel="stylesheet" href="Specfest/css/h.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- header files end -->
+
+	<!-- covido template links start -->
+	<link rel="stylesheet" href="Specfest/css/bootstrap.min.css">
+	<!-- style css -->
+	<link rel="stylesheet" href="Specfest/css/style.css">
+	<!-- Responsive-->
+	<link rel="stylesheet" href="Specfest/css/responsive.css">
+	<!-- fevicon -->
+	<link rel="icon" href="Specfest/images/fevicon.png" type="image/gif" />
+	<!-- Scrollbar Custom CSS -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="Specfest/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+		media="screen">
+	<link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+	<!-- covido template links start -->
+
+	<!-- spinning wheel css start -->
+	<link rel="stylesheet" href="Specfest/css/spinning.css">
+	<!-- spinning wheel css ends -->
+
+	<!-- FOR STAR BG FILES END -->
+	<link rel="stylesheet" href="Specfest/css/custom.css">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg sticky-top wreqwr" style="width: 100vw;">
+		<div class="container">
+			<a class="navbar-brand"
+				style="padding: 0; display: inline-block !important; vertical-align: top !important; width: 6rem;"
+				href="./index.html"><img src="Specfest/spec logo white.png" height="70" class="d-inline-block align-top"
+					alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse"></div>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Workshop Page/Workshops.html">Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="BLOGS/Blogs.html">Blogs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Team Page/team-2k20.html">Team SPEC</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Gallery/gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://electrothon.specnith.com/">Electrothon</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Alumini Page/Our-Alumini.html">Alumni</a>
+					</li>
+					<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" id="ebook"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+      Study Material
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <ul>
+        <li style="list-style: none;"><a target="blank"href="https://drive.google.com/drive/folders/1ShlVR0tY339vkXlqk_6z3rJqltAGUySa" style="color:black;">First Year</a></li>
+           <li style="list-style: none;" ><a  target="_blank" href="https://drive.google.com/drive/folders/1U8WE7-BNc2WZWliDdOSxZ87D2hsgn4YW" style="color: black; ">Second Year</a></li> 
+          <li style="list-style: none;" > <a  target="_blank"href="https://drive.google.com/drive/folders/1fCjgy4nqpnCvrHgxyTae56GkRGk5EUVe" style="color: black;">Third Year</a></li> 
+        <li style="list-style: none;" >   <a  target="_blank"href="https://drive.google.com/drive/folders/1_R5x_sAkFsrC4RRgPOygdzydzDhtHBOQ" style="color: black;">Final Year</a></li> 
+        </ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="parallax-body">	
+		<img src="Specfest/images/specfest-bg.webp" class="specfest-bg" />
+		<div class="specfest-tagline">
+			<h1 class="specfest-tag-text">Join the fearless escapade to traverse the enchanting castle of amusement and nostalgia</h1>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="about" style="z-index: 5;margin-top: -3px;padding:5rem 3rem 2rem 3rem;border:0;border-bottom-left-radius:30px;border-bottom-right-radius:30px;border-top-left-radius:10px;border-top-right-radius:10px;">
+		<div class="container_width">
+			<div class="row d_flex">
+				<div class="col-md-7">
+					<div class="titlepage text_align_left">
+						<h2 class="about_heading" style="color: #fff;">About SPECFEST </h2>
+						<p>When the snow melts, the sun warms, and birds come chirping outside your window, it's springtime with the mystery of Takeshi's Tatakae. SpecFest is right around the corner. Now is your chance to take off, jump, and enjoy the incredible events that lie ahead of you. 
+
+							The trail is all set and the treasures hidden. All we need now is for you to embark on the quest. Come join us on our daring college adventure by decoding the most tricky riddles, along with a series of fun challenges. Beat the other teams for immeasurable treasures and advance further in this fantastical adventure. Rack your brain with enthralling riddles until you progress to the final twist. A delightful SPECFEST features both fun and hunting this year. Put on your thinking caps and enjoy the challenge! The squad that arrives first at the fortress will be declared the winner, receiving great rewards.
+							
+							So, what are you waiting for?
+							Register now and enjoy the most memorable experience we have in store for you.
+							Ganbarimasu!! May the most daring team win!!
+						</p>
+						<!-- <a class="read_more" href="https://technext.github.io/covido/about.html">About More</a> -->
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="about_img text_align_center">
+						<figure><img loading="lazy" src="Specfest/images/about-image.webp" class="about-image" alt="#" /></figure>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- end about -->
+
+	<!-- events -->
+	<div class="cases">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="titlepage text_align_center ">
+						<h2 style="color: black;">Upcoming Events</h2>
+						<p style="color: black!important;">Conquer the mountains, take the Takeshi's trails,
+							It's the time for when SPECFEST's adventure prevails.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row d_flex" style="align-items: normal !important;">
+				<div class="col-md">
+					<div class="latest text_align_center" style="border-radius: 70px;">
+						<figure><img loading="lazy" src="Specfest/images/tatakae.webp" alt="#" class="event-image"/></figure>
+						<!-- <a class="read_more" href="cases.html">Read More</a> -->
+						<div class="nostrud">
+							<h3 style="font-family: 'romaji_minchoregular'; letter-spacing:0.5rem;padding-bottom:1rem;">Takeshi Tatakae</h3>
+							<p>Team Spec is back to recharge those neurons with the greatest event tailormade just for
+								you. This Bounty-Hunt brings forth an opportunity to traverse through the infinite
+								universe of mind boggling riddles, exciting ciphers and many other brainstorming
+								problems. All you need is a team and excellent problem solving skills to win some
+								amazing perks
+								including cash prizes. If you think you have a keen eye for things that aren't very
+								straightforward but
+								cryptic? Then we invite you to this little brainstorming event on 20th March, 2021 to
+								join in
+								this exhilarating quest among hundred others for the finest bounty-hunters out there!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="latest text_align_center" style="border-radius: 70px;">
+						<figure><img loading="lazy" src="Specfest/images/botmaze.webp" alt="#" class="event-image"/></figure>
+						<!-- <a class="read_more" href="cases.html">Read More</a> -->
+						<div class="nostrud">
+							<h3 style="font-family: 'romaji_minchoregular'; letter-spacing:0.5rem;padding-bottom:1rem;">MechaMaze</h3>
+							<p>A puzzling maze is in place with many paths to traverse. But wait, this is not gonna be a simple one to cross. The whole setup, paired with the incredible Arduino bot, is ready to put your calm head and quick reflexes to the test. With two members from each team, the maze's perplexing routes are designed to utilize your mettle and teamwork. One participant will be blindfolded and given a remote control, while the second member will guide their mate through the nooks and corners of the maze. Well, this is going to be a tough one to crack. 
+							But if you keep your patience and zest throughout the way, you will surely be the one to conquer this play!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end events -->
+
+
+	<!-- past year specfest -->
+	<div class="coronata">
+		<div class="container previous">
+			<div class="row d_flex grid">
+				<div class="col-md-6 oder1">
+					<div class="titlepage text_align_left">
+						<h2 style="font-family: 'romaji_minchoregular'; letter-spacing:0.5rem;">SPECFEST 2K21</h2>
+						<p>To sum up all the spectacular work done in the year of 2k21, SPECFEST 2k21 was successful in reaching new zeniths of fun and technical learning.
+							Be it the adrenaline gained from events like Empire Rush or the brain-tickling riddles from Bounty Hunt and Holocron, SPECFEST 2k21 embraced bountiful fun and learning like never before.
+						</p>
+						<a class="read_more" style="pointer-events: none;" href="./Gallery/specfest-gallery2k21.html">See More</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="coronata_img text_align_center">
+						<figure><img loading="lazy" src="Specfest/images/specfest2k21.webp" alt="#" /></figure>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row d_flex grid">
+				<div class="col-md-6">
+					<div class="coronata_img text_align_center">
+						<figure><img loading="lazy" src="Specfest/images/sp5.jpg" alt="#" /></figure>
+					</div>
+				</div>
+				<div class="col-md-6 oder1">
+					<div class="titlepage text_align_left">
+						<h2 style="font-family: 'romaji_minchoregular'; letter-spacing:0.5rem;">SPECFEST 2K20</h2>
+						<p>Inaugurating with opening ceremony, SPECFEST 2k20 was an exhilarating event to look back on.
+							The treasure hunt with a fun inculcation of AR, was immensely enjoyed by the students
+							sprinting all around the college to decode clues. It was followed by Atharva- an annual open
+							exhibition of projects.</p>
+						<a class="read_more" href="./Gallery/specfest-gallery2k20.html">See More</a>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row d_flex grid">
+				<div class="col-md-6 oder1">
+					<div class="titlepage text_align_left">
+						<h2 style="font-family: 'romaji_minchoregular'; letter-spacing:0.5rem;">SPECFEST 2K19</h2>
+						<p>SPECFEST 2k19 was a breed of its own. Team spec organised this year with the them of beloved
+							book amd film series Harry Potter in mind. With amazing events and fun games like Forbidden
+							forest and quiditch which enables the players to use robots in a fun and interesting way,
+							this year's SPECFEST was nothing more than pure magic.
+						</p>
+						<a class="read_more" href="./Gallery/specfest-gallery2k19.html">See More</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="coronata_img text_align_center">
+						<figure><img loading="lazy" src="Specfest/images/sp26.jpg" alt="#" /></figure>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row d_flex grid">
+				<div class="col-md-6">
+					<div class="coronata_img text_align_center">
+						<figure><img loading="lazy" src="Specfest/images/sp28.jpg" alt="#" /></figure>
+					</div>
+				</div>
+				<div class="col-md-6 oder1">
+					<div class="titlepage text_align_left">
+						<h2 style="font-family: 'romaji_minchoregular'; letter-spacing:0.5rem;" >SPECFEST 2K18</h2>
+						<p>The perfect amalgamation of technical events ,workshops and fun events like naughts and
+							crosses did make SPECFEST 2k18 a great success.SPECFEST 2k18 did set new bars of zenith and
+							also left some inspirational footsteps for the coming years to follow.
+						</p>
+						<a class="read_more" href="./Gallery/specfest-gallery2k18.html">See More</a>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row d_flex grid">
+				<div class="col-md-6 oder1">
+					<div class="titlepage text_align_left">
+						<h2 style="font-family: 'romaji_minchoregular'; letter-spacing:0.5rem;">SPECFEST 2K17</h2>
+						<p>Specfest has always been the most momentous and illustrious event of NIT Hamirpur. These
+							events have always provided a stage for students to showcase their extraordinary talents
+							while having fun.
+						</p>
+						<a class="read_more" href="./Gallery/specfest-gallery.html">See More</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="coronata_img text_align_center">
+						<figure><img loading="lazy" src="Specfest/images/sp29.jpg" alt="#" /></figure>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end past year specfest -->
+	
+
+	<footer id="foot">
+		<div class="container text-center d-flex flex-column">
+			<div class="container w-50 pl-5 pr-5" style="overflow: hidden;">
+				<img loading="lazy" class="speclogo" src="./Specfest/spec logo white.png" id="fimg">
+			</div>
+			<a class="link mb-2" href="mailto:spec@nith.ac.in"><i class="fa fa-envelope"> spec@nith.ac.in</i></a>
+			<div class="social mb-2">
+				<a href="https://www.facebook.com/spec.ece"><i style="color: #fff;" class="fa fa-facebook"></i></a>
+				<a href="https://www.linkedin.com/company/spec-nith/about/"><i style="color: #fff;"
+						class="fa fa-linkedin"></i></a>
+				<a href="https://twitter.com/SPEC__NITH"><i style="color: #fff;" class="fa fa-twitter"></i> </a>
+				<a href="https://www.instagram.com/s.p.e.c_nith/?hl=en"><i style="color: #fff;"
+						class="fa fa-instagram"></i> </a>
+			</div>
+			<span class="my-3">&copy; 2022, SPEC NITH</span>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript" src="Specfest/js/h.js"></script>
+	<!-- covido template js files start -->
+	<!-- Javascript files-->
+	<script src="Specfest/js/jquery.min.js"></script>
+	<script src="Specfest/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+	<script src="Specfest/js/owl.carousel.min.js"></script>
+	<script src="Specfest/js/custom.js"></script>
+	<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn-sb");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn-sn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+
+
+		var dropdown = document.getElementsByClassName("dropdown-btn-pp");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+
+
+
+</body>
+
+</html>

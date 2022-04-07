@@ -854,12 +854,13 @@ button {
     content: "";
     left: 0;
     right: 0;
-    background: url(../images/corona_icon.png);
+    background: url(../images/gate.png);
     bottom: -40px;
     width: 80px;
     height: 81px;
     text-align: center;
     margin: 0 auto;
+    background-repeat: no-repeat;
 }
 
 
