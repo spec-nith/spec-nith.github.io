@@ -1,0 +1,149 @@
+@import url(https://allfont.net/allfont.css?fonts=star-jedi);
+.title{
+    /* margin-top: 6rem; */
+    font-family: 'Star Jedi', arial;
+    transform: translateY(-120%);
+    background: transparent;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #40e0d0;
+    font-size: 8vw;
+    line-height:1em;
+    letter-spacing: 1rem;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+#question h1{
+  font-size: 2rem;
+}
+
+@keyframes glow {
+    from {
+      text-shadow:  0 0 80px #008577, 0 0 90px #008577;
+    }
+    
+    to {
+      text-shadow:   0 0 80px #5ea19b, 0 0 90px #5ea19b;
+    }
+  }
+
+.headline{
+    position: absolute;
+    text-align: center;
+    top: -30%;
+    /* z-index: 2000; */
+    letter-spacing: .3rem;
+    /* background-color: #000; */
+    font-family:Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 4s steps(22,end) forwards, blink 1s infinite;
+    font-weight: bold;
+    width: 100%;
+}
+.break-title{
+  display: none;
+}
+@keyframes typing {
+  0% { width:0% }
+  100% { width: 100% }
+}
+@keyframes blink {
+  0%,100% {
+    border-right:2px solid transparent;
+  }
+  50% {
+    /* border-right:2px solid #fff; */
+  }
+}
+.page{
+    border: 2px solid #ffffff;
+}
+.bounty{
+  margin-top: 10rem;
+}
+.previous{
+  background-color: black;
+  padding: 2rem;
+  box-shadow: 3px 0 62px rgba(0, 0, 0, 0.5);
+}
+.titlepage p{
+  color: #fff!important;
+}
+.mobile{
+  display: none;
+}
+.about{
+  border: 2px solid #fff;
+}
+
+/* media query for mobile device */
+@media only screen and (max-width: 700px) {
+  #c{
+    width: 100%;
+  }
+  .page{
+    right: -25%;
+    width: 150%;
+    height: 90vh;
+  }
+  .desk{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+
+  .about{
+    margin-top: -50vh;
+  }
+  .headline{
+    font-size: 1.3rem;
+    width: 100%;
+    margin-top: -5rem;
+    /* animation: none; */
+    /* overflow: visible; */
+  }
+  .owl-carousel .owl-nav button.owl-next, 
+  .owl-carousel .owl-nav button.owl-prev{
+    display: block;
+  }
+  .title{
+    margin-top: 12rem;
+    /* top: -15rem; */
+    font-size: 8rem;
+    padding-bottom: 5rem;
+  }
+  .speclogo{
+    transform: scale(3);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  #chart{
+    transform: scale(.6);
+    left: -15%;
+  }
+  .break-title{
+    display: block;
+  }
+  .title-icon{
+    display: none;
+  }
+  .item{
+    display: block;
+  }
+  .cases{
+    margin-left:20px ;
+    margin-right: 20px;
+  }
+  #question h1{
+    padding: 2rem;
+    max-width: 80%;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    left: 2rem;
+  }
+}

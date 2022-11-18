@@ -1,0 +1,140 @@
+.pater {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	color: #fff;
+	width: 100%;
+	padding: 0.5em 0.5em 0 0.5em;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 0.85em;
+	z-index: 10000;
+	font-family: "Avenir Next", "Avenir", Arial, sans-serif;
+}
+
+.pater:hover,
+.pater:focus {
+	color: #fff;
+}
+
+.pater__sponsor {
+	vertical-align: middle;
+}
+
+.pater__sponsor span {
+	font-size: 0.65em;
+	letter-spacing: 3px;
+	margin-left: 0.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.pater__logo {
+	max-height: 1.5em;
+	vertical-align: middle;
+}
+
+.pater__title {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: flex;
+	flex-direction: column;
+}
+
+.pater__title span:first-child {
+	font-size: 0.85em;
+	display: block;
+	line-height: 1;
+}
+
+.pater__title span:nth-child(2) {
+	letter-spacing: 2px;
+	font-size: 0.5em;
+	display: none;
+}
+
+.pater__description {
+	margin: 0;
+	display: none;
+}
+
+.pater__img {
+	max-height: 65px;
+}
+
+@media screen and (min-width: 55em) {
+	.pater {
+		right: 1.5em;
+		top: 0;
+		left: auto;
+		bottom: auto;
+		width: 300px;
+		display: grid;
+		padding: 1.5em 1.5em 0 1.5em;
+		grid-template-columns: 65% 35%;
+		grid-template-rows: 1em 9em;
+		font-size: 1em;
+		border-radius: 0 0 12px 12px;
+		background: #130629;
+		text-align: left;
+	}
+	.pater__sponsor {
+		width: 100%;
+		grid-area: 1 / 1 / 2 / 3;
+	}
+	.pater__logo {
+		padding: 0 0 0 0.45em;
+	}
+	.pater__img {
+		max-height: none;
+		max-width: 100%;
+		grid-area: 2 / 2 / 3 / 3;
+		align-self: end;
+		transition: transform 0.3s, opacity 0.3s;
+		transition-timing-function: ease-in-out;
+		transform-origin: 100% 100%;
+	}
+	.pater:hover .pater__img {
+		opacity: 0.7;
+		transform: scale3d(1.1,1.1,1);
+	}
+	.pater__title,
+	.pater__description {
+		grid-area: 2 / 1 / 3 / 2;
+		align-self: end;
+		padding: 0 0 1em 0.25em;
+		transition: transform 0.3s, opacity 0.3s;
+		transition-timing-function: ease-in-out;
+	}
+	.pater:hover .pater__title {
+		opacity: 0;
+		transform: translate3d(0,-20px,0);
+	}
+	.pater__description {
+		display: block;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 0.85em;
+		letter-spacing: 1px;
+		padding-right: 1.25em;
+		opacity: 0;
+		transform: translate3d(0,20px,0);
+	}
+	.pater:hover .pater__description {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+	.pater__title span:first-child {
+		margin: 0 0 0.25em;
+		font-size: 1em;
+	}
+	.pater__title span:nth-child(2) {
+		display: block;
+	}
+}

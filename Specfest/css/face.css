@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background: #efefef url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/106403/last-jedi--bg.jpg) top center no-repeat;
+  background-size: auto 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow: visible;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#battle-of-crait {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  @media (min-width: 200vh) and (min-height: 30vw) {
+    transform: translateY(2vw);
+  }
+  @media (max-width: 100vh) {
+    width: 160vw;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+  @media (max-height: 30vw) {
+    top: 60%
+  }
+}
+
+#heros {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-51%);
+  height: 100%;
+  width: auto;
+  opacity: 1;
+}
+
+#lightside {
+  animation: 8s lightside infinite;
+}
+
+@keyframes lightside {
+  0% {
+    opacity: 0.3
+  }
+  10% {
+    opacity: 0.6
+  }
+  20% {
+    opacity: 0.4
+  }
+  30% {
+    opacity: 1
+  }
+  40% {
+    opacity: 0.3
+  }
+  50% {
+    opacity: 0.6
+  }
+  60% {
+    opacity: 0.4
+  }
+  70% {
+    opacity: 0.6
+  }
+  80% {
+    opacity: 1
+  }
+  90% {
+    opacity: 0.1
+  }
+  100% {
+    opacity: 0.4
+  }
+}
+
+#darkside {
+  animation: 1s darkside infinite;
+}
+
+@keyframes darkside {
+  0% {
+    opacity: 0.3
+  }
+  5% {
+    opacity: 0.6
+  }
+  15% {
+    opacity: 0.4
+  }
+  20% {
+    opacity: 0.8
+  }
+  25% {
+    opacity: 0.3
+  }
+  30% {
+    opacity: 1
+  }
+  35% {
+    opacity: 0.4
+  }
+  40% {
+    opacity: 0.6
+  }
+  45% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0.2
+  }
+  55% {
+    opacity: 0.3
+  }
+  60% {
+    opacity: 0.6
+  }
+  65% {
+    opacity: 0.4
+  }
+  70% {
+    opacity: 0.2
+  }
+  80% {
+    opacity: 0.6
+  }
+  85% {
+    opacity: 0.8
+  }
+  90% {
+    opacity: 0.4
+  }
+  95% {
+    opacity: 0.6
+  }
+  100% {
+    opacity: 0.4
+  }
+}
+
+/* my custom css */
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #cf0c20;
+  border-color: #dc3545;
+}
+
+.text {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100vh;
+  width: 90%;
+  padding: 2rem;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+}
+
+.text p {
+  font-size: 1.5rem;
+}
