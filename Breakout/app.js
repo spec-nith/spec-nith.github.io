@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 const form2=document.getElementById("form2");
-const name = document.querySelector("#name");
+const uname = document.querySelector("#name");
 const email = document.querySelector("#email");
 const suggestions=document.getElementById("suggestions");
 const gender = document.querySelector("#gender");
@@ -30,18 +30,9 @@ function showSucc(input) {
   const inputField = input.parentElement;
   inputField.className = "input-field success";
 }
-function checkEmail(input) {
-  const re = /[0-9]{2}[a-zA-Z]{3}[0-9]{3}@nith\.ac\.in/i;
-  if (re.test(input.value.trim())) {
-    localStorage.setItem("invalidWorkshopForm",false);
-    showSucc(input);
-  } else {
-    localStorage.setItem("invalidWorkshopForm",true);
-    showErr(
-      input,
-      "Invalid college email"
-    );
-  }
+
+function getFieldname(input) {
+  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
 function checkRoll(input) {
@@ -88,9 +79,6 @@ function checkRequired(inputArr) {
     }
   });
 }
-function getFieldname(input) {
-  return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-}
 
 function checkLength(input, min, max) {
   if (input.value.length < min) {
@@ -111,17 +99,44 @@ function checkLength(input, min, max) {
 form.addEventListener("submit", function (evt) {
   localStorage.setItem("invalidWorkshopForm",false);
   evt.preventDefault();
-  checkRequired([name, email, gender, rollNumber]);
-  checkLength(name, 3, 30);
+  checkRequired([uname, email, gender, rollNumber]);
+  checkLength(uname, 3, 30);
   checkGender(gender);
-  checkEmail(email);
   checkRoll(rollNumber)
+
+  // Submit
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
+  if(localStorage.getItem("invalidWorkshopForm")=="false"){
+    fetch("https://spec-backend.onrender.com/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+    .then((res) => res.json())
+    .then((data) => alert(data.message))
+    .catch((err) => console.error(err));
+  }
 });
 
 form2.addEventListener("submit", function (evt) {
   evt.preventDefault();
   localStorage.setItem("invalidWorkshopForm",false);
   checkRequired([email, suggestions]);
-  checkEmail(email);
   checkSuggestions(suggestions);
+
+  // Submit
+  const formData = new FormData(form2);
+  const data = Object.fromEntries(formData);
+  console.log(data);
+  if(localStorage.getItem("invalidWorkshopForm")=="false"){
+    fetch("https://spec-backend.onrender.com/suggestions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+    .then((res) => res.json())
+    .then((data) => alert(data.message))
+    .catch((err) => console.error(err));
+  }
 });
