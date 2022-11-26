@@ -38,12 +38,15 @@
 
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input
-                type="text"
+              <select
                 id="gender"
                 name="gender"
-                placeholder="Enter your gender M/F"
-              />
+              >
+              <option value="" disabled selected>Select Gender</option>
+              <option value="M" style="color:#333">Male</option>
+              <option value="F" style="color:#333">Female</option>
+              <option value="O" style="color:#333">Other</option>
+              </select>
               <small>Error Message</small>
             </div>
 

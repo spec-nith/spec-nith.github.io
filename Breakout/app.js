@@ -50,18 +50,18 @@ function checkRoll(input) {
 }
 
 function checkGender(input) {
-  if (input.value === "M" || input.value === "F") {
+  if (input.value === "M" || input.value === "F" || input.value === "O") {
     localStorage.setItem("invalidWorkshopForm",false);
     showSucc(input);
   } else {
     localStorage.setItem("invalidWorkshopForm",true);
-    showErr(input, "Please enter M or F");
+    showErr(input, "Please select your Gender");
   }
 }
 function checkSuggestions(input) {
   if (input.value.trim() === "" || input.value.trim() === " " || input.value === null) {
     localStorage.setItem("invalidWorkshopForm",true);
-    showErr(input, "Please enter M or F");
+    showErr(input, "Please enter your suggestions");
   } else {
     localStorage.setItem("invalidWorkshopForm",false);
     showSucc(input);

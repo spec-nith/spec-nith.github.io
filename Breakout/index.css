@@ -12,7 +12,7 @@
 }
 
 body,
-input {
+input,select {
   font-family: "Poppins", sans-serif;
 }
 
@@ -114,7 +114,7 @@ form.sign-in-form {
   font-size: 1.1rem;
 }
 
-.input-field input {
+.input-field input,select{
   background: none;
   outline: none;
   border: none;
