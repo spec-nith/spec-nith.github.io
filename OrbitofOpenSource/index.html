@@ -6,66 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Registration</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="../Home-files/assets/electro.png" type="image/icon type">
-
+    <link
+      rel="icon"
+      href="../Home-files/assets/electro.png"
+      type="image/icon type"
+    />
   </head>
   <body>
     <form id="form">
-    <section>
-      <div class="container">
-        <div id="scene">
-          <div class="layer" data-depth-x="-0.5" data-depth-y="0.25"><img src="images/moon.png" alt="" /></div>
-          <div class="layer"  data-depth-x="0.15"><img src="images/mountains02.png" alt="" /></div>
-          <div class="layer"  data-depth-x="0.25"><img src="images/mountains01.png" alt="" /></div>
-          <div class="layer"  data-depth-x="-0.5"><img src="images/road.png" alt="" /></div>
-        </div>
-      </div>
-      <div class="login-form">
-        <div class="login-header">
-
-          <h2>Orbit of Open Source</h2>
-        </div>
-      <div class="login" id="changeView">
-       
-       
-        <div class="inputBox">
-            <input name="name" id="name" type="text" placeholder="Name" />
-            <small style="color: white;">Error Message</small>
-
+      <section>
+        <div class="container">
+          <div id="scene">
+            <div class="layer" data-depth-x="-0.5" data-depth-y="0.25">
+              <img src="images/moon.png" alt="" />
+            </div>
+            <div class="layer" data-depth-x="0.15">
+              <img src="images/mountains02.png" alt="" />
+            </div>
+            <div class="layer" data-depth-x="0.25">
+              <img src="images/mountains01.png" alt="" />
+            </div>
+            <div class="layer" data-depth-x="-0.5">
+              <img src="images/road.png" alt="" />
+            </div>
           </div>
-          <div class="inputBox">
-            <input name="rollno" id="rollno" type="text" placeholder="Roll No." />
-            <small style="color: white;">Error Message</small>
-
+        </div>
+        <div class="login-form">
+          <div class="login-header">
+            <h2 style="font-weight: lighter;">Orbit of Open Source</h2>
           </div>
-        <div class="inputBox">
-          <input name="email" id="email" type="email" placeholder="Email" />
-          <small style="color: white;">Error Message</small>
+          <div class="login" id="changeView">
+            <div class="inputBox">
+              <input name="name" id="name" type="text" placeholder="Name" />
+              <small style="color: red">Error Message</small>
+            </div>
+            <div class="inputBox">
+              <input
+                name="rollno"
+                id="rollno"
+                type="text"
+                placeholder="Roll No."
+              />
+              <small style="color: red">Error Message</small>
+            </div>
+            <div class="inputBox">
+              <input name="email" id="email" type="email" placeholder="Email" />
+              <small style="color: red">Error Message</small>
+            </div>
 
-        </div>
-       
-        <div class="inputBox">
-          <label for="gender"><span class="gender">Gender:</span></label>
-          <select id="gender" name="gender">
-            <option value="M" >Male</option>
-            <option value="F" >Female</option>
-            <option value="O">Other</option>
-            
-          </select>
-          <small>Error Message</small>
+            <div class="inputBox">
+              <label for="gender"><span class="gender">Gender:</span></label>
+              <select id="gender" name="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Other</option>
+              </select>
+              <small>Error Message</small>
+            </div>
 
+            <div class="inputBox1">
+              <input type="submit" value="Submit" id="btn" />
+            </div>
+          </div>
         </div>
-        
-        <div class="inputBox1">
-          <input type="submit" value="Submit" id="btn" />
-        </div>
-       
-      </div>
-    </div>
-      </div>
-      
-    </section>
-</form>
+      </section>
+    </form>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
       integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w=="
@@ -73,10 +78,9 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-        let scene = document.getElementById('scene');
-        let parallax = new Parallax(scene);
+      let scene = document.getElementById("scene");
+      let parallax = new Parallax(scene);
     </script>
-    <script src="app.js"></script> 
+    <script src="app.js"></script>
   </body>
 </html>
-
