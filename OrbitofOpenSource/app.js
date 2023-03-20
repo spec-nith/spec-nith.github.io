@@ -102,7 +102,7 @@ function checkLength(input, min, max) {
 }
 
 function redirectMe() {
-  window.location.replace("thankyou.html");
+  window.location.replace("https://electrothon.nith.ac.in/");
   return false;
 }
 
@@ -136,7 +136,9 @@ form.addEventListener("submit", function (evt) {
           thankYou.innerHTML = `<div style="display:flex; flex-direction:column; justify-content:center; align-items:center;"><img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" style="
           max-width: 300px;margin: 0 auto;" alt="thank-you-envelope" border="0">
           <h1 style="color:white;">Thank you!</h1>
-          <p style="color:white;">Your details has been submitted succsessfully.</p></div>`;
+          <p style="color:white;">Your details has been submitted succsessfully.</p>
+          <p style="color:white;">Redirecting to <a href="https://electrothon.nith.ac.in/">Electrothon 5.0</a>....</p></div>`;
+          setTimeout(redirectMe, 5000);
         }
         else{
           thankYou.innerHTML = formView
