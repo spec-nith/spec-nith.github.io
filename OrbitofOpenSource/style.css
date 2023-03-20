@@ -98,7 +98,6 @@ section{
     background: rgba(0, 0,0, 0.1);
     box-shadow:inset 0 0 15px rgba(0,0,0,0.25);
     border: 1px solid rgba(0,0,0,0.5);
-    margin-bottom: 30px;
     cursor: text;
 }
 .login .inputBox1 input{
@@ -150,7 +149,26 @@ section{
 .gender{
     font-size: 20px;
     font-weight: 400;
+    color: white;
+}
 
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+.loader {
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 /* For screens smaller than 600px */
 @media (max-width: 600px) {
@@ -211,7 +229,6 @@ section{
     background: rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(0, 0, 0, 0.5);
-    margin-bottom: 30px;
   }
   
   /* Style the select options */

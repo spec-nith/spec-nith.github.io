@@ -111,29 +111,36 @@ form.addEventListener("submit", function (evt) {
   evt.preventDefault();
   checkRequired([uname, rollNumber, email]);
   checkLength(uname, 3, 30);
-  // checkGender(gender);
+  checkGender(gender);
   checkRoll(rollNumber);
 
   // Submit
   const formData = new FormData(form);
   const data = Object.fromEntries(formData);
-  data.gender = "O";
-  console.log(data);
+  // console.log(data);
+  var thankYou = document.getElementById("changeView");
+  var formView = thankYou.innerHTML;
   if (localStorage.getItem("invalidWorkshopForm") == "false") {
+    thankYou.innerHTML = `<div style="display:flex; justify-content:center; align-items:center;"><div class="loader"></div></div>`
     fetch("https://openorbit.onrender.com/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     })
       .then((res) => {
-        res.json();
+        return res.json()
       })
       .then((data) => {
-        var thankYou = document.getElementById("changeView");
-        thankYou.innerHTML = `<img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" style="
-        max-width: 300px;margin: 0 auto;" alt="thank-you-envelope" border="0">
-        <h1 style="color:white;">Thank you!</h1>
-         <p style="color:white;">Your details has been submitted succsessfully.</p> `;
+        // console.log(data)
+        if(data.message == "Registration Successful"){
+          thankYou.innerHTML = `<div style="display:flex; flex-direction:column; justify-content:center; align-items:center;"><img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" style="
+          max-width: 300px;margin: 0 auto;" alt="thank-you-envelope" border="0">
+          <h1 style="color:white;">Thank you!</h1>
+          <p style="color:white;">Your details has been submitted succsessfully.</p></div>`;
+        }
+        else{
+          thankYou.innerHTML = formView
+        }
         alert(data.message);
       })
       .catch((err) => console.error(err));
