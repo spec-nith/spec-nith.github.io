@@ -70,7 +70,7 @@
   @media only screen and (max-width: 500px) {
     .container1 {
       max-width: 80%;
-      margin: 9rem auto;
+      margin:  auto;
       padding: 14px;
       font-family: Roboto;
       column-count: 1;
