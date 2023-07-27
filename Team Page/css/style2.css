@@ -163,13 +163,13 @@
       overflow: hidden;
       margin: 28px;
     }
-   //Edited 
+   /* Edited */
    .detail ul{  
     margin-bottom: -1.0rem;
    }
   }
 
-// Extra media query add by Arun 
+/* Extra media query add by Arun */
 @media only screen and (max-width : 380px) {
       .content1 .detail h2 {
       color: white;
