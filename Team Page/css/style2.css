@@ -163,6 +163,29 @@
       overflow: hidden;
       margin: 28px;
     }
+   /* Edited */
+   .detail ul{  
+    margin-bottom: -1.0rem;
+   }
+  }
+
+/* Extra media query add by Arun */
+@media only screen and (max-width : 380px) {
+      .content1 .detail h2 {
+      color: white;
+      font-size: 1.36em;
+      margin: -0.5rem;
+      font-weight: bolder;
+    }
+    
+    
+  }
+
+  @media only screen and (max-width : 340px) {
+     .detail ul{
+      margin-bottom: -0.2rem;
+    }
+    
   }
    
   
