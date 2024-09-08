@@ -2,13 +2,22 @@
   .d-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
   .container1 {
     max-width: 90%;
     margin: 3rem auto;
     font-family: Roboto;
     column-count:4;
+  }
+  .containerupdate{
+    max-width: 90%;
+    margin: 3rem auto;
+    font-family: Roboto;
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 4;
+    gap: 28px;
   }
   .container1 .card {
     color: #fff;
