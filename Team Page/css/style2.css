@@ -58,6 +58,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-image: linear-gradient(120deg, #e6e6e6 50%,#fafafa 60%,#fafafa 61%,#e6e6e6 70%);
+    background-size: 200%;
+    background-position: 100% 0;
+    animation: waves 2s linear infinite;
+  }
+
+  @keyframes waves{
+    100% {
+      background-position: -100% 0;
+    }
   }
   
   .content1 {
