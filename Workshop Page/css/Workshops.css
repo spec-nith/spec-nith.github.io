@@ -383,6 +383,7 @@
     margin-right: 274px;
     margin-left: -16px;
   }
+
 }.u-section-4 .u-sheet-1 {
   min-height: 361px;
 }
@@ -1651,4 +1652,74 @@
     margin-right: 283px;
     margin-left: -10px;
   }
+}
+@media only screen and (max-width: 600px) {
+  .event-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .event__venue__left, .event__venue__right {
+      font-size: 0.9rem;
+      padding-left: 2rem;
+  }
+  .u-image-1 {
+      width: 100%;
+      height: auto;
+  }
+  .u-text-3 {
+      font-size: 1.5rem;
+  }
+  .u-container-layout {
+      padding: 10px;
+  }
+  .btn {
+      width: 100%;
+      font-size: 1rem;
+      padding: 10px;
+  }
+}
+.event-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event__venue__left, .event__venue__right {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.u-image-1 {
+  width: 50%;
+  height: auto;
+}
+
+/* Add a hover effect to make it interactive */
+.event-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }

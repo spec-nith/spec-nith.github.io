@@ -60,6 +60,19 @@
   animation-duration: 1000ms;
   margin: -516px 80px 60px calc(((100% - 1140px) / 2) + 1012px);
 }
+.u-image.u-image-1 {
+  margin: 20px;
+  width: 80%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+.u-image.u-image-1:hover {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 
 @media (max-width: 1199px) {
   .u-section-1 {
