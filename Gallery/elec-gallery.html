@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SPEC | Gallery-Electrothon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../Home-files/assets/spec-logo-white1.png" type="image/icon type">
+
+
+    <!-- header ki hai ye 4 files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/Header.css">
+
+
+    <link rel="stylesheet" href="css/h.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="../Home-files/assets/spec-logo-white1.png">
+
+    <link rel="stylesheet" href="elect/css/normalize.css">
+    <link rel="stylesheet" href="elect/css/font-awesome.css">
+    <link rel="stylesheet" href="elect/css/bootstrap.min.css">
+    <link rel="stylesheet" href="elect/css/templatemo-style.css">
+    <link rel="stylesheet" href="elect/css/style.css">
+    <link rel="stylesheet" href="css/btn-style.css">
+    <script src="elect/js/vendor/modernizr-2.6.2.min.js"></script>
+  
+
+    <style>
+        
+            .sub-dropdown-menu{position: relative;
+    top: 80%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    padding-left: 5px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+        @media only screen and (max-width: 600px) {
+            .navbar-toggle {
+                position: relative;
+                right: 20%;
+            }
+        }
+
+        body {
+            width: 100% !important;
+
+        }
+
+        @media only screen and (min-width: 600px) {
+            .navbar-nav {
+                position: absolute;
+                right: 11rem;
+            }
+
+            .slogo {
+                position: relative;
+                left: 6rem;
+                width: 8rem;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav style="background-color: black; border: none;" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html"><img class="slogo" src="./assets/spec-logo-white.png" style="width: 8rem" alt="SPEC"></a>
+            </div>
+            <div class="collapse navbar-collapse topnav" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a style="color: white;" href="../index.html">About</a></li>
+                    <li><a style="color: white;" href="../Workshop Page/Workshops.html">Events</a></li>
+                    <li><a style="color: white;" href="../BLOGS/Blogs.html">Blogs</a></li>
+                    <li><a style="color: white;" href="../specfest2k22.html">SpecFest</a></li>
+                    <li><a style="color: white;" href="../Team Page/team-2k20.html">Team SPEC</a></li>
+                    <li><a style="color: white;" href="../Gallery/gallery.html">Gallery</a></li>
+                    <li><a style="color: white;" href="https://electrothon.nith.ac.in/">Electrothon 5.0</a></li>
+                    <li><a style="color: white;" href="../Alumini Page/alumini.html">Alumni</a></li>
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" id="ebook"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+      Study Material
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <ul>
+        <li style="list-style: none;"><a target="blank"href="https://drive.google.com/drive/folders/1ShlVR0tY339vkXlqk_6z3rJqltAGUySa" style="color:black;">First Year</a></li>
+           <li style="list-style: none;" ><a  target="_blank" href="https://drive.google.com/drive/folders/1U8WE7-BNc2WZWliDdOSxZ87D2hsgn4YW" style="color: black; ">Second Year</a></li> 
+          <li style="list-style: none;" > <a  target="_blank"href="https://drive.google.com/drive/folders/1fCjgy4nqpnCvrHgxyTae56GkRGk5EUVe" style="color: black;">Third Year</a></li> 
+        <li style="list-style: none;" >   <a  target="_blank"href="https://drive.google.com/drive/folders/1_R5x_sAkFsrC4RRgPOygdzydzDhtHBOQ" style="color: black;">Final Year</a></li> 
+        </ul>
+               
+            </div>
+        </div>
+    </nav>
+    <script>
+        function sbfunc(){
+        //   console.log("chal hat")
+          if(document.getElementById("sblist").style.display !== "block"){
+            document.getElementById("sblist").style.display = "block";
+          }
+          else if(document.getElementById("sblist").style.display !== "none"){
+            document.getElementById("sblist").style.display = "none";
+          }
+        }
+        function snfunc(){
+        //   console.log("chal hat")
+          if(document.getElementById("snlist").style.display !== "block"){
+            document.getElementById("snlist").style.display = "block";
+          }
+          else if(document.getElementById("snlist").style.display !== "none"){
+            document.getElementById("snlist").style.display = "none";
+          }
+        }
+        function ppfunc(){
+        //   console.log("chal hat")
+          if(document.getElementById("pplist").style.display !== "block"){
+            document.getElementById("pplist").style.display = "block";
+          }
+          else if(document.getElementById("pplist").style.display !== "none"){
+            document.getElementById("pplist").style.display = "none";
+          }
+        }
+    
+      </script>
+   
+    <video style="object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        opacity: 0.2;
+        z-index: -1;
+        left: 0;" playsinline autoplay muted loop id="bgvid">
+        <source src="./assets/bgvid.mp4" type="video/mp4">
+    </video>
+
+
+
+    
+    <h1 class="text gallery-heading"
+        style="letter-spacing: .5rem; font-weight: bold; font-size: 2.5rem; color: #fff; position: relative; text-align: center; background-color: rgba(0,0,0,0.7);margin-top: 15vh;">
+        <span class="text-wrapper">
+            <span class="letters">ELECTROTHON</span>
+            <hr style="width: 4rem;">
+        </span>
+    </h1>
+
+
+
+    <!-- MAIN POSTS -->
+    <div style="background-color: rgba(0,0,0,0.7);">
+        <div class="main-posts">
+            <div class="container">
+                <div class="row">
+                    <div class="blog-masonry masonry-true">
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/DSC_0680.jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>1st Winner</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/DSC_0651.jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>2nd Winner</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_7088.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>3rd Winner</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_9356 (1).jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Gargi Khanna</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/DSC_0312.jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Gaurav Juyal Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/gaurav juyal.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Gaurav Juyal</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_7080 2.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Kundan Singh Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_7083 2.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Faculty</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_7082 2.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Games</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_7084 2.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Github Expert</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/DSC_0123 (1).jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Team</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/DSC_0130.jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Devang Sharma Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_9335 (1).jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Projects</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_7081 2.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Discussion</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/insha.JPG" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Insha Ramin Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_9341.jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Insha Ramin</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_9428.jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Bot Making</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k23/IMG_9317.jpg" alt="" >
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k23</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">7th & 8th april 2023</span>
+                                        <h4>Team SPEC</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /. post-masonry-->>
+                        
+                        
+                        
+                        
+                   
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/ceremony1.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Inaugral Ceremony</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/ceremony2.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Inaugral Ceremony</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/arihant1.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Arihant Godha Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/gaurav1.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Gaurav Juyal Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/werewolf.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Werewolf organized by MLH</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/arihant2.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Arihant Godha Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/doreen1.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Doreen Lorenzo Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/tshirt.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>The @ Company Session</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/doreen2.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Doreen Lorenzo Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/gaurav2.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Gaurav Juyal Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/prateek1.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Prateek Narang Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/prateek2.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Prateek Narang Talk</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/2k22/openmic1.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k22</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+                                        <span class="date">19th & 20th Feb 2022</span>
+                                        <h4>Open MIC - SRIJAN</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el1.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>Evaluations</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el2.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>Diversity</h4>
+                                        <!-- <p>Donec venenatis libero sapien, eu condimentum lacus</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el3.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>Projects</h4>
+                                        <!-- <p>Sed vitae lacus eget ipsum scelerisque condimentum</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el4.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>We Together</h4>
+                                        <!-- <p>Praesent pharetra blandit ex sed imperdiet</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el5.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>All Girl's Team</h4>
+                                        <!-- <p>Vestibulum faucibus lacus ac risus efficitur</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el6.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>Tech Talks</h4>
+                                        <!-- <p>Morbi placerat pellentesque tortor, sed auctor dolor</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el7.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>Opening Ceremony</h4>
+                                        <!-- <p>Phasellus eu sapien sagittis, sodales neque ac</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el8.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>Guest Speakers</h4>
+                                        <!-- <p>In aliquet et tellus in iaculis. Ut fermentum quis tellus</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el15.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>Evaluations Phase</h4>
+                                        <!-- <p>Morbi placerat pellentesque tortor, sed auctor dolor</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/first.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Winners</h4>
+                                        <!-- <p>Phasellus eu sapien sagittis, sodales neque ac</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/second.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Winners</h4>
+                                        <!-- <p>In aliquet et tellus in iaculis. Ut fermentum quis tellus</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/third.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Winners</h4>
+                                        <!-- <p>Fusce ullamcorper diam vel arcu scelerisque</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el9.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Hacking</h4>
+                                        <!-- <p>Fusce ullamcorper diam vel arcu scelerisque</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+
+
+
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el10.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Hacking</h4>
+                                        <!-- <p>Cum sociis natoque penatibus et magnis dis parturient</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el11.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Hacking</h4>
+                                        <!-- <p>Donec venenatis libero sapien, eu condimentum lacus</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el12.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Hacking</h4>
+                                        <!-- <p>Sed vitae lacus eget ipsum scelerisque condimentum</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el13.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Hacking</h4>
+                                        <!-- <p>Praesent pharetra blandit ex sed imperdiet</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+                        <div class="post-masonry col-md-4 col-sm-6">
+                            <div class="post-thumb">
+                                <img src="elect/images/el14.jpg" alt="">
+                                <div class="title-over">
+                                    <h4><a href="#">Electrothon 2k20</a></h4>
+                                </div>
+                                <div class="post-hover text-center">
+                                    <div class="inside">
+
+                                        <span class="date">1st & 2nd Feb 2020</span>
+                                        <h4>#Hacking</h4>
+                                        <!-- <p>Vestibulum faucibus lacus ac risus efficitur</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.post-masonry -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">
+        <div class="box">
+            <div class="inner_box">
+                <h4 class="btn-text">View&nbsp;More</h4>
+            </div>
+        </div>
+    </a>
+
+    <footer style="z-index: 20; background-color: rgba(0,0,0,0.9);" id="foot">
+        <div class="container text-center d-flex flex-column">
+            <div class="container w-50 pl-5 pr-5" style="overflow: hidden;">
+                <img style="width: 9rem;" class="speclogo" src="assets/spec-logo-white.png" id="fimg">
+            </div>
+            <a class="link mb-2" href="mailto:spec@nith.ac.in"><i class="fa fa-envelope"> spec@nith.ac.in</i></a>
+            <div class="social mb-2">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            <span class="my-3">&copy; 2023, SPEC NITH</span>
+        </div>
+
+    </footer>
+   
+    <script src="elect/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="elect/js/min/plugins.min.js"></script>
+    <script src="elect/js/min/main.min.js"></script>
+
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).load(function () { // makes sure the whole site is loaded
+            $('#loader').fadeOut(); // will first fade out the loading animation
+            $('#loader-wrapper').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({ 'overflow-y': 'visible' });
+        })
+            //]]>
+    </script>
+    <!-- templatemo 434 masonry -->
+</body>
+
+</html>
