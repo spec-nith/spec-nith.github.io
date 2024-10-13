@@ -1,0 +1,391 @@
+/* 
+    Color      : Brown
+    Color Code : #cda964 
+	Hover Code : #d2b173
+*/
+
+/* color */
+
+.color-theme,
+.text-theme {
+    color: #cda964!important;
+}
+
+a,
+.text-color,
+.color-theme,
+.blockquote-3,
+.btn--bordered.btn--white:active,
+.btn--bordered.btn--white:focus,
+.btn--link.btn--primary,
+.btn--link.btn--secondary:active,
+.btn--link.btn--secondary:focus,
+.btn--link.btn-more,
+.tabs .nav-tabs > li > a:focus,
+.tabs .nav-tabs > li.active > a,
+.tabs .nav-tabs > li.active > a:focus,
+.tabs-2.tabs .nav-tabs > li > a:focus,
+.tabs-2.tabs .nav-tabs > li.active > a,
+.tabs-2.tabs .nav-tabs > li.active > a:focus,
+.tabs-vertical.tabs .nav-tabs > li > a:focus,
+.tabs-vertical.tabs .nav-tabs > li.active > a,
+.tabs-vertical.tabs .nav-tabs > li.active > a:focus,
+.accordion .panel .panel--heading a:hover,
+.alerts .alert-content h4,
+.range-slider input,
+.module .module-active .module-icon i,
+.cart-total .total-price,
+.transparent-header .navbar-nav li.has-dropdown.active > a .mega-dropdown-menu .container a[href='#'],
+ul.mega-menu li ul li span,
+.mega-dropdown-menu .container a[href='#'] ul.dropdown-menu li > a:active,
+ul.dropdown-menu li > a:focus,
+ul.mega-menu li a:active,
+ul.mega-menu li a:focus,
+.slider .slide--icons a i,
+.slider-portfolio .slide--action a,
+.portfolio-parallax .portfolio-item a.portfolio--more,
+.feature-panel .feature--icon,
+.feature-left-circle .feature--content h6,
+.blog-entry .entry--meta .entry--cat a,
+.portfolio-item .portfolio--cat a,
+ul.comments-list .comment-body .comment a.reply,
+td.cart-product-quantity .product-quantity i,
+.cart-total-amount ul li,
+.portfolio-filter li a.active-filter,
+.shop-options .product-view-mode a.active i,
+.shop-product .product-rating i,
+.shop-product .product-details ul li,
+.shop-product .product-quantity a i,
+.product-tabs .nav-tabs > li > a:focus,
+.product-tabs .nav-tabs > li.active > a,
+.product-tabs .nav-tabs > li.active > a:focus,
+.product-review li .product-rating,
+a.link--styled,
+.contact-panel i,
+.contact-panel .contact-action,
+.widget-tweets ul li a,
+.widget-search .form-search .btn,
+.widget-filter input,
+.widget-categories ul li a span,
+.timeline--item .timeline--item-date,
+.banner-panel a,
+.info-box-bar-dark .info-box-small h6,
+.number-panel .number--content h6,
+.number-panel .number--content a,
+.number-1 .number-panel .number--content h3 span,
+.pie-chart .rounded-skill span,
+.pie-chart .rounded-skill .rounded--icon,
+.process-panel .process-content span,
+.btn--icon-gradient i,
+.btn--bordered.btn--primary,
+.feature-gradient .feature--icon i,
+.feature-7 .feature-panel .feature--icon i,
+.feature-8 .feature-panel .feature--icon i,
+.banner-panel h6,
+.tweets-widget ul li a,
+.process-overlay span,
+.service-panel .link-more,
+.team-2 .member .member-overlay .member-social a,
+.team-4 .member .member-overlay .member-social a,
+.top-bar .top--contact i,
+.module-active .module-hamburger .module-widgets .module-cancel:hover,
+.module-cancel:hover,
+.feature-heading .feature-panel:hover .feature--icon,
+.feature-heading .feature-panel:hover h6 {
+    color: #cda964;
+}
+
+/* color hover */
+
+.tabs .nav-tabs > li > a:hover,
+.tabs .nav-tabs > li.active > a:hover,
+.tabs-2.tabs .nav-tabs > li > a:hover,
+.btn--link.btn--secondary:hover,
+.btn--bordered.btn--white:hover,
+.btn--video:hover,
+.btn--video:hover i,
+.tabs-2.tabs .nav-tabs > li.active > a:hover,
+.tabs-vertical.tabs .nav-tabs > li > a:hover,
+.tabs-vertical.tabs .nav-tabs > li.active > a:hover,
+.page-title .breadcrumb a:hover,
+.title-3 .breadcrumb a:hover,
+.module-menu .menu-list a:hover,
+.module-menu .menu-social a:hover,
+.top-bar .top--social a:hover,
+.hamburger-panel .list-links a:hover,
+ul.dropdown-menu li > a:hover,
+ul.mega-menu li a:hover,
+.transparent-header .navbar-nav li.has-dropdown > a:hover,
+.member .member-overlay .member-social a:hover,
+.team-boxed .member .member-social a:hover,
+.team-dark .member .member-social a:hover,
+.testimonial-4 .testimonial-panel:hover .testimonial--meta p,
+.portfolio-filter li a:hover,
+.portfolio-item .portfolio--title h4 a:hover,
+.portfolio-item .portfolio--cat a:hover,
+.portfolio-single .portfolio--share a:hover,
+.portfolio--prev-next .portfolio--bio a:hover,
+.portfolio-parallax .portfolio-item .portfolio--title h4 a:hover,
+.portfolio-parallax .portfolio-item .portfolio--cat a:hover,
+.feature-more .feature-panel:hover .feature--content .read-more,
+.entry-related .entry--title a:hover,
+.product--content .product--cat a:hover,
+.product--content .product--title a:hover,
+.shop-options .product-view-mode a:hover i,
+.blog-entry .entry--title h4 a:hover,
+.entry--share a:hover,
+.entry-bio .entry-bio-desc a:hover,
+.entry-meta a:hover,
+.entry-next:hover a,
+.entry-prev:hover a,
+.entry-related .entry:hover .entry-title h5,
+.entry-share a:hover,
+.shop-product .product-review span a:hover,
+.product-tabs .nav-tabs > li > a:hover,
+.breadcrumb > li a:hover,
+.header-fixed-side .header--panel .navbar-nav a:hover,
+.header-fixed-side .header--panel .navbar-nav a:hover,
+.service-panel:hover .link-more,
+.landing-demos .portfolio-title:hover,
+.carousel-navs .owl-controls .owl-nav [class*=owl-]:hover,
+.widget-recent-products .product .product-title a:hover,
+.widget-tweets ul li:before,
+.widget-tweets ul li a:hover,
+.footer-widget .footer--widget-about .social a:hover,
+.footer--widget-recent .entry--title a:hover,
+.footer--links li a:hover,
+ .newsletter .btn:hover,
+.widget-categories ul li a:hover,
+.widget-categories ul li a:hover:after,
+.widget-recent-posts .entry .entry-title a:hover,
+.product-tabs .nav-tabs > li.active > a:hover,
+.team-1 .member:hover .member-social a,
+.team-5 .member:hover .member-social a,
+.portfolio-standard .portfolio-item .portfolio--title h4 a:hover,
+.portfolio-standard .portfolio-item .portfolio--cat a:hover{
+    color: #d2b173
+}
+
+
+
+
+/* background-color*/
+
+::selection,
+.higlighted-style1,
+.bg-theme,
+.btn--primary,
+.btn--link.btn-more span:after,
+.btn--link.btn-more span:before,
+.tabs-2.tabs .nav-tabs > li > a:focus i,
+.tabs-2.tabs .nav-tabs > li.active > a i,
+.tabs-2.tabs .nav-tabs > li.active > a:focus i,
+.alerts .alert-icon,
+.range-slider .ui-slider-range,
+.module .module-label,
+.navbar-toggle .icon-bar,
+.portfolio--zoom a:before,
+.portfolio--zoom a:after,
+.portfolio-single .portfolio--title h3:after,
+.entry-widget .entry-widget-title h4:after,
+.feature-heading .feature-panel h3:after,
+.pricing-active:before,
+.shop-product .product-share a,
+.shop-product .product-share a,
+.shop-product .product-related-title h5:after,
+.widget .widget--title h5:after,
+.widget-filter .ui-slider-range,
+.widget-info,
+.skills .progress-bar,
+.video--content .video--player:hover,
+.divider--line:after,
+.banner-panel a:after,
+.banner-sale h6:after,
+.banner-more h3:after,
+.info-box-bar-dark .info-box-small h3:before,
+.number-panel .number--content a:after,
+.accordion .panel--heading .accordion-toggle:after,
+.progressbar.progress-gradient .progress-bar,
+.slide-overlay-gradient .slotholder:after,
+.spinner > div,
+.pricing-panel:before {
+    background-color: #cda964 !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.panel--content:after,
+.tabs-vertical-2.tabs-vertical.tabs .nav-tabs > li.active > a,
+.carousel-dots.carousel-theme .owl-controls .owl-dots .owl-dot.active span,
+.banner-6 .carousel-dots .owl-controls .owl-dots .owl-dot.active span,
+.divider--line:after{
+    background-color: #cda964;
+}
+
+
+/* background-color hover*/
+
+.tabs-2.tabs .nav-tabs > li > a:hover i,
+#back-to-top:hover,
+.cart-box .cart-overview li .cart-cancel:hover:after,
+.portfolio--prev-next .portfolio--icon a:hover,
+.portfolio--carousel .owl-controls .owl-nav [class*=owl-]:hover,
+.portfolio--slider .owl-controls .owl-nav [class*=owl-]:hover,
+.cart-product-remove:hover,
+.product--img .product--hover .product--action a:hover,
+.info-box .video--player .popup-video:hover,
+.process-3 .process-panel .process-img .process-overlay:hover,
+.process-panel .process-img .process-overlay:hover span {
+    background-color: #d2b173 !important;
+}
+
+.tabs-vertical-2.tabs-vertical.tabs .nav-tabs > li > a:hover,
+.owl-theme .owl-dots .owl-dot:hover span,
+.info-box .feature-panel:hover,
+.process-3 .process-panel .process-img .process-overlay:hover span,
+.process-panel .process-img .process-overlay:hover span,
+.feature-2 .feature-panel:hover .feature--icon i {
+    background-color: #d2b173;
+}
+
+
+/* BORDER */
+
+.border-all,
+.accordion .panel--heading .accordion-toggle:after {
+    border: 1px solid #cda964;
+}
+
+.border-top {
+    border-top: 1px solid #cda964;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #cda964;
+}
+
+.border-right {
+    border-right: 1px solid #cda964;
+}
+
+.border-left {
+    border-left: 1px solid #cda964;
+}
+
+.video--content .video--player-theme {
+    border: 2px solid #cda964;
+}
+
+/* border color */
+
+.navbar-toggle,
+.navbar-toggle,
+.form-control:focus,
+.slider-theme.slider-dots .owl-controls .owl-dots .owl-dot span,
+.btn--bordered.btn--primary,
+.banner-6 .carousel-dots .owl-controls .owl-dots .owl-dot span,
+.banner-6 .carousel-dots .owl-controls .owl-dots .owl-dot span,
+.feature-2 .feature-panel:hover .feature--icon i {
+    border-color: #cda964;
+}
+
+.video--content .video--player-bordered:hover {
+    border-color: #d2b173;
+}
+
+.contact-form .form-control:focus {
+    border-color: #cda964;
+}
+
+/*background-color & border-color  */
+
+.btn--secondary:active,
+.btn--secondary:focus,
+.btn--secondary:hover,
+.btn--white:active,
+.btn--white:focus,
+.btn--white:hover,
+.btn--bordered.btn--primary:active,
+.btn--bordered.btn--primary:focus,
+.btn--bordered.btn--primary:hover,
+.btn--white.btn--secondary:active,
+.btn--white.btn--secondary:focus,
+.btn--white.btn--secondary:hover,
+.pagination > .active > a,
+.pagination > li:hover > a,
+.feature-left-circle .feature--icon:hover,
+.widget-tags a:hover,
+.banner-6 .carousel-dots .owl-controls .owl-dots .owl-dot.active span,
+.carousel-dots.carousel-theme .owl-controls .owl-dots .owl-dot.active span,
+.nav-split li a:hover,
+.nav-split li.active a,
+.accordion .panel--heading .accordion-toggle:after,
+.accordion .panel--heading .accordion-toggle.collapsed:after,
+.pagination > .active > a, .pagination > li:hover > a{
+    background-color: #cda964 !important;
+    border-color: #cda964;
+}
+
+.btn--icon-gradient i {
+    background: -webkit-linear-gradient(150deg, #1da4cb 0%, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+    background: linear-gradient(150deg, #1da4cb 0%, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide-overlay-gradient .slotholder:after {
+    background-image: linear-gradient(to top, rgba(27, 181, 128, 0.8) 0%, rgba(12, 109, 176, 0.8) 100%);
+}
+
+.feature-gradient .feature--icon i {
+    background: -webkit-linear-gradient(150deg, #1da4cb 0%, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+    background: linear-gradient(150deg, #1da4cb 0%, #1da4cb 2%, #1dcb84 27%, #7bcb1d 58%, #efd631 100%);
+}
+
+.progressbar.progress-gradient .progress-bar {
+    background-image: -webkit-gradient(linear, left top, right top, from(#cda964), to(#cda964));
+    background-image: -webkit-linear-gradient(left, #cda964, #cda964);
+    background-image: -moz-linear-gradient(left, #cda964, #cda964);
+    background-image: -ms-linear-gradient(left, #cda964, #cda964);
+    background-image: -o-linear-gradient(left, #cda964, #cda964);
+    background-image: linear-gradient(left, #cda964, #cda964);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cda964', endColorStr='#cda964', gradientType='1');
+}
+
+.bg-overlay-theme2:before {
+    background-color: rgba(205, 169, 100, 0.93);
+}
+
+.bg-overlay-theme4:before {
+    background-color: rgba(205, 169, 100, 0.75);
+}
+
+.bg-overlay-theme3:before {
+    background-color: rgba(205, 169, 100, 0.45);
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+    .mega-dropdown-menu .container a[href='#'] {
+        color: #cda964;
+    }
+}
+
+.portfolio-item .portfolio--hover .portfolio--action,
+.portfolio-hover-2 .portfolio-item .portfolio--hover .portfolio--action {
+    background-color: rgba(205, 169, 100, 0.9);
+    background-image: none;
+}
+
+.widget-instagram .insta-hover i {
+    background-color: rgba(205, 169, 100, 0.95);
+}
+
+.btn--bordered.btn--white:active,
+.btn--bordered.btn--white:focus,
+.btn--bordered.btn--white:hover {
+    color: #cda964;
+    background-color: #ffffff !important;
+    border-color: #ffffff;
+}

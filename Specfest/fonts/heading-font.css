@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'kamikazeregular';
+    src: url('kamikaze-webfont.woff2') format('woff2'),
+         url('kamikaze-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

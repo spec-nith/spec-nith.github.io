@@ -1,0 +1,18 @@
+body {
+    background-color:#000;
+    color: #fff;
+  }
+  .heading{
+    text-align:center;
+  }
+  #c {
+      padding: 0;
+      margin: auto;
+      display: block;
+      position: relative;
+      top: 0vh;
+      margin-top: 5vh;
+      bottom: 0;
+      left: 0;
+      right: 0;
+  }
