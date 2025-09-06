@@ -81,11 +81,11 @@ body {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image:url(../assets/overlay.png), url(../assets/sp2k25.JPG);
+  background-image:url(../assets/overlay.png), url(../assets/Sp2k25.JPG);
   background-position: center;
 }
 .card:nth-child(2):before {
-  background-image:url(../assets/overlay.png), url(../assets/sp2k24.jpg);
+  background-image:url(../assets/overlay.png), url(../assets/Sp2k24.jpg);
   background-position: center;
 }
 .card:nth-child(3):before {
