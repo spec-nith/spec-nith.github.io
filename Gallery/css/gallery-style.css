@@ -93,7 +93,12 @@
     transform: scale(1.05) translateZ(0);
   }
   
-  .card-grid:hover > .card:not(:hover) .card__background{
+  .card:hover ~ .card .card__background,
+  .card:hover ~ .card ~ .card .card__background{
+    filter: brightness(0.5) saturate(1) contrast(1.2) blur(10px);
+  }
+  
+  .card:has(~ .card:hover) .card__background{
     filter: brightness(0.5) saturate(1) contrast(1.2) blur(10px);
   }
   
