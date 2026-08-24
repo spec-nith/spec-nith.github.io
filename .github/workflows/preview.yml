@@ -2,12 +2,12 @@ name: Preview deploy
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, labeled]
 
 jobs:
   deploy-preview:
+    if: contains(github.event.pull_request.labels.*.name, 'deploy-preview')
     runs-on: ubuntu-latest
-    environment: preview
     steps:
       - uses: actions/checkout@v4
       - name: Deploy preview to Cloudflare
