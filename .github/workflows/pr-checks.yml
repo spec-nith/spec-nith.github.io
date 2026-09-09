@@ -1,0 +1,69 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches: [master, better-master]
+
+permissions:
+  contents: read
+
+jobs:
+  image-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install image tools
+        run: sudo apt-get update && sudo apt-get install -y imagemagick jpegoptim optipng
+
+      - name: Determine changed image files
+        run: |
+          git fetch origin "$GITHUB_BASE_REF" --depth=1
+          git diff -z --name-only --diff-filter=ACM "origin/$GITHUB_BASE_REF...HEAD" -- '*.jpg' '*.jpeg' '*.png' '*.webp' '*.gif' '*.JPG' '*.JPEG' '*.PNG' '*.WEBP' '*.GIF' > /tmp/changed-images
+        env:
+          GITHUB_BASE_REF: ${{ github.base_ref }}
+
+      - name: Check image sizes
+        run: |
+          chmod +x scripts/check-image-sizes.sh
+          if [ -s /tmp/changed-images ]; then
+            xargs -0 -a /tmp/changed-images ./scripts/check-image-sizes.sh
+          fi
+
+      - name: Check for duplicate images
+        env:
+          GITHUB_BASE_REF: ${{ github.base_ref }}
+        run: |
+          [ -s /tmp/changed-images ] || exit 0
+          base="origin/$GITHUB_BASE_REF"
+          # git stores byte-identical files under one blob sha, so a duplicate
+          # image shares the sha of whatever it copies. Map base blob sha -> path.
+          git ls-tree -r "$base" | awk -F'\t' '
+            $2 ~ /\.([jJ][pP][eE]?[gG]|[pP][nN][gG]|[wW][eE][bB][pP]|[gG][iI][fF])$/ {
+              split($1, a, " "); print a[3]"\t"$2
+            }' > /tmp/base-blobs
+
+          fail=0
+          : > /tmp/pr-shas
+          while IFS= read -r -d '' f; do
+            sha=$(git rev-parse "HEAD:$f" 2>/dev/null) || continue
+            # A: image already present in the target branch under another path
+            match=$(awk -F'\t' -v s="$sha" -v self="$f" '$1==s && $2!=self {print $2}' /tmp/base-blobs)
+            if [ -n "$match" ]; then
+              echo "DUPLICATE: $f already exists in $GITHUB_BASE_REF as:"
+              echo "$match" | sed 's/^/  /'
+              fail=1
+            fi
+            printf '%s\t%s\n' "$sha" "$f" >> /tmp/pr-shas
+          done < /tmp/changed-images
+
+          # B: this PR adds two or more images that are identical to each other
+          for s in $(cut -f1 /tmp/pr-shas | sort | uniq -d); do
+            echo "DUPLICATE within this PR (identical images):"
+            awk -F'\t' -v s="$s" '$1==s {print "  "$2}' /tmp/pr-shas
+            fail=1
+          done
+
+          exit "$fail"

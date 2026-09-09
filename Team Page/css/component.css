@@ -324,7 +324,7 @@ img#four{
 .type{
 border: 0;
 height: 55px;
-background-image: url("imgs/type_1.png");
+background-image: url(../../assets/images/events/1.png);
 display: block;
 margin-left: center;
 margin-right: center;

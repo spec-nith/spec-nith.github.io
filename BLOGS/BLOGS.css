@@ -30,7 +30,7 @@
 
 @media only screen and (max-width: 600px){
   .u-section-1{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.561)),url("images/kuber.jpeg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.561)),url(images/whatsappimage2020-11-28at8.36.13pm2.jpeg);
     background-position: 20% 20%;
   }
   .u-section-rathi{
@@ -40,7 +40,7 @@
 }
 
 .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.603)), url("images/kuber.jpeg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.603)), url(images/whatsappimage2020-11-28at8.36.13pm2.jpeg);
   background-position: 50% 50%;
 
 }

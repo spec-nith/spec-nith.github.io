@@ -234,7 +234,7 @@ h5 {
   height: 100%;
   width: 100%;
   z-index: 0;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../../../assets/images/gallery-shared/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

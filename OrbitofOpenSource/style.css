@@ -22,7 +22,7 @@ section{
     left: -10%;
     width: 120%;
     height: 100vh;
-    background: url('images/bg.jpg');
+    background: url(images/bg.jpg);
 } 
 
 .container #scene .layer
