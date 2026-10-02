@@ -59,7 +59,11 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
+  .volunteer-container .img-bx {
+    transform: translateY(10px) scale(0.67);
+  }
+
   .content1 {
     position: absolute;
     width: 100%;
